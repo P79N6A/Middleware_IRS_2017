@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>/etc/xen/xl.conf - XL Global/Host Configuration</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#syntax">SYNTAX</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>/etc/xen/xl.conf - XL Global/Host Configuration</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>The <em class="file">xl.conf</em> file allows configuration of hostwide <a href="#xl"><code>xl</code></a> toolstack
+options.</p>
+<p>For details of per-domain configuration options please see
+<a href="#cfg">xl.cfg(5)</a>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="syntax">SYNTAX</a></h1>
+<p>The config file consists of a series of <code>KEY=VALUE</code> pairs.</p>
+<p>A value <code>VALUE</code> is one of:</p>
+<dl>
+<dt><strong><a name="string" class="item"><strong>&quot;STRING&quot;</strong></a></strong></dt>
+
+<dd>
+<p>A string, surrounded by either single or double quotes.</p>
+</dd>
+<dt><strong><a name="number" class="item"><strong>NUMBER</strong></a></strong></dt>
+
+<dd>
+<p>A number, in either decimal, octal (using a <code>0</code> prefix) or
+hexadecimal (using an <code>0x</code> prefix).</p>
+</dd>
+<dt><strong><a name="boolean" class="item"><strong>BOOLEAN</strong></a></strong></dt>
+
+<dd>
+<p>A <a href="#number"><code>NUMBER</code></a> interpreted as <code>False</code> (<code>0</code>) or <code>True</code> (any other
+value).</p>
+</dd>
+<dt><strong><a name="value_value" class="item"><strong>[ VALUE, VALUE, ... ]</strong></a></strong></dt>
+
+<dd>
+<p>A list of <code>VALUES</code> of the above types. Lists are homogeneous and are
+not nested.</p>
+</dd>
+</dl>
+<p>The semantics of each <code>KEY</code> defines which form of <code>VALUE</code> is required.</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="autoballoon_off_on_auto" class="item"><strong>autoballoon=&quot;off&quot;|&quot;on&quot;|&quot;auto&quot;</strong></a></strong></dt>
+
+<dd>
+<p>If set to &quot;on&quot; then <a href="#xl"><code>xl</code></a> will automatically reduce the amount of
+memory assigned to domain 0 in order to free memory for new domains.</p>
+<p>If set to &quot;off&quot; then <a href="#xl"><code>xl</code></a> will not automatically reduce the amount of
+domain 0 memory.</p>
+<p>If set to &quot;auto&quot; then auto-ballooning will be disabled if the
+<code>dom0_mem</code> option was provided on the Xen command line.</p>
+<p>You are strongly recommended to set this to <code>&quot;off&quot;</code> (or <code>&quot;auto&quot;</code>) if
+you use the <code>dom0_mem</code> hypervisor command line to reduce the amount
+of memory given to domain 0 by default.</p>
+<p>Default: <code>&quot;auto&quot;</code></p>
+</dd>
+<dt><strong><a name="run_hotplug_scripts_boolean" class="item"><strong>run_hotplug_scripts=BOOLEAN</strong></a></strong></dt>
+
+<dd>
+<p>If disabled hotplug scripts will be called from udev, as it used to
+be in the previous releases. With the default option, hotplug scripts
+will be launched by xl directly.</p>
+<p>Default: <code>1</code></p>
+</dd>
+<dt><strong><a name="lockfile_path" class="item"><strong>lockfile=&quot;PATH&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Sets the path to the lock file used by xl to serialise certain
+operations (primarily domain creation).</p>
+<p>Default: <code>/var/lock/xl</code></p>
+</dd>
+<dt><strong><a name="vif_default_script_path" class="item"><strong>vif.default.script=&quot;PATH&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default hotplug script used by virtual network devices.</p>
+<p>The old <strong>vifscript</strong> option is deprecated and should not be used.</p>
+<p>Default: <code>/etc/xen/scripts/vif-bridge</code></p>
+</dd>
+<dt><strong><a name="vif_default_bridge_name" class="item"><strong>vif.default.bridge=&quot;NAME&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default bridge to set for virtual network devices.</p>
+<p>The old <strong>defaultbridge</strong> option is deprecated and should not be used.</p>
+<p>Default: <code>xenbr0</code></p>
+</dd>
+<dt><strong><a name="vif_default_backend_name" class="item"><strong>vif.default.backend=&quot;NAME&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default backend to set for virtual network devices.</p>
+<p>Default: <code>0</code></p>
+</dd>
+<dt><strong><a name="vif_default_gatewaydev_name" class="item"><strong>vif.default.gatewaydev=&quot;NAME&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default gateway device to set for virtual network devices.</p>
+<p>Default: <code>None</code></p>
+</dd>
+<dt><strong><a name="remus_default_netbufscript_path" class="item"><strong>remus.default.netbufscript=&quot;PATH&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default script used by Remus to setup network buffering.</p>
+<p>Default: <code>/etc/xen/scripts/remus-netbuf-setup</code></p>
+</dd>
+<dt><strong><a name="output_format_json_sxp" class="item"><strong>output_format=&quot;json|sxp&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the default output format used by xl when printing &quot;machine
+readable&quot; information. The default is to use the <code>JSON</code>
+<a href="http://www.json.org/">http://www.json.org/</a> syntax. However for compatibility with the
+previous <code>xm</code> toolstack this can be configured to use the old <code>SXP</code>
+(S-Expression-like) syntax instead.</p>
+<p>Default: <code>json</code></p>
+</dd>
+<dt><strong><a name="blkdev_start_name" class="item"><strong>blkdev_start=&quot;NAME&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Configures the name of the first block device to be used for temporary
+block device allocations by the toolstack.
+The default choice is &quot;xvda&quot;.</p>
+</dd>
+<dt><strong><a name="claim_mode_boolean" class="item"><strong>claim_mode=BOOLEAN</strong></a></strong></dt>
+
+<dd>
+<p>If this option is enabled then when a guest is created there will be an
+guarantee that there is memory available for the guest. This is an
+particularly acute problem on hosts with memory over-provisioned guests
+that use tmem and have self-balloon enabled (which is the default
+option). The self-balloon mechanism can deflate/inflate the balloon
+quickly and the amount of free memory (which <code>xl info</code> can show) is
+stale the moment it is printed. When claim is enabled a reservation for
+the amount of memory (see 'memory' in xl.conf(5)) is set, which is then
+reduced as the domain's memory is populated and eventually reaches zero.
+The free memory in <code>xl info</code> is the combination of the hypervisor's
+free heap memory minus the outstanding claims value.</p>
+<p>If the reservation cannot be meet the guest creation fails immediately
+instead of taking seconds/minutes (depending on the size of the guest)
+while the guest is populated.</p>
+<p>Note that to enable tmem type guests, one needs to provide <code>tmem</code> on the
+Xen hypervisor argument and as well on the Linux kernel command line.</p>
+<p>Note that the claim call is not attempted if <code>superpages</code> option is
+used in the guest config (see xl.cfg(5)).</p>
+<p>Default: <code>1</code></p>
+<ol>
+<li>
+<p>No claim is made. Memory population during guest creation will be
+attempted as normal and may fail due to memory exhaustion.</p>
+</li>
+<li>
+<p>Normal memory and freeable pool of ephemeral pages (tmem) is used when
+calculating whether there is enough memory free to launch a guest.
+This guarantees immediate feedback whether the guest can be launched due
+to memory exhaustion (which can take a long time to find out if launching
+massively huge guests).</p>
+</li>
+</ol>
+</dd>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<dl>
+<dt><strong><a name="xl" class="item"><a href="#xl">xl(1)</a></a></strong></dt>
+
+<dt><strong><a name="cfg" class="item"><a href="#cfg">xl.cfg(5)</a></a></strong></dt>
+
+<dt><strong><a name="http_www_json_org" class="item"><a href="http://www.json.org/">http://www.json.org/</a></a></strong></dt>
+
+</dl>
+
+</body>
+
+</html>

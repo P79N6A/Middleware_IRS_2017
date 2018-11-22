@@ -1,0 +1,82 @@
+NAME
+    xlcpupool.cfg - XL Cpupool Configuration File Syntax
+
+SYNOPSIS
+     /etc/xen/xlcpupool
+
+DESCRIPTION
+    To create a Cpupool with xl requires the provision of a cpupool config
+    file. Typically these live in `/etc/xen/CPUPOOL.cfg` where CPUPOOL is
+    the name of the cpupool.
+
+SYNTAX
+    A cpupool config file consists of a series of "KEY=VALUE" pairs.
+
+    A value "VALUE" is one of:
+
+    "STRING"
+        A string, surrounded by either single or double quotes.
+
+    NUMBER
+        A number, in either decimal, octal (using a 0 prefix) or hexadecimal
+        (using an "0x" prefix).
+
+    [ VALUE, VALUE, ... ]
+        A list of "VALUES" of the above types. Lists are homogeneous and are
+        not nested.
+
+    The semantics of each "KEY" defines which form of "VALUE" is required.
+
+OPTIONS
+  Mandatory Configuration Items
+    The following key is mandatory for any cpupool:
+
+    name="NAME"
+        Specifies the name of the cpupool. Names of cpupools existing on a
+        single host must be unique.
+
+  Optional Configuration Items
+    The following options apply to guests of any type.
+
+    sched="SCHED"
+        Specifies the scheduler which is used for the cpupool. Valid values
+        for "SCHED" are:
+
+        credit
+            the credit scheduler
+
+        credit2
+            the credit2 scheduler
+
+        sedf
+            the SEDF scheduler
+
+        The default scheduler is the one used for "Pool-0" specified as boot
+        parameter of the hypervisor.
+
+    nodes="NODES"
+        Specifies the cpus of the NUMA-nodes given in "NODES" (an integer or
+        a list of integers) to be member of the cpupool. The free cpus in
+        the specified nodes are allocated in the new cpupool.
+
+    cpus="CPUS"
+        The specified "CPUS" are allocated in the new cpupool. All cpus must
+        be free. Must not be specified together with nodes.
+
+        If neither nodes nor cpus are specified only the first free cpu
+        found will be allocated in the new cpupool.
+
+FILES
+    /etc/xen/CPUPOOL.cfg
+
+BUGS
+    This document is a work in progress and contains items which require
+    further documentation and which are generally incomplete (marked with
+    XXX). However all options are included here whether or not they are
+    fully documented.
+
+    Patches to improve incomplete items (or any other item) would be
+    gratefully received on the xen-devel@lists.xen.org mailing list. Please
+    see <http://wiki.xen.org/wiki/SubmittingXenPatches> for information on
+    how to submit a patch to Xen.
+

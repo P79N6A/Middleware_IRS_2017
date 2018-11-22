@@ -1,0 +1,270 @@
+Binary file ./xen-syms matches
+./arch/x86/domctl.c:957:        if ( !d->controller_pause_count )
+./arch/x86/domctl.c:972:        if ( !d->controller_pause_count )
+./arch/x86/domctl.c:991:        domctl->u.gdbsx_domstatus.paused = d->controller_pause_count > 0;
+Binary file ./arch/x86/x86_64/traps.o matches
+Binary file ./arch/x86/x86_64/domain.o matches
+Binary file ./arch/x86/x86_64/cpu_idle.o matches
+Binary file ./arch/x86/x86_64/platform_hypercall.o matches
+Binary file ./arch/x86/x86_64/mm.o matches
+Binary file ./arch/x86/x86_64/compat.o matches
+Binary file ./arch/x86/x86_64/cpufreq.o matches
+Binary file ./arch/x86/x86_64/physdev.o matches
+Binary file ./arch/x86/x86_64/built_in.o matches
+Binary file ./arch/x86/numa.o matches
+Binary file ./arch/x86/msi.o matches
+Binary file ./arch/x86/traps.o matches
+Binary file ./arch/x86/hvm/vpt.o matches
+Binary file ./arch/x86/hvm/vpic.o matches
+Binary file ./arch/x86/hvm/vioapic.o matches
+Binary file ./arch/x86/hvm/svm/vmcb.o matches
+Binary file ./arch/x86/hvm/svm/vpmu.o matches
+Binary file ./arch/x86/hvm/svm/intr.o matches
+Binary file ./arch/x86/hvm/svm/asid.o matches
+Binary file ./arch/x86/hvm/svm/nestedsvm.o matches
+Binary file ./arch/x86/hvm/svm/svm.o matches
+Binary file ./arch/x86/hvm/svm/built_in.o matches
+Binary file ./arch/x86/hvm/svm/emulate.o matches
+Binary file ./arch/x86/hvm/vpmu.o matches
+Binary file ./arch/x86/hvm/i8254.o matches
+Binary file ./arch/x86/hvm/nestedhvm.o matches
+Binary file ./arch/x86/hvm/irq.o matches
+Binary file ./arch/x86/hvm/hpet.o matches
+Binary file ./arch/x86/hvm/vmx/vmcs.o matches
+Binary file ./arch/x86/hvm/vmx/vvmx.o matches
+Binary file ./arch/x86/hvm/vmx/vpmu_core2.o matches
+Binary file ./arch/x86/hvm/vmx/intr.o matches
+Binary file ./arch/x86/hvm/vmx/realmode.o matches
+Binary file ./arch/x86/hvm/vmx/vmx.o matches
+Binary file ./arch/x86/hvm/vmx/built_in.o matches
+Binary file ./arch/x86/hvm/vlapic.o matches
+Binary file ./arch/x86/hvm/pmtimer.o matches
+Binary file ./arch/x86/hvm/asid.o matches
+Binary file ./arch/x86/hvm/save.o matches
+Binary file ./arch/x86/hvm/mtrr.o matches
+Binary file ./arch/x86/hvm/rtc.o matches
+Binary file ./arch/x86/hvm/quirks.o matches
+Binary file ./arch/x86/hvm/vmsi.o matches
+Binary file ./arch/x86/hvm/io.o matches
+Binary file ./arch/x86/hvm/hvm.o matches
+Binary file ./arch/x86/hvm/built_in.o matches
+Binary file ./arch/x86/hvm/viridian.o matches
+Binary file ./arch/x86/hvm/stdvga.o matches
+Binary file ./arch/x86/hvm/intercept.o matches
+Binary file ./arch/x86/hvm/emulate.o matches
+Binary file ./arch/x86/domain_page.o matches
+Binary file ./arch/x86/smp.o matches
+Binary file ./arch/x86/trace.o matches
+Binary file ./arch/x86/domain.o matches
+Binary file ./arch/x86/i8259.o matches
+Binary file ./arch/x86/mpparse.o matches
+Binary file ./arch/x86/apic.o matches
+Binary file ./arch/x86/nmi.o matches
+Binary file ./arch/x86/microcode_intel.o matches
+Binary file ./arch/x86/smpboot.o matches
+Binary file ./arch/x86/acpi/suspend.o matches
+Binary file ./arch/x86/acpi/cpu_idle.o matches
+Binary file ./arch/x86/acpi/power.o matches
+Binary file ./arch/x86/acpi/built_in.o matches
+Binary file ./arch/x86/acpi/cpufreq/cpufreq.o matches
+Binary file ./arch/x86/acpi/cpufreq/built_in.o matches
+Binary file ./arch/x86/domain_build.o matches
+Binary file ./arch/x86/prelink.o matches
+Binary file ./arch/x86/irq.o matches
+Binary file ./arch/x86/sysctl.o matches
+Binary file ./arch/x86/platform_hypercall.o matches
+Binary file ./arch/x86/mm.o matches
+Binary file ./arch/x86/compat.o matches
+Binary file ./arch/x86/domain_build.init.o matches
+Binary file ./arch/x86/crash.o matches
+Binary file ./arch/x86/psr.o matches
+Binary file ./arch/x86/io_apic.o matches
+Binary file ./arch/x86/oprofile/xenoprof.o matches
+Binary file ./arch/x86/oprofile/backtrace.o matches
+Binary file ./arch/x86/oprofile/nmi_int.o matches
+Binary file ./arch/x86/oprofile/op_model_ppro.o matches
+Binary file ./arch/x86/oprofile/op_model_athlon.o matches
+Binary file ./arch/x86/oprofile/built_in.o matches
+Binary file ./arch/x86/microcode.o matches
+Binary file ./arch/x86/mm/guest_walk_4.o matches
+Binary file ./arch/x86/mm/shadow/guest_3.o matches
+Binary file ./arch/x86/mm/shadow/guest_2.o matches
+Binary file ./arch/x86/mm/shadow/guest_4.o matches
+Binary file ./arch/x86/mm/shadow/common.o matches
+Binary file ./arch/x86/mm/shadow/built_in.o matches
+Binary file ./arch/x86/mm/mem_paging.o matches
+Binary file ./arch/x86/mm/mem_sharing.o matches
+Binary file ./arch/x86/mm/p2m.o matches
+Binary file ./arch/x86/mm/p2m-pod.o matches
+Binary file ./arch/x86/mm/p2m-pt.o matches
+Binary file ./arch/x86/mm/p2m-ept.o matches
+Binary file ./arch/x86/mm/paging.o matches
+Binary file ./arch/x86/mm/guest_walk_3.o matches
+Binary file ./arch/x86/mm/hap/guest_walk_2level.o matches
+Binary file ./arch/x86/mm/hap/hap.o matches
+Binary file ./arch/x86/mm/hap/nested_hap.o matches
+Binary file ./arch/x86/mm/hap/guest_walk_3level.o matches
+Binary file ./arch/x86/mm/hap/guest_walk_4level.o matches
+Binary file ./arch/x86/mm/hap/built_in.o matches
+Binary file ./arch/x86/mm/hap/nested_ept.o matches
+Binary file ./arch/x86/mm/guest_walk_2.o matches
+Binary file ./arch/x86/mm/built_in.o matches
+Binary file ./arch/x86/setup.o matches
+Binary file ./arch/x86/tboot.o matches
+./arch/x86/asm-offsets.s:16235:	.string	"controller_pause_count"
+./arch/x86/asm-offsets.s:16793:	.string	"pause_count"
+./arch/x86/asm-offsets.s:18673:	.string	"mem_event_pause_count"
+Binary file ./arch/x86/machine_kexec.o matches
+Binary file ./arch/x86/xstate.o matches
+Binary file ./arch/x86/shutdown.o matches
+Binary file ./arch/x86/debug.o matches
+Binary file ./arch/x86/flushtlb.o matches
+Binary file ./arch/x86/physdev.o matches
+Binary file ./arch/x86/usercopy.o matches
+Binary file ./arch/x86/i387.o matches
+Binary file ./arch/x86/microcode_amd.o matches
+Binary file ./arch/x86/cpu/mcheck/vmce.o matches
+Binary file ./arch/x86/cpu/mcheck/mce-apei.o matches
+Binary file ./arch/x86/cpu/mcheck/non-fatal.o matches
+Binary file ./arch/x86/cpu/mcheck/mce_intel.o matches
+Binary file ./arch/x86/cpu/mcheck/mcaction.o matches
+Binary file ./arch/x86/cpu/mcheck/util.o matches
+Binary file ./arch/x86/cpu/mcheck/mce_amd.o matches
+Binary file ./arch/x86/cpu/mcheck/mce.o matches
+Binary file ./arch/x86/cpu/mcheck/barrier.o matches
+Binary file ./arch/x86/cpu/mcheck/mctelem.o matches
+Binary file ./arch/x86/cpu/mcheck/built_in.o matches
+Binary file ./arch/x86/cpu/mcheck/amd_nonfatal.o matches
+Binary file ./arch/x86/cpu/amd.o matches
+Binary file ./arch/x86/cpu/mwait-idle.o matches
+Binary file ./arch/x86/cpu/intel.o matches
+Binary file ./arch/x86/cpu/built_in.o matches
+Binary file ./arch/x86/domctl.o matches
+Binary file ./arch/x86/built_in.o matches
+Binary file ./arch/x86/time.o matches
+Binary file ./arch/x86/genapic/delivery.o matches
+Binary file ./arch/x86/genapic/built_in.o matches
+Binary file ./arch/x86/ioport_emulate.o matches
+Binary file ./xsm/xsm_core.o matches
+Binary file ./xsm/built_in.o matches
+./include/xen/sched.h:249:    atomic_t         pause_count;
+./include/xen/sched.h:252:    atomic_t         mem_event_pause_count;
+./include/xen/sched.h:254:    int              controller_pause_count;
+./include/xen/sched.h:418:    int              controller_pause_count;
+./include/xen/sched.h:439:    atomic_t         pause_count;
+./include/xen/sched.h:814:             atomic_read(&v->pause_count) |
+./include/xen/sched.h:815:             atomic_read(&v->domain->pause_count));
+Binary file ./drivers/acpi/pmstat.o matches
+Binary file ./drivers/acpi/built_in.o matches
+Binary file ./drivers/passthrough/pci.o matches
+Binary file ./drivers/passthrough/iommu.o matches
+Binary file ./drivers/passthrough/x86/iommu.o matches
+Binary file ./drivers/passthrough/x86/ats.o matches
+Binary file ./drivers/passthrough/x86/built_in.o matches
+Binary file ./drivers/passthrough/amd/iommu_guest.o matches
+Binary file ./drivers/passthrough/amd/iommu_intr.o matches
+Binary file ./drivers/passthrough/amd/iommu_detect.init.o matches
+Binary file ./drivers/passthrough/amd/iommu_cmd.o matches
+Binary file ./drivers/passthrough/amd/iommu_acpi.init.o matches
+Binary file ./drivers/passthrough/amd/pci_amd_iommu.o matches
+Binary file ./drivers/passthrough/amd/iommu_map.o matches
+Binary file ./drivers/passthrough/amd/iommu_init.o matches
+Binary file ./drivers/passthrough/amd/iommu_acpi.o matches
+Binary file ./drivers/passthrough/amd/built_in.o matches
+Binary file ./drivers/passthrough/amd/iommu_detect.o matches
+Binary file ./drivers/passthrough/io.o matches
+Binary file ./drivers/passthrough/vtd/utils.o matches
+Binary file ./drivers/passthrough/vtd/iommu.o matches
+Binary file ./drivers/passthrough/vtd/x86/ats.o matches
+Binary file ./drivers/passthrough/vtd/x86/built_in.o matches
+Binary file ./drivers/passthrough/vtd/x86/vtd.o matches
+Binary file ./drivers/passthrough/vtd/intremap.o matches
+Binary file ./drivers/passthrough/vtd/quirks.o matches
+Binary file ./drivers/passthrough/vtd/built_in.o matches
+Binary file ./drivers/passthrough/vtd/qinval.o matches
+Binary file ./drivers/passthrough/built_in.o matches
+Binary file ./drivers/char/ns16550.o matches
+Binary file ./drivers/char/built_in.o matches
+Binary file ./drivers/char/console.o matches
+Binary file ./drivers/built_in.o matches
+Binary file ./drivers/cpufreq/cpufreq_misc_governors.o matches
+Binary file ./drivers/cpufreq/cpufreq.o matches
+Binary file ./drivers/cpufreq/utility.o matches
+Binary file ./drivers/cpufreq/built_in.o matches
+Binary file ./drivers/cpufreq/cpufreq_ondemand.o matches
+Binary file ./xen matches
+Binary file ./common/keyhandler.o matches
+./common/domctl.c:187:        (d->controller_pause_count > 0  ? XEN_DOMINF_paused   : 0) |
+Binary file ./common/kimage.o matches
+./common/domain.c:323:        d->controller_pause_count = 1;
+./common/domain.c:324:        atomic_inc(&d->pause_count);
+./common/domain.c:875:    atomic_inc(&v->pause_count);
+./common/domain.c:881:    atomic_inc(&v->pause_count);
+./common/domain.c:887:    if ( atomic_dec_and_test(&v->pause_count) )
+./common/domain.c:893:    int old, new, prev = v->controller_pause_count;
+./common/domain.c:903:        prev = cmpxchg(&v->controller_pause_count, old, new);
+./common/domain.c:913:    int old, new, prev = v->controller_pause_count;
+./common/domain.c:923:        prev = cmpxchg(&v->controller_pause_count, old, new);
+./common/domain.c:936:    atomic_inc(&d->pause_count);
+./common/domain.c:961:    if ( atomic_dec_and_test(&d->pause_count) )
+./common/domain.c:969:    int old, new, prev = d->controller_pause_count;
+./common/domain.c:978:         * toolstack overflowing d->pause_count with many repeated hypercalls.
+./common/domain.c:983:        prev = cmpxchg(&d->controller_pause_count, old, new);
+./common/domain.c:993:    int old, new, prev = d->controller_pause_count;
+./common/domain.c:1003:        prev = cmpxchg(&d->controller_pause_count, old, new);
+Binary file ./common/xenoprof.o matches
+Binary file ./common/cpupool.o matches
+Binary file ./common/sched_credit2.o matches
+Binary file ./common/hvm/save.o matches
+Binary file ./common/hvm/built_in.o matches
+Binary file ./common/sched_credit.o matches
+Binary file ./common/trace.o matches
+Binary file ./common/domain.o matches
+Binary file ./common/tmem_xen.o matches
+Binary file ./common/stop_machine.o matches
+Binary file ./common/tmem.o matches
+Binary file ./common/tasklet.o matches
+Binary file ./common/vsprintf.o matches
+Binary file ./common/cpu.o matches
+Binary file ./common/memory.o matches
+Binary file ./common/mem_access.o matches
+Binary file ./common/event_fifo.o matches
+Binary file ./common/sysctl.o matches
+Binary file ./common/softirq.o matches
+Binary file ./common/schedule.o matches
+Binary file ./common/spinlock.o matches
+Binary file ./common/multicall.o matches
+Binary file ./common/sched_arinc653.o matches
+Binary file ./common/timer.o matches
+Binary file ./common/shutdown.o matches
+Binary file ./common/event_2l.o matches
+Binary file ./common/sched_sedf.o matches
+./common/keyhandler.c:261:        printk("    refcnt=%d dying=%d pause_count=%d\n",
+./common/keyhandler.c:263:               atomic_read(&d->pause_count));
+./common/keyhandler.c:308:            printk("    pause_count=%d pause_flags=%lx\n",
+./common/keyhandler.c:309:                   atomic_read(&v->pause_count), v->pause_flags);
+Binary file ./common/compat/domain.o matches
+Binary file ./common/compat/tmem_xen.o matches
+Binary file ./common/compat/memory.o matches
+Binary file ./common/compat/multicall.o matches
+Binary file ./common/compat/kernel.o matches
+Binary file ./common/compat/built_in.o matches
+Binary file ./common/mem_event.o matches
+Binary file ./common/event_channel.o matches
+Binary file ./common/kernel.o matches
+Binary file ./common/rcupdate.o matches
+Binary file ./common/grant_table.o matches
+Binary file ./common/domctl.o matches
+Binary file ./common/page_alloc.o matches
+Binary file ./common/built_in.o matches
+Binary file ./common/kexec.o matches
+Binary file ./common/rangeset.o matches
+Binary file ./common/libelf/libelf-loader.o matches
+Binary file ./common/libelf/libelf.o matches
+Binary file ./common/libelf/libelf-temp.o matches
+Binary file ./common/libelf/built_in.o matches
+Binary file ./common/sched_rt.o matches
+Binary file ./common/wait.o matches
+./common/mem_event.c:707:    atomic_inc(&v->mem_event_pause_count);
+./common/mem_event.c:713:    int old, new, prev = v->mem_event_pause_count.counter;
+./common/mem_event.c:729:        prev = cmpxchg(&v->mem_event_pause_count.counter, old, new);

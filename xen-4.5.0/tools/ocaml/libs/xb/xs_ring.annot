@@ -1,0 +1,187 @@
+"xs_ring.ml" 24 806 811 "xs_ring.ml" 24 806 818
+type(
+  'a -> 'a -> int
+)
+ident(
+  def compare "xs_ring.ml" 24 806 828 "xs_ring.ml" 25 829 832
+)
+"xs_ring.ml" 24 806 821 "xs_ring.ml" 24 806 828
+type(
+  'a -> 'a -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"xs_ring.ml" 34 1250 1254 "xs_ring.ml" 34 1250 1273
+type(
+  Xenmmap.mmap_interface -> Server_features.t
+)
+ident(
+  def get_server_features "xs_ring.ml" 41 1478 1478 --
+)
+"xs_ring.ml" 34 1250 1274 "xs_ring.ml" 34 1250 1278
+type(
+  Xenmmap.mmap_interface
+)
+ident(
+  def mmap "xs_ring.ml" 36 1332 1333 "xs_ring.ml" 39 1417 1476
+)
+"xs_ring.ml" 36 1332 1337 "xs_ring.ml" 36 1332 1338
+type(
+  int
+)
+"xs_ring.ml" 36 1332 1341 "xs_ring.ml" 36 1332 1370
+type(
+  Xenmmap.mmap_interface -> int
+)
+"xs_ring.ml" 36 1332 1371 "xs_ring.ml" 36 1332 1375
+type(
+  Xenmmap.mmap_interface
+)
+ident(
+  int_ref mmap "xs_ring.ml" 34 1250 1274 "xs_ring.ml" 34 1250 1278
+)
+"xs_ring.ml" 36 1332 1341 "xs_ring.ml" 36 1332 1375
+type(
+  int
+)
+"xs_ring.ml" 37 1379 1383 "xs_ring.ml" 37 1379 1384
+type(
+  int
+)
+ident(
+  int_ref x "xs_ring.ml" 36 1332 1337 "xs_ring.ml" 36 1332 1338
+)
+"xs_ring.ml" 37 1379 1385 "xs_ring.ml" 37 1379 1386
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"xs_ring.ml" 37 1379 1387 "xs_ring.ml" 37 1379 1388
+type(
+  int
+)
+"xs_ring.ml" 37 1379 1383 "xs_ring.ml" 37 1379 1388
+type(
+  bool
+)
+"xs_ring.ml" 38 1389 1395 "xs_ring.ml" 38 1389 1416
+type(
+  Server_features.t
+)
+ident(
+  ext_ref Server_features.empty
+)
+"xs_ring.ml" 39 1417 1423 "xs_ring.ml" 39 1417 1448
+type(
+  Server_features.elt -> Server_features.t
+)
+ident(
+  ext_ref Server_features.singleton
+)
+"xs_ring.ml" 39 1417 1449 "xs_ring.ml" 39 1417 1476
+type(
+  Server_features.elt
+)
+"xs_ring.ml" 39 1417 1423 "xs_ring.ml" 39 1417 1476
+type(
+  Server_features.t
+)
+"xs_ring.ml" 37 1379 1380 "xs_ring.ml" 39 1417 1476
+type(
+  Server_features.t
+)
+"xs_ring.ml" 36 1332 1333 "xs_ring.ml" 39 1417 1476
+type(
+  Server_features.t
+)
+"xs_ring.ml" 41 1478 1482 "xs_ring.ml" 41 1478 1501
+type(
+  Xenmmap.mmap_interface -> Server_features.t -> unit
+)
+ident(
+  def set_server_features "xs_ring.ml" 46 1660 1660 --
+)
+"xs_ring.ml" 41 1478 1502 "xs_ring.ml" 41 1478 1506
+type(
+  Xenmmap.mmap_interface
+)
+ident(
+  def mmap "xs_ring.ml" 41 1478 1507 "xs_ring.ml" 44 1621 1658
+)
+"xs_ring.ml" 41 1478 1507 "xs_ring.ml" 41 1478 1510
+type(
+  Server_features.t
+)
+ident(
+  def set "xs_ring.ml" 43 1564 1565 "xs_ring.ml" 44 1621 1658
+)
+"xs_ring.ml" 43 1564 1569 "xs_ring.ml" 43 1564 1570
+type(
+  int
+)
+"xs_ring.ml" 43 1564 1576 "xs_ring.ml" 43 1564 1579
+type(
+  Server_features.t
+)
+ident(
+  int_ref set "xs_ring.ml" 41 1478 1507 "xs_ring.ml" 41 1478 1510
+)
+"xs_ring.ml" 43 1564 1580 "xs_ring.ml" 43 1564 1581
+type(
+  Server_features.t -> Server_features.t -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"xs_ring.ml" 43 1564 1582 "xs_ring.ml" 43 1564 1603
+type(
+  Server_features.t
+)
+ident(
+  ext_ref Server_features.empty
+)
+"xs_ring.ml" 43 1564 1576 "xs_ring.ml" 43 1564 1603
+type(
+  bool
+)
+"xs_ring.ml" 43 1564 1609 "xs_ring.ml" 43 1564 1610
+type(
+  int
+)
+"xs_ring.ml" 43 1564 1616 "xs_ring.ml" 43 1564 1617
+type(
+  int
+)
+"xs_ring.ml" 43 1564 1573 "xs_ring.ml" 43 1564 1617
+type(
+  int
+)
+"xs_ring.ml" 44 1621 1622 "xs_ring.ml" 44 1621 1651
+type(
+  Xenmmap.mmap_interface -> int -> unit
+)
+"xs_ring.ml" 44 1621 1652 "xs_ring.ml" 44 1621 1656
+type(
+  Xenmmap.mmap_interface
+)
+ident(
+  int_ref mmap "xs_ring.ml" 41 1478 1502 "xs_ring.ml" 41 1478 1506
+)
+"xs_ring.ml" 44 1621 1657 "xs_ring.ml" 44 1621 1658
+type(
+  int
+)
+ident(
+  int_ref x "xs_ring.ml" 43 1564 1569 "xs_ring.ml" 43 1564 1570
+)
+"xs_ring.ml" 44 1621 1622 "xs_ring.ml" 44 1621 1658
+type(
+  unit
+)
+"xs_ring.ml" 43 1564 1565 "xs_ring.ml" 44 1621 1658
+type(
+  unit
+)

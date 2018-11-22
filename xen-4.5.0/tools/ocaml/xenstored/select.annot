@@ -1,0 +1,1391 @@
+"select.ml" 30 1141 1145 "select.ml" 30 1141 1163
+type(
+  unit -> int
+)
+ident(
+  def get_sys_fs_nr_open "select.ml" 37 1309 1309 --
+)
+"select.ml" 30 1141 1164 "select.ml" 30 1141 1166
+type(
+  unit
+)
+"select.ml" 32 1174 1180 "select.ml" 32 1174 1182
+type(
+  in_channel
+)
+ident(
+  def ch "select.ml" 33 1219 1221 "select.ml" 34 1262 1284
+)
+"select.ml" 32 1174 1185 "select.ml" 32 1174 1192
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"select.ml" 32 1174 1193 "select.ml" 32 1174 1215
+type(
+  string
+)
+"select.ml" 32 1174 1185 "select.ml" 32 1174 1215
+type(
+  in_channel
+)
+"select.ml" 33 1219 1225 "select.ml" 33 1219 1226
+type(
+  int
+)
+ident(
+  def v "select.ml" 34 1262 1264 "select.ml" 34 1262 1284
+)
+"select.ml" 33 1219 1229 "select.ml" 33 1219 1242
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"select.ml" 33 1219 1244 "select.ml" 33 1219 1254
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"select.ml" 33 1219 1255 "select.ml" 33 1219 1257
+type(
+  in_channel
+)
+ident(
+  int_ref ch "select.ml" 32 1174 1180 "select.ml" 32 1174 1182
+)
+"select.ml" 33 1219 1243 "select.ml" 33 1219 1258
+type(
+  string
+)
+"select.ml" 33 1219 1229 "select.ml" 33 1219 1258
+type(
+  int
+)
+"select.ml" 34 1262 1264 "select.ml" 34 1262 1278
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in_noerr
+)
+"select.ml" 34 1262 1279 "select.ml" 34 1262 1281
+type(
+  in_channel
+)
+ident(
+  int_ref ch "select.ml" 32 1174 1180 "select.ml" 32 1174 1182
+)
+"select.ml" 34 1262 1264 "select.ml" 34 1262 1281
+type(
+  unit
+)
+"select.ml" 34 1262 1283 "select.ml" 34 1262 1284
+type(
+  int
+)
+ident(
+  int_ref v "select.ml" 33 1219 1225 "select.ml" 33 1219 1226
+)
+"select.ml" 34 1262 1264 "select.ml" 34 1262 1284
+type(
+  int
+)
+"select.ml" 33 1219 1221 "select.ml" 34 1262 1284
+type(
+  int
+)
+"select.ml" 32 1174 1176 "select.ml" 34 1262 1284
+type(
+  int
+)
+"select.ml" 35 1285 1291 "select.ml" 35 1285 1292
+type(
+  exn
+)
+"select.ml" 35 1285 1296 "select.ml" 35 1285 1300
+type(
+  int
+)
+"select.ml" 35 1285 1301 "select.ml" 35 1285 1302
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.*
+)
+"select.ml" 35 1285 1303 "select.ml" 35 1285 1307
+type(
+  int
+)
+"select.ml" 35 1285 1296 "select.ml" 35 1285 1307
+type(
+  int
+)
+"select.ml" 31 1169 1170 "select.ml" 35 1285 1307
+type(
+  int
+)
+"select.ml" 37 1309 1313 "select.ml" 37 1309 1323
+type(
+  unit -> event
+)
+ident(
+  def init_event "select.ml" 39 1376 1376 --
+)
+"select.ml" 37 1309 1324 "select.ml" 37 1309 1326
+type(
+  unit
+)
+"select.ml" 37 1309 1337 "select.ml" 37 1309 1342
+type(
+  bool
+)
+"select.ml" 37 1309 1352 "select.ml" 37 1309 1357
+type(
+  bool
+)
+"select.ml" 37 1309 1368 "select.ml" 37 1309 1373
+type(
+  bool
+)
+"select.ml" 37 1309 1329 "select.ml" 37 1309 1374
+type(
+  event
+)
+"select.ml" 39 1376 1380 "select.ml" 39 1376 1391
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  def poll_select "select.ml" 67 2462 2462 --
+)
+"select.ml" 39 1376 1392 "select.ml" 39 1376 1398
+type(
+  Unix.file_descr list
+)
+ident(
+  def in_fds "select.ml" 39 1376 1399 "select.ml" 64 2353 2359
+)
+"select.ml" 39 1376 1399 "select.ml" 39 1376 1406
+type(
+  Unix.file_descr list
+)
+ident(
+  def out_fds "select.ml" 39 1376 1407 "select.ml" 64 2353 2359
+)
+"select.ml" 39 1376 1407 "select.ml" 39 1376 1414
+type(
+  Unix.file_descr list
+)
+ident(
+  def exc_fds "select.ml" 39 1376 1415 "select.ml" 64 2353 2359
+)
+"select.ml" 39 1376 1415 "select.ml" 39 1376 1422
+type(
+  float
+)
+ident(
+  def timeout "select.ml" 40 1425 1426 "select.ml" 64 2353 2359
+)
+"select.ml" 40 1425 1430 "select.ml" 40 1425 1431
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+"select.ml" 40 1425 1434 "select.ml" 40 1425 1448
+type(
+  int -> (Unix.file_descr, event) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"select.ml" 40 1425 1449 "select.ml" 40 1425 1451
+type(
+  int
+)
+"select.ml" 40 1425 1434 "select.ml" 40 1425 1451
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+"select.ml" 41 1455 1460 "select.ml" 41 1455 1469
+type(
+  (event -> 'a) -> Unix.file_descr -> 'a
+)
+"select.ml" 41 1455 1470 "select.ml" 41 1455 1479
+type(
+  event -> 'a
+)
+ident(
+  def event_set "select.ml" 41 1455 1480 "select.ml" 47 1599 1612
+)
+"select.ml" 41 1455 1480 "select.ml" 41 1455 1482
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "select.ml" 42 1485 1487 "select.ml" 47 1599 1612
+)
+"select.ml" 42 1485 1491 "select.ml" 42 1485 1492
+type(
+  event
+)
+"select.ml" 43 1495 1502 "select.ml" 43 1495 1514
+type(
+  (Unix.file_descr, event) Hashtbl.t -> Unix.file_descr -> event
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"select.ml" 43 1495 1515 "select.ml" 43 1495 1516
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+ident(
+  int_ref h "select.ml" 40 1425 1430 "select.ml" 40 1425 1431
+)
+"select.ml" 43 1495 1517 "select.ml" 43 1495 1519
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 41 1455 1480 "select.ml" 41 1455 1482
+)
+"select.ml" 43 1495 1502 "select.ml" 43 1495 1519
+type(
+  event
+)
+"select.ml" 44 1520 1528 "select.ml" 44 1520 1537
+type(
+  exn
+)
+"select.ml" 45 1541 1549 "select.ml" 45 1541 1550
+type(
+  event
+)
+"select.ml" 45 1541 1553 "select.ml" 45 1541 1563
+type(
+  unit -> event
+)
+ident(
+  int_ref init_event "select.ml" 37 1309 1313 "select.ml" 37 1309 1323
+)
+"select.ml" 45 1541 1564 "select.ml" 45 1541 1566
+type(
+  unit
+)
+"select.ml" 45 1541 1553 "select.ml" 45 1541 1566
+type(
+  event
+)
+"select.ml" 46 1570 1574 "select.ml" 46 1570 1585
+type(
+  (Unix.file_descr, event) Hashtbl.t -> Unix.file_descr -> event -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"select.ml" 46 1570 1586 "select.ml" 46 1570 1587
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+ident(
+  int_ref h "select.ml" 40 1425 1430 "select.ml" 40 1425 1431
+)
+"select.ml" 46 1570 1588 "select.ml" 46 1570 1590
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 41 1455 1480 "select.ml" 41 1455 1482
+)
+"select.ml" 46 1570 1591 "select.ml" 46 1570 1592
+type(
+  event
+)
+ident(
+  int_ref e "select.ml" 45 1541 1549 "select.ml" 45 1541 1550
+)
+"select.ml" 46 1570 1574 "select.ml" 46 1570 1592
+type(
+  unit
+)
+"select.ml" 46 1570 1594 "select.ml" 46 1570 1595
+type(
+  event
+)
+ident(
+  int_ref e "select.ml" 45 1541 1549 "select.ml" 45 1541 1550
+)
+"select.ml" 46 1570 1574 "select.ml" 46 1570 1595
+type(
+  event
+)
+"select.ml" 45 1541 1545 "select.ml" 46 1570 1595
+type(
+  event
+)
+"select.ml" 43 1495 1498 "select.ml" 46 1570 1595
+type(
+  event
+)
+"select.ml" 47 1599 1601 "select.ml" 47 1599 1610
+type(
+  event -> 'a
+)
+ident(
+  int_ref event_set "select.ml" 41 1455 1470 "select.ml" 41 1455 1479
+)
+"select.ml" 47 1599 1611 "select.ml" 47 1599 1612
+type(
+  event
+)
+ident(
+  int_ref e "select.ml" 42 1485 1491 "select.ml" 42 1485 1492
+)
+"select.ml" 47 1599 1601 "select.ml" 47 1599 1612
+type(
+  'a
+)
+"select.ml" 42 1485 1487 "select.ml" 47 1599 1612
+type(
+  'a
+)
+"select.ml" 48 1616 1617 "select.ml" 48 1616 1626
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"select.ml" 48 1616 1628 "select.ml" 48 1616 1637
+type(
+  (event -> unit) -> Unix.file_descr -> unit
+)
+ident(
+  int_ref add_event "select.ml" 41 1455 1460 "select.ml" 41 1455 1469
+)
+"select.ml" 48 1616 1643 "select.ml" 48 1616 1644
+type(
+  event
+)
+ident(
+  def x "select.ml" 48 1616 1648 "select.ml" 48 1616 1662
+)
+"select.ml" 48 1616 1648 "select.ml" 48 1616 1649
+type(
+  event
+)
+ident(
+  int_ref x "select.ml" 48 1616 1643 "select.ml" 48 1616 1644
+)
+"select.ml" 48 1616 1658 "select.ml" 48 1616 1662
+type(
+  bool
+)
+"select.ml" 48 1616 1648 "select.ml" 48 1616 1662
+type(
+  unit
+)
+"select.ml" 48 1616 1638 "select.ml" 48 1616 1663
+type(
+  event -> unit
+)
+"select.ml" 48 1616 1627 "select.ml" 48 1616 1664
+type(
+  Unix.file_descr -> unit
+)
+"select.ml" 48 1616 1665 "select.ml" 48 1616 1671
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref in_fds "select.ml" 39 1376 1392 "select.ml" 39 1376 1398
+)
+"select.ml" 48 1616 1617 "select.ml" 48 1616 1671
+type(
+  unit
+)
+"select.ml" 49 1673 1674 "select.ml" 49 1673 1683
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"select.ml" 49 1673 1685 "select.ml" 49 1673 1694
+type(
+  (event -> unit) -> Unix.file_descr -> unit
+)
+ident(
+  int_ref add_event "select.ml" 41 1455 1460 "select.ml" 41 1455 1469
+)
+"select.ml" 49 1673 1700 "select.ml" 49 1673 1701
+type(
+  event
+)
+ident(
+  def x "select.ml" 49 1673 1705 "select.ml" 49 1673 1720
+)
+"select.ml" 49 1673 1705 "select.ml" 49 1673 1706
+type(
+  event
+)
+ident(
+  int_ref x "select.ml" 49 1673 1700 "select.ml" 49 1673 1701
+)
+"select.ml" 49 1673 1716 "select.ml" 49 1673 1720
+type(
+  bool
+)
+"select.ml" 49 1673 1705 "select.ml" 49 1673 1720
+type(
+  unit
+)
+"select.ml" 49 1673 1695 "select.ml" 49 1673 1721
+type(
+  event -> unit
+)
+"select.ml" 49 1673 1684 "select.ml" 49 1673 1722
+type(
+  Unix.file_descr -> unit
+)
+"select.ml" 49 1673 1723 "select.ml" 49 1673 1730
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref out_fds "select.ml" 39 1376 1399 "select.ml" 39 1376 1406
+)
+"select.ml" 49 1673 1674 "select.ml" 49 1673 1730
+type(
+  unit
+)
+"select.ml" 50 1732 1733 "select.ml" 50 1732 1742
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"select.ml" 50 1732 1744 "select.ml" 50 1732 1753
+type(
+  (event -> unit) -> Unix.file_descr -> unit
+)
+ident(
+  int_ref add_event "select.ml" 41 1455 1460 "select.ml" 41 1455 1469
+)
+"select.ml" 50 1732 1759 "select.ml" 50 1732 1760
+type(
+  event
+)
+ident(
+  def x "select.ml" 50 1732 1764 "select.ml" 50 1732 1780
+)
+"select.ml" 50 1732 1764 "select.ml" 50 1732 1765
+type(
+  event
+)
+ident(
+  int_ref x "select.ml" 50 1732 1759 "select.ml" 50 1732 1760
+)
+"select.ml" 50 1732 1776 "select.ml" 50 1732 1780
+type(
+  bool
+)
+"select.ml" 50 1732 1764 "select.ml" 50 1732 1780
+type(
+  unit
+)
+"select.ml" 50 1732 1754 "select.ml" 50 1732 1781
+type(
+  event -> unit
+)
+"select.ml" 50 1732 1743 "select.ml" 50 1732 1782
+type(
+  Unix.file_descr -> unit
+)
+"select.ml" 50 1732 1783 "select.ml" 50 1732 1790
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref exc_fds "select.ml" 39 1376 1407 "select.ml" 39 1376 1414
+)
+"select.ml" 50 1732 1733 "select.ml" 50 1732 1790
+type(
+  unit
+)
+"select.ml" 53 1906 1911 "select.ml" 53 1906 1912
+type(
+  (Unix.file_descr * event) array
+)
+"select.ml" 53 1906 1915 "select.ml" 53 1906 1925
+type(
+  int -> Unix.file_descr * event -> (Unix.file_descr * event) array
+)
+ident(
+  ext_ref Array.make
+)
+"select.ml" 53 1906 1927 "select.ml" 53 1906 1941
+type(
+  (Unix.file_descr, event) Hashtbl.t -> int
+)
+ident(
+  ext_ref Hashtbl.length
+)
+"select.ml" 53 1906 1942 "select.ml" 53 1906 1943
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+ident(
+  int_ref h "select.ml" 40 1425 1430 "select.ml" 40 1425 1431
+)
+"select.ml" 53 1906 1926 "select.ml" 53 1906 1944
+type(
+  int
+)
+"select.ml" 53 1906 1946 "select.ml" 53 1906 1956
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdin
+)
+"select.ml" 53 1906 1958 "select.ml" 53 1906 1968
+type(
+  unit -> event
+)
+ident(
+  int_ref init_event "select.ml" 37 1309 1313 "select.ml" 37 1309 1323
+)
+"select.ml" 53 1906 1969 "select.ml" 53 1906 1971
+type(
+  unit
+)
+"select.ml" 53 1906 1958 "select.ml" 53 1906 1971
+type(
+  event
+)
+"select.ml" 53 1906 1945 "select.ml" 53 1906 1972
+type(
+  Unix.file_descr * event
+)
+"select.ml" 53 1906 1915 "select.ml" 53 1906 1972
+type(
+  (Unix.file_descr * event) array
+)
+"select.ml" 54 1976 1981 "select.ml" 54 1976 1982
+type(
+  int ref
+)
+"select.ml" 54 1976 1985 "select.ml" 54 1976 1988
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"select.ml" 54 1976 1989 "select.ml" 54 1976 1993
+type(
+  int
+)
+"select.ml" 54 1976 1985 "select.ml" 54 1976 1993
+type(
+  int ref
+)
+"select.ml" 55 1997 1998 "select.ml" 55 1997 2010
+type(
+  (Unix.file_descr -> event -> unit) ->
+  (Unix.file_descr, event) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.iter
+)
+"select.ml" 55 1997 2016 "select.ml" 55 1997 2018
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "select.ml" 55 1997 2019 "select.ml" 55 1997 2062
+)
+"select.ml" 55 1997 2019 "select.ml" 55 1997 2024
+type(
+  event
+)
+ident(
+  def event "select.ml" 55 1997 2028 "select.ml" 55 1997 2062
+)
+"select.ml" 55 1997 2028 "select.ml" 55 1997 2032
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"select.ml" 55 1997 2033 "select.ml" 55 1997 2034
+type(
+  int ref
+)
+ident(
+  int_ref i "select.ml" 54 1976 1981 "select.ml" 54 1976 1982
+)
+"select.ml" 55 1997 2028 "select.ml" 55 1997 2034
+type(
+  unit
+)
+"select.ml" 55 1997 2036 "select.ml" 55 1997 2045
+type(
+  (Unix.file_descr * event) array -> int -> Unix.file_descr * event -> unit
+)
+ident(
+  ext_ref Array.set
+)
+"select.ml" 55 1997 2046 "select.ml" 55 1997 2047
+type(
+  (Unix.file_descr * event) array
+)
+ident(
+  int_ref a "select.ml" 53 1906 1911 "select.ml" 53 1906 1912
+)
+"select.ml" 55 1997 2048 "select.ml" 55 1997 2049
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.!
+)
+"select.ml" 55 1997 2049 "select.ml" 55 1997 2050
+type(
+  int ref
+)
+ident(
+  int_ref i "select.ml" 54 1976 1981 "select.ml" 54 1976 1982
+)
+"select.ml" 55 1997 2048 "select.ml" 55 1997 2050
+type(
+  int
+)
+"select.ml" 55 1997 2052 "select.ml" 55 1997 2054
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 55 1997 2016 "select.ml" 55 1997 2018
+)
+"select.ml" 55 1997 2056 "select.ml" 55 1997 2061
+type(
+  event
+)
+ident(
+  int_ref event "select.ml" 55 1997 2019 "select.ml" 55 1997 2024
+)
+"select.ml" 55 1997 2051 "select.ml" 55 1997 2062
+type(
+  Unix.file_descr * event
+)
+"select.ml" 55 1997 2036 "select.ml" 55 1997 2062
+type(
+  unit
+)
+"select.ml" 55 1997 2028 "select.ml" 55 1997 2062
+type(
+  unit
+)
+"select.ml" 55 1997 2011 "select.ml" 55 1997 2063
+type(
+  Unix.file_descr -> event -> unit
+)
+"select.ml" 55 1997 2064 "select.ml" 55 1997 2065
+type(
+  (Unix.file_descr, event) Hashtbl.t
+)
+ident(
+  int_ref h "select.ml" 40 1425 1430 "select.ml" 40 1425 1431
+)
+"select.ml" 55 1997 1998 "select.ml" 55 1997 2065
+type(
+  unit
+)
+"select.ml" 56 2067 2072 "select.ml" 56 2067 2073
+type(
+  int
+)
+"select.ml" 56 2067 2076 "select.ml" 56 2067 2090
+type(
+  (Unix.file_descr * event) array -> int -> int
+)
+"select.ml" 56 2067 2091 "select.ml" 56 2067 2092
+type(
+  (Unix.file_descr * event) array
+)
+ident(
+  int_ref a "select.ml" 53 1906 1911 "select.ml" 53 1906 1912
+)
+"select.ml" 56 2067 2094 "select.ml" 56 2067 2106
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"select.ml" 56 2067 2108 "select.ml" 56 2067 2115
+type(
+  float
+)
+ident(
+  int_ref timeout "select.ml" 39 1376 1415 "select.ml" 39 1376 1422
+)
+"select.ml" 56 2067 2116 "select.ml" 56 2067 2118
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.*.
+)
+"select.ml" 56 2067 2119 "select.ml" 56 2067 2124
+type(
+  float
+)
+"select.ml" 56 2067 2107 "select.ml" 56 2067 2125
+type(
+  float
+)
+"select.ml" 56 2067 2093 "select.ml" 56 2067 2126
+type(
+  int
+)
+"select.ml" 56 2067 2076 "select.ml" 56 2067 2126
+type(
+  int
+)
+"select.ml" 57 2130 2135 "select.ml" 57 2130 2136
+type(
+  'b list * 'c list * 'd list
+)
+"select.ml" 57 2130 2139 "select.ml" 57 2130 2141
+type(
+  'b list
+)
+"select.ml" 57 2130 2143 "select.ml" 57 2130 2145
+type(
+  'c list
+)
+"select.ml" 57 2130 2147 "select.ml" 57 2130 2149
+type(
+  'd list
+)
+"select.ml" 57 2130 2139 "select.ml" 57 2130 2149
+type(
+  'b list * 'c list * 'd list
+)
+"select.ml" 58 2153 2157 "select.ml" 58 2153 2158
+type(
+  int
+)
+ident(
+  int_ref n "select.ml" 56 2067 2072 "select.ml" 56 2067 2073
+)
+"select.ml" 58 2153 2159 "select.ml" 58 2153 2160
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"select.ml" 58 2153 2161 "select.ml" 58 2153 2162
+type(
+  int
+)
+"select.ml" 58 2153 2157 "select.ml" 58 2153 2162
+type(
+  bool
+)
+"select.ml" 58 2153 2168 "select.ml" 58 2153 2169
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  int_ref r "select.ml" 57 2130 2135 "select.ml" 57 2130 2136
+)
+"select.ml" 59 2175 2177 "select.ml" 59 2175 2193
+type(
+  (Unix.file_descr * event ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) ->
+  (Unix.file_descr * event) array ->
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list ->
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Array.fold_right
+)
+"select.ml" 60 2194 2203 "select.ml" 60 2194 2205
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "select.ml" 60 2194 2214 "select.ml" 63 2310 2351
+)
+"select.ml" 60 2194 2207 "select.ml" 60 2194 2212
+type(
+  event
+)
+ident(
+  def event "select.ml" 60 2194 2214 "select.ml" 63 2310 2351
+)
+"select.ml" 60 2194 2202 "select.ml" 60 2194 2213
+type(
+  Unix.file_descr * event
+)
+"select.ml" 60 2194 2215 "select.ml" 60 2194 2216
+type(
+  Unix.file_descr list
+)
+ident(
+  def r "select.ml" 61 2227 2231 "select.ml" 63 2310 2351
+)
+"select.ml" 60 2194 2218 "select.ml" 60 2194 2219
+type(
+  Unix.file_descr list
+)
+ident(
+  def w "select.ml" 61 2227 2231 "select.ml" 63 2310 2351
+)
+"select.ml" 60 2194 2221 "select.ml" 60 2194 2222
+type(
+  Unix.file_descr list
+)
+ident(
+  def x "select.ml" 61 2227 2231 "select.ml" 63 2310 2351
+)
+"select.ml" 60 2194 2214 "select.ml" 60 2194 2223
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 61 2227 2235 "select.ml" 61 2227 2240
+type(
+  event
+)
+ident(
+  int_ref event "select.ml" 60 2194 2207 "select.ml" 60 2194 2212
+)
+"select.ml" 61 2227 2235 "select.ml" 61 2227 2245
+type(
+  bool
+)
+"select.ml" 61 2227 2251 "select.ml" 61 2227 2253
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 60 2194 2203 "select.ml" 60 2194 2205
+)
+"select.ml" 61 2227 2257 "select.ml" 61 2227 2258
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref r "select.ml" 60 2194 2215 "select.ml" 60 2194 2216
+)
+"select.ml" 61 2227 2251 "select.ml" 61 2227 2258
+type(
+  Unix.file_descr list
+)
+"select.ml" 61 2227 2264 "select.ml" 61 2227 2265
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref r "select.ml" 60 2194 2215 "select.ml" 60 2194 2216
+)
+"select.ml" 61 2227 2231 "select.ml" 61 2227 2266
+type(
+  Unix.file_descr list
+)
+"select.ml" 62 2268 2276 "select.ml" 62 2268 2281
+type(
+  event
+)
+ident(
+  int_ref event "select.ml" 60 2194 2207 "select.ml" 60 2194 2212
+)
+"select.ml" 62 2268 2276 "select.ml" 62 2268 2287
+type(
+  bool
+)
+"select.ml" 62 2268 2293 "select.ml" 62 2268 2295
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 60 2194 2203 "select.ml" 60 2194 2205
+)
+"select.ml" 62 2268 2299 "select.ml" 62 2268 2300
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref w "select.ml" 60 2194 2218 "select.ml" 60 2194 2219
+)
+"select.ml" 62 2268 2293 "select.ml" 62 2268 2300
+type(
+  Unix.file_descr list
+)
+"select.ml" 62 2268 2306 "select.ml" 62 2268 2307
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref w "select.ml" 60 2194 2218 "select.ml" 60 2194 2219
+)
+"select.ml" 62 2268 2272 "select.ml" 62 2268 2308
+type(
+  Unix.file_descr list
+)
+"select.ml" 63 2310 2318 "select.ml" 63 2310 2323
+type(
+  event
+)
+ident(
+  int_ref event "select.ml" 60 2194 2207 "select.ml" 60 2194 2212
+)
+"select.ml" 63 2310 2318 "select.ml" 63 2310 2330
+type(
+  bool
+)
+"select.ml" 63 2310 2336 "select.ml" 63 2310 2338
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "select.ml" 60 2194 2203 "select.ml" 60 2194 2205
+)
+"select.ml" 63 2310 2342 "select.ml" 63 2310 2343
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref x "select.ml" 60 2194 2221 "select.ml" 60 2194 2222
+)
+"select.ml" 63 2310 2336 "select.ml" 63 2310 2343
+type(
+  Unix.file_descr list
+)
+"select.ml" 63 2310 2349 "select.ml" 63 2310 2350
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref x "select.ml" 60 2194 2221 "select.ml" 60 2194 2222
+)
+"select.ml" 63 2310 2314 "select.ml" 63 2310 2351
+type(
+  Unix.file_descr list
+)
+"select.ml" 61 2227 2231 "select.ml" 63 2310 2351
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 60 2194 2197 "select.ml" 63 2310 2352
+type(
+  Unix.file_descr * event ->
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list ->
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 64 2353 2356 "select.ml" 64 2353 2357
+type(
+  (Unix.file_descr * event) array
+)
+ident(
+  int_ref a "select.ml" 53 1906 1911 "select.ml" 53 1906 1912
+)
+"select.ml" 64 2353 2358 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  int_ref r "select.ml" 57 2130 2135 "select.ml" 57 2130 2136
+)
+"select.ml" 59 2175 2177 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 58 2153 2154 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 57 2130 2131 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 56 2067 2068 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 55 1997 1998 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 54 1976 1977 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 53 1906 1907 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 50 1732 1733 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 49 1673 1674 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 48 1616 1617 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 41 1455 1456 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 40 1425 1426 "select.ml" 64 2353 2359
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 67 2462 2466 "select.ml" 67 2462 2476
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref
+)
+ident(
+  def select_fun "select.ml" 69 2496 2496 --
+)
+"select.ml" 67 2462 2479 "select.ml" 67 2462 2482
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) ->
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"select.ml" 67 2462 2483 "select.ml" 67 2462 2494
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Unix.select
+)
+"select.ml" 67 2462 2479 "select.ml" 67 2462 2494
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref
+)
+"select.ml" 69 2496 2500 "select.ml" 69 2496 2508
+type(
+  bool -> unit
+)
+ident(
+  def use_poll "select.ml" 76 2661 2661 --
+)
+"select.ml" 69 2496 2509 "select.ml" 69 2496 2512
+type(
+  bool
+)
+ident(
+  def yes "select.ml" 70 2515 2516 "select.ml" 74 2639 2659
+)
+"select.ml" 70 2515 2520 "select.ml" 70 2515 2527
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 70 2515 2529 "select.ml" 70 2515 2535
+type(
+  int
+)
+"select.ml" 70 2515 2520 "select.ml" 70 2515 2535
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) *
+  int
+)
+"select.ml" 71 2538 2543 "select.ml" 71 2538 2546
+type(
+  bool
+)
+ident(
+  int_ref yes "select.ml" 69 2496 2509 "select.ml" 69 2496 2512
+)
+"select.ml" 71 2538 2552 "select.ml" 71 2538 2563
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  int_ref poll_select "select.ml" 39 1376 1380 "select.ml" 39 1376 1391
+)
+"select.ml" 71 2538 2565 "select.ml" 71 2538 2583
+type(
+  unit -> int
+)
+ident(
+  int_ref get_sys_fs_nr_open "select.ml" 30 1141 1145 "select.ml" 30 1141 1163
+)
+"select.ml" 71 2538 2584 "select.ml" 71 2538 2586
+type(
+  unit
+)
+"select.ml" 71 2538 2565 "select.ml" 71 2538 2586
+type(
+  int
+)
+"select.ml" 71 2538 2552 "select.ml" 71 2538 2586
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) *
+  int
+)
+"select.ml" 72 2587 2594 "select.ml" 72 2587 2605
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Unix.select
+)
+"select.ml" 72 2587 2607 "select.ml" 72 2587 2611
+type(
+  int
+)
+"select.ml" 72 2587 2594 "select.ml" 72 2587 2611
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) *
+  int
+)
+"select.ml" 71 2538 2540 "select.ml" 72 2587 2611
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) *
+  int
+)
+"select.ml" 73 2615 2616 "select.ml" 73 2615 2626
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref
+)
+ident(
+  int_ref select_fun "select.ml" 67 2462 2466 "select.ml" 67 2462 2476
+)
+"select.ml" 73 2615 2627 "select.ml" 73 2615 2629
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref ->
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list) ->
+  unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"select.ml" 73 2615 2630 "select.ml" 73 2615 2637
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  int_ref sel_fun "select.ml" 70 2515 2520 "select.ml" 70 2515 2527
+)
+"select.ml" 73 2615 2616 "select.ml" 73 2615 2637
+type(
+  unit
+)
+"select.ml" 74 2639 2640 "select.ml" 74 2639 2652
+type(
+  int -> unit
+)
+"select.ml" 74 2639 2653 "select.ml" 74 2639 2659
+type(
+  int
+)
+ident(
+  int_ref max_fd "select.ml" 70 2515 2529 "select.ml" 70 2515 2535
+)
+"select.ml" 74 2639 2640 "select.ml" 74 2639 2659
+type(
+  unit
+)
+"select.ml" 73 2615 2616 "select.ml" 74 2639 2659
+type(
+  unit
+)
+"select.ml" 70 2515 2516 "select.ml" 74 2639 2659
+type(
+  unit
+)
+"select.ml" 76 2661 2665 "select.ml" 76 2661 2671
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  def select "select.ml" 77 2705 2750 --
+)
+"select.ml" 76 2661 2672 "select.ml" 76 2661 2678
+type(
+  Unix.file_descr list
+)
+ident(
+  def in_fds "select.ml" 76 2661 2679 "select.ml" 77 2705 2750
+)
+"select.ml" 76 2661 2679 "select.ml" 76 2661 2686
+type(
+  Unix.file_descr list
+)
+ident(
+  def out_fds "select.ml" 76 2661 2687 "select.ml" 77 2705 2750
+)
+"select.ml" 76 2661 2687 "select.ml" 76 2661 2694
+type(
+  Unix.file_descr list
+)
+ident(
+  def exc_fds "select.ml" 76 2661 2695 "select.ml" 77 2705 2750
+)
+"select.ml" 76 2661 2695 "select.ml" 76 2661 2702
+type(
+  float
+)
+ident(
+  def timeout "select.ml" 77 2705 2706 "select.ml" 77 2705 2750
+)
+"select.ml" 77 2705 2707 "select.ml" 77 2705 2708
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Pervasives.!
+)
+"select.ml" 77 2705 2708 "select.ml" 77 2705 2718
+type(
+  (Unix.file_descr list ->
+   Unix.file_descr list ->
+   Unix.file_descr list ->
+   float ->
+   Unix.file_descr list * Unix.file_descr list * Unix.file_descr list)
+  ref
+)
+ident(
+  int_ref select_fun "select.ml" 67 2462 2466 "select.ml" 67 2462 2476
+)
+"select.ml" 77 2705 2706 "select.ml" 77 2705 2719
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"select.ml" 77 2705 2720 "select.ml" 77 2705 2726
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref in_fds "select.ml" 76 2661 2672 "select.ml" 76 2661 2678
+)
+"select.ml" 77 2705 2727 "select.ml" 77 2705 2734
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref out_fds "select.ml" 76 2661 2679 "select.ml" 76 2661 2686
+)
+"select.ml" 77 2705 2735 "select.ml" 77 2705 2742
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref exc_fds "select.ml" 76 2661 2687 "select.ml" 76 2661 2694
+)
+"select.ml" 77 2705 2743 "select.ml" 77 2705 2750
+type(
+  float
+)
+ident(
+  int_ref timeout "select.ml" 76 2661 2695 "select.ml" 76 2661 2702
+)
+"select.ml" 77 2705 2706 "select.ml" 77 2705 2750
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)

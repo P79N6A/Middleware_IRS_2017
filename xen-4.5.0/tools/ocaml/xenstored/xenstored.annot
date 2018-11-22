@@ -1,0 +1,8647 @@
+"xenstored.ml" 22 778 782 "xenstored.ml" 22 778 787
+type(
+  ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  def error "xenstored.ml" 23 824 824 --
+)
+"xenstored.ml" 22 778 788 "xenstored.ml" 22 778 791
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  def fmt "xenstored.ml" 22 778 794 "xenstored.ml" 22 778 823
+)
+"xenstored.ml" 22 778 794 "xenstored.ml" 22 778 807
+type(
+  string -> ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  ext_ref Logging.error
+)
+"xenstored.ml" 22 778 808 "xenstored.ml" 22 778 819
+type(
+  string
+)
+"xenstored.ml" 22 778 820 "xenstored.ml" 22 778 823
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  int_ref fmt "xenstored.ml" 22 778 788 "xenstored.ml" 22 778 791
+)
+"xenstored.ml" 22 778 794 "xenstored.ml" 22 778 823
+type(
+  'a
+)
+"xenstored.ml" 23 824 828 "xenstored.ml" 23 824 833
+type(
+  ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  def debug "xenstored.ml" 24 870 870 --
+)
+"xenstored.ml" 23 824 834 "xenstored.ml" 23 824 837
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  def fmt "xenstored.ml" 23 824 840 "xenstored.ml" 23 824 869
+)
+"xenstored.ml" 23 824 840 "xenstored.ml" 23 824 853
+type(
+  string -> ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  ext_ref Logging.debug
+)
+"xenstored.ml" 23 824 854 "xenstored.ml" 23 824 865
+type(
+  string
+)
+"xenstored.ml" 23 824 866 "xenstored.ml" 23 824 869
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  int_ref fmt "xenstored.ml" 23 824 834 "xenstored.ml" 23 824 837
+)
+"xenstored.ml" 23 824 840 "xenstored.ml" 23 824 869
+type(
+  'a
+)
+"xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+type(
+  ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  def info "xenstored.ml" 27 970 970 --
+)
+"xenstored.ml" 24 870 879 "xenstored.ml" 24 870 882
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  def fmt "xenstored.ml" 24 870 885 "xenstored.ml" 24 870 913
+)
+"xenstored.ml" 24 870 885 "xenstored.ml" 24 870 897
+type(
+  string -> ('a, unit, string, unit) format4 -> 'a
+)
+ident(
+  ext_ref Logging.info
+)
+"xenstored.ml" 24 870 898 "xenstored.ml" 24 870 909
+type(
+  string
+)
+"xenstored.ml" 24 870 910 "xenstored.ml" 24 870 913
+type(
+  ('a, unit, string, unit) format4
+)
+ident(
+  int_ref fmt "xenstored.ml" 24 870 879 "xenstored.ml" 24 870 882
+)
+"xenstored.ml" 24 870 885 "xenstored.ml" 24 870 913
+type(
+  'a
+)
+"xenstored.ml" 27 970 974 "xenstored.ml" 27 970 996
+type(
+  Store.t ->
+  Connections.t ->
+  Domains.domains -> Unix.file_descr list -> Unix.file_descr list -> unit
+)
+ident(
+  def process_connection_fds "xenstored.ml" 54 1791 1791 --
+)
+"xenstored.ml" 27 970 997 "xenstored.ml" 27 970 1002
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 27 970 1003 "xenstored.ml" 52 1747 1789
+)
+"xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 27 970 1008 "xenstored.ml" 52 1747 1789
+)
+"xenstored.ml" 27 970 1008 "xenstored.ml" 27 970 1015
+type(
+  Domains.domains
+)
+ident(
+  def domains "xenstored.ml" 27 970 1016 "xenstored.ml" 52 1747 1789
+)
+"xenstored.ml" 27 970 1016 "xenstored.ml" 27 970 1020
+type(
+  Unix.file_descr list
+)
+ident(
+  def rset "xenstored.ml" 27 970 1021 "xenstored.ml" 52 1747 1789
+)
+"xenstored.ml" 27 970 1021 "xenstored.ml" 27 970 1025
+type(
+  Unix.file_descr list
+)
+ident(
+  def wset "xenstored.ml" 28 1028 1029 "xenstored.ml" 52 1747 1789
+)
+"xenstored.ml" 28 1028 1033 "xenstored.ml" 28 1028 1040
+type(
+  (Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit) ->
+  Connection.t -> unit
+)
+"xenstored.ml" 28 1028 1041 "xenstored.ml" 28 1028 1044
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  def fct "xenstored.ml" 28 1028 1045 "xenstored.ml" 43 1518 1554
+)
+"xenstored.ml" 28 1028 1045 "xenstored.ml" 28 1028 1046
+type(
+  Connection.t
+)
+ident(
+  def c "xenstored.ml" 29 1049 1051 "xenstored.ml" 43 1518 1554
+)
+"xenstored.ml" 30 1055 1058 "xenstored.ml" 30 1055 1061
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  int_ref fct "xenstored.ml" 28 1028 1041 "xenstored.ml" 28 1028 1044
+)
+"xenstored.ml" 30 1055 1062 "xenstored.ml" 30 1055 1067
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 27 970 997 "xenstored.ml" 27 970 1002
+)
+"xenstored.ml" 30 1055 1068 "xenstored.ml" 30 1055 1072
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+)
+"xenstored.ml" 30 1055 1073 "xenstored.ml" 30 1055 1080
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 27 970 1008 "xenstored.ml" 27 970 1015
+)
+"xenstored.ml" 30 1055 1081 "xenstored.ml" 30 1055 1082
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 28 1028 1045 "xenstored.ml" 28 1028 1046
+)
+"xenstored.ml" 30 1055 1058 "xenstored.ml" 30 1055 1082
+type(
+  unit
+)
+"xenstored.ml" 32 1090 1110 "xenstored.ml" 32 1090 1113
+type(
+  Unix.error
+)
+ident(
+  def err "xenstored.ml" 33 1130 1133 "xenstored.ml" 35 1221 1254
+)
+"xenstored.ml" 32 1090 1115 "xenstored.ml" 32 1090 1122
+type(
+  string
+)
+"xenstored.ml" 32 1090 1124 "xenstored.ml" 32 1090 1125
+type(
+  string
+)
+"xenstored.ml" 32 1090 1094 "xenstored.ml" 32 1090 1126
+type(
+  exn
+)
+"xenstored.ml" 33 1130 1133 "xenstored.ml" 33 1130 1158
+type(
+  Connections.t -> Connection.t -> unit
+)
+ident(
+  ext_ref Connections.del_anonymous
+)
+"xenstored.ml" 33 1130 1159 "xenstored.ml" 33 1130 1163
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+)
+"xenstored.ml" 33 1130 1164 "xenstored.ml" 33 1130 1165
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 28 1028 1045 "xenstored.ml" 28 1028 1046
+)
+"xenstored.ml" 33 1130 1133 "xenstored.ml" 33 1130 1165
+type(
+  unit
+)
+"xenstored.ml" 34 1167 1170 "xenstored.ml" 34 1167 1175
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  int_ref error "xenstored.ml" 22 778 782 "xenstored.ml" 22 778 787
+)
+"xenstored.ml" 34 1167 1176 "xenstored.ml" 34 1167 1220
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 35 1221 1231 "xenstored.ml" 35 1221 1249
+type(
+  Unix.error -> string
+)
+ident(
+  ext_ref Unix.error_message
+)
+"xenstored.ml" 35 1221 1250 "xenstored.ml" 35 1221 1253
+type(
+  Unix.error
+)
+ident(
+  int_ref err "xenstored.ml" 32 1090 1110 "xenstored.ml" 32 1090 1113
+)
+"xenstored.ml" 35 1221 1230 "xenstored.ml" 35 1221 1254
+type(
+  string
+)
+"xenstored.ml" 34 1167 1170 "xenstored.ml" 35 1221 1254
+type(
+  unit
+)
+"xenstored.ml" 33 1130 1133 "xenstored.ml" 35 1221 1254
+type(
+  unit
+)
+"xenstored.ml" 36 1255 1275 "xenstored.ml" 36 1255 1278
+type(
+  Unix.error
+)
+ident(
+  def err "xenstored.ml" 37 1294 1297 "xenstored.ml" 40 1418 1451
+)
+"xenstored.ml" 36 1255 1280 "xenstored.ml" 36 1255 1286
+type(
+  string
+)
+"xenstored.ml" 36 1255 1288 "xenstored.ml" 36 1255 1289
+type(
+  string
+)
+"xenstored.ml" 36 1255 1259 "xenstored.ml" 36 1255 1290
+type(
+  exn
+)
+"xenstored.ml" 37 1294 1297 "xenstored.ml" 37 1294 1322
+type(
+  Connections.t -> Connection.t -> unit
+)
+ident(
+  ext_ref Connections.del_anonymous
+)
+"xenstored.ml" 37 1294 1323 "xenstored.ml" 37 1294 1327
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+)
+"xenstored.ml" 37 1294 1328 "xenstored.ml" 37 1294 1329
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 28 1028 1045 "xenstored.ml" 28 1028 1046
+)
+"xenstored.ml" 37 1294 1297 "xenstored.ml" 37 1294 1329
+type(
+  unit
+)
+"xenstored.ml" 38 1331 1337 "xenstored.ml" 38 1331 1340
+type(
+  Unix.error
+)
+ident(
+  int_ref err "xenstored.ml" 36 1255 1275 "xenstored.ml" 36 1255 1278
+)
+"xenstored.ml" 38 1331 1341 "xenstored.ml" 38 1331 1343
+type(
+  Unix.error -> Unix.error -> bool
+)
+ident(
+  ext_ref Pervasives.<>
+)
+"xenstored.ml" 38 1331 1344 "xenstored.ml" 38 1331 1359
+type(
+  Unix.error
+)
+"xenstored.ml" 38 1331 1337 "xenstored.ml" 38 1331 1359
+type(
+  bool
+)
+"xenstored.ml" 39 1365 1368 "xenstored.ml" 39 1365 1373
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  int_ref error "xenstored.ml" 22 778 782 "xenstored.ml" 22 778 787
+)
+"xenstored.ml" 39 1365 1374 "xenstored.ml" 39 1365 1417
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 40 1418 1428 "xenstored.ml" 40 1418 1446
+type(
+  Unix.error -> string
+)
+ident(
+  ext_ref Unix.error_message
+)
+"xenstored.ml" 40 1418 1447 "xenstored.ml" 40 1418 1450
+type(
+  Unix.error
+)
+ident(
+  int_ref err "xenstored.ml" 36 1255 1275 "xenstored.ml" 36 1255 1278
+)
+"xenstored.ml" 40 1418 1427 "xenstored.ml" 40 1418 1451
+type(
+  string
+)
+"xenstored.ml" 39 1365 1368 "xenstored.ml" 40 1418 1451
+type(
+  unit
+)
+"xenstored.ml" 38 1331 1334 "xenstored.ml" 40 1418 1451
+type(
+  unit
+)
+"xenstored.ml" 37 1294 1297 "xenstored.ml" 40 1418 1451
+type(
+  unit
+)
+"xenstored.ml" 41 1452 1456 "xenstored.ml" 41 1452 1477
+type(
+  exn
+)
+"xenstored.ml" 42 1481 1484 "xenstored.ml" 42 1481 1509
+type(
+  Connections.t -> Connection.t -> unit
+)
+ident(
+  ext_ref Connections.del_anonymous
+)
+"xenstored.ml" 42 1481 1510 "xenstored.ml" 42 1481 1514
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+)
+"xenstored.ml" 42 1481 1515 "xenstored.ml" 42 1481 1516
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 28 1028 1045 "xenstored.ml" 28 1028 1046
+)
+"xenstored.ml" 42 1481 1484 "xenstored.ml" 42 1481 1516
+type(
+  unit
+)
+"xenstored.ml" 43 1518 1521 "xenstored.ml" 43 1518 1526
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  int_ref debug "xenstored.ml" 23 824 828 "xenstored.ml" 23 824 833
+)
+"xenstored.ml" 43 1518 1527 "xenstored.ml" 43 1518 1554
+type(
+  (unit, unit, string, unit) format4
+)
+"xenstored.ml" 43 1518 1521 "xenstored.ml" 43 1518 1554
+type(
+  unit
+)
+"xenstored.ml" 42 1481 1484 "xenstored.ml" 43 1518 1554
+type(
+  unit
+)
+"xenstored.ml" 29 1049 1051 "xenstored.ml" 43 1518 1554
+type(
+  unit
+)
+"xenstored.ml" 45 1560 1565 "xenstored.ml" 45 1560 1583
+type(
+  Unix.file_descr list ->
+  (Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit) ->
+  unit
+)
+"xenstored.ml" 45 1560 1584 "xenstored.ml" 45 1560 1587
+type(
+  Unix.file_descr list
+)
+ident(
+  def fds "xenstored.ml" 45 1560 1588 "xenstored.ml" 50 1692 1700
+)
+"xenstored.ml" 45 1560 1588 "xenstored.ml" 45 1560 1591
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  def fct "xenstored.ml" 46 1594 1596 "xenstored.ml" 50 1692 1700
+)
+"xenstored.ml" 46 1594 1596 "xenstored.ml" 46 1594 1605
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"xenstored.ml" 47 1606 1614 "xenstored.ml" 47 1606 1616
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "xenstored.ml" 48 1620 1624 "xenstored.ml" 49 1667 1691
+)
+"xenstored.ml" 48 1620 1628 "xenstored.ml" 48 1620 1635
+type(
+  (Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit) ->
+  Connection.t -> unit
+)
+ident(
+  int_ref try_fct "xenstored.ml" 28 1028 1033 "xenstored.ml" 28 1028 1040
+)
+"xenstored.ml" 48 1620 1636 "xenstored.ml" 48 1620 1639
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  int_ref fct "xenstored.ml" 45 1560 1588 "xenstored.ml" 45 1560 1591
+)
+"xenstored.ml" 48 1620 1641 "xenstored.ml" 48 1620 1657
+type(
+  Connections.t -> Unix.file_descr -> Connection.t
+)
+ident(
+  ext_ref Connections.find
+)
+"xenstored.ml" 48 1620 1658 "xenstored.ml" 48 1620 1662
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 27 970 1003 "xenstored.ml" 27 970 1007
+)
+"xenstored.ml" 48 1620 1663 "xenstored.ml" 48 1620 1665
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "xenstored.ml" 47 1606 1614 "xenstored.ml" 47 1606 1616
+)
+"xenstored.ml" 48 1620 1640 "xenstored.ml" 48 1620 1666
+type(
+  Connection.t
+)
+"xenstored.ml" 48 1620 1628 "xenstored.ml" 48 1620 1666
+type(
+  unit
+)
+"xenstored.ml" 49 1667 1676 "xenstored.ml" 49 1667 1685
+type(
+  exn
+)
+"xenstored.ml" 49 1667 1689 "xenstored.ml" 49 1667 1691
+type(
+  unit
+)
+"xenstored.ml" 48 1620 1624 "xenstored.ml" 49 1667 1691
+type(
+  unit
+)
+"xenstored.ml" 47 1606 1609 "xenstored.ml" 50 1692 1696
+type(
+  Unix.file_descr -> unit
+)
+"xenstored.ml" 50 1692 1697 "xenstored.ml" 50 1692 1700
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref fds "xenstored.ml" 45 1560 1584 "xenstored.ml" 45 1560 1587
+)
+"xenstored.ml" 46 1594 1596 "xenstored.ml" 50 1692 1700
+type(
+  unit
+)
+"xenstored.ml" 51 1704 1705 "xenstored.ml" 51 1704 1723
+type(
+  Unix.file_descr list ->
+  (Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit) ->
+  unit
+)
+ident(
+  int_ref process_fdset_with "xenstored.ml" 45 1560 1565 "xenstored.ml" 45 1560 1583
+)
+"xenstored.ml" 51 1704 1724 "xenstored.ml" 51 1704 1728
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref rset "xenstored.ml" 27 970 1016 "xenstored.ml" 27 970 1020
+)
+"xenstored.ml" 51 1704 1729 "xenstored.ml" 51 1704 1745
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_input
+)
+"xenstored.ml" 51 1704 1705 "xenstored.ml" 51 1704 1745
+type(
+  unit
+)
+"xenstored.ml" 52 1747 1748 "xenstored.ml" 52 1747 1766
+type(
+  Unix.file_descr list ->
+  (Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit) ->
+  unit
+)
+ident(
+  int_ref process_fdset_with "xenstored.ml" 45 1560 1565 "xenstored.ml" 45 1560 1583
+)
+"xenstored.ml" 52 1747 1767 "xenstored.ml" 52 1747 1771
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref wset "xenstored.ml" 27 970 1021 "xenstored.ml" 27 970 1025
+)
+"xenstored.ml" 52 1747 1772 "xenstored.ml" 52 1747 1789
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_output
+)
+"xenstored.ml" 52 1747 1748 "xenstored.ml" 52 1747 1789
+type(
+  unit
+)
+"xenstored.ml" 51 1704 1705 "xenstored.ml" 52 1747 1789
+type(
+  unit
+)
+"xenstored.ml" 45 1560 1561 "xenstored.ml" 52 1747 1789
+type(
+  unit
+)
+"xenstored.ml" 28 1028 1029 "xenstored.ml" 52 1747 1789
+type(
+  unit
+)
+"xenstored.ml" 54 1791 1795 "xenstored.ml" 54 1791 1810
+type(
+  Store.t -> Connections.t -> Domains.domains -> unit
+)
+ident(
+  def process_domains "xenstored.ml" 66 2218 2218 --
+)
+"xenstored.ml" 54 1791 1811 "xenstored.ml" 54 1791 1816
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 54 1791 1817 "xenstored.ml" 64 2182 2216
+)
+"xenstored.ml" 54 1791 1817 "xenstored.ml" 54 1791 1821
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 54 1791 1822 "xenstored.ml" 64 2182 2216
+)
+"xenstored.ml" 54 1791 1822 "xenstored.ml" 54 1791 1829
+type(
+  Domains.domains
+)
+ident(
+  def domains "xenstored.ml" 55 1832 1833 "xenstored.ml" 64 2182 2216
+)
+"xenstored.ml" 55 1832 1837 "xenstored.ml" 55 1832 1849
+type(
+  Domain.t -> unit
+)
+"xenstored.ml" 55 1832 1850 "xenstored.ml" 55 1832 1856
+type(
+  Domain.t
+)
+ident(
+  def domain "xenstored.ml" 56 1859 1861 "xenstored.ml" 63 2174 2178
+)
+"xenstored.ml" 56 1859 1864 "xenstored.ml" 56 1859 1867
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 56 1859 1869 "xenstored.ml" 56 1859 1889
+type(
+  Domain.t -> bool
+)
+ident(
+  ext_ref Domain.is_bad_domain
+)
+"xenstored.ml" 56 1859 1890 "xenstored.ml" 56 1859 1896
+type(
+  Domain.t
+)
+ident(
+  int_ref domain "xenstored.ml" 55 1832 1850 "xenstored.ml" 55 1832 1856
+)
+"xenstored.ml" 56 1859 1868 "xenstored.ml" 56 1859 1897
+type(
+  bool
+)
+"xenstored.ml" 56 1859 1864 "xenstored.ml" 56 1859 1897
+type(
+  bool
+)
+"xenstored.ml" 57 1903 1910 "xenstored.ml" 57 1903 1919
+type(
+  int
+)
+"xenstored.ml" 57 1903 1922 "xenstored.ml" 57 1903 1942
+type(
+  Domain.t -> int
+)
+ident(
+  ext_ref Domain.get_io_credit
+)
+"xenstored.ml" 57 1903 1943 "xenstored.ml" 57 1903 1949
+type(
+  Domain.t
+)
+ident(
+  int_ref domain "xenstored.ml" 55 1832 1850 "xenstored.ml" 55 1832 1856
+)
+"xenstored.ml" 57 1903 1922 "xenstored.ml" 57 1903 1949
+type(
+  int
+)
+"xenstored.ml" 58 1953 1959 "xenstored.ml" 58 1953 1968
+type(
+  int
+)
+ident(
+  int_ref io_credit "xenstored.ml" 57 1903 1910 "xenstored.ml" 57 1903 1919
+)
+"xenstored.ml" 58 1953 1969 "xenstored.ml" 58 1953 1970
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 58 1953 1971 "xenstored.ml" 58 1953 1972
+type(
+  int
+)
+"xenstored.ml" 58 1953 1959 "xenstored.ml" 58 1953 1972
+type(
+  bool
+)
+"xenstored.ml" 59 1980 1988 "xenstored.ml" 59 1980 1991
+type(
+  Connection.t
+)
+"xenstored.ml" 59 1980 1994 "xenstored.ml" 59 1980 2017
+type(
+  Connections.t -> Xenctrl.domid -> Connection.t
+)
+ident(
+  ext_ref Connections.find_domain
+)
+"xenstored.ml" 59 1980 2018 "xenstored.ml" 59 1980 2022
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 54 1791 1817 "xenstored.ml" 54 1791 1821
+)
+"xenstored.ml" 59 1980 2024 "xenstored.ml" 59 1980 2037
+type(
+  Domain.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Domain.get_id
+)
+"xenstored.ml" 59 1980 2038 "xenstored.ml" 59 1980 2044
+type(
+  Domain.t
+)
+ident(
+  int_ref domain "xenstored.ml" 55 1832 1850 "xenstored.ml" 55 1832 1856
+)
+"xenstored.ml" 59 1980 2023 "xenstored.ml" 59 1980 2045
+type(
+  Xenctrl.domid
+)
+"xenstored.ml" 59 1980 1994 "xenstored.ml" 59 1980 2045
+type(
+  Connection.t
+)
+"xenstored.ml" 60 2049 2053 "xenstored.ml" 60 2049 2069
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_input
+)
+"xenstored.ml" 60 2049 2070 "xenstored.ml" 60 2049 2075
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 54 1791 1811 "xenstored.ml" 54 1791 1816
+)
+"xenstored.ml" 60 2049 2076 "xenstored.ml" 60 2049 2080
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 54 1791 1817 "xenstored.ml" 54 1791 1821
+)
+"xenstored.ml" 60 2049 2081 "xenstored.ml" 60 2049 2088
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 54 1791 1822 "xenstored.ml" 54 1791 1829
+)
+"xenstored.ml" 60 2049 2089 "xenstored.ml" 60 2049 2092
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 59 1980 1988 "xenstored.ml" 59 1980 1991
+)
+"xenstored.ml" 60 2049 2053 "xenstored.ml" 60 2049 2092
+type(
+  unit
+)
+"xenstored.ml" 61 2094 2098 "xenstored.ml" 61 2094 2115
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_output
+)
+"xenstored.ml" 61 2094 2116 "xenstored.ml" 61 2094 2121
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 54 1791 1811 "xenstored.ml" 54 1791 1816
+)
+"xenstored.ml" 61 2094 2122 "xenstored.ml" 61 2094 2126
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 54 1791 1817 "xenstored.ml" 54 1791 1821
+)
+"xenstored.ml" 61 2094 2127 "xenstored.ml" 61 2094 2134
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 54 1791 1822 "xenstored.ml" 54 1791 1829
+)
+"xenstored.ml" 61 2094 2135 "xenstored.ml" 61 2094 2138
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 59 1980 1988 "xenstored.ml" 59 1980 1991
+)
+"xenstored.ml" 61 2094 2098 "xenstored.ml" 61 2094 2138
+type(
+  unit
+)
+"xenstored.ml" 62 2140 2144 "xenstored.ml" 62 2140 2165
+type(
+  Domain.t -> unit
+)
+ident(
+  ext_ref Domain.decr_io_credit
+)
+"xenstored.ml" 62 2140 2166 "xenstored.ml" 62 2140 2172
+type(
+  Domain.t
+)
+ident(
+  int_ref domain "xenstored.ml" 55 1832 1850 "xenstored.ml" 55 1832 1856
+)
+"xenstored.ml" 62 2140 2144 "xenstored.ml" 62 2140 2173
+type(
+  unit
+)
+"xenstored.ml" 61 2094 2098 "xenstored.ml" 62 2140 2173
+type(
+  unit
+)
+"xenstored.ml" 60 2049 2053 "xenstored.ml" 62 2140 2173
+type(
+  unit
+)
+"xenstored.ml" 58 1953 1978 "xenstored.ml" 63 2174 2178
+type(
+  unit
+)
+"xenstored.ml" 58 1953 1956 "xenstored.ml" 63 2174 2178
+type(
+  unit
+)
+"xenstored.ml" 57 1903 1906 "xenstored.ml" 63 2174 2178
+type(
+  unit
+)
+"xenstored.ml" 56 1859 1861 "xenstored.ml" 63 2174 2178
+type(
+  unit
+)
+"xenstored.ml" 64 2182 2183 "xenstored.ml" 64 2182 2195
+type(
+  Domains.domains -> (Domain.t -> unit) -> unit
+)
+ident(
+  ext_ref Domains.iter
+)
+"xenstored.ml" 64 2182 2196 "xenstored.ml" 64 2182 2203
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 54 1791 1822 "xenstored.ml" 54 1791 1829
+)
+"xenstored.ml" 64 2182 2204 "xenstored.ml" 64 2182 2216
+type(
+  Domain.t -> unit
+)
+ident(
+  int_ref do_io_domain "xenstored.ml" 55 1832 1837 "xenstored.ml" 55 1832 1849
+)
+"xenstored.ml" 64 2182 2183 "xenstored.ml" 64 2182 2216
+type(
+  unit
+)
+"xenstored.ml" 55 1832 1833 "xenstored.ml" 64 2182 2216
+type(
+  unit
+)
+"xenstored.ml" 66 2218 2222 "xenstored.ml" 66 2218 2237
+type(
+  Store.t -> unit
+)
+ident(
+  def sigusr1_handler "xenstored.ml" 75 2486 2486 --
+)
+"xenstored.ml" 66 2218 2238 "xenstored.ml" 66 2218 2243
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 67 2246 2247 "xenstored.ml" 73 2480 2484
+)
+"xenstored.ml" 68 2251 2257 "xenstored.ml" 68 2251 2264
+type(
+  out_channel
+)
+ident(
+  def channel "xenstored.ml" 70 2389 2391 "xenstored.ml" 71 2436 2468
+)
+"xenstored.ml" 68 2251 2267 "xenstored.ml" 68 2251 2279
+type(
+  open_flag list -> int -> string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_gen
+)
+"xenstored.ml" 68 2251 2282 "xenstored.ml" 68 2251 2293
+type(
+  open_flag
+)
+"xenstored.ml" 68 2251 2295 "xenstored.ml" 68 2251 2305
+type(
+  open_flag
+)
+"xenstored.ml" 68 2251 2307 "xenstored.ml" 68 2251 2317
+type(
+  open_flag
+)
+"xenstored.ml" 68 2251 2280 "xenstored.ml" 68 2251 2320
+type(
+  open_flag list
+)
+"xenstored.ml" 69 2321 2350 "xenstored.ml" 69 2321 2355
+type(
+  int
+)
+"xenstored.ml" 69 2321 2356 "xenstored.ml" 69 2321 2385
+type(
+  string
+)
+"xenstored.ml" 68 2251 2267 "xenstored.ml" 69 2321 2385
+type(
+  out_channel
+)
+"xenstored.ml" 70 2389 2391 "xenstored.ml" 70 2389 2398
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Stdext.finally
+)
+"xenstored.ml" 70 2389 2404 "xenstored.ml" 70 2389 2406
+type(
+  unit
+)
+"xenstored.ml" 70 2389 2410 "xenstored.ml" 70 2389 2420
+type(
+  Store.t -> out_channel -> unit
+)
+ident(
+  ext_ref Store.dump
+)
+"xenstored.ml" 70 2389 2421 "xenstored.ml" 70 2389 2426
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 66 2218 2238 "xenstored.ml" 66 2218 2243
+)
+"xenstored.ml" 70 2389 2427 "xenstored.ml" 70 2389 2434
+type(
+  out_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 68 2251 2257 "xenstored.ml" 68 2251 2264
+)
+"xenstored.ml" 70 2389 2410 "xenstored.ml" 70 2389 2434
+type(
+  unit
+)
+"xenstored.ml" 70 2389 2399 "xenstored.ml" 70 2389 2435
+type(
+  unit -> unit
+)
+"xenstored.ml" 71 2436 2444 "xenstored.ml" 71 2436 2446
+type(
+  unit
+)
+"xenstored.ml" 71 2436 2450 "xenstored.ml" 71 2436 2459
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"xenstored.ml" 71 2436 2460 "xenstored.ml" 71 2436 2467
+type(
+  out_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 68 2251 2257 "xenstored.ml" 68 2251 2264
+)
+"xenstored.ml" 71 2436 2450 "xenstored.ml" 71 2436 2467
+type(
+  unit
+)
+"xenstored.ml" 71 2436 2439 "xenstored.ml" 71 2436 2468
+type(
+  unit -> unit
+)
+"xenstored.ml" 70 2389 2391 "xenstored.ml" 71 2436 2468
+type(
+  unit
+)
+"xenstored.ml" 68 2251 2253 "xenstored.ml" 71 2436 2468
+type(
+  unit
+)
+"xenstored.ml" 72 2469 2475 "xenstored.ml" 72 2469 2476
+type(
+  exn
+)
+"xenstored.ml" 73 2480 2482 "xenstored.ml" 73 2480 2484
+type(
+  unit
+)
+"xenstored.ml" 67 2246 2247 "xenstored.ml" 73 2480 2484
+type(
+  unit
+)
+"xenstored.ml" 75 2486 2490 "xenstored.ml" 75 2486 2504
+type(
+  'a -> unit
+)
+ident(
+  def sighup_handler "xenstored.ml" 79 2656 2656 --
+)
+"xenstored.ml" 75 2486 2505 "xenstored.ml" 75 2486 2506
+type(
+  'a
+)
+"xenstored.ml" 76 2509 2510 "xenstored.ml" 76 2509 2515
+type(
+  (Logging.logger -> unit) -> Logging.logger option -> unit
+)
+ident(
+  ext_ref Stdext.maybe
+)
+"xenstored.ml" 76 2509 2521 "xenstored.ml" 76 2509 2527
+type(
+  Logging.logger
+)
+ident(
+  def logger "xenstored.ml" 76 2509 2531 "xenstored.ml" 76 2509 2555
+)
+"xenstored.ml" 76 2509 2531 "xenstored.ml" 76 2509 2537
+type(
+  Logging.logger
+)
+ident(
+  int_ref logger "xenstored.ml" 76 2509 2521 "xenstored.ml" 76 2509 2527
+)
+"xenstored.ml" 76 2509 2531 "xenstored.ml" 76 2509 2553
+type(
+  unit -> unit
+)
+"xenstored.ml" 76 2509 2553 "xenstored.ml" 76 2509 2555
+type(
+  unit
+)
+"xenstored.ml" 76 2509 2531 "xenstored.ml" 76 2509 2555
+type(
+  unit
+)
+"xenstored.ml" 76 2509 2516 "xenstored.ml" 76 2509 2556
+type(
+  Logging.logger -> unit
+)
+"xenstored.ml" 76 2509 2557 "xenstored.ml" 76 2509 2558
+type(
+  Logging.logger option ref -> Logging.logger option
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 76 2509 2558 "xenstored.ml" 76 2509 2582
+type(
+  Logging.logger option ref
+)
+ident(
+  ext_ref Logging.xenstored_logger
+)
+"xenstored.ml" 76 2509 2557 "xenstored.ml" 76 2509 2582
+type(
+  Logging.logger option
+)
+"xenstored.ml" 76 2509 2510 "xenstored.ml" 76 2509 2582
+type(
+  unit
+)
+"xenstored.ml" 77 2584 2585 "xenstored.ml" 77 2584 2590
+type(
+  (Logging.logger -> unit) -> Logging.logger option -> unit
+)
+ident(
+  ext_ref Stdext.maybe
+)
+"xenstored.ml" 77 2584 2596 "xenstored.ml" 77 2584 2602
+type(
+  Logging.logger
+)
+ident(
+  def logger "xenstored.ml" 77 2584 2606 "xenstored.ml" 77 2584 2630
+)
+"xenstored.ml" 77 2584 2606 "xenstored.ml" 77 2584 2612
+type(
+  Logging.logger
+)
+ident(
+  int_ref logger "xenstored.ml" 77 2584 2596 "xenstored.ml" 77 2584 2602
+)
+"xenstored.ml" 77 2584 2606 "xenstored.ml" 77 2584 2628
+type(
+  unit -> unit
+)
+"xenstored.ml" 77 2584 2628 "xenstored.ml" 77 2584 2630
+type(
+  unit
+)
+"xenstored.ml" 77 2584 2606 "xenstored.ml" 77 2584 2630
+type(
+  unit
+)
+"xenstored.ml" 77 2584 2591 "xenstored.ml" 77 2584 2631
+type(
+  Logging.logger -> unit
+)
+"xenstored.ml" 77 2584 2632 "xenstored.ml" 77 2584 2633
+type(
+  Logging.logger option ref -> Logging.logger option
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 77 2584 2633 "xenstored.ml" 77 2584 2654
+type(
+  Logging.logger option ref
+)
+ident(
+  ext_ref Logging.access_logger
+)
+"xenstored.ml" 77 2584 2632 "xenstored.ml" 77 2584 2654
+type(
+  Logging.logger option
+)
+"xenstored.ml" 77 2584 2585 "xenstored.ml" 77 2584 2654
+type(
+  unit
+)
+"xenstored.ml" 76 2509 2510 "xenstored.ml" 77 2584 2654
+type(
+  unit
+)
+"xenstored.ml" 79 2656 2660 "xenstored.ml" 79 2656 2675
+type(
+  Parse_arg.config -> string
+)
+ident(
+  def config_filename "xenstored.ml" 84 2793 2793 --
+)
+"xenstored.ml" 79 2656 2676 "xenstored.ml" 79 2656 2678
+type(
+  Parse_arg.config
+)
+ident(
+  def cf "xenstored.ml" 80 2681 2682 "xenstored.ml" 82 2729 2791
+)
+"xenstored.ml" 80 2681 2688 "xenstored.ml" 80 2681 2690
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 79 2656 2676 "xenstored.ml" 79 2656 2678
+)
+"xenstored.ml" 80 2681 2688 "xenstored.ml" 80 2681 2702
+type(
+  string option
+)
+"xenstored.ml" 81 2708 2716 "xenstored.ml" 81 2708 2720
+type(
+  string
+)
+ident(
+  def name "xenstored.ml" 81 2708 2724 "xenstored.ml" 81 2708 2728
+)
+"xenstored.ml" 81 2708 2711 "xenstored.ml" 81 2708 2720
+type(
+  string option
+)
+"xenstored.ml" 81 2708 2724 "xenstored.ml" 81 2708 2728
+type(
+  string
+)
+ident(
+  int_ref name "xenstored.ml" 81 2708 2716 "xenstored.ml" 81 2708 2720
+)
+"xenstored.ml" 82 2729 2732 "xenstored.ml" 82 2729 2736
+type(
+  string option
+)
+"xenstored.ml" 82 2729 2745 "xenstored.ml" 82 2729 2770
+type(
+  string
+)
+ident(
+  ext_ref Define.default_config_dir
+)
+"xenstored.ml" 82 2729 2771 "xenstored.ml" 82 2729 2772
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"xenstored.ml" 82 2729 2773 "xenstored.ml" 82 2729 2791
+type(
+  string
+)
+"xenstored.ml" 82 2729 2745 "xenstored.ml" 82 2729 2791
+type(
+  string
+)
+"xenstored.ml" 80 2681 2682 "xenstored.ml" 82 2729 2791
+type(
+  string
+)
+"xenstored.ml" 84 2793 2797 "xenstored.ml" 84 2793 2812
+type(
+  string
+)
+ident(
+  def default_pidfile "xenstored.ml" 86 2841 2841 --
+)
+"xenstored.ml" 84 2793 2815 "xenstored.ml" 84 2793 2839
+type(
+  string
+)
+"xenstored.ml" 86 2841 2845 "xenstored.ml" 86 2841 2863
+type(
+  int ref
+)
+ident(
+  def ring_scan_interval "xenstored.ml" 88 2874 2874 --
+)
+"xenstored.ml" 86 2841 2866 "xenstored.ml" 86 2841 2869
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 86 2841 2870 "xenstored.ml" 86 2841 2872
+type(
+  int
+)
+"xenstored.ml" 86 2841 2866 "xenstored.ml" 86 2841 2872
+type(
+  int ref
+)
+"xenstored.ml" 88 2874 2878 "xenstored.ml" 88 2874 2890
+type(
+  string -> string
+)
+ident(
+  def parse_config "xenstored.ml" 127 4891 4891 --
+)
+"xenstored.ml" 88 2874 2891 "xenstored.ml" 88 2874 2899
+type(
+  string
+)
+ident(
+  def filename "xenstored.ml" 89 2902 2903 "xenstored.ml" 125 4880 4889
+)
+"xenstored.ml" 89 2902 2907 "xenstored.ml" 89 2902 2914
+type(
+  string ref
+)
+"xenstored.ml" 89 2902 2917 "xenstored.ml" 89 2902 2920
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 89 2902 2921 "xenstored.ml" 89 2902 2936
+type(
+  string
+)
+ident(
+  int_ref default_pidfile "xenstored.ml" 84 2793 2797 "xenstored.ml" 84 2793 2812
+)
+"xenstored.ml" 89 2902 2917 "xenstored.ml" 89 2902 2936
+type(
+  string ref
+)
+"xenstored.ml" 90 2940 2945 "xenstored.ml" 90 2940 2952
+type(
+  (string * Config.ty) list
+)
+"xenstored.ml" 91 2957 2960 "xenstored.ml" 91 2957 2976
+type(
+  string
+)
+"xenstored.ml" 91 2957 2994 "xenstored.ml" 91 2957 3017
+type(
+  bool ref
+)
+ident(
+  ext_ref Transaction.do_coalesce
+)
+"xenstored.ml" 91 2957 2978 "xenstored.ml" 91 2957 3017
+type(
+  Config.ty
+)
+"xenstored.ml" 91 2957 2959 "xenstored.ml" 91 2957 3018
+type(
+  string * Config.ty
+)
+"xenstored.ml" 92 3020 3023 "xenstored.ml" 92 3020 3039
+type(
+  string
+)
+"xenstored.ml" 92 3020 3057 "xenstored.ml" 92 3020 3071
+type(
+  bool ref
+)
+ident(
+  ext_ref Perms.activate
+)
+"xenstored.ml" 92 3020 3041 "xenstored.ml" 92 3020 3071
+type(
+  Config.ty
+)
+"xenstored.ml" 92 3020 3022 "xenstored.ml" 92 3020 3072
+type(
+  string * Config.ty
+)
+"xenstored.ml" 93 3074 3077 "xenstored.ml" 93 3074 3093
+type(
+  string
+)
+"xenstored.ml" 93 3074 3111 "xenstored.ml" 93 3074 3125
+type(
+  bool ref
+)
+ident(
+  ext_ref Quota.activate
+)
+"xenstored.ml" 93 3074 3095 "xenstored.ml" 93 3074 3125
+type(
+  Config.ty
+)
+"xenstored.ml" 93 3074 3076 "xenstored.ml" 93 3074 3126
+type(
+  string * Config.ty
+)
+"xenstored.ml" 94 3128 3131 "xenstored.ml" 94 3128 3147
+type(
+  string
+)
+"xenstored.ml" 94 3128 3164 "xenstored.ml" 94 3128 3179
+type(
+  int ref
+)
+ident(
+  ext_ref Define.maxwatch
+)
+"xenstored.ml" 94 3128 3149 "xenstored.ml" 94 3128 3179
+type(
+  Config.ty
+)
+"xenstored.ml" 94 3128 3130 "xenstored.ml" 94 3128 3180
+type(
+  string * Config.ty
+)
+"xenstored.ml" 95 3182 3185 "xenstored.ml" 95 3182 3204
+type(
+  string
+)
+"xenstored.ml" 95 3182 3221 "xenstored.ml" 95 3182 3242
+type(
+  int ref
+)
+ident(
+  ext_ref Define.maxtransaction
+)
+"xenstored.ml" 95 3182 3206 "xenstored.ml" 95 3182 3242
+type(
+  Config.ty
+)
+"xenstored.ml" 95 3182 3184 "xenstored.ml" 95 3182 3243
+type(
+  string * Config.ty
+)
+"xenstored.ml" 96 3245 3248 "xenstored.ml" 96 3245 3265
+type(
+  string
+)
+"xenstored.ml" 96 3245 3282 "xenstored.ml" 96 3245 3294
+type(
+  int ref
+)
+ident(
+  ext_ref Quota.maxent
+)
+"xenstored.ml" 96 3245 3267 "xenstored.ml" 96 3245 3294
+type(
+  Config.ty
+)
+"xenstored.ml" 96 3245 3247 "xenstored.ml" 96 3245 3295
+type(
+  string * Config.ty
+)
+"xenstored.ml" 97 3297 3300 "xenstored.ml" 97 3297 3315
+type(
+  string
+)
+"xenstored.ml" 97 3297 3332 "xenstored.ml" 97 3297 3345
+type(
+  int ref
+)
+ident(
+  ext_ref Quota.maxsize
+)
+"xenstored.ml" 97 3297 3317 "xenstored.ml" 97 3297 3345
+type(
+  Config.ty
+)
+"xenstored.ml" 97 3297 3299 "xenstored.ml" 97 3297 3346
+type(
+  string * Config.ty
+)
+"xenstored.ml" 98 3348 3351 "xenstored.ml" 98 3348 3364
+type(
+  string
+)
+"xenstored.ml" 98 3348 3382 "xenstored.ml" 98 3348 3405
+type(
+  bool ref
+)
+ident(
+  ext_ref Transaction.test_eagain
+)
+"xenstored.ml" 98 3348 3366 "xenstored.ml" 98 3348 3405
+type(
+  Config.ty
+)
+"xenstored.ml" 98 3348 3350 "xenstored.ml" 98 3348 3406
+type(
+  string * Config.ty
+)
+"xenstored.ml" 99 3408 3411 "xenstored.ml" 99 3408 3423
+type(
+  string
+)
+"xenstored.ml" 99 3408 3441 "xenstored.ml" 99 3408 3452
+type(
+  bool ref
+)
+ident(
+  ext_ref Disk.enable
+)
+"xenstored.ml" 99 3408 3425 "xenstored.ml" 99 3408 3452
+type(
+  Config.ty
+)
+"xenstored.ml" 99 3408 3410 "xenstored.ml" 99 3408 3453
+type(
+  string * Config.ty
+)
+"xenstored.ml" 100 3455 3458 "xenstored.ml" 100 3455 3478
+type(
+  string
+)
+"xenstored.ml" 100 3455 3494 "xenstored.ml" 100 3455 3531
+type(
+  string -> unit
+)
+ident(
+  ext_ref Logging.set_xenstored_log_destination
+)
+"xenstored.ml" 100 3455 3480 "xenstored.ml" 100 3455 3531
+type(
+  Config.ty
+)
+"xenstored.ml" 100 3455 3457 "xenstored.ml" 100 3455 3532
+type(
+  string * Config.ty
+)
+"xenstored.ml" 101 3534 3537 "xenstored.ml" 101 3534 3558
+type(
+  string
+)
+"xenstored.ml" 102 3574 3582 "xenstored.ml" 102 3574 3583
+type(
+  string
+)
+ident(
+  def s "xenstored.ml" 102 3574 3587 "xenstored.ml" 102 3574 3643
+)
+"xenstored.ml" 102 3574 3587 "xenstored.ml" 102 3574 3614
+type(
+  Logging.level ref
+)
+ident(
+  ext_ref Logging.xenstored_log_level
+)
+"xenstored.ml" 102 3574 3615 "xenstored.ml" 102 3574 3617
+type(
+  Logging.level ref -> Logging.level -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 102 3574 3618 "xenstored.ml" 102 3574 3641
+type(
+  string -> Logging.level
+)
+ident(
+  ext_ref Logging.level_of_string
+)
+"xenstored.ml" 102 3574 3642 "xenstored.ml" 102 3574 3643
+type(
+  string
+)
+ident(
+  int_ref s "xenstored.ml" 102 3574 3582 "xenstored.ml" 102 3574 3583
+)
+"xenstored.ml" 102 3574 3618 "xenstored.ml" 102 3574 3643
+type(
+  Logging.level
+)
+"xenstored.ml" 102 3574 3587 "xenstored.ml" 102 3574 3643
+type(
+  unit
+)
+"xenstored.ml" 102 3574 3577 "xenstored.ml" 102 3574 3644
+type(
+  string -> unit
+)
+"xenstored.ml" 101 3534 3560 "xenstored.ml" 102 3574 3644
+type(
+  Config.ty
+)
+"xenstored.ml" 101 3534 3536 "xenstored.ml" 102 3574 3645
+type(
+  string * Config.ty
+)
+"xenstored.ml" 103 3647 3650 "xenstored.ml" 103 3647 3674
+type(
+  string
+)
+"xenstored.ml" 103 3647 3691 "xenstored.ml" 103 3647 3721
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.xenstored_log_nb_files
+)
+"xenstored.ml" 103 3647 3676 "xenstored.ml" 103 3647 3721
+type(
+  Config.ty
+)
+"xenstored.ml" 103 3647 3649 "xenstored.ml" 103 3647 3722
+type(
+  string * Config.ty
+)
+"xenstored.ml" 104 3724 3727 "xenstored.ml" 104 3724 3751
+type(
+  string
+)
+"xenstored.ml" 104 3724 3768 "xenstored.ml" 104 3724 3798
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.xenstored_log_nb_lines
+)
+"xenstored.ml" 104 3724 3753 "xenstored.ml" 104 3724 3798
+type(
+  Config.ty
+)
+"xenstored.ml" 104 3724 3726 "xenstored.ml" 104 3724 3799
+type(
+  string * Config.ty
+)
+"xenstored.ml" 105 3801 3804 "xenstored.ml" 105 3801 3828
+type(
+  string
+)
+"xenstored.ml" 105 3801 3845 "xenstored.ml" 105 3801 3875
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.xenstored_log_nb_chars
+)
+"xenstored.ml" 105 3801 3830 "xenstored.ml" 105 3801 3875
+type(
+  Config.ty
+)
+"xenstored.ml" 105 3801 3803 "xenstored.ml" 105 3801 3876
+type(
+  string * Config.ty
+)
+"xenstored.ml" 106 3878 3881 "xenstored.ml" 106 3878 3898
+type(
+  string
+)
+"xenstored.ml" 106 3878 3914 "xenstored.ml" 106 3878 3948
+type(
+  string -> unit
+)
+ident(
+  ext_ref Logging.set_access_log_destination
+)
+"xenstored.ml" 106 3878 3900 "xenstored.ml" 106 3878 3948
+type(
+  Config.ty
+)
+"xenstored.ml" 106 3878 3880 "xenstored.ml" 106 3878 3949
+type(
+  string * Config.ty
+)
+"xenstored.ml" 107 3951 3954 "xenstored.ml" 107 3951 3975
+type(
+  string
+)
+"xenstored.ml" 107 3951 3992 "xenstored.ml" 107 3951 4019
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.access_log_nb_files
+)
+"xenstored.ml" 107 3951 3977 "xenstored.ml" 107 3951 4019
+type(
+  Config.ty
+)
+"xenstored.ml" 107 3951 3953 "xenstored.ml" 107 3951 4020
+type(
+  string * Config.ty
+)
+"xenstored.ml" 108 4022 4025 "xenstored.ml" 108 4022 4046
+type(
+  string
+)
+"xenstored.ml" 108 4022 4063 "xenstored.ml" 108 4022 4090
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.access_log_nb_lines
+)
+"xenstored.ml" 108 4022 4048 "xenstored.ml" 108 4022 4090
+type(
+  Config.ty
+)
+"xenstored.ml" 108 4022 4024 "xenstored.ml" 108 4022 4091
+type(
+  string * Config.ty
+)
+"xenstored.ml" 109 4093 4096 "xenstored.ml" 109 4093 4117
+type(
+  string
+)
+"xenstored.ml" 109 4093 4134 "xenstored.ml" 109 4093 4161
+type(
+  int ref
+)
+ident(
+  ext_ref Logging.access_log_nb_chars
+)
+"xenstored.ml" 109 4093 4119 "xenstored.ml" 109 4093 4161
+type(
+  Config.ty
+)
+"xenstored.ml" 109 4093 4095 "xenstored.ml" 109 4093 4162
+type(
+  string * Config.ty
+)
+"xenstored.ml" 110 4164 4167 "xenstored.ml" 110 4164 4188
+type(
+  string
+)
+"xenstored.ml" 110 4164 4206 "xenstored.ml" 110 4164 4233
+type(
+  bool ref
+)
+ident(
+  ext_ref Logging.access_log_read_ops
+)
+"xenstored.ml" 110 4164 4190 "xenstored.ml" 110 4164 4233
+type(
+  Config.ty
+)
+"xenstored.ml" 110 4164 4166 "xenstored.ml" 110 4164 4234
+type(
+  string * Config.ty
+)
+"xenstored.ml" 111 4236 4239 "xenstored.ml" 111 4236 4268
+type(
+  string
+)
+"xenstored.ml" 111 4236 4286 "xenstored.ml" 111 4236 4320
+type(
+  bool ref
+)
+ident(
+  ext_ref Logging.access_log_transaction_ops
+)
+"xenstored.ml" 111 4236 4270 "xenstored.ml" 111 4236 4320
+type(
+  Config.ty
+)
+"xenstored.ml" 111 4236 4238 "xenstored.ml" 111 4236 4321
+type(
+  string * Config.ty
+)
+"xenstored.ml" 112 4323 4326 "xenstored.ml" 112 4323 4350
+type(
+  string
+)
+"xenstored.ml" 112 4323 4368 "xenstored.ml" 112 4323 4398
+type(
+  bool ref
+)
+ident(
+  ext_ref Logging.access_log_special_ops
+)
+"xenstored.ml" 112 4323 4352 "xenstored.ml" 112 4323 4398
+type(
+  Config.ty
+)
+"xenstored.ml" 112 4323 4325 "xenstored.ml" 112 4323 4399
+type(
+  string * Config.ty
+)
+"xenstored.ml" 113 4401 4404 "xenstored.ml" 113 4401 4417
+type(
+  string
+)
+"xenstored.ml" 113 4401 4435 "xenstored.ml" 113 4401 4454
+type(
+  bool ref
+)
+ident(
+  ext_ref Process.allow_debug
+)
+"xenstored.ml" 113 4401 4419 "xenstored.ml" 113 4401 4454
+type(
+  Config.ty
+)
+"xenstored.ml" 113 4401 4403 "xenstored.ml" 113 4401 4455
+type(
+  string * Config.ty
+)
+"xenstored.ml" 114 4457 4460 "xenstored.ml" 114 4457 4480
+type(
+  string
+)
+"xenstored.ml" 114 4457 4497 "xenstored.ml" 114 4457 4515
+type(
+  int ref
+)
+ident(
+  int_ref ring_scan_interval "xenstored.ml" 86 2841 2845 "xenstored.ml" 86 2841 2863
+)
+"xenstored.ml" 114 4457 4482 "xenstored.ml" 114 4457 4515
+type(
+  Config.ty
+)
+"xenstored.ml" 114 4457 4459 "xenstored.ml" 114 4457 4516
+type(
+  string * Config.ty
+)
+"xenstored.ml" 115 4518 4521 "xenstored.ml" 115 4518 4531
+type(
+  string
+)
+"xenstored.ml" 115 4518 4551 "xenstored.ml" 115 4518 4558
+type(
+  string ref
+)
+ident(
+  int_ref pidfile "xenstored.ml" 89 2902 2907 "xenstored.ml" 89 2902 2914
+)
+"xenstored.ml" 115 4518 4533 "xenstored.ml" 115 4518 4558
+type(
+  Config.ty
+)
+"xenstored.ml" 115 4518 4520 "xenstored.ml" 115 4518 4559
+type(
+  string * Config.ty
+)
+"xenstored.ml" 90 2940 2955 "xenstored.ml" 115 4518 4562
+type(
+  (string * Config.ty) list
+)
+"xenstored.ml" 116 4566 4577 "xenstored.ml" 116 4566 4588
+type(
+  string -> (string * Config.ty) list -> (string -> string -> unit) -> unit
+)
+ident(
+  ext_ref Config.read
+)
+"xenstored.ml" 116 4566 4589 "xenstored.ml" 116 4566 4597
+type(
+  string
+)
+ident(
+  int_ref filename "xenstored.ml" 88 2874 2891 "xenstored.ml" 88 2874 2899
+)
+"xenstored.ml" 116 4566 4598 "xenstored.ml" 116 4566 4605
+type(
+  (string * Config.ty) list
+)
+ident(
+  int_ref options "xenstored.ml" 90 2940 2945 "xenstored.ml" 90 2940 2952
+)
+"xenstored.ml" 116 4566 4611 "xenstored.ml" 116 4566 4612
+type(
+  string
+)
+"xenstored.ml" 116 4566 4613 "xenstored.ml" 116 4566 4614
+type(
+  string
+)
+"xenstored.ml" 116 4566 4618 "xenstored.ml" 116 4566 4623
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"xenstored.ml" 116 4566 4624 "xenstored.ml" 116 4566 4633
+type(
+  exn
+)
+"xenstored.ml" 116 4566 4618 "xenstored.ml" 116 4566 4633
+type(
+  unit
+)
+"xenstored.ml" 116 4566 4606 "xenstored.ml" 116 4566 4634
+type(
+  string -> string -> unit
+)
+"xenstored.ml" 116 4566 4577 "xenstored.ml" 116 4566 4634
+type(
+  unit
+)
+"xenstored.ml" 118 4641 4657 "xenstored.ml" 118 4641 4660
+type(
+  (string * string) list
+)
+ident(
+  def err "xenstored.ml" 118 4641 4664 "xenstored.ml" 122 4814 4822
+)
+"xenstored.ml" 118 4641 4644 "xenstored.ml" 118 4641 4660
+type(
+  exn
+)
+"xenstored.ml" 118 4641 4664 "xenstored.ml" 118 4641 4673
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"xenstored.ml" 118 4641 4680 "xenstored.ml" 118 4641 4681
+type(
+  string
+)
+ident(
+  def k "xenstored.ml" 119 4689 4691 "xenstored.ml" 121 4762 4813
+)
+"xenstored.ml" 118 4641 4683 "xenstored.ml" 118 4641 4684
+type(
+  string
+)
+ident(
+  def e "xenstored.ml" 119 4689 4691 "xenstored.ml" 121 4762 4813
+)
+"xenstored.ml" 118 4641 4679 "xenstored.ml" 118 4641 4685
+type(
+  string * string
+)
+"xenstored.ml" 119 4689 4697 "xenstored.ml" 119 4689 4698
+type(
+  string
+)
+ident(
+  int_ref e "xenstored.ml" 118 4641 4683 "xenstored.ml" 118 4641 4684
+)
+"xenstored.ml" 120 4704 4708 "xenstored.ml" 120 4704 4721
+type(
+  string
+)
+"xenstored.ml" 120 4704 4725 "xenstored.ml" 120 4704 4732
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"xenstored.ml" 120 4704 4733 "xenstored.ml" 120 4704 4759
+type(
+  (string -> unit, out_channel, unit) format
+)
+"xenstored.ml" 120 4704 4760 "xenstored.ml" 120 4704 4761
+type(
+  string
+)
+ident(
+  int_ref k "xenstored.ml" 118 4641 4680 "xenstored.ml" 118 4641 4681
+)
+"xenstored.ml" 120 4704 4725 "xenstored.ml" 120 4704 4761
+type(
+  unit
+)
+"xenstored.ml" 121 4762 4766 "xenstored.ml" 121 4762 4767
+type(
+  string
+)
+"xenstored.ml" 121 4762 4783 "xenstored.ml" 121 4762 4790
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"xenstored.ml" 121 4762 4791 "xenstored.ml" 121 4762 4809
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"xenstored.ml" 121 4762 4810 "xenstored.ml" 121 4762 4811
+type(
+  string
+)
+ident(
+  int_ref k "xenstored.ml" 118 4641 4680 "xenstored.ml" 118 4641 4681
+)
+"xenstored.ml" 121 4762 4812 "xenstored.ml" 121 4762 4813
+type(
+  string
+)
+ident(
+  int_ref e "xenstored.ml" 118 4641 4683 "xenstored.ml" 118 4641 4684
+)
+"xenstored.ml" 121 4762 4783 "xenstored.ml" 121 4762 4813
+type(
+  unit
+)
+"xenstored.ml" 119 4689 4691 "xenstored.ml" 121 4762 4813
+type(
+  unit
+)
+"xenstored.ml" 118 4641 4674 "xenstored.ml" 122 4814 4817
+type(
+  string * string -> unit
+)
+"xenstored.ml" 122 4814 4818 "xenstored.ml" 122 4814 4821
+type(
+  (string * string) list
+)
+ident(
+  int_ref err "xenstored.ml" 118 4641 4657 "xenstored.ml" 118 4641 4660
+)
+"xenstored.ml" 118 4641 4664 "xenstored.ml" 122 4814 4822
+type(
+  unit
+)
+"xenstored.ml" 123 4823 4836 "xenstored.ml" 123 4823 4837
+type(
+  string
+)
+ident(
+  def m "xenstored.ml" 123 4823 4841 "xenstored.ml" 123 4823 4873
+)
+"xenstored.ml" 123 4823 4826 "xenstored.ml" 123 4823 4837
+type(
+  exn
+)
+"xenstored.ml" 123 4823 4841 "xenstored.ml" 123 4823 4848
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"xenstored.ml" 123 4823 4849 "xenstored.ml" 123 4823 4870
+type(
+  (string -> unit, out_channel, unit) format
+)
+"xenstored.ml" 123 4823 4871 "xenstored.ml" 123 4823 4872
+type(
+  string
+)
+ident(
+  int_ref m "xenstored.ml" 123 4823 4836 "xenstored.ml" 123 4823 4837
+)
+"xenstored.ml" 123 4823 4841 "xenstored.ml" 123 4823 4873
+type(
+  unit
+)
+"xenstored.ml" 116 4566 4567 "xenstored.ml" 124 4874 4878
+type(
+  unit
+)
+"xenstored.ml" 125 4880 4881 "xenstored.ml" 125 4880 4882
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 125 4880 4882 "xenstored.ml" 125 4880 4889
+type(
+  string ref
+)
+ident(
+  int_ref pidfile "xenstored.ml" 89 2902 2907 "xenstored.ml" 89 2902 2914
+)
+"xenstored.ml" 125 4880 4881 "xenstored.ml" 125 4880 4889
+type(
+  string
+)
+"xenstored.ml" 116 4566 4567 "xenstored.ml" 125 4880 4889
+type(
+  string
+)
+"xenstored.ml" 90 2940 2941 "xenstored.ml" 125 4880 4889
+type(
+  string
+)
+"xenstored.ml" 89 2902 2903 "xenstored.ml" 125 4880 4889
+type(
+  string
+)
+"xenstored.ml" 131 4943 4947 "xenstored.ml" 131 4943 4965
+type(
+  string
+)
+ident(
+  def dump_format_header "xenstored.ml" 133 4994 4994 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 131 4943 4968 "xenstored.ml" 131 4943 4992
+type(
+  string
+)
+"xenstored.ml" 133 4994 4998 "xenstored.ml" 133 4994 5012
+type(
+  in_channel ->
+  (int -> nativeint -> int -> unit) ->
+  (int -> string -> string -> unit) ->
+  (string list -> Perms.Node.t -> string -> unit) -> unit
+)
+ident(
+  def from_channel_f "xenstored.ml" 169 6085 6085 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 133 4994 5013 "xenstored.ml" 133 4994 5017
+type(
+  in_channel
+)
+ident(
+  def chan "xenstored.ml" 133 4994 5018 "xenstored.ml" 167 6080 6083
+)
+"xenstored.ml" 133 4994 5018 "xenstored.ml" 133 4994 5026
+type(
+  int -> nativeint -> int -> unit
+)
+ident(
+  def domain_f "xenstored.ml" 133 4994 5027 "xenstored.ml" 167 6080 6083
+)
+"xenstored.ml" 133 4994 5027 "xenstored.ml" 133 4994 5034
+type(
+  int -> string -> string -> unit
+)
+ident(
+  def watch_f "xenstored.ml" 133 4994 5035 "xenstored.ml" 167 6080 6083
+)
+"xenstored.ml" 133 4994 5035 "xenstored.ml" 133 4994 5042
+type(
+  string list -> Perms.Node.t -> string -> unit
+)
+ident(
+  def store_f "xenstored.ml" 134 5045 5046 "xenstored.ml" 167 6080 6083
+)
+"xenstored.ml" 134 5045 5050 "xenstored.ml" 134 5045 5058
+type(
+  string -> string
+)
+"xenstored.ml" 134 5045 5059 "xenstored.ml" 134 5045 5060
+type(
+  string
+)
+ident(
+  def s "xenstored.ml" 134 5045 5063 "xenstored.ml" 134 5045 5079
+)
+"xenstored.ml" 134 5045 5063 "xenstored.ml" 134 5045 5077
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.unhexify
+)
+"xenstored.ml" 134 5045 5078 "xenstored.ml" 134 5045 5079
+type(
+  string
+)
+ident(
+  int_ref s "xenstored.ml" 134 5045 5059 "xenstored.ml" 134 5045 5060
+)
+"xenstored.ml" 134 5045 5063 "xenstored.ml" 134 5045 5079
+type(
+  string
+)
+"xenstored.ml" 135 5083 5088 "xenstored.ml" 135 5083 5095
+type(
+  string -> string list
+)
+"xenstored.ml" 135 5083 5096 "xenstored.ml" 135 5083 5097
+type(
+  string
+)
+ident(
+  def s "xenstored.ml" 135 5083 5100 "xenstored.ml" 135 5083 5139
+)
+"xenstored.ml" 135 5083 5100 "xenstored.ml" 135 5083 5120
+type(
+  string -> string list
+)
+ident(
+  ext_ref Store.Path.of_string
+)
+"xenstored.ml" 135 5083 5122 "xenstored.ml" 135 5083 5136
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.unhexify
+)
+"xenstored.ml" 135 5083 5137 "xenstored.ml" 135 5083 5138
+type(
+  string
+)
+ident(
+  int_ref s "xenstored.ml" 135 5083 5096 "xenstored.ml" 135 5083 5097
+)
+"xenstored.ml" 135 5083 5121 "xenstored.ml" 135 5083 5139
+type(
+  string
+)
+"xenstored.ml" 135 5083 5100 "xenstored.ml" 135 5083 5139
+type(
+  string list
+)
+"xenstored.ml" 136 5143 5148 "xenstored.ml" 136 5143 5154
+type(
+  string
+)
+"xenstored.ml" 136 5143 5157 "xenstored.ml" 136 5143 5167
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"xenstored.ml" 136 5143 5168 "xenstored.ml" 136 5143 5172
+type(
+  in_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 133 4994 5013 "xenstored.ml" 133 4994 5017
+)
+"xenstored.ml" 136 5143 5157 "xenstored.ml" 136 5143 5172
+type(
+  string
+)
+"xenstored.ml" 137 5176 5180 "xenstored.ml" 137 5176 5186
+type(
+  string
+)
+ident(
+  int_ref header "xenstored.ml" 136 5143 5148 "xenstored.ml" 136 5143 5154
+)
+"xenstored.ml" 137 5176 5187 "xenstored.ml" 137 5176 5189
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.<>
+)
+"xenstored.ml" 137 5176 5190 "xenstored.ml" 137 5176 5208
+type(
+  string
+)
+ident(
+  int_ref dump_format_header "xenstored.ml" 131 4943 4947 "xenstored.ml" 131 4943 4965
+)
+"xenstored.ml" 137 5176 5180 "xenstored.ml" 137 5176 5208
+type(
+  bool
+)
+"xenstored.ml" 138 5214 5216 "xenstored.ml" 138 5214 5221
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"xenstored.ml" 138 5214 5234 "xenstored.ml" 138 5214 5242
+type(
+  string
+)
+"xenstored.ml" 138 5214 5222 "xenstored.ml" 138 5214 5243
+type(
+  exn
+)
+"xenstored.ml" 138 5214 5216 "xenstored.ml" 138 5214 5243
+type(
+  unit
+)
+"xenstored.ml" 137 5176 5177 "xenstored.ml" 138 5214 5243
+type(
+  unit
+)
+"xenstored.ml" 139 5245 5250 "xenstored.ml" 139 5245 5254
+type(
+  bool ref
+)
+"xenstored.ml" 139 5245 5257 "xenstored.ml" 139 5245 5260
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 139 5245 5261 "xenstored.ml" 139 5245 5266
+type(
+  bool
+)
+"xenstored.ml" 139 5245 5257 "xenstored.ml" 139 5245 5266
+type(
+  bool ref
+)
+"xenstored.ml" 140 5270 5277 "xenstored.ml" 140 5270 5280
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 140 5270 5281 "xenstored.ml" 140 5270 5282
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 140 5270 5282 "xenstored.ml" 140 5270 5286
+type(
+  bool ref
+)
+ident(
+  int_ref quit "xenstored.ml" 139 5245 5250 "xenstored.ml" 139 5245 5254
+)
+"xenstored.ml" 140 5270 5281 "xenstored.ml" 140 5270 5286
+type(
+  bool
+)
+"xenstored.ml" 140 5270 5277 "xenstored.ml" 140 5270 5286
+type(
+  bool
+)
+"xenstored.ml" 143 5297 5304 "xenstored.ml" 143 5297 5308
+type(
+  string
+)
+ident(
+  def line "xenstored.ml" 144 5330 5333 "xenstored.ml" 163 6028 6034
+)
+"xenstored.ml" 143 5297 5311 "xenstored.ml" 143 5297 5321
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"xenstored.ml" 143 5297 5322 "xenstored.ml" 143 5297 5326
+type(
+  in_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 133 4994 5013 "xenstored.ml" 133 4994 5017
+)
+"xenstored.ml" 143 5297 5311 "xenstored.ml" 143 5297 5326
+type(
+  string
+)
+"xenstored.ml" 144 5330 5337 "xenstored.ml" 144 5330 5338
+type(
+  string list
+)
+ident(
+  def l "xenstored.ml" 145 5366 5369 "xenstored.ml" 163 6028 6034
+)
+"xenstored.ml" 144 5330 5341 "xenstored.ml" 144 5330 5353
+type(
+  ?limit:int -> char -> string -> string list
+)
+ident(
+  ext_ref Stdext.String.split
+)
+"xenstored.ml" 144 5330 5354 "xenstored.ml" 144 5330 5357
+type(
+  char
+)
+"xenstored.ml" 144 5330 5358 "xenstored.ml" 144 5330 5362
+type(
+  string
+)
+ident(
+  int_ref line "xenstored.ml" 143 5297 5304 "xenstored.ml" 143 5297 5308
+)
+"xenstored.ml" 144 5330 5341 "xenstored.ml" 144 5330 5362
+type(
+  string list
+)
+"xenstored.ml" 146 5373 5383 "xenstored.ml" 146 5373 5384
+type(
+  string list
+)
+ident(
+  int_ref l "xenstored.ml" 144 5330 5337 "xenstored.ml" 144 5330 5338
+)
+"xenstored.ml" 147 5390 5396 "xenstored.ml" 147 5390 5401
+type(
+  string
+)
+"xenstored.ml" 147 5390 5405 "xenstored.ml" 147 5390 5410
+type(
+  string
+)
+ident(
+  def domid "xenstored.ml" 148 5434 5439 "xenstored.ml" 150 5510 5544
+)
+"xenstored.ml" 147 5390 5414 "xenstored.ml" 147 5390 5417
+type(
+  string
+)
+ident(
+  def mfn "xenstored.ml" 148 5434 5439 "xenstored.ml" 150 5510 5544
+)
+"xenstored.ml" 147 5390 5421 "xenstored.ml" 147 5390 5425
+type(
+  string
+)
+ident(
+  def port "xenstored.ml" 148 5434 5439 "xenstored.ml" 150 5510 5544
+)
+"xenstored.ml" 147 5390 5429 "xenstored.ml" 147 5390 5431
+type(
+  string list
+)
+"xenstored.ml" 147 5390 5421 "xenstored.ml" 147 5390 5431
+type(
+  string list
+)
+"xenstored.ml" 147 5390 5414 "xenstored.ml" 147 5390 5431
+type(
+  string list
+)
+"xenstored.ml" 147 5390 5405 "xenstored.ml" 147 5390 5431
+type(
+  string list
+)
+"xenstored.ml" 147 5390 5396 "xenstored.ml" 147 5390 5431
+type(
+  string list
+)
+"xenstored.ml" 148 5434 5439 "xenstored.ml" 148 5434 5447
+type(
+  int -> nativeint -> int -> unit
+)
+ident(
+  int_ref domain_f "xenstored.ml" 133 4994 5018 "xenstored.ml" 133 4994 5026
+)
+"xenstored.ml" 148 5434 5449 "xenstored.ml" 148 5434 5462
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"xenstored.ml" 148 5434 5463 "xenstored.ml" 148 5434 5468
+type(
+  string
+)
+ident(
+  int_ref domid "xenstored.ml" 147 5390 5405 "xenstored.ml" 147 5390 5410
+)
+"xenstored.ml" 148 5434 5448 "xenstored.ml" 148 5434 5469
+type(
+  int
+)
+"xenstored.ml" 149 5470 5485 "xenstored.ml" 149 5470 5504
+type(
+  string -> nativeint
+)
+ident(
+  ext_ref Nativeint.of_string
+)
+"xenstored.ml" 149 5470 5505 "xenstored.ml" 149 5470 5508
+type(
+  string
+)
+ident(
+  int_ref mfn "xenstored.ml" 147 5390 5414 "xenstored.ml" 147 5390 5417
+)
+"xenstored.ml" 149 5470 5484 "xenstored.ml" 149 5470 5509
+type(
+  nativeint
+)
+"xenstored.ml" 150 5510 5525 "xenstored.ml" 150 5510 5538
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"xenstored.ml" 150 5510 5539 "xenstored.ml" 150 5510 5543
+type(
+  string
+)
+ident(
+  int_ref port "xenstored.ml" 147 5390 5421 "xenstored.ml" 147 5390 5425
+)
+"xenstored.ml" 150 5510 5524 "xenstored.ml" 150 5510 5544
+type(
+  int
+)
+"xenstored.ml" 148 5434 5439 "xenstored.ml" 150 5510 5544
+type(
+  unit
+)
+"xenstored.ml" 151 5545 5551 "xenstored.ml" 151 5545 5558
+type(
+  string
+)
+"xenstored.ml" 151 5545 5562 "xenstored.ml" 151 5545 5567
+type(
+  string
+)
+ident(
+  def domid "xenstored.ml" 152 5594 5599 "xenstored.ml" 153 5629 5674
+)
+"xenstored.ml" 151 5545 5571 "xenstored.ml" 151 5545 5575
+type(
+  string
+)
+ident(
+  def path "xenstored.ml" 152 5594 5599 "xenstored.ml" 153 5629 5674
+)
+"xenstored.ml" 151 5545 5579 "xenstored.ml" 151 5545 5584
+type(
+  string
+)
+ident(
+  def token "xenstored.ml" 152 5594 5599 "xenstored.ml" 153 5629 5674
+)
+"xenstored.ml" 151 5545 5588 "xenstored.ml" 151 5545 5590
+type(
+  string list
+)
+"xenstored.ml" 151 5545 5579 "xenstored.ml" 151 5545 5590
+type(
+  string list
+)
+"xenstored.ml" 151 5545 5571 "xenstored.ml" 151 5545 5590
+type(
+  string list
+)
+"xenstored.ml" 151 5545 5562 "xenstored.ml" 151 5545 5590
+type(
+  string list
+)
+"xenstored.ml" 151 5545 5551 "xenstored.ml" 151 5545 5590
+type(
+  string list
+)
+"xenstored.ml" 152 5594 5599 "xenstored.ml" 152 5594 5606
+type(
+  int -> string -> string -> unit
+)
+ident(
+  int_ref watch_f "xenstored.ml" 133 4994 5027 "xenstored.ml" 133 4994 5034
+)
+"xenstored.ml" 152 5594 5608 "xenstored.ml" 152 5594 5621
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"xenstored.ml" 152 5594 5622 "xenstored.ml" 152 5594 5627
+type(
+  string
+)
+ident(
+  int_ref domid "xenstored.ml" 151 5545 5562 "xenstored.ml" 151 5545 5567
+)
+"xenstored.ml" 152 5594 5607 "xenstored.ml" 152 5594 5628
+type(
+  int
+)
+"xenstored.ml" 153 5629 5643 "xenstored.ml" 153 5629 5651
+type(
+  string -> string
+)
+ident(
+  int_ref unhexify "xenstored.ml" 134 5045 5050 "xenstored.ml" 134 5045 5058
+)
+"xenstored.ml" 153 5629 5652 "xenstored.ml" 153 5629 5656
+type(
+  string
+)
+ident(
+  int_ref path "xenstored.ml" 151 5545 5571 "xenstored.ml" 151 5545 5575
+)
+"xenstored.ml" 153 5629 5642 "xenstored.ml" 153 5629 5657
+type(
+  string
+)
+"xenstored.ml" 153 5629 5659 "xenstored.ml" 153 5629 5667
+type(
+  string -> string
+)
+ident(
+  int_ref unhexify "xenstored.ml" 134 5045 5050 "xenstored.ml" 134 5045 5058
+)
+"xenstored.ml" 153 5629 5668 "xenstored.ml" 153 5629 5673
+type(
+  string
+)
+ident(
+  int_ref token "xenstored.ml" 151 5545 5579 "xenstored.ml" 151 5545 5584
+)
+"xenstored.ml" 153 5629 5658 "xenstored.ml" 153 5629 5674
+type(
+  string
+)
+"xenstored.ml" 152 5594 5599 "xenstored.ml" 153 5629 5674
+type(
+  unit
+)
+"xenstored.ml" 154 5675 5681 "xenstored.ml" 154 5675 5688
+type(
+  string
+)
+"xenstored.ml" 154 5675 5692 "xenstored.ml" 154 5675 5696
+type(
+  string
+)
+ident(
+  def path "xenstored.ml" 155 5724 5729 "xenstored.ml" 157 5814 5843
+)
+"xenstored.ml" 154 5675 5700 "xenstored.ml" 154 5675 5705
+type(
+  string
+)
+ident(
+  def perms "xenstored.ml" 155 5724 5729 "xenstored.ml" 157 5814 5843
+)
+"xenstored.ml" 154 5675 5709 "xenstored.ml" 154 5675 5714
+type(
+  string
+)
+ident(
+  def value "xenstored.ml" 155 5724 5729 "xenstored.ml" 157 5814 5843
+)
+"xenstored.ml" 154 5675 5718 "xenstored.ml" 154 5675 5720
+type(
+  string list
+)
+"xenstored.ml" 154 5675 5709 "xenstored.ml" 154 5675 5720
+type(
+  string list
+)
+"xenstored.ml" 154 5675 5700 "xenstored.ml" 154 5675 5720
+type(
+  string list
+)
+"xenstored.ml" 154 5675 5692 "xenstored.ml" 154 5675 5720
+type(
+  string list
+)
+"xenstored.ml" 154 5675 5681 "xenstored.ml" 154 5675 5720
+type(
+  string list
+)
+"xenstored.ml" 155 5724 5729 "xenstored.ml" 155 5724 5736
+type(
+  string list -> Perms.Node.t -> string -> unit
+)
+ident(
+  int_ref store_f "xenstored.ml" 133 4994 5035 "xenstored.ml" 133 4994 5042
+)
+"xenstored.ml" 155 5724 5738 "xenstored.ml" 155 5724 5745
+type(
+  string -> string list
+)
+ident(
+  int_ref getpath "xenstored.ml" 135 5083 5088 "xenstored.ml" 135 5083 5095
+)
+"xenstored.ml" 155 5724 5746 "xenstored.ml" 155 5724 5750
+type(
+  string
+)
+ident(
+  int_ref path "xenstored.ml" 154 5675 5692 "xenstored.ml" 154 5675 5696
+)
+"xenstored.ml" 155 5724 5737 "xenstored.ml" 155 5724 5751
+type(
+  string list
+)
+"xenstored.ml" 156 5752 5766 "xenstored.ml" 156 5752 5786
+type(
+  string -> Perms.Node.t
+)
+ident(
+  ext_ref Perms.Node.of_string
+)
+"xenstored.ml" 156 5752 5788 "xenstored.ml" 156 5752 5796
+type(
+  string -> string
+)
+ident(
+  int_ref unhexify "xenstored.ml" 134 5045 5050 "xenstored.ml" 134 5045 5058
+)
+"xenstored.ml" 156 5752 5797 "xenstored.ml" 156 5752 5802
+type(
+  string
+)
+ident(
+  int_ref perms "xenstored.ml" 154 5675 5700 "xenstored.ml" 154 5675 5705
+)
+"xenstored.ml" 156 5752 5788 "xenstored.ml" 156 5752 5802
+type(
+  string
+)
+"xenstored.ml" 156 5752 5803 "xenstored.ml" 156 5752 5804
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"xenstored.ml" 156 5752 5805 "xenstored.ml" 156 5752 5811
+type(
+  string
+)
+"xenstored.ml" 156 5752 5787 "xenstored.ml" 156 5752 5812
+type(
+  string
+)
+"xenstored.ml" 156 5752 5765 "xenstored.ml" 156 5752 5813
+type(
+  Perms.Node.t
+)
+"xenstored.ml" 157 5814 5828 "xenstored.ml" 157 5814 5836
+type(
+  string -> string
+)
+ident(
+  int_ref unhexify "xenstored.ml" 134 5045 5050 "xenstored.ml" 134 5045 5058
+)
+"xenstored.ml" 157 5814 5837 "xenstored.ml" 157 5814 5842
+type(
+  string
+)
+ident(
+  int_ref value "xenstored.ml" 154 5675 5709 "xenstored.ml" 154 5675 5714
+)
+"xenstored.ml" 157 5814 5827 "xenstored.ml" 157 5814 5843
+type(
+  string
+)
+"xenstored.ml" 155 5724 5729 "xenstored.ml" 157 5814 5843
+type(
+  unit
+)
+"xenstored.ml" 158 5844 5850 "xenstored.ml" 158 5844 5851
+type(
+  string list
+)
+"xenstored.ml" 159 5855 5860 "xenstored.ml" 159 5855 5864
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 159 5855 5865 "xenstored.ml" 159 5855 5903
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 159 5855 5904 "xenstored.ml" 159 5855 5908
+type(
+  string
+)
+ident(
+  int_ref line "xenstored.ml" 143 5297 5304 "xenstored.ml" 143 5297 5308
+)
+"xenstored.ml" 159 5855 5860 "xenstored.ml" 159 5855 5908
+type(
+  unit
+)
+"xenstored.ml" 146 5373 5377 "xenstored.ml" 159 5855 5908
+type(
+  unit
+)
+"xenstored.ml" 160 5909 5917 "xenstored.ml" 160 5909 5920
+type(
+  exn
+)
+ident(
+  def exn "xenstored.ml" 161 5924 5928 "xenstored.ml" 163 6028 6034
+)
+"xenstored.ml" 161 5924 5928 "xenstored.ml" 161 5924 5932
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 161 5924 5933 "xenstored.ml" 161 5924 5987
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 162 5988 5997 "xenstored.ml" 162 5988 6001
+type(
+  string
+)
+ident(
+  int_ref line "xenstored.ml" 143 5297 5304 "xenstored.ml" 143 5297 5308
+)
+"xenstored.ml" 162 5988 6003 "xenstored.ml" 162 5988 6021
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"xenstored.ml" 162 5988 6022 "xenstored.ml" 162 5988 6025
+type(
+  exn
+)
+ident(
+  int_ref exn "xenstored.ml" 160 5909 5917 "xenstored.ml" 160 5909 5920
+)
+"xenstored.ml" 162 5988 6002 "xenstored.ml" 162 5988 6026
+type(
+  string
+)
+"xenstored.ml" 161 5924 5928 "xenstored.ml" 162 5988 6026
+type(
+  unit
+)
+"xenstored.ml" 163 6028 6032 "xenstored.ml" 163 6028 6034
+type(
+  unit
+)
+"xenstored.ml" 161 5924 5928 "xenstored.ml" 163 6028 6034
+type(
+  unit
+)
+"xenstored.ml" 145 5366 5369 "xenstored.ml" 163 6028 6034
+type(
+  unit
+)
+"xenstored.ml" 144 5330 5333 "xenstored.ml" 163 6028 6034
+type(
+  unit
+)
+"xenstored.ml" 143 5297 5300 "xenstored.ml" 163 6028 6034
+type(
+  unit
+)
+"xenstored.ml" 164 6035 6042 "xenstored.ml" 164 6035 6053
+type(
+  exn
+)
+"xenstored.ml" 165 6057 6060 "xenstored.ml" 165 6057 6064
+type(
+  bool ref
+)
+ident(
+  int_ref quit "xenstored.ml" 139 5245 5250 "xenstored.ml" 139 5245 5254
+)
+"xenstored.ml" 165 6057 6065 "xenstored.ml" 165 6057 6067
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 165 6057 6068 "xenstored.ml" 165 6057 6072
+type(
+  bool
+)
+"xenstored.ml" 165 6057 6060 "xenstored.ml" 165 6057 6072
+type(
+  unit
+)
+"xenstored.ml" 142 5291 5293 "xenstored.ml" 165 6057 6072
+type(
+  unit
+)
+"xenstored.ml" 140 5270 5271 "xenstored.ml" 166 6073 6078
+type(
+  unit
+)
+"xenstored.ml" 167 6080 6081 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 140 5270 5271 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 139 5245 5246 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 137 5176 5177 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 136 5143 5144 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 135 5083 5084 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 134 5045 5046 "xenstored.ml" 167 6080 6083
+type(
+  unit
+)
+"xenstored.ml" 169 6085 6089 "xenstored.ml" 169 6085 6101
+type(
+  Store.t -> Connections.t -> Domains.domains -> in_channel -> unit
+)
+ident(
+  def from_channel "xenstored.ml" 194 6833 6833 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 169 6085 6102 "xenstored.ml" 169 6085 6107
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 169 6085 6108 "xenstored.ml" 192 6784 6831
+)
+"xenstored.ml" 169 6085 6108 "xenstored.ml" 169 6085 6112
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 169 6085 6113 "xenstored.ml" 192 6784 6831
+)
+"xenstored.ml" 169 6085 6113 "xenstored.ml" 169 6085 6117
+type(
+  Domains.domains
+)
+ident(
+  def doms "xenstored.ml" 169 6085 6118 "xenstored.ml" 192 6784 6831
+)
+"xenstored.ml" 169 6085 6118 "xenstored.ml" 169 6085 6122
+type(
+  in_channel
+)
+ident(
+  def chan "xenstored.ml" 171 6185 6186 "xenstored.ml" 192 6784 6831
+)
+"xenstored.ml" 171 6185 6190 "xenstored.ml" 171 6185 6192
+type(
+  Store.ops
+)
+"xenstored.ml" 171 6185 6195 "xenstored.ml" 171 6185 6208
+type(
+  Store.t -> Perms.Connection.t -> Store.ops
+)
+ident(
+  ext_ref Store.get_ops
+)
+"xenstored.ml" 171 6185 6209 "xenstored.ml" 171 6185 6214
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 169 6085 6102 "xenstored.ml" 169 6085 6107
+)
+"xenstored.ml" 171 6185 6215 "xenstored.ml" 171 6185 6243
+type(
+  Perms.Connection.t
+)
+ident(
+  ext_ref Perms.Connection.full_rights
+)
+"xenstored.ml" 171 6185 6195 "xenstored.ml" 171 6185 6243
+type(
+  Store.ops
+)
+"xenstored.ml" 172 6247 6252 "xenstored.ml" 172 6247 6254
+type(
+  Xenctrl.handle
+)
+"xenstored.ml" 172 6247 6257 "xenstored.ml" 172 6247 6279
+type(
+  unit -> Xenctrl.handle
+)
+ident(
+  ext_ref Xenctrl.interface_open
+)
+"xenstored.ml" 172 6247 6280 "xenstored.ml" 172 6247 6282
+type(
+  unit
+)
+"xenstored.ml" 172 6247 6257 "xenstored.ml" 172 6247 6282
+type(
+  Xenctrl.handle
+)
+"xenstored.ml" 174 6287 6292 "xenstored.ml" 174 6287 6300
+type(
+  Xenctrl.domid -> nativeint -> int -> unit
+)
+"xenstored.ml" 174 6287 6301 "xenstored.ml" 174 6287 6306
+type(
+  Xenctrl.domid
+)
+ident(
+  def domid "xenstored.ml" 174 6287 6307 "xenstored.ml" 181 6439 6474
+)
+"xenstored.ml" 174 6287 6307 "xenstored.ml" 174 6287 6310
+type(
+  nativeint
+)
+ident(
+  def mfn "xenstored.ml" 174 6287 6311 "xenstored.ml" 181 6439 6474
+)
+"xenstored.ml" 174 6287 6311 "xenstored.ml" 174 6287 6315
+type(
+  int
+)
+ident(
+  def port "xenstored.ml" 175 6318 6320 "xenstored.ml" 181 6439 6474
+)
+"xenstored.ml" 175 6318 6324 "xenstored.ml" 175 6318 6328
+type(
+  Domain.t
+)
+"xenstored.ml" 176 6331 6337 "xenstored.ml" 176 6331 6342
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref domid "xenstored.ml" 174 6287 6301 "xenstored.ml" 174 6287 6306
+)
+"xenstored.ml" 176 6331 6343 "xenstored.ml" 176 6331 6344
+type(
+  Xenctrl.domid -> Xenctrl.domid -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 176 6331 6345 "xenstored.ml" 176 6331 6346
+type(
+  Xenctrl.domid
+)
+"xenstored.ml" 176 6331 6337 "xenstored.ml" 176 6331 6346
+type(
+  bool
+)
+"xenstored.ml" 177 6352 6356 "xenstored.ml" 177 6352 6370
+type(
+  Xenctrl.handle ->
+  Domains.domains -> Xenctrl.domid -> nativeint -> int -> Domain.t
+)
+ident(
+  ext_ref Domains.create
+)
+"xenstored.ml" 177 6352 6371 "xenstored.ml" 177 6352 6373
+type(
+  Xenctrl.handle
+)
+ident(
+  int_ref xc "xenstored.ml" 172 6247 6252 "xenstored.ml" 172 6247 6254
+)
+"xenstored.ml" 177 6352 6374 "xenstored.ml" 177 6352 6378
+type(
+  Domains.domains
+)
+ident(
+  int_ref doms "xenstored.ml" 169 6085 6113 "xenstored.ml" 169 6085 6117
+)
+"xenstored.ml" 177 6352 6379 "xenstored.ml" 177 6352 6384
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref domid "xenstored.ml" 174 6287 6301 "xenstored.ml" 174 6287 6306
+)
+"xenstored.ml" 177 6352 6385 "xenstored.ml" 177 6352 6388
+type(
+  nativeint
+)
+ident(
+  int_ref mfn "xenstored.ml" 174 6287 6307 "xenstored.ml" 174 6287 6310
+)
+"xenstored.ml" 177 6352 6389 "xenstored.ml" 177 6352 6393
+type(
+  int
+)
+ident(
+  int_ref port "xenstored.ml" 174 6287 6311 "xenstored.ml" 174 6287 6315
+)
+"xenstored.ml" 177 6352 6356 "xenstored.ml" 177 6352 6393
+type(
+  Domain.t
+)
+"xenstored.ml" 179 6402 6406 "xenstored.ml" 179 6402 6421
+type(
+  bool -> Domains.domains -> Domain.t
+)
+ident(
+  ext_ref Domains.create0
+)
+"xenstored.ml" 179 6402 6422 "xenstored.ml" 179 6402 6427
+type(
+  bool
+)
+"xenstored.ml" 179 6402 6428 "xenstored.ml" 179 6402 6432
+type(
+  Domains.domains
+)
+ident(
+  int_ref doms "xenstored.ml" 169 6085 6113 "xenstored.ml" 169 6085 6117
+)
+"xenstored.ml" 179 6402 6406 "xenstored.ml" 179 6402 6432
+type(
+  Domain.t
+)
+"xenstored.ml" 176 6331 6334 "xenstored.ml" 179 6402 6432
+type(
+  Domain.t
+)
+"xenstored.ml" 181 6439 6441 "xenstored.ml" 181 6439 6463
+type(
+  Connections.t -> Domain.t -> unit
+)
+ident(
+  ext_ref Connections.add_domain
+)
+"xenstored.ml" 181 6439 6464 "xenstored.ml" 181 6439 6468
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 169 6085 6108 "xenstored.ml" 169 6085 6112
+)
+"xenstored.ml" 181 6439 6469 "xenstored.ml" 181 6439 6473
+type(
+  Domain.t
+)
+ident(
+  int_ref ndom "xenstored.ml" 175 6318 6324 "xenstored.ml" 175 6318 6328
+)
+"xenstored.ml" 181 6439 6441 "xenstored.ml" 181 6439 6474
+type(
+  unit
+)
+"xenstored.ml" 175 6318 6320 "xenstored.ml" 181 6439 6474
+type(
+  unit
+)
+"xenstored.ml" 183 6480 6485 "xenstored.ml" 183 6480 6492
+type(
+  int -> string -> string -> unit
+)
+"xenstored.ml" 183 6480 6493 "xenstored.ml" 183 6480 6498
+type(
+  int
+)
+ident(
+  def domid "xenstored.ml" 183 6480 6499 "xenstored.ml" 185 6563 6615
+)
+"xenstored.ml" 183 6480 6499 "xenstored.ml" 183 6480 6503
+type(
+  string
+)
+ident(
+  def path "xenstored.ml" 183 6480 6504 "xenstored.ml" 185 6563 6615
+)
+"xenstored.ml" 183 6480 6504 "xenstored.ml" 183 6480 6509
+type(
+  string
+)
+ident(
+  def token "xenstored.ml" 184 6513 6515 "xenstored.ml" 185 6563 6615
+)
+"xenstored.ml" 184 6513 6519 "xenstored.ml" 184 6513 6522
+type(
+  Connection.t
+)
+"xenstored.ml" 184 6513 6525 "xenstored.ml" 184 6513 6548
+type(
+  Connections.t -> int -> Connection.t
+)
+ident(
+  ext_ref Connections.find_domain
+)
+"xenstored.ml" 184 6513 6549 "xenstored.ml" 184 6513 6553
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 169 6085 6108 "xenstored.ml" 169 6085 6112
+)
+"xenstored.ml" 184 6513 6554 "xenstored.ml" 184 6513 6559
+type(
+  int
+)
+ident(
+  int_ref domid "xenstored.ml" 183 6480 6493 "xenstored.ml" 183 6480 6498
+)
+"xenstored.ml" 184 6513 6525 "xenstored.ml" 184 6513 6559
+type(
+  Connection.t
+)
+"xenstored.ml" 185 6563 6565 "xenstored.ml" 185 6563 6571
+type(
+  Connection.watch -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"xenstored.ml" 185 6563 6573 "xenstored.ml" 185 6563 6594
+type(
+  Connections.t -> Connection.t -> string -> string -> Connection.watch
+)
+ident(
+  ext_ref Connections.add_watch
+)
+"xenstored.ml" 185 6563 6595 "xenstored.ml" 185 6563 6599
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 169 6085 6108 "xenstored.ml" 169 6085 6112
+)
+"xenstored.ml" 185 6563 6600 "xenstored.ml" 185 6563 6603
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 184 6513 6519 "xenstored.ml" 184 6513 6522
+)
+"xenstored.ml" 185 6563 6604 "xenstored.ml" 185 6563 6608
+type(
+  string
+)
+ident(
+  int_ref path "xenstored.ml" 183 6480 6499 "xenstored.ml" 183 6480 6503
+)
+"xenstored.ml" 185 6563 6609 "xenstored.ml" 185 6563 6614
+type(
+  string
+)
+ident(
+  int_ref token "xenstored.ml" 183 6480 6504 "xenstored.ml" 183 6480 6509
+)
+"xenstored.ml" 185 6563 6572 "xenstored.ml" 185 6563 6615
+type(
+  Connection.watch
+)
+"xenstored.ml" 185 6563 6565 "xenstored.ml" 185 6563 6615
+type(
+  unit
+)
+"xenstored.ml" 184 6513 6515 "xenstored.ml" 185 6563 6615
+type(
+  unit
+)
+"xenstored.ml" 187 6621 6626 "xenstored.ml" 187 6621 6633
+type(
+  Store.Path.t -> Perms.Node.t -> string -> unit
+)
+"xenstored.ml" 187 6621 6634 "xenstored.ml" 187 6621 6638
+type(
+  Store.Path.t
+)
+ident(
+  def path "xenstored.ml" 187 6621 6639 "xenstored.ml" 189 6682 6712
+)
+"xenstored.ml" 187 6621 6639 "xenstored.ml" 187 6621 6644
+type(
+  Perms.Node.t
+)
+ident(
+  def perms "xenstored.ml" 187 6621 6645 "xenstored.ml" 189 6682 6712
+)
+"xenstored.ml" 187 6621 6645 "xenstored.ml" 187 6621 6650
+type(
+  string
+)
+ident(
+  def value "xenstored.ml" 188 6653 6655 "xenstored.ml" 189 6682 6712
+)
+"xenstored.ml" 188 6653 6655 "xenstored.ml" 188 6653 6657
+type(
+  Store.ops
+)
+ident(
+  int_ref op "xenstored.ml" 171 6185 6190 "xenstored.ml" 171 6185 6192
+)
+"xenstored.ml" 188 6653 6655 "xenstored.ml" 188 6653 6669
+type(
+  Store.Path.t -> string -> unit
+)
+"xenstored.ml" 188 6653 6670 "xenstored.ml" 188 6653 6674
+type(
+  Store.Path.t
+)
+ident(
+  int_ref path "xenstored.ml" 187 6621 6634 "xenstored.ml" 187 6621 6638
+)
+"xenstored.ml" 188 6653 6675 "xenstored.ml" 188 6653 6680
+type(
+  string
+)
+ident(
+  int_ref value "xenstored.ml" 187 6621 6645 "xenstored.ml" 187 6621 6650
+)
+"xenstored.ml" 188 6653 6655 "xenstored.ml" 188 6653 6680
+type(
+  unit
+)
+"xenstored.ml" 189 6682 6684 "xenstored.ml" 189 6682 6686
+type(
+  Store.ops
+)
+ident(
+  int_ref op "xenstored.ml" 171 6185 6190 "xenstored.ml" 171 6185 6192
+)
+"xenstored.ml" 189 6682 6684 "xenstored.ml" 189 6682 6701
+type(
+  Store.Path.t -> Perms.Node.t -> unit
+)
+"xenstored.ml" 189 6682 6702 "xenstored.ml" 189 6682 6706
+type(
+  Store.Path.t
+)
+ident(
+  int_ref path "xenstored.ml" 187 6621 6634 "xenstored.ml" 187 6621 6638
+)
+"xenstored.ml" 189 6682 6707 "xenstored.ml" 189 6682 6712
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref perms "xenstored.ml" 187 6621 6639 "xenstored.ml" 187 6621 6644
+)
+"xenstored.ml" 189 6682 6684 "xenstored.ml" 189 6682 6712
+type(
+  unit
+)
+"xenstored.ml" 188 6653 6655 "xenstored.ml" 189 6682 6712
+type(
+  unit
+)
+"xenstored.ml" 191 6718 6719 "xenstored.ml" 191 6718 6726
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Stdext.finally
+)
+"xenstored.ml" 191 6718 6732 "xenstored.ml" 191 6718 6734
+type(
+  unit
+)
+"xenstored.ml" 191 6718 6738 "xenstored.ml" 191 6718 6752
+type(
+  in_channel ->
+  (Xenctrl.domid -> nativeint -> int -> unit) ->
+  (int -> string -> string -> unit) ->
+  (Store.Path.t -> Perms.Node.t -> string -> unit) -> unit
+)
+ident(
+  int_ref from_channel_f "xenstored.ml" 133 4994 4998 "xenstored.ml" 133 4994 5012
+)
+"xenstored.ml" 191 6718 6753 "xenstored.ml" 191 6718 6757
+type(
+  in_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 169 6085 6118 "xenstored.ml" 169 6085 6122
+)
+"xenstored.ml" 191 6718 6758 "xenstored.ml" 191 6718 6766
+type(
+  Xenctrl.domid -> nativeint -> int -> unit
+)
+ident(
+  int_ref domain_f "xenstored.ml" 174 6287 6292 "xenstored.ml" 174 6287 6300
+)
+"xenstored.ml" 191 6718 6767 "xenstored.ml" 191 6718 6774
+type(
+  int -> string -> string -> unit
+)
+ident(
+  int_ref watch_f "xenstored.ml" 183 6480 6485 "xenstored.ml" 183 6480 6492
+)
+"xenstored.ml" 191 6718 6775 "xenstored.ml" 191 6718 6782
+type(
+  Store.Path.t -> Perms.Node.t -> string -> unit
+)
+ident(
+  int_ref store_f "xenstored.ml" 187 6621 6626 "xenstored.ml" 187 6621 6633
+)
+"xenstored.ml" 191 6718 6738 "xenstored.ml" 191 6718 6782
+type(
+  unit
+)
+"xenstored.ml" 191 6718 6727 "xenstored.ml" 191 6718 6783
+type(
+  unit -> unit
+)
+"xenstored.ml" 192 6784 6798 "xenstored.ml" 192 6784 6800
+type(
+  unit
+)
+"xenstored.ml" 192 6784 6804 "xenstored.ml" 192 6784 6827
+type(
+  Xenctrl.handle -> unit
+)
+ident(
+  ext_ref Xenctrl.interface_close
+)
+"xenstored.ml" 192 6784 6828 "xenstored.ml" 192 6784 6830
+type(
+  Xenctrl.handle
+)
+ident(
+  int_ref xc "xenstored.ml" 172 6247 6252 "xenstored.ml" 172 6247 6254
+)
+"xenstored.ml" 192 6784 6804 "xenstored.ml" 192 6784 6830
+type(
+  unit
+)
+"xenstored.ml" 192 6784 6793 "xenstored.ml" 192 6784 6831
+type(
+  unit -> unit
+)
+"xenstored.ml" 191 6718 6719 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 187 6621 6622 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 183 6480 6481 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 174 6287 6288 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 172 6247 6248 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 171 6185 6186 "xenstored.ml" 192 6784 6831
+type(
+  unit
+)
+"xenstored.ml" 194 6833 6837 "xenstored.ml" 194 6833 6846
+type(
+  Store.t -> Domains.domains -> Connections.t -> string -> unit
+)
+ident(
+  def from_file "xenstored.ml" 199 6998 6998 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 194 6833 6847 "xenstored.ml" 194 6833 6852
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 194 6833 6853 "xenstored.ml" 197 6959 6996
+)
+"xenstored.ml" 194 6833 6853 "xenstored.ml" 194 6833 6857
+type(
+  Domains.domains
+)
+ident(
+  def cons "xenstored.ml" 194 6833 6858 "xenstored.ml" 197 6959 6996
+)
+"xenstored.ml" 194 6833 6858 "xenstored.ml" 194 6833 6862
+type(
+  Connections.t
+)
+ident(
+  def doms "xenstored.ml" 194 6833 6863 "xenstored.ml" 197 6959 6996
+)
+"xenstored.ml" 194 6833 6863 "xenstored.ml" 194 6833 6867
+type(
+  string
+)
+ident(
+  def file "xenstored.ml" 195 6870 6871 "xenstored.ml" 197 6959 6996
+)
+"xenstored.ml" 195 6870 6875 "xenstored.ml" 195 6870 6882
+type(
+  in_channel
+)
+"xenstored.ml" 195 6870 6885 "xenstored.ml" 195 6870 6892
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"xenstored.ml" 195 6870 6893 "xenstored.ml" 195 6870 6897
+type(
+  string
+)
+ident(
+  int_ref file "xenstored.ml" 194 6833 6863 "xenstored.ml" 194 6833 6867
+)
+"xenstored.ml" 195 6870 6885 "xenstored.ml" 195 6870 6897
+type(
+  in_channel
+)
+"xenstored.ml" 196 6901 6902 "xenstored.ml" 196 6901 6909
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Stdext.finally
+)
+"xenstored.ml" 196 6901 6915 "xenstored.ml" 196 6901 6917
+type(
+  unit
+)
+"xenstored.ml" 196 6901 6921 "xenstored.ml" 196 6901 6933
+type(
+  Store.t -> Connections.t -> Domains.domains -> in_channel -> unit
+)
+ident(
+  int_ref from_channel "xenstored.ml" 169 6085 6089 "xenstored.ml" 169 6085 6101
+)
+"xenstored.ml" 196 6901 6934 "xenstored.ml" 196 6901 6939
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 194 6833 6847 "xenstored.ml" 194 6833 6852
+)
+"xenstored.ml" 196 6901 6940 "xenstored.ml" 196 6901 6944
+type(
+  Connections.t
+)
+ident(
+  int_ref doms "xenstored.ml" 194 6833 6858 "xenstored.ml" 194 6833 6862
+)
+"xenstored.ml" 196 6901 6945 "xenstored.ml" 196 6901 6949
+type(
+  Domains.domains
+)
+ident(
+  int_ref cons "xenstored.ml" 194 6833 6853 "xenstored.ml" 194 6833 6857
+)
+"xenstored.ml" 196 6901 6950 "xenstored.ml" 196 6901 6957
+type(
+  in_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 195 6870 6875 "xenstored.ml" 195 6870 6882
+)
+"xenstored.ml" 196 6901 6921 "xenstored.ml" 196 6901 6957
+type(
+  unit
+)
+"xenstored.ml" 196 6901 6910 "xenstored.ml" 196 6901 6958
+type(
+  unit -> unit
+)
+"xenstored.ml" 197 6959 6973 "xenstored.ml" 197 6959 6975
+type(
+  unit
+)
+"xenstored.ml" 197 6959 6979 "xenstored.ml" 197 6959 6987
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"xenstored.ml" 197 6959 6988 "xenstored.ml" 197 6959 6995
+type(
+  in_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 195 6870 6875 "xenstored.ml" 195 6870 6882
+)
+"xenstored.ml" 197 6959 6979 "xenstored.ml" 197 6959 6995
+type(
+  unit
+)
+"xenstored.ml" 197 6959 6968 "xenstored.ml" 197 6959 6996
+type(
+  unit -> unit
+)
+"xenstored.ml" 196 6901 6902 "xenstored.ml" 197 6959 6996
+type(
+  unit
+)
+"xenstored.ml" 195 6870 6871 "xenstored.ml" 197 6959 6996
+type(
+  unit
+)
+"xenstored.ml" 199 6998 7002 "xenstored.ml" 199 6998 7012
+type(
+  Store.t -> Connections.t -> out_channel -> unit
+)
+ident(
+  def to_channel "xenstored.ml" 218 7587 7587 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 199 6998 7013 "xenstored.ml" 199 6998 7018
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 199 6998 7019 "xenstored.ml" 215 7581 7584
+)
+"xenstored.ml" 199 6998 7019 "xenstored.ml" 199 6998 7023
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 199 6998 7024 "xenstored.ml" 215 7581 7584
+)
+"xenstored.ml" 199 6998 7024 "xenstored.ml" 199 6998 7028
+type(
+  out_channel
+)
+ident(
+  def chan "xenstored.ml" 200 7031 7032 "xenstored.ml" 215 7581 7584
+)
+"xenstored.ml" 200 7031 7036 "xenstored.ml" 200 7031 7042
+type(
+  string -> string
+)
+"xenstored.ml" 200 7031 7043 "xenstored.ml" 200 7031 7044
+type(
+  string
+)
+ident(
+  def s "xenstored.ml" 200 7031 7047 "xenstored.ml" 200 7031 7061
+)
+"xenstored.ml" 200 7031 7047 "xenstored.ml" 200 7031 7059
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.hexify
+)
+"xenstored.ml" 200 7031 7060 "xenstored.ml" 200 7031 7061
+type(
+  string
+)
+ident(
+  int_ref s "xenstored.ml" 200 7031 7043 "xenstored.ml" 200 7031 7044
+)
+"xenstored.ml" 200 7031 7047 "xenstored.ml" 200 7031 7061
+type(
+  string
+)
+"xenstored.ml" 202 7066 7067 "xenstored.ml" 202 7066 7074
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"xenstored.ml" 202 7066 7075 "xenstored.ml" 202 7066 7079
+type(
+  out_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 199 6998 7024 "xenstored.ml" 199 6998 7028
+)
+"xenstored.ml" 202 7066 7080 "xenstored.ml" 202 7066 7086
+type(
+  (string -> unit, out_channel, unit) format
+)
+"xenstored.ml" 202 7066 7087 "xenstored.ml" 202 7066 7105
+type(
+  string
+)
+ident(
+  int_ref dump_format_header "xenstored.ml" 131 4943 4947 "xenstored.ml" 131 4943 4965
+)
+"xenstored.ml" 202 7066 7067 "xenstored.ml" 202 7066 7105
+type(
+  unit
+)
+"xenstored.ml" 205 7187 7188 "xenstored.ml" 205 7187 7212
+type(
+  Connections.t -> (Connection.t -> unit) -> unit
+)
+ident(
+  ext_ref Connections.iter_domains
+)
+"xenstored.ml" 205 7187 7213 "xenstored.ml" 205 7187 7217
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 199 6998 7019 "xenstored.ml" 199 6998 7023
+)
+"xenstored.ml" 205 7187 7223 "xenstored.ml" 205 7187 7226
+type(
+  Connection.t
+)
+ident(
+  def con "xenstored.ml" 205 7187 7230 "xenstored.ml" 205 7187 7254
+)
+"xenstored.ml" 205 7187 7230 "xenstored.ml" 205 7187 7245
+type(
+  Connection.t -> out_channel -> unit
+)
+ident(
+  ext_ref Connection.dump
+)
+"xenstored.ml" 205 7187 7246 "xenstored.ml" 205 7187 7249
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 205 7187 7223 "xenstored.ml" 205 7187 7226
+)
+"xenstored.ml" 205 7187 7250 "xenstored.ml" 205 7187 7254
+type(
+  out_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 199 6998 7024 "xenstored.ml" 199 6998 7028
+)
+"xenstored.ml" 205 7187 7230 "xenstored.ml" 205 7187 7254
+type(
+  unit
+)
+"xenstored.ml" 205 7187 7218 "xenstored.ml" 205 7187 7255
+type(
+  Connection.t -> unit
+)
+"xenstored.ml" 205 7187 7188 "xenstored.ml" 205 7187 7255
+type(
+  unit
+)
+"xenstored.ml" 208 7280 7281 "xenstored.ml" 208 7280 7295
+type(
+  Store.t -> (string list -> Store.Node.t -> unit) -> unit
+)
+ident(
+  ext_ref Store.dump_fct
+)
+"xenstored.ml" 208 7280 7296 "xenstored.ml" 208 7280 7301
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 199 6998 7013 "xenstored.ml" 199 6998 7018
+)
+"xenstored.ml" 208 7280 7307 "xenstored.ml" 208 7280 7311
+type(
+  string list
+)
+ident(
+  def path "xenstored.ml" 208 7280 7312 "xenstored.ml" 212 7480 7563
+)
+"xenstored.ml" 208 7280 7312 "xenstored.ml" 208 7280 7316
+type(
+  Store.Node.t
+)
+ident(
+  def node "xenstored.ml" 209 7320 7322 "xenstored.ml" 212 7480 7563
+)
+"xenstored.ml" 209 7320 7326 "xenstored.ml" 209 7320 7330
+type(
+  string
+)
+"xenstored.ml" 209 7320 7332 "xenstored.ml" 209 7320 7337
+type(
+  Perms.Node.t
+)
+"xenstored.ml" 209 7320 7339 "xenstored.ml" 209 7320 7344
+type(
+  string
+)
+"xenstored.ml" 209 7320 7326 "xenstored.ml" 209 7320 7344
+type(
+  string * Perms.Node.t * string
+)
+"xenstored.ml" 209 7320 7347 "xenstored.ml" 209 7320 7364
+type(
+  Store.Node.t -> string * Perms.Node.t * string
+)
+ident(
+  ext_ref Store.Node.unpack
+)
+"xenstored.ml" 209 7320 7365 "xenstored.ml" 209 7320 7369
+type(
+  Store.Node.t
+)
+ident(
+  int_ref node "xenstored.ml" 208 7280 7312 "xenstored.ml" 208 7280 7316
+)
+"xenstored.ml" 209 7320 7347 "xenstored.ml" 209 7320 7369
+type(
+  string * Perms.Node.t * string
+)
+"xenstored.ml" 210 7373 7379 "xenstored.ml" 210 7373 7387
+type(
+  string
+)
+"xenstored.ml" 210 7373 7391 "xenstored.ml" 210 7373 7411
+type(
+  string list -> string
+)
+ident(
+  ext_ref Store.Path.to_string
+)
+"xenstored.ml" 210 7373 7412 "xenstored.ml" 210 7373 7416
+type(
+  string list
+)
+ident(
+  int_ref path "xenstored.ml" 208 7280 7307 "xenstored.ml" 208 7280 7311
+)
+"xenstored.ml" 210 7373 7390 "xenstored.ml" 210 7373 7417
+type(
+  string
+)
+"xenstored.ml" 210 7373 7418 "xenstored.ml" 210 7373 7419
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"xenstored.ml" 210 7373 7420 "xenstored.ml" 210 7373 7423
+type(
+  string
+)
+"xenstored.ml" 210 7373 7424 "xenstored.ml" 210 7373 7425
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"xenstored.ml" 210 7373 7426 "xenstored.ml" 210 7373 7430
+type(
+  string
+)
+ident(
+  int_ref name "xenstored.ml" 209 7320 7326 "xenstored.ml" 209 7320 7330
+)
+"xenstored.ml" 210 7373 7420 "xenstored.ml" 210 7373 7430
+type(
+  string
+)
+"xenstored.ml" 210 7373 7390 "xenstored.ml" 210 7373 7430
+type(
+  string
+)
+"xenstored.ml" 211 7434 7440 "xenstored.ml" 211 7434 7447
+type(
+  string
+)
+"xenstored.ml" 211 7434 7450 "xenstored.ml" 211 7434 7470
+type(
+  Perms.Node.t -> string
+)
+ident(
+  ext_ref Perms.Node.to_string
+)
+"xenstored.ml" 211 7434 7471 "xenstored.ml" 211 7434 7476
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref perms "xenstored.ml" 209 7320 7332 "xenstored.ml" 209 7320 7337
+)
+"xenstored.ml" 211 7434 7450 "xenstored.ml" 211 7434 7476
+type(
+  string
+)
+"xenstored.ml" 212 7480 7482 "xenstored.ml" 212 7480 7489
+type(
+  out_channel ->
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"xenstored.ml" 212 7480 7490 "xenstored.ml" 212 7480 7494
+type(
+  out_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 199 6998 7024 "xenstored.ml" 199 6998 7028
+)
+"xenstored.ml" 212 7480 7495 "xenstored.ml" 212 7480 7513
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"xenstored.ml" 212 7480 7515 "xenstored.ml" 212 7480 7521
+type(
+  string -> string
+)
+ident(
+  int_ref hexify "xenstored.ml" 200 7031 7036 "xenstored.ml" 200 7031 7042
+)
+"xenstored.ml" 212 7480 7522 "xenstored.ml" 212 7480 7530
+type(
+  string
+)
+ident(
+  int_ref fullpath "xenstored.ml" 210 7373 7379 "xenstored.ml" 210 7373 7387
+)
+"xenstored.ml" 212 7480 7514 "xenstored.ml" 212 7480 7531
+type(
+  string
+)
+"xenstored.ml" 212 7480 7533 "xenstored.ml" 212 7480 7539
+type(
+  string -> string
+)
+ident(
+  int_ref hexify "xenstored.ml" 200 7031 7036 "xenstored.ml" 200 7031 7042
+)
+"xenstored.ml" 212 7480 7540 "xenstored.ml" 212 7480 7547
+type(
+  string
+)
+ident(
+  int_ref permstr "xenstored.ml" 211 7434 7440 "xenstored.ml" 211 7434 7447
+)
+"xenstored.ml" 212 7480 7532 "xenstored.ml" 212 7480 7548
+type(
+  string
+)
+"xenstored.ml" 212 7480 7550 "xenstored.ml" 212 7480 7556
+type(
+  string -> string
+)
+ident(
+  int_ref hexify "xenstored.ml" 200 7031 7036 "xenstored.ml" 200 7031 7042
+)
+"xenstored.ml" 212 7480 7557 "xenstored.ml" 212 7480 7562
+type(
+  string
+)
+ident(
+  int_ref value "xenstored.ml" 209 7320 7339 "xenstored.ml" 209 7320 7344
+)
+"xenstored.ml" 212 7480 7549 "xenstored.ml" 212 7480 7563
+type(
+  string
+)
+"xenstored.ml" 212 7480 7482 "xenstored.ml" 212 7480 7563
+type(
+  unit
+)
+"xenstored.ml" 211 7434 7436 "xenstored.ml" 212 7480 7563
+type(
+  unit
+)
+"xenstored.ml" 210 7373 7375 "xenstored.ml" 212 7480 7563
+type(
+  unit
+)
+"xenstored.ml" 209 7320 7322 "xenstored.ml" 212 7480 7563
+type(
+  unit
+)
+"xenstored.ml" 208 7280 7302 "xenstored.ml" 213 7564 7566
+type(
+  string list -> Store.Node.t -> unit
+)
+"xenstored.ml" 208 7280 7281 "xenstored.ml" 213 7564 7566
+type(
+  unit
+)
+"xenstored.ml" 214 7568 7569 "xenstored.ml" 214 7568 7574
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"xenstored.ml" 214 7568 7575 "xenstored.ml" 214 7568 7579
+type(
+  out_channel
+)
+ident(
+  int_ref chan "xenstored.ml" 199 6998 7024 "xenstored.ml" 199 6998 7028
+)
+"xenstored.ml" 214 7568 7569 "xenstored.ml" 214 7568 7579
+type(
+  unit
+)
+"xenstored.ml" 215 7581 7582 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 214 7568 7569 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 208 7280 7281 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 205 7187 7188 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 202 7066 7067 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 200 7031 7032 "xenstored.ml" 215 7581 7584
+type(
+  unit
+)
+"xenstored.ml" 218 7587 7591 "xenstored.ml" 218 7587 7598
+type(
+  Store.t -> Connections.t -> string -> unit
+)
+ident(
+  def to_file "xenstored.ml" 221 7751 7789 "xenstored.ml" 222 7790 7793
+)
+"xenstored.ml" 218 7587 7599 "xenstored.ml" 218 7587 7604
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 218 7587 7605 "xenstored.ml" 221 7751 7789
+)
+"xenstored.ml" 218 7587 7605 "xenstored.ml" 218 7587 7609
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 218 7587 7610 "xenstored.ml" 221 7751 7789
+)
+"xenstored.ml" 218 7587 7610 "xenstored.ml" 218 7587 7614
+type(
+  string
+)
+ident(
+  def file "xenstored.ml" 219 7617 7618 "xenstored.ml" 221 7751 7789
+)
+"xenstored.ml" 219 7617 7622 "xenstored.ml" 219 7617 7629
+type(
+  out_channel
+)
+"xenstored.ml" 219 7617 7632 "xenstored.ml" 219 7617 7644
+type(
+  open_flag list -> int -> string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_gen
+)
+"xenstored.ml" 219 7617 7647 "xenstored.ml" 219 7617 7658
+type(
+  open_flag
+)
+"xenstored.ml" 219 7617 7660 "xenstored.ml" 219 7617 7670
+type(
+  open_flag
+)
+"xenstored.ml" 219 7617 7672 "xenstored.ml" 219 7617 7682
+type(
+  open_flag
+)
+"xenstored.ml" 219 7617 7645 "xenstored.ml" 219 7617 7685
+type(
+  open_flag list
+)
+"xenstored.ml" 219 7617 7686 "xenstored.ml" 219 7617 7691
+type(
+  int
+)
+"xenstored.ml" 219 7617 7692 "xenstored.ml" 219 7617 7696
+type(
+  string
+)
+ident(
+  int_ref file "xenstored.ml" 218 7587 7610 "xenstored.ml" 218 7587 7614
+)
+"xenstored.ml" 219 7617 7632 "xenstored.ml" 219 7617 7696
+type(
+  out_channel
+)
+"xenstored.ml" 220 7700 7701 "xenstored.ml" 220 7700 7708
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Stdext.finally
+)
+"xenstored.ml" 220 7700 7714 "xenstored.ml" 220 7700 7716
+type(
+  unit
+)
+"xenstored.ml" 220 7700 7720 "xenstored.ml" 220 7700 7730
+type(
+  Store.t -> Connections.t -> out_channel -> unit
+)
+ident(
+  int_ref to_channel "xenstored.ml" 199 6998 7002 "xenstored.ml" 199 6998 7012
+)
+"xenstored.ml" 220 7700 7731 "xenstored.ml" 220 7700 7736
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 218 7587 7599 "xenstored.ml" 218 7587 7604
+)
+"xenstored.ml" 220 7700 7737 "xenstored.ml" 220 7700 7741
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 218 7587 7605 "xenstored.ml" 218 7587 7609
+)
+"xenstored.ml" 220 7700 7742 "xenstored.ml" 220 7700 7749
+type(
+  out_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 219 7617 7622 "xenstored.ml" 219 7617 7629
+)
+"xenstored.ml" 220 7700 7720 "xenstored.ml" 220 7700 7749
+type(
+  unit
+)
+"xenstored.ml" 220 7700 7709 "xenstored.ml" 220 7700 7750
+type(
+  unit -> unit
+)
+"xenstored.ml" 221 7751 7765 "xenstored.ml" 221 7751 7767
+type(
+  unit
+)
+"xenstored.ml" 221 7751 7771 "xenstored.ml" 221 7751 7780
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"xenstored.ml" 221 7751 7781 "xenstored.ml" 221 7751 7788
+type(
+  out_channel
+)
+ident(
+  int_ref channel "xenstored.ml" 219 7617 7622 "xenstored.ml" 219 7617 7629
+)
+"xenstored.ml" 221 7751 7771 "xenstored.ml" 221 7751 7788
+type(
+  unit
+)
+"xenstored.ml" 221 7751 7760 "xenstored.ml" 221 7751 7789
+type(
+  unit -> unit
+)
+"xenstored.ml" 220 7700 7701 "xenstored.ml" 221 7751 7789
+type(
+  unit
+)
+"xenstored.ml" 219 7617 7618 "xenstored.ml" 221 7751 7789
+type(
+  unit
+)
+"xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+type(
+  Parse_arg.config
+)
+ident(
+  def cf "xenstored.ml" 226 7824 7825 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 225 7803 7813 "xenstored.ml" 225 7803 7820
+type(
+  Parse_arg.config
+)
+ident(
+  ext_ref Parse_arg.do_argv
+)
+"xenstored.ml" 226 7824 7829 "xenstored.ml" 226 7824 7836
+type(
+  string
+)
+ident(
+  def pidfile "xenstored.ml" 233 7955 7956 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 227 7839 7844 "xenstored.ml" 227 7839 7859
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"xenstored.ml" 227 7839 7861 "xenstored.ml" 227 7839 7876
+type(
+  Parse_arg.config -> string
+)
+ident(
+  int_ref config_filename "xenstored.ml" 79 2656 2660 "xenstored.ml" 79 2656 2675
+)
+"xenstored.ml" 227 7839 7877 "xenstored.ml" 227 7839 7879
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 227 7839 7860 "xenstored.ml" 227 7839 7880
+type(
+  string
+)
+"xenstored.ml" 227 7839 7844 "xenstored.ml" 227 7839 7880
+type(
+  bool
+)
+"xenstored.ml" 228 7886 7889 "xenstored.ml" 228 7886 7901
+type(
+  string -> string
+)
+ident(
+  int_ref parse_config "xenstored.ml" 88 2874 2878 "xenstored.ml" 88 2874 2890
+)
+"xenstored.ml" 228 7886 7903 "xenstored.ml" 228 7886 7918
+type(
+  Parse_arg.config -> string
+)
+ident(
+  int_ref config_filename "xenstored.ml" 79 2656 2660 "xenstored.ml" 79 2656 2675
+)
+"xenstored.ml" 228 7886 7919 "xenstored.ml" 228 7886 7921
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 228 7886 7902 "xenstored.ml" 228 7886 7922
+type(
+  string
+)
+"xenstored.ml" 228 7886 7889 "xenstored.ml" 228 7886 7922
+type(
+  string
+)
+"xenstored.ml" 230 7930 7933 "xenstored.ml" 230 7930 7948
+type(
+  string
+)
+ident(
+  int_ref default_pidfile "xenstored.ml" 84 2793 2797 "xenstored.ml" 84 2793 2812
+)
+"xenstored.ml" 227 7839 7841 "xenstored.ml" 230 7930 7948
+type(
+  string
+)
+"xenstored.ml" 234 7962 7964 "xenstored.ml" 234 7962 7981
+type(
+  string -> Unix.file_perm -> unit
+)
+ident(
+  ext_ref Stdext.Unixext.mkdir_rec
+)
+"xenstored.ml" 234 7962 7983 "xenstored.ml" 234 7962 7999
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.dirname
+)
+"xenstored.ml" 234 7962 8000 "xenstored.ml" 234 7962 8007
+type(
+  string
+)
+ident(
+  int_ref pidfile "xenstored.ml" 226 7824 7829 "xenstored.ml" 226 7824 7836
+)
+"xenstored.ml" 234 7962 7982 "xenstored.ml" 234 7962 8008
+type(
+  string
+)
+"xenstored.ml" 234 7962 8009 "xenstored.ml" 234 7962 8014
+type(
+  Unix.file_perm
+)
+"xenstored.ml" 234 7962 7964 "xenstored.ml" 234 7962 8014
+type(
+  unit
+)
+"xenstored.ml" 235 8015 8021 "xenstored.ml" 235 8015 8022
+type(
+  exn
+)
+"xenstored.ml" 236 8026 8028 "xenstored.ml" 236 8026 8030
+type(
+  unit
+)
+"xenstored.ml" 233 7955 7956 "xenstored.ml" 237 8031 8033
+type(
+  unit
+)
+"xenstored.ml" 239 8036 8041 "xenstored.ml" 239 8036 8048
+type(
+  Unix.file_descr option
+)
+ident(
+  def rw_sock "xenstored.ml" 247 8284 8285 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 239 8036 8050 "xenstored.ml" 239 8036 8057
+type(
+  Unix.file_descr option
+)
+ident(
+  def ro_sock "xenstored.ml" 247 8284 8285 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 239 8036 8041 "xenstored.ml" 239 8036 8057
+type(
+  Unix.file_descr option * Unix.file_descr option
+)
+"xenstored.ml" 240 8060 8065 "xenstored.ml" 240 8060 8067
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 240 8060 8065 "xenstored.ml" 240 8060 8082
+type(
+  bool
+)
+"xenstored.ml" 241 8088 8091 "xenstored.ml" 241 8088 8095
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 241 8088 8097 "xenstored.ml" 241 8088 8101
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 241 8088 8091 "xenstored.ml" 241 8088 8101
+type(
+  Unix.file_descr option * Unix.file_descr option
+)
+"xenstored.ml" 243 8109 8118 "xenstored.ml" 243 8109 8140
+type(
+  (string -> Unix.file_descr) -> string -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.handle_unix_error
+)
+"xenstored.ml" 243 8109 8141 "xenstored.ml" 243 8109 8165
+type(
+  string -> Unix.file_descr
+)
+ident(
+  ext_ref Utils.create_unix_socket
+)
+"xenstored.ml" 243 8109 8166 "xenstored.ml" 243 8109 8189
+type(
+  string
+)
+ident(
+  ext_ref Define.xs_daemon_socket
+)
+"xenstored.ml" 243 8109 8117 "xenstored.ml" 243 8109 8190
+type(
+  Unix.file_descr
+)
+"xenstored.ml" 243 8109 8112 "xenstored.ml" 243 8109 8190
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 244 8192 8201 "xenstored.ml" 244 8192 8223
+type(
+  (string -> Unix.file_descr) -> string -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.handle_unix_error
+)
+"xenstored.ml" 244 8192 8224 "xenstored.ml" 244 8192 8248
+type(
+  string -> Unix.file_descr
+)
+ident(
+  ext_ref Utils.create_unix_socket
+)
+"xenstored.ml" 244 8192 8249 "xenstored.ml" 244 8192 8275
+type(
+  string
+)
+ident(
+  ext_ref Define.xs_daemon_socket_ro
+)
+"xenstored.ml" 244 8192 8200 "xenstored.ml" 244 8192 8276
+type(
+  Unix.file_descr
+)
+"xenstored.ml" 244 8192 8195 "xenstored.ml" 244 8192 8276
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 243 8109 8112 "xenstored.ml" 244 8192 8276
+type(
+  Unix.file_descr option * Unix.file_descr option
+)
+"xenstored.ml" 240 8060 8062 "xenstored.ml" 244 8192 8276
+type(
+  Unix.file_descr option * Unix.file_descr option
+)
+"xenstored.ml" 247 8284 8288 "xenstored.ml" 247 8284 8290
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 247 8284 8288 "xenstored.ml" 247 8284 8300
+type(
+  bool
+)
+"xenstored.ml" 248 8306 8308 "xenstored.ml" 248 8306 8325
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Stdext.Unixext.daemonize
+)
+"xenstored.ml" 248 8306 8326 "xenstored.ml" 248 8306 8328
+type(
+  unit
+)
+"xenstored.ml" 248 8306 8308 "xenstored.ml" 248 8306 8328
+type(
+  unit
+)
+"xenstored.ml" 250 8335 8337 "xenstored.ml" 250 8335 8343
+type(
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"xenstored.ml" 250 8335 8344 "xenstored.ml" 250 8335 8383
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"xenstored.ml" 251 8385 8388 "xenstored.ml" 251 8385 8410
+type(
+  int
+)
+ident(
+  ext_ref Define.xenstored_major
+)
+"xenstored.ml" 251 8385 8411 "xenstored.ml" 251 8385 8433
+type(
+  int
+)
+ident(
+  ext_ref Define.xenstored_minor
+)
+"xenstored.ml" 250 8335 8337 "xenstored.ml" 251 8385 8433
+type(
+  unit
+)
+"xenstored.ml" 247 8284 8285 "xenstored.ml" 251 8385 8433
+type(
+  unit
+)
+"xenstored.ml" 253 8436 8442 "xenstored.ml" 253 8436 8463
+type(
+  string -> unit
+)
+ident(
+  ext_ref Stdext.Unixext.pidfile_write
+)
+"xenstored.ml" 253 8436 8464 "xenstored.ml" 253 8436 8471
+type(
+  string
+)
+ident(
+  int_ref pidfile "xenstored.ml" 226 7824 7829 "xenstored.ml" 226 7824 7836
+)
+"xenstored.ml" 253 8436 8442 "xenstored.ml" 253 8436 8471
+type(
+  unit
+)
+"xenstored.ml" 253 8436 8477 "xenstored.ml" 253 8436 8478
+type(
+  exn
+)
+"xenstored.ml" 253 8436 8482 "xenstored.ml" 253 8436 8484
+type(
+  unit
+)
+"xenstored.ml" 253 8436 8437 "xenstored.ml" 253 8436 8485
+type(
+  unit
+)
+"xenstored.ml" 256 8532 8545 "xenstored.ml" 256 8532 8547
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 256 8532 8545 "xenstored.ml" 256 8532 8555
+type(
+  string option
+)
+"xenstored.ml" 257 8561 8569 "xenstored.ml" 257 8561 8576
+type(
+  string
+)
+ident(
+  def pidfile "xenstored.ml" 257 8561 8580 "xenstored.ml" 257 8561 8609
+)
+"xenstored.ml" 257 8561 8564 "xenstored.ml" 257 8561 8576
+type(
+  string option
+)
+"xenstored.ml" 257 8561 8580 "xenstored.ml" 257 8561 8601
+type(
+  string -> unit
+)
+ident(
+  ext_ref Stdext.Unixext.pidfile_write
+)
+"xenstored.ml" 257 8561 8602 "xenstored.ml" 257 8561 8609
+type(
+  string
+)
+ident(
+  int_ref pidfile "xenstored.ml" 257 8561 8569 "xenstored.ml" 257 8561 8576
+)
+"xenstored.ml" 257 8561 8580 "xenstored.ml" 257 8561 8609
+type(
+  unit
+)
+"xenstored.ml" 258 8610 8613 "xenstored.ml" 258 8610 8617
+type(
+  string option
+)
+"xenstored.ml" 258 8610 8629 "xenstored.ml" 258 8610 8631
+type(
+  unit
+)
+"xenstored.ml" 256 8532 8533 "xenstored.ml" 258 8610 8635
+type(
+  unit
+)
+"xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+type(
+  Store.t
+)
+ident(
+  def store "xenstored.ml" 261 8670 8671 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 260 8638 8651 "xenstored.ml" 260 8638 8663
+type(
+  unit -> Store.t
+)
+ident(
+  ext_ref Store.create
+)
+"xenstored.ml" 260 8638 8664 "xenstored.ml" 260 8638 8666
+type(
+  unit
+)
+"xenstored.ml" 260 8638 8651 "xenstored.ml" 260 8638 8666
+type(
+  Store.t
+)
+"xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+type(
+  Event.t
+)
+ident(
+  def eventchn "xenstored.ml" 262 8703 8704 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 261 8670 8686 "xenstored.ml" 261 8670 8696
+type(
+  unit -> Event.t
+)
+ident(
+  ext_ref Event.init
+)
+"xenstored.ml" 261 8670 8697 "xenstored.ml" 261 8670 8699
+type(
+  unit
+)
+"xenstored.ml" 261 8670 8686 "xenstored.ml" 261 8670 8699
+type(
+  Event.t
+)
+"xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+type(
+  Domains.domains
+)
+ident(
+  def domains "xenstored.ml" 263 8743 8744 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 262 8703 8718 "xenstored.ml" 262 8703 8730
+type(
+  Event.t -> Domains.domains
+)
+ident(
+  ext_ref Domains.init
+)
+"xenstored.ml" 262 8703 8731 "xenstored.ml" 262 8703 8739
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 262 8703 8718 "xenstored.ml" 262 8703 8739
+type(
+  Domains.domains
+)
+"xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+type(
+  Connections.t
+)
+ident(
+  def cons "xenstored.ml" 265 8781 8782 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 263 8743 8755 "xenstored.ml" 263 8743 8773
+type(
+  unit -> Connections.t
+)
+ident(
+  ext_ref Connections.create
+)
+"xenstored.ml" 263 8743 8774 "xenstored.ml" 263 8743 8776
+type(
+  unit
+)
+"xenstored.ml" 263 8743 8755 "xenstored.ml" 263 8743 8776
+type(
+  Connections.t
+)
+"xenstored.ml" 265 8781 8786 "xenstored.ml" 265 8781 8790
+type(
+  bool ref
+)
+ident(
+  def quit "xenstored.ml" 267 8807 8808 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 265 8781 8793 "xenstored.ml" 265 8781 8796
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 265 8781 8797 "xenstored.ml" 265 8781 8802
+type(
+  bool
+)
+"xenstored.ml" 265 8781 8793 "xenstored.ml" 265 8781 8802
+type(
+  bool ref
+)
+"xenstored.ml" 267 8807 8811 "xenstored.ml" 267 8807 8813
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 267 8807 8811 "xenstored.ml" 267 8807 8821
+type(
+  bool
+)
+"xenstored.ml" 268 8829 8831 "xenstored.ml" 268 8829 8843
+type(
+  Store.t -> Domains.domains -> Connections.t -> string -> unit
+)
+ident(
+  ext_ref DB.from_file
+)
+"xenstored.ml" 268 8829 8844 "xenstored.ml" 268 8829 8849
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 268 8829 8850 "xenstored.ml" 268 8829 8857
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 268 8829 8858 "xenstored.ml" 268 8829 8862
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 268 8829 8863 "xenstored.ml" 268 8829 8886
+type(
+  string
+)
+"xenstored.ml" 268 8829 8831 "xenstored.ml" 268 8829 8886
+type(
+  unit
+)
+"xenstored.ml" 269 8888 8890 "xenstored.ml" 269 8888 8913
+type(
+  Event.t -> unit
+)
+ident(
+  ext_ref Event.bind_dom_exc_virq
+)
+"xenstored.ml" 269 8888 8914 "xenstored.ml" 269 8888 8922
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 269 8888 8890 "xenstored.ml" 269 8888 8922
+type(
+  unit
+)
+"xenstored.ml" 267 8807 8827 "xenstored.ml" 270 8923 8925
+type(
+  unit
+)
+"xenstored.ml" 271 8933 8938 "xenstored.ml" 271 8933 8939
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 271 8933 8939 "xenstored.ml" 271 8933 8950
+type(
+  bool ref
+)
+ident(
+  ext_ref Disk.enable
+)
+"xenstored.ml" 271 8933 8938 "xenstored.ml" 271 8933 8950
+type(
+  bool
+)
+"xenstored.ml" 272 8958 8961 "xenstored.ml" 272 8958 8965
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 272 8958 8966 "xenstored.ml" 272 8958 8991
+type(
+  (unit, unit, string, unit) format4
+)
+"xenstored.ml" 272 8958 8961 "xenstored.ml" 272 8958 8991
+type(
+  unit
+)
+"xenstored.ml" 273 8993 8996 "xenstored.ml" 273 8993 9005
+type(
+  Store.t -> unit
+)
+ident(
+  ext_ref Disk.read
+)
+"xenstored.ml" 273 8993 9006 "xenstored.ml" 273 8993 9011
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 273 8993 8996 "xenstored.ml" 273 8993 9011
+type(
+  unit
+)
+"xenstored.ml" 271 8933 8956 "xenstored.ml" 274 9012 9015
+type(
+  unit
+)
+"xenstored.ml" 271 8933 8935 "xenstored.ml" 274 9012 9015
+type(
+  unit
+)
+"xenstored.ml" 276 9018 9024 "xenstored.ml" 276 9018 9033
+type(
+  string list
+)
+"xenstored.ml" 276 9018 9036 "xenstored.ml" 276 9018 9056
+type(
+  string -> string list
+)
+ident(
+  ext_ref Store.Path.of_string
+)
+"xenstored.ml" 276 9018 9057 "xenstored.ml" 276 9018 9065
+type(
+  string
+)
+"xenstored.ml" 276 9018 9036 "xenstored.ml" 276 9018 9065
+type(
+  string list
+)
+"xenstored.ml" 277 9069 9074 "xenstored.ml" 277 9069 9077
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 277 9069 9079 "xenstored.ml" 277 9069 9096
+type(
+  Store.t -> string list -> bool
+)
+ident(
+  ext_ref Store.path_exists
+)
+"xenstored.ml" 277 9069 9097 "xenstored.ml" 277 9069 9102
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 277 9069 9103 "xenstored.ml" 277 9069 9112
+type(
+  string list
+)
+ident(
+  int_ref localpath "xenstored.ml" 276 9018 9024 "xenstored.ml" 276 9018 9033
+)
+"xenstored.ml" 277 9069 9078 "xenstored.ml" 277 9069 9113
+type(
+  bool
+)
+"xenstored.ml" 277 9069 9074 "xenstored.ml" 277 9069 9113
+type(
+  bool
+)
+"xenstored.ml" 278 9119 9122 "xenstored.ml" 278 9119 9133
+type(
+  Store.t -> Perms.Connection.t -> string list -> unit
+)
+ident(
+  ext_ref Store.mkdir
+)
+"xenstored.ml" 278 9119 9134 "xenstored.ml" 278 9119 9139
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 278 9119 9141 "xenstored.ml" 278 9119 9164
+type(
+  ?perms:Perms.permty list -> Xenctrl.domid -> Perms.Connection.t
+)
+ident(
+  ext_ref Perms.Connection.create
+)
+"xenstored.ml" 278 9119 9165 "xenstored.ml" 278 9119 9166
+type(
+  Xenctrl.domid
+)
+"xenstored.ml" 278 9119 9140 "xenstored.ml" 278 9119 9167
+type(
+  Perms.Connection.t
+)
+"xenstored.ml" 278 9119 9168 "xenstored.ml" 278 9119 9177
+type(
+  string list
+)
+ident(
+  int_ref localpath "xenstored.ml" 276 9018 9024 "xenstored.ml" 276 9018 9033
+)
+"xenstored.ml" 278 9119 9122 "xenstored.ml" 278 9119 9177
+type(
+  unit
+)
+"xenstored.ml" 277 9069 9071 "xenstored.ml" 278 9119 9177
+type(
+  unit
+)
+"xenstored.ml" 280 9180 9185 "xenstored.ml" 280 9180 9187
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 280 9180 9185 "xenstored.ml" 280 9180 9199
+type(
+  bool
+)
+"xenstored.ml" 281 9207 9214 "xenstored.ml" 281 9207 9222
+type(
+  bool
+)
+"xenstored.ml" 281 9207 9225 "xenstored.ml" 281 9207 9240
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Xenctrl.is_fake
+)
+"xenstored.ml" 281 9207 9241 "xenstored.ml" 281 9207 9243
+type(
+  unit
+)
+"xenstored.ml" 281 9207 9225 "xenstored.ml" 281 9207 9243
+type(
+  bool
+)
+"xenstored.ml" 282 9247 9250 "xenstored.ml" 282 9247 9272
+type(
+  Connections.t -> Domain.t -> unit
+)
+ident(
+  ext_ref Connections.add_domain
+)
+"xenstored.ml" 282 9247 9273 "xenstored.ml" 282 9247 9277
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 282 9247 9279 "xenstored.ml" 282 9247 9294
+type(
+  bool -> Domains.domains -> Domain.t
+)
+ident(
+  ext_ref Domains.create0
+)
+"xenstored.ml" 282 9247 9295 "xenstored.ml" 282 9247 9303
+type(
+  bool
+)
+ident(
+  int_ref usingxiu "xenstored.ml" 281 9207 9214 "xenstored.ml" 281 9207 9222
+)
+"xenstored.ml" 282 9247 9304 "xenstored.ml" 282 9247 9311
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 282 9247 9278 "xenstored.ml" 282 9247 9312
+type(
+  Domain.t
+)
+"xenstored.ml" 282 9247 9250 "xenstored.ml" 282 9247 9312
+type(
+  unit
+)
+"xenstored.ml" 283 9314 9317 "xenstored.ml" 283 9314 9340
+type(
+  Event.t -> unit
+)
+ident(
+  ext_ref Event.bind_dom_exc_virq
+)
+"xenstored.ml" 283 9314 9341 "xenstored.ml" 283 9314 9349
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 283 9314 9317 "xenstored.ml" 283 9314 9349
+type(
+  unit
+)
+"xenstored.ml" 282 9247 9250 "xenstored.ml" 283 9314 9349
+type(
+  unit
+)
+"xenstored.ml" 280 9180 9205 "xenstored.ml" 284 9350 9353
+type(
+  unit
+)
+"xenstored.ml" 280 9180 9182 "xenstored.ml" 284 9350 9354
+type(
+  unit
+)
+"xenstored.ml" 277 9069 9071 "xenstored.ml" 284 9350 9354
+type(
+  unit
+)
+"xenstored.ml" 276 9018 9020 "xenstored.ml" 284 9350 9354
+type(
+  unit
+)
+"xenstored.ml" 270 8923 8931 "xenstored.ml" 285 9355 9357
+type(
+  unit
+)
+"xenstored.ml" 267 8807 8808 "xenstored.ml" 285 9355 9357
+type(
+  unit
+)
+"xenstored.ml" 287 9360 9361 "xenstored.ml" 287 9360 9376
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Select.use_poll
+)
+"xenstored.ml" 287 9360 9378 "xenstored.ml" 287 9360 9381
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 287 9360 9382 "xenstored.ml" 287 9360 9384
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 287 9360 9382 "xenstored.ml" 287 9360 9395
+type(
+  bool
+)
+"xenstored.ml" 287 9360 9377 "xenstored.ml" 287 9360 9396
+type(
+  bool
+)
+"xenstored.ml" 287 9360 9361 "xenstored.ml" 287 9360 9396
+type(
+  unit
+)
+"xenstored.ml" 289 9399 9400 "xenstored.ml" 289 9399 9414
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"xenstored.ml" 289 9399 9415 "xenstored.ml" 289 9399 9425
+type(
+  int
+)
+ident(
+  ext_ref Sys.sighup
+)
+"xenstored.ml" 289 9399 9445 "xenstored.ml" 289 9399 9459
+type(
+  int -> unit
+)
+ident(
+  int_ref sighup_handler "xenstored.ml" 75 2486 2490 "xenstored.ml" 75 2486 2504
+)
+"xenstored.ml" 289 9399 9426 "xenstored.ml" 289 9399 9460
+type(
+  Sys.signal_behavior
+)
+"xenstored.ml" 289 9399 9400 "xenstored.ml" 289 9399 9460
+type(
+  unit
+)
+"xenstored.ml" 290 9462 9463 "xenstored.ml" 290 9462 9477
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"xenstored.ml" 290 9462 9478 "xenstored.ml" 290 9462 9489
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigterm
+)
+"xenstored.ml" 290 9462 9514 "xenstored.ml" 290 9462 9515
+type(
+  int
+)
+ident(
+  def i "xenstored.ml" 290 9462 9519 "xenstored.ml" 290 9462 9531
+)
+"xenstored.ml" 290 9462 9519 "xenstored.ml" 290 9462 9523
+type(
+  bool ref
+)
+ident(
+  int_ref quit "xenstored.ml" 265 8781 8786 "xenstored.ml" 265 8781 8790
+)
+"xenstored.ml" 290 9462 9524 "xenstored.ml" 290 9462 9526
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 290 9462 9527 "xenstored.ml" 290 9462 9531
+type(
+  bool
+)
+"xenstored.ml" 290 9462 9519 "xenstored.ml" 290 9462 9531
+type(
+  unit
+)
+"xenstored.ml" 290 9462 9509 "xenstored.ml" 290 9462 9532
+type(
+  int -> unit
+)
+"xenstored.ml" 290 9462 9490 "xenstored.ml" 290 9462 9533
+type(
+  Sys.signal_behavior
+)
+"xenstored.ml" 290 9462 9463 "xenstored.ml" 290 9462 9533
+type(
+  unit
+)
+"xenstored.ml" 291 9535 9536 "xenstored.ml" 291 9535 9550
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"xenstored.ml" 291 9535 9551 "xenstored.ml" 291 9535 9562
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigusr1
+)
+"xenstored.ml" 291 9535 9587 "xenstored.ml" 291 9535 9588
+type(
+  int
+)
+ident(
+  def i "xenstored.ml" 291 9535 9592 "xenstored.ml" 291 9535 9613
+)
+"xenstored.ml" 291 9535 9592 "xenstored.ml" 291 9535 9607
+type(
+  Store.t -> unit
+)
+ident(
+  int_ref sigusr1_handler "xenstored.ml" 66 2218 2222 "xenstored.ml" 66 2218 2237
+)
+"xenstored.ml" 291 9535 9608 "xenstored.ml" 291 9535 9613
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 291 9535 9592 "xenstored.ml" 291 9535 9613
+type(
+  unit
+)
+"xenstored.ml" 291 9535 9582 "xenstored.ml" 291 9535 9614
+type(
+  int -> unit
+)
+"xenstored.ml" 291 9535 9563 "xenstored.ml" 291 9535 9615
+type(
+  Sys.signal_behavior
+)
+"xenstored.ml" 291 9535 9536 "xenstored.ml" 291 9535 9615
+type(
+  unit
+)
+"xenstored.ml" 292 9617 9618 "xenstored.ml" 292 9617 9632
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"xenstored.ml" 292 9617 9633 "xenstored.ml" 292 9617 9644
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigpipe
+)
+"xenstored.ml" 292 9617 9645 "xenstored.ml" 292 9617 9662
+type(
+  Sys.signal_behavior
+)
+"xenstored.ml" 292 9617 9618 "xenstored.ml" 292 9617 9662
+type(
+  unit
+)
+"xenstored.ml" 294 9665 9666 "xenstored.ml" 294 9665 9692
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Logging.init_xenstored_log
+)
+"xenstored.ml" 294 9665 9692 "xenstored.ml" 294 9665 9694
+type(
+  unit
+)
+"xenstored.ml" 294 9665 9666 "xenstored.ml" 294 9665 9694
+type(
+  unit
+)
+"xenstored.ml" 295 9696 9700 "xenstored.ml" 295 9696 9702
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 295 9696 9700 "xenstored.ml" 295 9696 9722
+type(
+  bool
+)
+"xenstored.ml" 296 9734 9740 "xenstored.ml" 296 9734 9751
+type(
+  unit -> unit
+)
+"xenstored.ml" 296 9734 9752 "xenstored.ml" 296 9734 9754
+type(
+  unit
+)
+"xenstored.ml" 296 9734 9757 "xenstored.ml" 296 9734 9767
+type(
+  Store.t -> Connections.t -> string -> unit
+)
+ident(
+  ext_ref DB.to_file
+)
+"xenstored.ml" 296 9734 9768 "xenstored.ml" 296 9734 9773
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 296 9734 9774 "xenstored.ml" 296 9734 9778
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 296 9734 9779 "xenstored.ml" 296 9734 9802
+type(
+  string
+)
+"xenstored.ml" 296 9734 9757 "xenstored.ml" 296 9734 9802
+type(
+  unit
+)
+"xenstored.ml" 297 9806 9808 "xenstored.ml" 297 9806 9831
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Logging.init_access_log
+)
+"xenstored.ml" 297 9806 9832 "xenstored.ml" 297 9806 9843
+type(
+  unit -> unit
+)
+ident(
+  int_ref post_rotate "xenstored.ml" 296 9734 9740 "xenstored.ml" 296 9734 9751
+)
+"xenstored.ml" 297 9806 9808 "xenstored.ml" 297 9806 9843
+type(
+  unit
+)
+"xenstored.ml" 295 9696 9728 "xenstored.ml" 298 9844 9848
+type(
+  unit
+)
+"xenstored.ml" 295 9696 9697 "xenstored.ml" 298 9844 9848
+type(
+  unit
+)
+"xenstored.ml" 300 9851 9856 "xenstored.ml" 300 9851 9864
+type(
+  Unix.file_descr list
+)
+ident(
+  def spec_fds "xenstored.ml" 306 10038 10039 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 301 9867 9876 "xenstored.ml" 301 9867 9883
+type(
+  Unix.file_descr option
+)
+ident(
+  int_ref rw_sock "xenstored.ml" 239 8036 8041 "xenstored.ml" 239 8036 8048
+)
+"xenstored.ml" 301 9867 9889 "xenstored.ml" 301 9867 9893
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 301 9867 9897 "xenstored.ml" 301 9867 9899
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 301 9867 9907 "xenstored.ml" 301 9867 9908
+type(
+  Unix.file_descr
+)
+ident(
+  def x "xenstored.ml" 301 9867 9912 "xenstored.ml" 301 9867 9917
+)
+"xenstored.ml" 301 9867 9902 "xenstored.ml" 301 9867 9908
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 301 9867 9914 "xenstored.ml" 301 9867 9915
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref x "xenstored.ml" 301 9867 9907 "xenstored.ml" 301 9867 9908
+)
+"xenstored.ml" 301 9867 9912 "xenstored.ml" 301 9867 9917
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 301 9867 9869 "xenstored.ml" 301 9867 9918
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 301 9867 9919 "xenstored.ml" 301 9867 9920
+type(
+  Unix.file_descr list -> Unix.file_descr list -> Unix.file_descr list
+)
+ident(
+  ext_ref Pervasives.@
+)
+"xenstored.ml" 302 9921 9930 "xenstored.ml" 302 9921 9937
+type(
+  Unix.file_descr option
+)
+ident(
+  int_ref ro_sock "xenstored.ml" 239 8036 8050 "xenstored.ml" 239 8036 8057
+)
+"xenstored.ml" 302 9921 9943 "xenstored.ml" 302 9921 9947
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 302 9921 9951 "xenstored.ml" 302 9921 9953
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 302 9921 9961 "xenstored.ml" 302 9921 9962
+type(
+  Unix.file_descr
+)
+ident(
+  def x "xenstored.ml" 302 9921 9966 "xenstored.ml" 302 9921 9971
+)
+"xenstored.ml" 302 9921 9956 "xenstored.ml" 302 9921 9962
+type(
+  Unix.file_descr option
+)
+"xenstored.ml" 302 9921 9968 "xenstored.ml" 302 9921 9969
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref x "xenstored.ml" 302 9921 9961 "xenstored.ml" 302 9921 9962
+)
+"xenstored.ml" 302 9921 9966 "xenstored.ml" 302 9921 9971
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 302 9921 9923 "xenstored.ml" 302 9921 9972
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 302 9921 9973 "xenstored.ml" 302 9921 9974
+type(
+  Unix.file_descr list -> Unix.file_descr list -> Unix.file_descr list
+)
+ident(
+  ext_ref Pervasives.@
+)
+"xenstored.ml" 303 9975 9981 "xenstored.ml" 303 9975 9983
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 303 9975 9981 "xenstored.ml" 303 9975 9995
+type(
+  bool
+)
+"xenstored.ml" 303 9975 10003 "xenstored.ml" 303 9975 10011
+type(
+  Event.t -> Unix.file_descr
+)
+ident(
+  ext_ref Event.fd
+)
+"xenstored.ml" 303 9975 10012 "xenstored.ml" 303 9975 10020
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 303 9975 10003 "xenstored.ml" 303 9975 10020
+type(
+  Unix.file_descr
+)
+"xenstored.ml" 303 9975 10001 "xenstored.ml" 303 9975 10022
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 303 9975 10028 "xenstored.ml" 303 9975 10030
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 303 9975 9977 "xenstored.ml" 303 9975 10031
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 302 9921 9923 "xenstored.ml" 303 9975 10031
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 301 9867 9869 "xenstored.ml" 303 9975 10031
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 306 10038 10043 "xenstored.ml" 306 10038 10045
+type(
+  Xenctrl.handle
+)
+ident(
+  def xc "xenstored.ml" 308 10078 10079 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 306 10038 10048 "xenstored.ml" 306 10038 10070
+type(
+  unit -> Xenctrl.handle
+)
+ident(
+  ext_ref Xenctrl.interface_open
+)
+"xenstored.ml" 306 10038 10071 "xenstored.ml" 306 10038 10073
+type(
+  unit
+)
+"xenstored.ml" 306 10038 10048 "xenstored.ml" 306 10038 10073
+type(
+  Xenctrl.handle
+)
+"xenstored.ml" 308 10078 10083 "xenstored.ml" 308 10078 10102
+type(
+  Unix.file_descr list -> unit
+)
+ident(
+  def process_special_fds "xenstored.ml" 337 11172 11173 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 308 10078 10103 "xenstored.ml" 308 10078 10107
+type(
+  Unix.file_descr list
+)
+ident(
+  def rset "xenstored.ml" 309 10110 10112 "xenstored.ml" 334 11112 11166
+)
+"xenstored.ml" 309 10110 10116 "xenstored.ml" 309 10110 10133
+type(
+  'a -> Unix.file_descr -> unit
+)
+"xenstored.ml" 309 10110 10134 "xenstored.ml" 309 10110 10143
+type(
+  'a
+)
+ident(
+  def can_write "xenstored.ml" 309 10110 10144 "xenstored.ml" 312 10230 10277
+)
+"xenstored.ml" 309 10110 10144 "xenstored.ml" 309 10110 10146
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "xenstored.ml" 310 10149 10152 "xenstored.ml" 312 10230 10277
+)
+"xenstored.ml" 310 10149 10157 "xenstored.ml" 310 10149 10160
+type(
+  Unix.file_descr
+)
+"xenstored.ml" 310 10149 10162 "xenstored.ml" 310 10149 10166
+type(
+  Unix.sockaddr
+)
+"xenstored.ml" 310 10149 10156 "xenstored.ml" 310 10149 10167
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"xenstored.ml" 310 10149 10170 "xenstored.ml" 310 10149 10181
+type(
+  Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+)
+ident(
+  ext_ref Unix.accept
+)
+"xenstored.ml" 310 10149 10182 "xenstored.ml" 310 10149 10184
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "xenstored.ml" 309 10110 10144 "xenstored.ml" 309 10110 10146
+)
+"xenstored.ml" 310 10149 10170 "xenstored.ml" 310 10149 10184
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"xenstored.ml" 311 10188 10191 "xenstored.ml" 311 10188 10196
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  int_ref debug "xenstored.ml" 23 824 828 "xenstored.ml" 23 824 833
+)
+"xenstored.ml" 311 10188 10197 "xenstored.ml" 311 10188 10228
+type(
+  (unit, unit, string, unit) format4
+)
+"xenstored.ml" 311 10188 10191 "xenstored.ml" 311 10188 10228
+type(
+  unit
+)
+"xenstored.ml" 312 10230 10233 "xenstored.ml" 312 10230 10258
+type(
+  Connections.t -> Unix.file_descr -> 'a -> unit
+)
+ident(
+  ext_ref Connections.add_anonymous
+)
+"xenstored.ml" 312 10230 10259 "xenstored.ml" 312 10230 10263
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 312 10230 10264 "xenstored.ml" 312 10230 10267
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref cfd "xenstored.ml" 310 10149 10157 "xenstored.ml" 310 10149 10160
+)
+"xenstored.ml" 312 10230 10268 "xenstored.ml" 312 10230 10277
+type(
+  'a
+)
+ident(
+  int_ref can_write "xenstored.ml" 309 10110 10134 "xenstored.ml" 309 10110 10143
+)
+"xenstored.ml" 312 10230 10233 "xenstored.ml" 312 10230 10277
+type(
+  unit
+)
+"xenstored.ml" 311 10188 10191 "xenstored.ml" 312 10230 10277
+type(
+  unit
+)
+"xenstored.ml" 310 10149 10152 "xenstored.ml" 312 10230 10277
+type(
+  unit
+)
+"xenstored.ml" 313 10278 10284 "xenstored.ml" 313 10278 10299
+type(
+  'b -> unit
+)
+"xenstored.ml" 313 10278 10300 "xenstored.ml" 313 10278 10302
+type(
+  'b
+)
+ident(
+  def fd "xenstored.ml" 314 10305 10308 "xenstored.ml" 327 10851 10895
+)
+"xenstored.ml" 314 10305 10312 "xenstored.ml" 314 10305 10316
+type(
+  Xeneventchn.t
+)
+"xenstored.ml" 314 10305 10319 "xenstored.ml" 314 10305 10332
+type(
+  Event.t -> Xeneventchn.t
+)
+ident(
+  ext_ref Event.pending
+)
+"xenstored.ml" 314 10305 10333 "xenstored.ml" 314 10305 10341
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 314 10305 10319 "xenstored.ml" 314 10305 10341
+type(
+  Xeneventchn.t
+)
+"xenstored.ml" 315 10345 10348 "xenstored.ml" 315 10345 10353
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  int_ref debug "xenstored.ml" 23 824 828 "xenstored.ml" 23 824 833
+)
+"xenstored.ml" 315 10345 10354 "xenstored.ml" 315 10345 10371
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 315 10345 10373 "xenstored.ml" 315 10345 10391
+type(
+  Xeneventchn.t -> int
+)
+ident(
+  ext_ref Xeneventchn.to_int
+)
+"xenstored.ml" 315 10345 10392 "xenstored.ml" 315 10345 10396
+type(
+  Xeneventchn.t
+)
+ident(
+  int_ref port "xenstored.ml" 314 10305 10312 "xenstored.ml" 314 10305 10316
+)
+"xenstored.ml" 315 10345 10372 "xenstored.ml" 315 10345 10397
+type(
+  int
+)
+"xenstored.ml" 315 10345 10348 "xenstored.ml" 315 10345 10397
+type(
+  unit
+)
+"xenstored.ml" 316 10399 10402 "xenstored.ml" 316 10399 10409
+type(
+  (unit -> unit) -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Stdext.finally
+)
+"xenstored.ml" 316 10399 10415 "xenstored.ml" 316 10399 10417
+type(
+  unit
+)
+"xenstored.ml" 317 10421 10433 "xenstored.ml" 317 10421 10437
+type(
+  Xeneventchn.t
+)
+ident(
+  int_ref port "xenstored.ml" 314 10305 10312 "xenstored.ml" 314 10305 10316
+)
+"xenstored.ml" 317 10421 10428 "xenstored.ml" 317 10421 10437
+type(
+  Xeneventchn.t option
+)
+"xenstored.ml" 317 10421 10438 "xenstored.ml" 317 10421 10439
+type(
+  Xeneventchn.t option -> Xeneventchn.t option -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"xenstored.ml" 317 10421 10440 "xenstored.ml" 317 10421 10448
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 317 10421 10440 "xenstored.ml" 317 10421 10464
+type(
+  Xeneventchn.t option
+)
+"xenstored.ml" 317 10421 10428 "xenstored.ml" 317 10421 10464
+type(
+  bool
+)
+"xenstored.ml" 318 10472 10482 "xenstored.ml" 318 10472 10488
+type(
+  bool
+)
+ident(
+  def notify "xenstored.ml" 319 10531 10536 "xenstored.ml" 321 10622 10679
+)
+"xenstored.ml" 318 10472 10490 "xenstored.ml" 318 10472 10497
+type(
+  Xenctrl.domid list
+)
+ident(
+  def deaddom "xenstored.ml" 319 10531 10536 "xenstored.ml" 321 10622 10679
+)
+"xenstored.ml" 318 10472 10481 "xenstored.ml" 318 10472 10498
+type(
+  bool * Xenctrl.domid list
+)
+"xenstored.ml" 318 10472 10501 "xenstored.ml" 318 10472 10516
+type(
+  Xenctrl.handle -> Domains.domains -> bool * Xenctrl.domid list
+)
+ident(
+  ext_ref Domains.cleanup
+)
+"xenstored.ml" 318 10472 10517 "xenstored.ml" 318 10472 10519
+type(
+  Xenctrl.handle
+)
+ident(
+  int_ref xc "xenstored.ml" 306 10038 10043 "xenstored.ml" 306 10038 10045
+)
+"xenstored.ml" 318 10472 10520 "xenstored.ml" 318 10472 10527
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 318 10472 10501 "xenstored.ml" 318 10472 10527
+type(
+  bool * Xenctrl.domid list
+)
+"xenstored.ml" 319 10531 10536 "xenstored.ml" 319 10531 10545
+type(
+  (Xenctrl.domid -> unit) -> Xenctrl.domid list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"xenstored.ml" 319 10531 10547 "xenstored.ml" 319 10531 10569
+type(
+  Connections.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Connections.del_domain
+)
+"xenstored.ml" 319 10531 10570 "xenstored.ml" 319 10531 10574
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 319 10531 10546 "xenstored.ml" 319 10531 10575
+type(
+  Xenctrl.domid -> unit
+)
+"xenstored.ml" 319 10531 10576 "xenstored.ml" 319 10531 10583
+type(
+  Xenctrl.domid list
+)
+ident(
+  int_ref deaddom "xenstored.ml" 318 10472 10490 "xenstored.ml" 318 10472 10497
+)
+"xenstored.ml" 319 10531 10536 "xenstored.ml" 319 10531 10583
+type(
+  unit
+)
+"xenstored.ml" 320 10585 10593 "xenstored.ml" 320 10585 10600
+type(
+  Xenctrl.domid list
+)
+ident(
+  int_ref deaddom "xenstored.ml" 318 10472 10490 "xenstored.ml" 318 10472 10497
+)
+"xenstored.ml" 320 10585 10601 "xenstored.ml" 320 10585 10603
+type(
+  Xenctrl.domid list -> Xenctrl.domid list -> bool
+)
+ident(
+  ext_ref Pervasives.<>
+)
+"xenstored.ml" 320 10585 10604 "xenstored.ml" 320 10585 10606
+type(
+  Xenctrl.domid list
+)
+"xenstored.ml" 320 10585 10593 "xenstored.ml" 320 10585 10606
+type(
+  bool
+)
+"xenstored.ml" 320 10585 10607 "xenstored.ml" 320 10585 10609
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"xenstored.ml" 320 10585 10610 "xenstored.ml" 320 10585 10616
+type(
+  bool
+)
+ident(
+  int_ref notify "xenstored.ml" 318 10472 10482 "xenstored.ml" 318 10472 10488
+)
+"xenstored.ml" 320 10585 10593 "xenstored.ml" 320 10585 10616
+type(
+  bool
+)
+"xenstored.ml" 321 10622 10628 "xenstored.ml" 321 10622 10657
+type(
+  Connections.t -> string -> unit
+)
+ident(
+  ext_ref Connections.fire_spec_watches
+)
+"xenstored.ml" 321 10622 10658 "xenstored.ml" 321 10622 10662
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 321 10622 10663 "xenstored.ml" 321 10622 10679
+type(
+  string
+)
+"xenstored.ml" 321 10622 10628 "xenstored.ml" 321 10622 10679
+type(
+  unit
+)
+"xenstored.ml" 320 10585 10590 "xenstored.ml" 321 10622 10679
+type(
+  unit
+)
+"xenstored.ml" 319 10531 10536 "xenstored.ml" 321 10622 10679
+type(
+  unit
+)
+"xenstored.ml" 317 10421 10470 "xenstored.ml" 322 10680 10685
+type(
+  unit
+)
+"xenstored.ml" 324 10695 10704 "xenstored.ml" 324 10695 10705
+type(
+  Connection.t
+)
+"xenstored.ml" 324 10695 10708 "xenstored.ml" 324 10695 10739
+type(
+  Connections.t -> Xeneventchn.t -> Connection.t
+)
+ident(
+  ext_ref Connections.find_domain_by_port
+)
+"xenstored.ml" 324 10695 10740 "xenstored.ml" 324 10695 10744
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 324 10695 10745 "xenstored.ml" 324 10695 10749
+type(
+  Xeneventchn.t
+)
+ident(
+  int_ref port "xenstored.ml" 314 10305 10312 "xenstored.ml" 314 10305 10316
+)
+"xenstored.ml" 324 10695 10708 "xenstored.ml" 324 10695 10749
+type(
+  Connection.t
+)
+"xenstored.ml" 325 10753 10764 "xenstored.ml" 325 10753 10785
+type(
+  Connection.t -> Domain.t option
+)
+ident(
+  ext_ref Connection.get_domain
+)
+"xenstored.ml" 325 10753 10786 "xenstored.ml" 325 10753 10787
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 324 10695 10704 "xenstored.ml" 324 10695 10705
+)
+"xenstored.ml" 325 10753 10764 "xenstored.ml" 325 10753 10787
+type(
+  Domain.t option
+)
+"xenstored.ml" 326 10793 10805 "xenstored.ml" 326 10793 10808
+type(
+  Domain.t
+)
+ident(
+  def dom "xenstored.ml" 326 10793 10812 "xenstored.ml" 326 10793 10837
+)
+"xenstored.ml" 326 10793 10800 "xenstored.ml" 326 10793 10808
+type(
+  Domain.t option
+)
+"xenstored.ml" 326 10793 10812 "xenstored.ml" 326 10793 10833
+type(
+  Domain.t -> unit
+)
+ident(
+  ext_ref Domain.incr_io_credit
+)
+"xenstored.ml" 326 10793 10834 "xenstored.ml" 326 10793 10837
+type(
+  Domain.t
+)
+ident(
+  int_ref dom "xenstored.ml" 326 10793 10805 "xenstored.ml" 326 10793 10808
+)
+"xenstored.ml" 326 10793 10812 "xenstored.ml" 326 10793 10837
+type(
+  unit
+)
+"xenstored.ml" 326 10793 10840 "xenstored.ml" 326 10793 10844
+type(
+  Domain.t option
+)
+"xenstored.ml" 326 10793 10848 "xenstored.ml" 326 10793 10850
+type(
+  unit
+)
+"xenstored.ml" 325 10753 10758 "xenstored.ml" 326 10793 10850
+type(
+  unit
+)
+"xenstored.ml" 324 10695 10700 "xenstored.ml" 326 10793 10850
+type(
+  unit
+)
+"xenstored.ml" 317 10421 10425 "xenstored.ml" 326 10793 10850
+type(
+  unit
+)
+"xenstored.ml" 316 10399 10410 "xenstored.ml" 327 10851 10856
+type(
+  unit -> unit
+)
+"xenstored.ml" 327 10851 10862 "xenstored.ml" 327 10851 10864
+type(
+  unit
+)
+"xenstored.ml" 327 10851 10868 "xenstored.ml" 327 10851 10880
+type(
+  Event.t -> Xeneventchn.t -> unit
+)
+ident(
+  ext_ref Event.unmask
+)
+"xenstored.ml" 327 10851 10881 "xenstored.ml" 327 10851 10889
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 327 10851 10890 "xenstored.ml" 327 10851 10894
+type(
+  Xeneventchn.t
+)
+ident(
+  int_ref port "xenstored.ml" 314 10305 10312 "xenstored.ml" 314 10305 10316
+)
+"xenstored.ml" 327 10851 10868 "xenstored.ml" 327 10851 10894
+type(
+  unit
+)
+"xenstored.ml" 327 10851 10857 "xenstored.ml" 327 10851 10895
+type(
+  unit -> unit
+)
+"xenstored.ml" 316 10399 10402 "xenstored.ml" 327 10851 10895
+type(
+  unit
+)
+"xenstored.ml" 315 10345 10348 "xenstored.ml" 327 10851 10895
+type(
+  unit
+)
+"xenstored.ml" 314 10305 10308 "xenstored.ml" 327 10851 10895
+type(
+  unit
+)
+"xenstored.ml" 328 10896 10902 "xenstored.ml" 328 10896 10911
+type(
+  'c -> 'c list -> ('c -> unit) -> unit
+)
+"xenstored.ml" 328 10896 10912 "xenstored.ml" 328 10896 10914
+type(
+  'c
+)
+ident(
+  def fd "xenstored.ml" 328 10896 10915 "xenstored.ml" 330 10952 10962
+)
+"xenstored.ml" 328 10896 10915 "xenstored.ml" 328 10896 10918
+type(
+  'c list
+)
+ident(
+  def set "xenstored.ml" 328 10896 10919 "xenstored.ml" 330 10952 10962
+)
+"xenstored.ml" 328 10896 10919 "xenstored.ml" 328 10896 10922
+type(
+  'c -> unit
+)
+ident(
+  def fct "xenstored.ml" 329 10925 10928 "xenstored.ml" 330 10952 10962
+)
+"xenstored.ml" 329 10925 10931 "xenstored.ml" 329 10925 10939
+type(
+  'c -> 'c list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"xenstored.ml" 329 10925 10940 "xenstored.ml" 329 10925 10942
+type(
+  'c
+)
+ident(
+  int_ref fd "xenstored.ml" 328 10896 10912 "xenstored.ml" 328 10896 10914
+)
+"xenstored.ml" 329 10925 10943 "xenstored.ml" 329 10925 10946
+type(
+  'c list
+)
+ident(
+  int_ref set "xenstored.ml" 328 10896 10915 "xenstored.ml" 328 10896 10918
+)
+"xenstored.ml" 329 10925 10931 "xenstored.ml" 329 10925 10946
+type(
+  bool
+)
+"xenstored.ml" 330 10952 10956 "xenstored.ml" 330 10952 10959
+type(
+  'c -> unit
+)
+ident(
+  int_ref fct "xenstored.ml" 328 10896 10919 "xenstored.ml" 328 10896 10922
+)
+"xenstored.ml" 330 10952 10960 "xenstored.ml" 330 10952 10962
+type(
+  'c
+)
+ident(
+  int_ref fd "xenstored.ml" 328 10896 10912 "xenstored.ml" 328 10896 10914
+)
+"xenstored.ml" 330 10952 10956 "xenstored.ml" 330 10952 10962
+type(
+  unit
+)
+"xenstored.ml" 329 10925 10928 "xenstored.ml" 330 10952 10962
+type(
+  unit
+)
+"xenstored.ml" 332 10967 10969 "xenstored.ml" 332 10967 10974
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr option -> unit
+)
+ident(
+  ext_ref Stdext.maybe
+)
+"xenstored.ml" 332 10967 10980 "xenstored.ml" 332 10967 10982
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "xenstored.ml" 332 10967 10986 "xenstored.ml" 332 10967 11028
+)
+"xenstored.ml" 332 10967 10986 "xenstored.ml" 332 10967 10995
+type(
+  Unix.file_descr ->
+  Unix.file_descr list -> (Unix.file_descr -> unit) -> unit
+)
+ident(
+  int_ref do_if_set "xenstored.ml" 328 10896 10902 "xenstored.ml" 328 10896 10911
+)
+"xenstored.ml" 332 10967 10996 "xenstored.ml" 332 10967 10998
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "xenstored.ml" 332 10967 10980 "xenstored.ml" 332 10967 10982
+)
+"xenstored.ml" 332 10967 10999 "xenstored.ml" 332 10967 11003
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref rset "xenstored.ml" 308 10078 10103 "xenstored.ml" 308 10078 10107
+)
+"xenstored.ml" 332 10967 11005 "xenstored.ml" 332 10967 11022
+type(
+  bool -> Unix.file_descr -> unit
+)
+ident(
+  int_ref accept_connection "xenstored.ml" 309 10110 10116 "xenstored.ml" 309 10110 10133
+)
+"xenstored.ml" 332 10967 11023 "xenstored.ml" 332 10967 11027
+type(
+  bool
+)
+"xenstored.ml" 332 10967 11004 "xenstored.ml" 332 10967 11028
+type(
+  Unix.file_descr -> unit
+)
+"xenstored.ml" 332 10967 10986 "xenstored.ml" 332 10967 11028
+type(
+  unit
+)
+"xenstored.ml" 332 10967 10975 "xenstored.ml" 332 10967 11029
+type(
+  Unix.file_descr -> unit
+)
+"xenstored.ml" 332 10967 11030 "xenstored.ml" 332 10967 11037
+type(
+  Unix.file_descr option
+)
+ident(
+  int_ref rw_sock "xenstored.ml" 239 8036 8041 "xenstored.ml" 239 8036 8048
+)
+"xenstored.ml" 332 10967 10969 "xenstored.ml" 332 10967 11037
+type(
+  unit
+)
+"xenstored.ml" 333 11039 11041 "xenstored.ml" 333 11039 11046
+type(
+  (Unix.file_descr -> unit) -> Unix.file_descr option -> unit
+)
+ident(
+  ext_ref Stdext.maybe
+)
+"xenstored.ml" 333 11039 11052 "xenstored.ml" 333 11039 11054
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "xenstored.ml" 333 11039 11058 "xenstored.ml" 333 11039 11101
+)
+"xenstored.ml" 333 11039 11058 "xenstored.ml" 333 11039 11067
+type(
+  Unix.file_descr ->
+  Unix.file_descr list -> (Unix.file_descr -> unit) -> unit
+)
+ident(
+  int_ref do_if_set "xenstored.ml" 328 10896 10902 "xenstored.ml" 328 10896 10911
+)
+"xenstored.ml" 333 11039 11068 "xenstored.ml" 333 11039 11070
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "xenstored.ml" 333 11039 11052 "xenstored.ml" 333 11039 11054
+)
+"xenstored.ml" 333 11039 11071 "xenstored.ml" 333 11039 11075
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref rset "xenstored.ml" 308 10078 10103 "xenstored.ml" 308 10078 10107
+)
+"xenstored.ml" 333 11039 11077 "xenstored.ml" 333 11039 11094
+type(
+  bool -> Unix.file_descr -> unit
+)
+ident(
+  int_ref accept_connection "xenstored.ml" 309 10110 10116 "xenstored.ml" 309 10110 10133
+)
+"xenstored.ml" 333 11039 11095 "xenstored.ml" 333 11039 11100
+type(
+  bool
+)
+"xenstored.ml" 333 11039 11076 "xenstored.ml" 333 11039 11101
+type(
+  Unix.file_descr -> unit
+)
+"xenstored.ml" 333 11039 11058 "xenstored.ml" 333 11039 11101
+type(
+  unit
+)
+"xenstored.ml" 333 11039 11047 "xenstored.ml" 333 11039 11102
+type(
+  Unix.file_descr -> unit
+)
+"xenstored.ml" 333 11039 11103 "xenstored.ml" 333 11039 11110
+type(
+  Unix.file_descr option
+)
+ident(
+  int_ref ro_sock "xenstored.ml" 239 8036 8050 "xenstored.ml" 239 8036 8057
+)
+"xenstored.ml" 333 11039 11041 "xenstored.ml" 333 11039 11110
+type(
+  unit
+)
+"xenstored.ml" 334 11112 11114 "xenstored.ml" 334 11112 11123
+type(
+  Unix.file_descr ->
+  Unix.file_descr list -> (Unix.file_descr -> unit) -> unit
+)
+ident(
+  int_ref do_if_set "xenstored.ml" 328 10896 10902 "xenstored.ml" 328 10896 10911
+)
+"xenstored.ml" 334 11112 11125 "xenstored.ml" 334 11112 11133
+type(
+  Event.t -> Unix.file_descr
+)
+ident(
+  ext_ref Event.fd
+)
+"xenstored.ml" 334 11112 11134 "xenstored.ml" 334 11112 11142
+type(
+  Event.t
+)
+ident(
+  int_ref eventchn "xenstored.ml" 261 8670 8675 "xenstored.ml" 261 8670 8683
+)
+"xenstored.ml" 334 11112 11124 "xenstored.ml" 334 11112 11143
+type(
+  Unix.file_descr
+)
+"xenstored.ml" 334 11112 11144 "xenstored.ml" 334 11112 11148
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref rset "xenstored.ml" 308 10078 10103 "xenstored.ml" 308 10078 10107
+)
+"xenstored.ml" 334 11112 11149 "xenstored.ml" 334 11112 11166
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  int_ref handle_eventchn "xenstored.ml" 313 10278 10284 "xenstored.ml" 313 10278 10299
+)
+"xenstored.ml" 334 11112 11114 "xenstored.ml" 334 11112 11166
+type(
+  unit
+)
+"xenstored.ml" 333 11039 11041 "xenstored.ml" 334 11112 11166
+type(
+  unit
+)
+"xenstored.ml" 332 10967 10969 "xenstored.ml" 334 11112 11166
+type(
+  unit
+)
+"xenstored.ml" 309 10110 10112 "xenstored.ml" 334 11112 11166
+type(
+  unit
+)
+"xenstored.ml" 337 11172 11177 "xenstored.ml" 337 11172 11194
+type(
+  Domain.t -> unit
+)
+ident(
+  def ring_scan_checker "xenstored.ml" 355 12032 12033 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 337 11172 11195 "xenstored.ml" 337 11172 11198
+type(
+  Domain.t
+)
+ident(
+  def dom "xenstored.ml" 339 11266 11268 "xenstored.ml" 353 12023 12027
+)
+"xenstored.ml" 339 11266 11271 "xenstored.ml" 339 11266 11274
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 339 11266 11276 "xenstored.ml" 339 11266 11296
+type(
+  Domain.t -> int
+)
+ident(
+  ext_ref Domain.get_io_credit
+)
+"xenstored.ml" 339 11266 11297 "xenstored.ml" 339 11266 11300
+type(
+  Domain.t
+)
+ident(
+  int_ref dom "xenstored.ml" 337 11172 11195 "xenstored.ml" 337 11172 11198
+)
+"xenstored.ml" 339 11266 11276 "xenstored.ml" 339 11266 11300
+type(
+  int
+)
+"xenstored.ml" 339 11266 11301 "xenstored.ml" 339 11266 11302
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 339 11266 11303 "xenstored.ml" 339 11266 11304
+type(
+  int
+)
+"xenstored.ml" 339 11266 11275 "xenstored.ml" 339 11266 11305
+type(
+  bool
+)
+"xenstored.ml" 339 11266 11271 "xenstored.ml" 339 11266 11305
+type(
+  bool
+)
+"xenstored.ml" 340 11311 11318 "xenstored.ml" 340 11311 11321
+type(
+  Connection.t
+)
+"xenstored.ml" 340 11311 11324 "xenstored.ml" 340 11311 11347
+type(
+  Connections.t -> Xenctrl.domid -> Connection.t
+)
+ident(
+  ext_ref Connections.find_domain
+)
+"xenstored.ml" 340 11311 11348 "xenstored.ml" 340 11311 11352
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 340 11311 11354 "xenstored.ml" 340 11311 11367
+type(
+  Domain.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Domain.get_id
+)
+"xenstored.ml" 340 11311 11368 "xenstored.ml" 340 11311 11371
+type(
+  Domain.t
+)
+ident(
+  int_ref dom "xenstored.ml" 337 11172 11195 "xenstored.ml" 337 11172 11198
+)
+"xenstored.ml" 340 11311 11353 "xenstored.ml" 340 11311 11372
+type(
+  Xenctrl.domid
+)
+"xenstored.ml" 340 11311 11324 "xenstored.ml" 340 11311 11372
+type(
+  Connection.t
+)
+"xenstored.ml" 341 11376 11382 "xenstored.ml" 341 11376 11385
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 341 11376 11387 "xenstored.ml" 341 11376 11411
+type(
+  Connection.t -> bool
+)
+ident(
+  ext_ref Connection.has_more_work
+)
+"xenstored.ml" 341 11376 11412 "xenstored.ml" 341 11376 11415
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 340 11311 11318 "xenstored.ml" 340 11311 11321
+)
+"xenstored.ml" 341 11376 11386 "xenstored.ml" 341 11376 11416
+type(
+  bool
+)
+"xenstored.ml" 341 11376 11382 "xenstored.ml" 341 11376 11416
+type(
+  bool
+)
+"xenstored.ml" 342 11424 11428 "xenstored.ml" 342 11424 11445
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_output
+)
+"xenstored.ml" 342 11424 11446 "xenstored.ml" 342 11424 11451
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 342 11424 11452 "xenstored.ml" 342 11424 11456
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 342 11424 11457 "xenstored.ml" 342 11424 11464
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 342 11424 11465 "xenstored.ml" 342 11424 11468
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 340 11311 11318 "xenstored.ml" 340 11311 11321
+)
+"xenstored.ml" 342 11424 11428 "xenstored.ml" 342 11424 11468
+type(
+  unit
+)
+"xenstored.ml" 343 11470 11474 "xenstored.ml" 343 11470 11490
+type(
+  Store.t -> Connections.t -> Domains.domains -> Connection.t -> unit
+)
+ident(
+  ext_ref Process.do_input
+)
+"xenstored.ml" 343 11470 11491 "xenstored.ml" 343 11470 11496
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 343 11470 11497 "xenstored.ml" 343 11470 11501
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 343 11470 11502 "xenstored.ml" 343 11470 11509
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 343 11470 11510 "xenstored.ml" 343 11470 11513
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 340 11311 11318 "xenstored.ml" 340 11311 11321
+)
+"xenstored.ml" 343 11470 11474 "xenstored.ml" 343 11470 11513
+type(
+  unit
+)
+"xenstored.ml" 344 11515 11522 "xenstored.ml" 344 11515 11546
+type(
+  Connection.t -> bool
+)
+ident(
+  ext_ref Connection.has_more_work
+)
+"xenstored.ml" 344 11515 11547 "xenstored.ml" 344 11515 11550
+type(
+  Connection.t
+)
+ident(
+  int_ref con "xenstored.ml" 340 11311 11318 "xenstored.ml" 340 11311 11321
+)
+"xenstored.ml" 344 11515 11522 "xenstored.ml" 344 11515 11550
+type(
+  bool
+)
+"xenstored.ml" 350 11873 11882 "xenstored.ml" 350 11873 11883
+type(
+  int
+)
+"xenstored.ml" 350 11873 11886 "xenstored.ml" 350 11873 11888
+type(
+  int
+)
+"xenstored.ml" 350 11873 11889 "xenstored.ml" 350 11873 11890
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.+
+)
+"xenstored.ml" 350 11873 11891 "xenstored.ml" 350 11873 11892
+type(
+  int
+)
+"xenstored.ml" 350 11873 11893 "xenstored.ml" 350 11873 11894
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.*
+)
+"xenstored.ml" 350 11873 11896 "xenstored.ml" 350 11873 11910
+type(
+  Domains.domains -> int
+)
+ident(
+  ext_ref Domains.number
+)
+"xenstored.ml" 350 11873 11911 "xenstored.ml" 350 11873 11918
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 350 11873 11895 "xenstored.ml" 350 11873 11919
+type(
+  int
+)
+"xenstored.ml" 350 11873 11891 "xenstored.ml" 350 11873 11919
+type(
+  int
+)
+"xenstored.ml" 350 11873 11886 "xenstored.ml" 350 11873 11919
+type(
+  int
+)
+"xenstored.ml" 351 11923 11928 "xenstored.ml" 351 11923 11932
+type(
+  (Xenctrl.domid -> int -> unit, unit, string, unit) format4 ->
+  Xenctrl.domid -> int -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 351 11923 11933 "xenstored.ml" 351 11923 11966
+type(
+  (Xenctrl.domid -> int -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 351 11923 11968 "xenstored.ml" 351 11923 11981
+type(
+  Domain.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Domain.get_id
+)
+"xenstored.ml" 351 11923 11982 "xenstored.ml" 351 11923 11985
+type(
+  Domain.t
+)
+ident(
+  int_ref dom "xenstored.ml" 337 11172 11195 "xenstored.ml" 337 11172 11198
+)
+"xenstored.ml" 351 11923 11967 "xenstored.ml" 351 11923 11986
+type(
+  Xenctrl.domid
+)
+"xenstored.ml" 351 11923 11987 "xenstored.ml" 351 11923 11988
+type(
+  int
+)
+ident(
+  int_ref n "xenstored.ml" 350 11873 11882 "xenstored.ml" 350 11873 11883
+)
+"xenstored.ml" 351 11923 11928 "xenstored.ml" 351 11923 11988
+type(
+  unit
+)
+"xenstored.ml" 352 11990 11995 "xenstored.ml" 352 11990 12015
+type(
+  ?n:int -> Domain.t -> unit
+)
+ident(
+  ext_ref Domain.set_io_credit
+)
+"xenstored.ml" 352 11990 12017 "xenstored.ml" 352 11990 12018
+type(
+  int
+)
+ident(
+  int_ref n "xenstored.ml" 350 11873 11882 "xenstored.ml" 350 11873 11883
+)
+"xenstored.ml" 352 11990 12019 "xenstored.ml" 352 11990 12022
+type(
+  Domain.t
+)
+ident(
+  int_ref dom "xenstored.ml" 337 11172 11195 "xenstored.ml" 337 11172 11198
+)
+"xenstored.ml" 352 11990 11995 "xenstored.ml" 352 11990 12022
+type(
+  unit
+)
+"xenstored.ml" 351 11923 11928 "xenstored.ml" 352 11990 12022
+type(
+  unit
+)
+"xenstored.ml" 350 11873 11878 "xenstored.ml" 352 11990 12022
+type(
+  unit
+)
+"xenstored.ml" 344 11515 11519 "xenstored.ml" 352 11990 12022
+type(
+  unit
+)
+"xenstored.ml" 343 11470 11474 "xenstored.ml" 352 11990 12022
+type(
+  unit
+)
+"xenstored.ml" 341 11376 11422 "xenstored.ml" 353 12023 12027
+type(
+  unit
+)
+"xenstored.ml" 341 11376 11379 "xenstored.ml" 353 12023 12027
+type(
+  unit
+)
+"xenstored.ml" 340 11311 11314 "xenstored.ml" 353 12023 12027
+type(
+  unit
+)
+"xenstored.ml" 339 11266 11268 "xenstored.ml" 353 12023 12027
+type(
+  unit
+)
+"xenstored.ml" 355 12032 12037 "xenstored.ml" 355 12032 12051
+type(
+  float ref
+)
+ident(
+  def last_stat_time "xenstored.ml" 356 12064 12065 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 355 12032 12054 "xenstored.ml" 355 12032 12057
+type(
+  float -> float ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 355 12032 12058 "xenstored.ml" 355 12032 12060
+type(
+  float
+)
+"xenstored.ml" 355 12032 12054 "xenstored.ml" 355 12032 12060
+type(
+  float ref
+)
+"xenstored.ml" 356 12064 12069 "xenstored.ml" 356 12064 12083
+type(
+  float ref
+)
+ident(
+  def last_scan_time "xenstored.ml" 358 12097 12098 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 356 12064 12086 "xenstored.ml" 356 12064 12089
+type(
+  float -> float ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 356 12064 12090 "xenstored.ml" 356 12064 12092
+type(
+  float
+)
+"xenstored.ml" 356 12064 12086 "xenstored.ml" 356 12064 12092
+type(
+  float ref
+)
+"xenstored.ml" 358 12097 12102 "xenstored.ml" 358 12097 12114
+type(
+  float -> unit
+)
+ident(
+  def periodic_ops "xenstored.ml" 398 13730 13732 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 358 12097 12115 "xenstored.ml" 358 12097 12118
+type(
+  float
+)
+ident(
+  def now "xenstored.ml" 363 12319 12321 "xenstored.ml" 395 13720 13723
+)
+"xenstored.ml" 363 12319 12324 "xenstored.ml" 363 12319 12338
+type(
+  unit -> int
+)
+ident(
+  ext_ref Symbol.created
+)
+"xenstored.ml" 363 12319 12339 "xenstored.ml" 363 12319 12341
+type(
+  unit
+)
+"xenstored.ml" 363 12319 12324 "xenstored.ml" 363 12319 12341
+type(
+  int
+)
+"xenstored.ml" 363 12319 12342 "xenstored.ml" 363 12319 12343
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 363 12319 12344 "xenstored.ml" 363 12319 12348
+type(
+  int
+)
+"xenstored.ml" 363 12319 12324 "xenstored.ml" 363 12319 12348
+type(
+  bool
+)
+"xenstored.ml" 363 12319 12349 "xenstored.ml" 363 12319 12351
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"xenstored.ml" 363 12319 12352 "xenstored.ml" 363 12319 12363
+type(
+  unit -> int
+)
+ident(
+  ext_ref Symbol.used
+)
+"xenstored.ml" 363 12319 12364 "xenstored.ml" 363 12319 12366
+type(
+  unit
+)
+"xenstored.ml" 363 12319 12352 "xenstored.ml" 363 12319 12366
+type(
+  int
+)
+"xenstored.ml" 363 12319 12367 "xenstored.ml" 363 12319 12368
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 363 12319 12369 "xenstored.ml" 363 12319 12374
+type(
+  int
+)
+"xenstored.ml" 363 12319 12352 "xenstored.ml" 363 12319 12374
+type(
+  bool
+)
+"xenstored.ml" 363 12319 12324 "xenstored.ml" 363 12319 12374
+type(
+  bool
+)
+"xenstored.ml" 365 12388 12391 "xenstored.ml" 365 12388 12416
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Symbol.mark_all_as_unused
+)
+"xenstored.ml" 365 12388 12417 "xenstored.ml" 365 12388 12419
+type(
+  unit
+)
+"xenstored.ml" 365 12388 12391 "xenstored.ml" 365 12388 12419
+type(
+  unit
+)
+"xenstored.ml" 366 12421 12424 "xenstored.ml" 366 12421 12442
+type(
+  Store.t -> unit
+)
+ident(
+  ext_ref Store.mark_symbols
+)
+"xenstored.ml" 366 12421 12443 "xenstored.ml" 366 12421 12448
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 366 12421 12424 "xenstored.ml" 366 12421 12448
+type(
+  unit
+)
+"xenstored.ml" 367 12450 12453 "xenstored.ml" 367 12450 12469
+type(
+  Connections.t -> (Connection.t -> unit) -> unit
+)
+ident(
+  ext_ref Connections.iter
+)
+"xenstored.ml" 367 12450 12470 "xenstored.ml" 367 12450 12474
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 367 12450 12475 "xenstored.ml" 367 12450 12498
+type(
+  Connection.t -> unit
+)
+ident(
+  ext_ref Connection.mark_symbols
+)
+"xenstored.ml" 367 12450 12453 "xenstored.ml" 367 12450 12498
+type(
+  unit
+)
+"xenstored.ml" 368 12500 12503 "xenstored.ml" 368 12500 12517
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Symbol.garbage
+)
+"xenstored.ml" 368 12500 12518 "xenstored.ml" 368 12500 12520
+type(
+  unit
+)
+"xenstored.ml" 368 12500 12503 "xenstored.ml" 368 12500 12520
+type(
+  unit
+)
+"xenstored.ml" 367 12450 12453 "xenstored.ml" 368 12500 12520
+type(
+  unit
+)
+"xenstored.ml" 366 12421 12424 "xenstored.ml" 368 12500 12520
+type(
+  unit
+)
+"xenstored.ml" 364 12375 12382 "xenstored.ml" 369 12521 12526
+type(
+  unit
+)
+"xenstored.ml" 363 12319 12321 "xenstored.ml" 369 12521 12526
+type(
+  unit
+)
+"xenstored.ml" 372 12596 12601 "xenstored.ml" 372 12596 12602
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 372 12596 12602 "xenstored.ml" 372 12596 12620
+type(
+  int ref
+)
+ident(
+  int_ref ring_scan_interval "xenstored.ml" 86 2841 2845 "xenstored.ml" 86 2841 2863
+)
+"xenstored.ml" 372 12596 12601 "xenstored.ml" 372 12596 12620
+type(
+  int
+)
+"xenstored.ml" 372 12596 12621 "xenstored.ml" 372 12596 12623
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>=
+)
+"xenstored.ml" 372 12596 12624 "xenstored.ml" 372 12596 12625
+type(
+  int
+)
+"xenstored.ml" 372 12596 12601 "xenstored.ml" 372 12596 12625
+type(
+  bool
+)
+"xenstored.ml" 372 12596 12626 "xenstored.ml" 372 12596 12628
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"xenstored.ml" 372 12596 12629 "xenstored.ml" 372 12596 12632
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 358 12097 12115 "xenstored.ml" 358 12097 12118
+)
+"xenstored.ml" 372 12596 12633 "xenstored.ml" 372 12596 12634
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 372 12596 12636 "xenstored.ml" 372 12596 12637
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 372 12596 12637 "xenstored.ml" 372 12596 12651
+type(
+  float ref
+)
+ident(
+  int_ref last_scan_time "xenstored.ml" 356 12064 12069 "xenstored.ml" 356 12064 12083
+)
+"xenstored.ml" 372 12596 12636 "xenstored.ml" 372 12596 12651
+type(
+  float
+)
+"xenstored.ml" 372 12596 12652 "xenstored.ml" 372 12596 12654
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.+.
+)
+"xenstored.ml" 372 12596 12655 "xenstored.ml" 372 12596 12660
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"xenstored.ml" 372 12596 12661 "xenstored.ml" 372 12596 12662
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 372 12596 12662 "xenstored.ml" 372 12596 12680
+type(
+  int ref
+)
+ident(
+  int_ref ring_scan_interval "xenstored.ml" 86 2841 2845 "xenstored.ml" 86 2841 2863
+)
+"xenstored.ml" 372 12596 12661 "xenstored.ml" 372 12596 12680
+type(
+  int
+)
+"xenstored.ml" 372 12596 12655 "xenstored.ml" 372 12596 12680
+type(
+  float
+)
+"xenstored.ml" 372 12596 12635 "xenstored.ml" 372 12596 12681
+type(
+  float
+)
+"xenstored.ml" 372 12596 12629 "xenstored.ml" 372 12596 12681
+type(
+  bool
+)
+"xenstored.ml" 372 12596 12601 "xenstored.ml" 372 12596 12681
+type(
+  bool
+)
+"xenstored.ml" 373 12687 12691 "xenstored.ml" 373 12687 12705
+type(
+  float ref
+)
+ident(
+  int_ref last_scan_time "xenstored.ml" 356 12064 12069 "xenstored.ml" 356 12064 12083
+)
+"xenstored.ml" 373 12687 12706 "xenstored.ml" 373 12687 12708
+type(
+  float ref -> float -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 373 12687 12709 "xenstored.ml" 373 12687 12712
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 358 12097 12115 "xenstored.ml" 358 12097 12118
+)
+"xenstored.ml" 373 12687 12691 "xenstored.ml" 373 12687 12712
+type(
+  unit
+)
+"xenstored.ml" 373 12687 12714 "xenstored.ml" 373 12687 12726
+type(
+  Domains.domains -> (Domain.t -> unit) -> unit
+)
+ident(
+  ext_ref Domains.iter
+)
+"xenstored.ml" 373 12687 12727 "xenstored.ml" 373 12687 12734
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 373 12687 12735 "xenstored.ml" 373 12687 12752
+type(
+  Domain.t -> unit
+)
+ident(
+  int_ref ring_scan_checker "xenstored.ml" 337 11172 11177 "xenstored.ml" 337 11172 11194
+)
+"xenstored.ml" 373 12687 12714 "xenstored.ml" 373 12687 12752
+type(
+  unit
+)
+"xenstored.ml" 373 12687 12690 "xenstored.ml" 373 12687 12753
+type(
+  unit
+)
+"xenstored.ml" 372 12596 12598 "xenstored.ml" 373 12687 12753
+type(
+  unit
+)
+"xenstored.ml" 376 12821 12826 "xenstored.ml" 376 12821 12829
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 358 12097 12115 "xenstored.ml" 358 12097 12118
+)
+"xenstored.ml" 376 12821 12830 "xenstored.ml" 376 12821 12831
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 376 12821 12833 "xenstored.ml" 376 12821 12834
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 376 12821 12834 "xenstored.ml" 376 12821 12848
+type(
+  float ref
+)
+ident(
+  int_ref last_stat_time "xenstored.ml" 355 12032 12037 "xenstored.ml" 355 12032 12051
+)
+"xenstored.ml" 376 12821 12833 "xenstored.ml" 376 12821 12848
+type(
+  float
+)
+"xenstored.ml" 376 12821 12849 "xenstored.ml" 376 12821 12851
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.+.
+)
+"xenstored.ml" 376 12821 12852 "xenstored.ml" 376 12821 12856
+type(
+  float
+)
+"xenstored.ml" 376 12821 12832 "xenstored.ml" 376 12821 12857
+type(
+  float
+)
+"xenstored.ml" 376 12821 12826 "xenstored.ml" 376 12821 12857
+type(
+  bool
+)
+"xenstored.ml" 377 12865 12868 "xenstored.ml" 377 12865 12882
+type(
+  float ref
+)
+ident(
+  int_ref last_stat_time "xenstored.ml" 355 12032 12037 "xenstored.ml" 355 12032 12051
+)
+"xenstored.ml" 377 12865 12883 "xenstored.ml" 377 12865 12885
+type(
+  float ref -> float -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 377 12865 12886 "xenstored.ml" 377 12865 12889
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 358 12097 12115 "xenstored.ml" 358 12097 12118
+)
+"xenstored.ml" 377 12865 12868 "xenstored.ml" 377 12865 12889
+type(
+  unit
+)
+"xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+type(
+  Gc.stat
+)
+"xenstored.ml" 379 12892 12904 "xenstored.ml" 379 12892 12911
+type(
+  unit -> Gc.stat
+)
+ident(
+  ext_ref Gc.stat
+)
+"xenstored.ml" 379 12892 12912 "xenstored.ml" 379 12892 12914
+type(
+  unit
+)
+"xenstored.ml" 379 12892 12904 "xenstored.ml" 379 12892 12914
+type(
+  Gc.stat
+)
+"xenstored.ml" 380 12918 12926 "xenstored.ml" 380 12918 12931
+type(
+  int
+)
+"xenstored.ml" 380 12918 12933 "xenstored.ml" 380 12918 12942
+type(
+  int
+)
+"xenstored.ml" 380 12918 12944 "xenstored.ml" 380 12918 12956
+type(
+  int
+)
+"xenstored.ml" 381 12958 12966 "xenstored.ml" 381 12958 12970
+type(
+  int
+)
+"xenstored.ml" 381 12958 12972 "xenstored.ml" 381 12958 12980
+type(
+  int
+)
+"xenstored.ml" 381 12958 12982 "xenstored.ml" 381 12958 12993
+type(
+  int
+)
+"xenstored.ml" 380 12918 12925 "xenstored.ml" 381 12958 12994
+type(
+  int * int * int * int * int * int
+)
+"xenstored.ml" 381 12958 12997 "xenstored.ml" 381 12958 13014
+type(
+  Connections.t -> int * int * int * int * int * int
+)
+ident(
+  ext_ref Connections.stats
+)
+"xenstored.ml" 381 12958 13015 "xenstored.ml" 381 12958 13019
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 381 12958 12997 "xenstored.ml" 381 12958 13019
+type(
+  int * int * int * int * int * int
+)
+"xenstored.ml" 382 13023 13030 "xenstored.ml" 382 13023 13041
+type(
+  int
+)
+"xenstored.ml" 382 13023 13043 "xenstored.ml" 382 13023 13054
+type(
+  int
+)
+"xenstored.ml" 382 13023 13056 "xenstored.ml" 382 13023 13070
+type(
+  int
+)
+"xenstored.ml" 382 13023 13030 "xenstored.ml" 382 13023 13070
+type(
+  int * int * int
+)
+"xenstored.ml" 382 13023 13073 "xenstored.ml" 382 13023 13084
+type(
+  Store.t -> int * int * int
+)
+ident(
+  ext_ref Store.stats
+)
+"xenstored.ml" 382 13023 13085 "xenstored.ml" 382 13023 13090
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 382 13023 13073 "xenstored.ml" 382 13023 13090
+type(
+  int * int * int
+)
+"xenstored.ml" 383 13094 13101 "xenstored.ml" 383 13094 13111
+type(
+  int
+)
+"xenstored.ml" 383 13094 13114 "xenstored.ml" 383 13094 13126
+type(
+  unit -> int
+)
+ident(
+  ext_ref Symbol.stats
+)
+"xenstored.ml" 383 13094 13127 "xenstored.ml" 383 13094 13129
+type(
+  unit
+)
+"xenstored.ml" 383 13094 13114 "xenstored.ml" 383 13094 13129
+type(
+  int
+)
+"xenstored.ml" 385 13134 13137 "xenstored.ml" 385 13134 13141
+type(
+  (int -> int -> int -> unit, unit, string, unit) format4 ->
+  int -> int -> int -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 385 13134 13142 "xenstored.ml" 385 13134 13192
+type(
+  (int -> int -> int -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 386 13193 13201 "xenstored.ml" 386 13193 13212
+type(
+  int
+)
+ident(
+  int_ref store_nodes "xenstored.ml" 382 13023 13030 "xenstored.ml" 382 13023 13041
+)
+"xenstored.ml" 386 13193 13213 "xenstored.ml" 386 13193 13224
+type(
+  int
+)
+ident(
+  int_ref store_abort "xenstored.ml" 382 13023 13043 "xenstored.ml" 382 13023 13054
+)
+"xenstored.ml" 386 13193 13225 "xenstored.ml" 386 13193 13239
+type(
+  int
+)
+ident(
+  int_ref store_coalesce "xenstored.ml" 382 13023 13056 "xenstored.ml" 382 13023 13070
+)
+"xenstored.ml" 385 13134 13137 "xenstored.ml" 386 13193 13239
+type(
+  unit
+)
+"xenstored.ml" 387 13241 13244 "xenstored.ml" 387 13241 13248
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 387 13241 13249 "xenstored.ml" 387 13241 13265
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 387 13241 13266 "xenstored.ml" 387 13241 13276
+type(
+  int
+)
+ident(
+  int_ref symtbl_len "xenstored.ml" 383 13094 13101 "xenstored.ml" 383 13094 13111
+)
+"xenstored.ml" 387 13241 13244 "xenstored.ml" 387 13241 13276
+type(
+  unit
+)
+"xenstored.ml" 388 13278 13281 "xenstored.ml" 388 13278 13285
+type(
+  (int -> int -> int -> int -> int -> int -> unit, unit, string, unit)
+  format4 -> int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 388 13278 13286 "xenstored.ml" 388 13278 13349
+type(
+  (int -> int -> int -> int -> int -> int -> unit, unit, string, unit)
+  format4
+)
+"xenstored.ml" 389 13350 13358 "xenstored.ml" 389 13350 13363
+type(
+  int
+)
+ident(
+  int_ref lanon "xenstored.ml" 380 12918 12926 "xenstored.ml" 380 12918 12931
+)
+"xenstored.ml" 389 13350 13364 "xenstored.ml" 389 13350 13373
+type(
+  int
+)
+ident(
+  int_ref lanon_ops "xenstored.ml" 380 12918 12933 "xenstored.ml" 380 12918 12942
+)
+"xenstored.ml" 389 13350 13374 "xenstored.ml" 389 13350 13386
+type(
+  int
+)
+ident(
+  int_ref lanon_watchs "xenstored.ml" 380 12918 12944 "xenstored.ml" 380 12918 12956
+)
+"xenstored.ml" 389 13350 13387 "xenstored.ml" 389 13350 13391
+type(
+  int
+)
+ident(
+  int_ref ldom "xenstored.ml" 381 12958 12966 "xenstored.ml" 381 12958 12970
+)
+"xenstored.ml" 389 13350 13392 "xenstored.ml" 389 13350 13400
+type(
+  int
+)
+ident(
+  int_ref ldom_ops "xenstored.ml" 381 12958 12972 "xenstored.ml" 381 12958 12980
+)
+"xenstored.ml" 389 13350 13401 "xenstored.ml" 389 13350 13412
+type(
+  int
+)
+ident(
+  int_ref ldom_watchs "xenstored.ml" 381 12958 12982 "xenstored.ml" 381 12958 12993
+)
+"xenstored.ml" 388 13278 13281 "xenstored.ml" 389 13350 13412
+type(
+  unit
+)
+"xenstored.ml" 390 13414 13417 "xenstored.ml" 390 13414 13421
+type(
+  (float -> float -> float -> int -> int -> int -> int -> int -> int -> unit,
+   unit, string, unit)
+  format4 ->
+  float -> float -> float -> int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 390 13414 13422 "xenstored.ml" 390 13414 13525
+type(
+  (float -> float -> float -> int -> int -> int -> int -> int -> int -> unit,
+   unit, string, unit)
+  format4
+)
+"xenstored.ml" 391 13526 13534 "xenstored.ml" 391 13526 13536
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 391 13526 13534 "xenstored.ml" 391 13526 13551
+type(
+  float
+)
+"xenstored.ml" 391 13526 13552 "xenstored.ml" 391 13526 13554
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 391 13526 13552 "xenstored.ml" 391 13526 13572
+type(
+  float
+)
+"xenstored.ml" 391 13526 13573 "xenstored.ml" 391 13526 13575
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 391 13526 13573 "xenstored.ml" 391 13526 13590
+type(
+  float
+)
+"xenstored.ml" 392 13591 13599 "xenstored.ml" 392 13591 13601
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 392 13591 13599 "xenstored.ml" 392 13591 13615
+type(
+  int
+)
+"xenstored.ml" 392 13591 13616 "xenstored.ml" 392 13591 13618
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 392 13591 13616 "xenstored.ml" 392 13591 13633
+type(
+  int
+)
+"xenstored.ml" 393 13634 13642 "xenstored.ml" 393 13634 13644
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 393 13634 13642 "xenstored.ml" 393 13634 13658
+type(
+  int
+)
+"xenstored.ml" 393 13634 13659 "xenstored.ml" 393 13634 13661
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 393 13634 13659 "xenstored.ml" 393 13634 13676
+type(
+  int
+)
+"xenstored.ml" 394 13677 13685 "xenstored.ml" 394 13677 13687
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 394 13677 13685 "xenstored.ml" 394 13677 13701
+type(
+  int
+)
+"xenstored.ml" 394 13677 13702 "xenstored.ml" 394 13677 13704
+type(
+  Gc.stat
+)
+ident(
+  int_ref gc "xenstored.ml" 379 12892 12899 "xenstored.ml" 379 12892 12901
+)
+"xenstored.ml" 394 13677 13702 "xenstored.ml" 394 13677 13719
+type(
+  int
+)
+"xenstored.ml" 390 13414 13417 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 388 13278 13281 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 387 13241 13244 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 385 13134 13137 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 383 13094 13097 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 382 13023 13026 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 380 12918 12921 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 379 12892 12895 "xenstored.ml" 394 13677 13719
+type(
+  unit
+)
+"xenstored.ml" 376 12821 12863 "xenstored.ml" 395 13720 13723
+type(
+  unit
+)
+"xenstored.ml" 376 12821 12823 "xenstored.ml" 395 13720 13723
+type(
+  unit
+)
+"xenstored.ml" 372 12596 12598 "xenstored.ml" 395 13720 13723
+type(
+  unit
+)
+"xenstored.ml" 363 12319 12321 "xenstored.ml" 395 13720 13723
+type(
+  unit
+)
+"xenstored.ml" 398 13730 13736 "xenstored.ml" 398 13730 13755
+type(
+  float
+)
+ident(
+  def period_ops_interval "xenstored.ml" 399 13765 13767 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 398 13730 13758 "xenstored.ml" 398 13730 13761
+type(
+  float
+)
+"xenstored.ml" 399 13765 13771 "xenstored.ml" 399 13765 13783
+type(
+  float ref
+)
+ident(
+  def period_start "xenstored.ml" 401 13797 13798 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 399 13765 13786 "xenstored.ml" 399 13765 13789
+type(
+  float -> float ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"xenstored.ml" 399 13765 13790 "xenstored.ml" 399 13765 13792
+type(
+  float
+)
+"xenstored.ml" 399 13765 13786 "xenstored.ml" 399 13765 13792
+type(
+  float ref
+)
+"xenstored.ml" 401 13797 13802 "xenstored.ml" 401 13797 13811
+type(
+  unit -> unit
+)
+ident(
+  def main_loop "xenstored.ml" 431 14715 14716 "xenstored.ml" 444 15070 15073
+)
+"xenstored.ml" 401 13797 13812 "xenstored.ml" 401 13797 13814
+type(
+  unit
+)
+"xenstored.ml" 403 13818 13824 "xenstored.ml" 403 13818 13826
+type(
+  Connection.t list
+)
+"xenstored.ml" 403 13818 13829 "xenstored.ml" 403 13818 13854
+type(
+  Connections.t -> Connection.t list
+)
+ident(
+  ext_ref Connections.has_more_work
+)
+"xenstored.ml" 403 13818 13855 "xenstored.ml" 403 13818 13859
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 403 13818 13829 "xenstored.ml" 403 13818 13859
+type(
+  Connection.t list
+)
+"xenstored.ml" 404 13863 13865 "xenstored.ml" 404 13863 13874
+type(
+  (Connection.t -> unit) -> Connection.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"xenstored.ml" 405 13875 13883 "xenstored.ml" 405 13875 13884
+type(
+  Connection.t
+)
+ident(
+  def c "xenstored.ml" 406 13888 13892 "xenstored.ml" 407 13927 13979
+)
+"xenstored.ml" 406 13888 13898 "xenstored.ml" 406 13888 13919
+type(
+  Connection.t -> Domain.t option
+)
+ident(
+  ext_ref Connection.get_domain
+)
+"xenstored.ml" 406 13888 13920 "xenstored.ml" 406 13888 13921
+type(
+  Connection.t
+)
+ident(
+  int_ref c "xenstored.ml" 405 13875 13883 "xenstored.ml" 405 13875 13884
+)
+"xenstored.ml" 406 13888 13898 "xenstored.ml" 406 13888 13921
+type(
+  Domain.t option
+)
+"xenstored.ml" 407 13927 13933 "xenstored.ml" 407 13927 13937
+type(
+  Domain.t option
+)
+"xenstored.ml" 407 13927 13941 "xenstored.ml" 407 13927 13943
+type(
+  unit
+)
+"xenstored.ml" 407 13927 13951 "xenstored.ml" 407 13927 13952
+type(
+  Domain.t
+)
+ident(
+  def d "xenstored.ml" 407 13927 13956 "xenstored.ml" 407 13927 13979
+)
+"xenstored.ml" 407 13927 13946 "xenstored.ml" 407 13927 13952
+type(
+  Domain.t option
+)
+"xenstored.ml" 407 13927 13956 "xenstored.ml" 407 13927 13977
+type(
+  Domain.t -> unit
+)
+ident(
+  ext_ref Domain.incr_io_credit
+)
+"xenstored.ml" 407 13927 13978 "xenstored.ml" 407 13927 13979
+type(
+  Domain.t
+)
+ident(
+  int_ref d "xenstored.ml" 407 13927 13951 "xenstored.ml" 407 13927 13952
+)
+"xenstored.ml" 407 13927 13956 "xenstored.ml" 407 13927 13979
+type(
+  unit
+)
+"xenstored.ml" 406 13888 13892 "xenstored.ml" 407 13927 13979
+type(
+  unit
+)
+"xenstored.ml" 405 13875 13878 "xenstored.ml" 407 13927 13980
+type(
+  Connection.t -> unit
+)
+"xenstored.ml" 408 13981 13984 "xenstored.ml" 408 13981 13986
+type(
+  Connection.t list
+)
+ident(
+  int_ref mw "xenstored.ml" 403 13818 13824 "xenstored.ml" 403 13818 13826
+)
+"xenstored.ml" 404 13863 13865 "xenstored.ml" 408 13981 13986
+type(
+  unit
+)
+"xenstored.ml" 409 13988 13994 "xenstored.ml" 409 13988 14001
+type(
+  float
+)
+"xenstored.ml" 410 14004 14010 "xenstored.ml" 410 14004 14021
+type(
+  Connection.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"xenstored.ml" 410 14004 14022 "xenstored.ml" 410 14004 14024
+type(
+  Connection.t list
+)
+ident(
+  int_ref mw "xenstored.ml" 403 13818 13824 "xenstored.ml" 403 13818 13826
+)
+"xenstored.ml" 410 14004 14010 "xenstored.ml" 410 14004 14024
+type(
+  int
+)
+"xenstored.ml" 410 14004 14025 "xenstored.ml" 410 14004 14026
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 410 14004 14027 "xenstored.ml" 410 14004 14028
+type(
+  int
+)
+"xenstored.ml" 410 14004 14010 "xenstored.ml" 410 14004 14028
+type(
+  bool
+)
+"xenstored.ml" 410 14004 14034 "xenstored.ml" 410 14004 14036
+type(
+  float
+)
+"xenstored.ml" 410 14004 14042 "xenstored.ml" 410 14004 14061
+type(
+  float
+)
+ident(
+  int_ref period_ops_interval "xenstored.ml" 398 13730 13736 "xenstored.ml" 398 13730 13755
+)
+"xenstored.ml" 410 14004 14007 "xenstored.ml" 410 14004 14061
+type(
+  float
+)
+"xenstored.ml" 411 14065 14071 "xenstored.ml" 411 14065 14076
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 411 14065 14078 "xenstored.ml" 411 14065 14084
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 411 14065 14071 "xenstored.ml" 411 14065 14084
+type(
+  Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 411 14065 14087 "xenstored.ml" 411 14065 14105
+type(
+  Connections.t -> Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Connections.select
+)
+"xenstored.ml" 411 14065 14106 "xenstored.ml" 411 14065 14110
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 411 14065 14087 "xenstored.ml" 411 14065 14110
+type(
+  Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 412 14114 14120 "xenstored.ml" 412 14114 14124
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 412 14114 14126 "xenstored.ml" 412 14114 14130
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 412 14114 14132 "xenstored.ml" 412 14114 14133
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 412 14114 14120 "xenstored.ml" 412 14114 14133
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 414 14142 14145 "xenstored.ml" 414 14142 14158
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Select.select
+)
+"xenstored.ml" 414 14142 14160 "xenstored.ml" 414 14142 14168
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref spec_fds "xenstored.ml" 300 9851 9856 "xenstored.ml" 300 9851 9864
+)
+"xenstored.ml" 414 14142 14169 "xenstored.ml" 414 14142 14170
+type(
+  Unix.file_descr list -> Unix.file_descr list -> Unix.file_descr list
+)
+ident(
+  ext_ref Pervasives.@
+)
+"xenstored.ml" 414 14142 14171 "xenstored.ml" 414 14142 14176
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref inset "xenstored.ml" 411 14065 14071 "xenstored.ml" 411 14065 14076
+)
+"xenstored.ml" 414 14142 14159 "xenstored.ml" 414 14142 14177
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 414 14142 14178 "xenstored.ml" 414 14142 14184
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref outset "xenstored.ml" 411 14065 14078 "xenstored.ml" 411 14065 14084
+)
+"xenstored.ml" 414 14142 14185 "xenstored.ml" 414 14142 14187
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 414 14142 14188 "xenstored.ml" 414 14142 14195
+type(
+  float
+)
+ident(
+  int_ref timeout "xenstored.ml" 409 13988 13994 "xenstored.ml" 409 13988 14001
+)
+"xenstored.ml" 414 14142 14145 "xenstored.ml" 414 14142 14195
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 415 14196 14219 "xenstored.ml" 415 14196 14229
+type(
+  Unix.error
+)
+"xenstored.ml" 415 14196 14231 "xenstored.ml" 415 14196 14232
+type(
+  string
+)
+"xenstored.ml" 415 14196 14234 "xenstored.ml" 415 14196 14235
+type(
+  string
+)
+"xenstored.ml" 415 14196 14203 "xenstored.ml" 415 14196 14236
+type(
+  exn
+)
+"xenstored.ml" 416 14240 14243 "xenstored.ml" 416 14240 14245
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 416 14240 14247 "xenstored.ml" 416 14240 14249
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 416 14240 14251 "xenstored.ml" 416 14240 14253
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 416 14240 14243 "xenstored.ml" 416 14240 14253
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 413 14136 14138 "xenstored.ml" 416 14240 14253
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 417 14257 14263 "xenstored.ml" 417 14257 14267
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 417 14257 14269 "xenstored.ml" 417 14257 14273
+type(
+  Unix.file_descr list
+)
+"xenstored.ml" 417 14257 14263 "xenstored.ml" 417 14257 14273
+type(
+  Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 418 14276 14279 "xenstored.ml" 418 14276 14293
+type(
+  (Unix.file_descr -> bool) ->
+  Unix.file_descr list -> Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref List.partition
+)
+"xenstored.ml" 418 14276 14299 "xenstored.ml" 418 14276 14301
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "xenstored.ml" 418 14276 14305 "xenstored.ml" 418 14276 14325
+)
+"xenstored.ml" 418 14276 14305 "xenstored.ml" 418 14276 14313
+type(
+  Unix.file_descr -> Unix.file_descr list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"xenstored.ml" 418 14276 14314 "xenstored.ml" 418 14276 14316
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "xenstored.ml" 418 14276 14299 "xenstored.ml" 418 14276 14301
+)
+"xenstored.ml" 418 14276 14317 "xenstored.ml" 418 14276 14325
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref spec_fds "xenstored.ml" 300 9851 9856 "xenstored.ml" 300 9851 9864
+)
+"xenstored.ml" 418 14276 14305 "xenstored.ml" 418 14276 14325
+type(
+  bool
+)
+"xenstored.ml" 418 14276 14294 "xenstored.ml" 418 14276 14326
+type(
+  Unix.file_descr -> bool
+)
+"xenstored.ml" 418 14276 14327 "xenstored.ml" 418 14276 14331
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref rset "xenstored.ml" 412 14114 14120 "xenstored.ml" 412 14114 14124
+)
+"xenstored.ml" 418 14276 14279 "xenstored.ml" 418 14276 14331
+type(
+  Unix.file_descr list * Unix.file_descr list
+)
+"xenstored.ml" 419 14335 14340 "xenstored.ml" 419 14335 14351
+type(
+  Unix.file_descr list -> int
+)
+ident(
+  ext_ref List.length
+)
+"xenstored.ml" 419 14335 14352 "xenstored.ml" 419 14335 14356
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref sfds "xenstored.ml" 417 14257 14263 "xenstored.ml" 417 14257 14267
+)
+"xenstored.ml" 419 14335 14340 "xenstored.ml" 419 14335 14356
+type(
+  int
+)
+"xenstored.ml" 419 14335 14357 "xenstored.ml" 419 14335 14358
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 419 14335 14359 "xenstored.ml" 419 14335 14360
+type(
+  int
+)
+"xenstored.ml" 419 14335 14340 "xenstored.ml" 419 14335 14360
+type(
+  bool
+)
+"xenstored.ml" 420 14366 14369 "xenstored.ml" 420 14366 14388
+type(
+  Unix.file_descr list -> unit
+)
+ident(
+  int_ref process_special_fds "xenstored.ml" 308 10078 10083 "xenstored.ml" 308 10078 10102
+)
+"xenstored.ml" 420 14366 14389 "xenstored.ml" 420 14366 14393
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref sfds "xenstored.ml" 417 14257 14263 "xenstored.ml" 417 14257 14267
+)
+"xenstored.ml" 420 14366 14369 "xenstored.ml" 420 14366 14393
+type(
+  unit
+)
+"xenstored.ml" 419 14335 14337 "xenstored.ml" 420 14366 14393
+type(
+  unit
+)
+"xenstored.ml" 421 14395 14400 "xenstored.ml" 421 14395 14411
+type(
+  Unix.file_descr list -> int
+)
+ident(
+  ext_ref List.length
+)
+"xenstored.ml" 421 14395 14412 "xenstored.ml" 421 14395 14416
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref cfds "xenstored.ml" 417 14257 14269 "xenstored.ml" 417 14257 14273
+)
+"xenstored.ml" 421 14395 14400 "xenstored.ml" 421 14395 14416
+type(
+  int
+)
+"xenstored.ml" 421 14395 14417 "xenstored.ml" 421 14395 14418
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 421 14395 14419 "xenstored.ml" 421 14395 14420
+type(
+  int
+)
+"xenstored.ml" 421 14395 14400 "xenstored.ml" 421 14395 14420
+type(
+  bool
+)
+"xenstored.ml" 421 14395 14421 "xenstored.ml" 421 14395 14423
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"xenstored.ml" 421 14395 14424 "xenstored.ml" 421 14395 14435
+type(
+  Unix.file_descr list -> int
+)
+ident(
+  ext_ref List.length
+)
+"xenstored.ml" 421 14395 14436 "xenstored.ml" 421 14395 14440
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref wset "xenstored.ml" 412 14114 14126 "xenstored.ml" 412 14114 14130
+)
+"xenstored.ml" 421 14395 14424 "xenstored.ml" 421 14395 14440
+type(
+  int
+)
+"xenstored.ml" 421 14395 14441 "xenstored.ml" 421 14395 14442
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 421 14395 14443 "xenstored.ml" 421 14395 14444
+type(
+  int
+)
+"xenstored.ml" 421 14395 14424 "xenstored.ml" 421 14395 14444
+type(
+  bool
+)
+"xenstored.ml" 421 14395 14400 "xenstored.ml" 421 14395 14444
+type(
+  bool
+)
+"xenstored.ml" 422 14450 14453 "xenstored.ml" 422 14450 14475
+type(
+  Store.t ->
+  Connections.t ->
+  Domains.domains -> Unix.file_descr list -> Unix.file_descr list -> unit
+)
+ident(
+  int_ref process_connection_fds "xenstored.ml" 27 970 974 "xenstored.ml" 27 970 996
+)
+"xenstored.ml" 422 14450 14476 "xenstored.ml" 422 14450 14481
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 422 14450 14482 "xenstored.ml" 422 14450 14486
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 422 14450 14487 "xenstored.ml" 422 14450 14494
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 422 14450 14495 "xenstored.ml" 422 14450 14499
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref cfds "xenstored.ml" 417 14257 14269 "xenstored.ml" 417 14257 14273
+)
+"xenstored.ml" 422 14450 14500 "xenstored.ml" 422 14450 14504
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref wset "xenstored.ml" 412 14114 14126 "xenstored.ml" 412 14114 14130
+)
+"xenstored.ml" 422 14450 14453 "xenstored.ml" 422 14450 14504
+type(
+  unit
+)
+"xenstored.ml" 421 14395 14397 "xenstored.ml" 422 14450 14504
+type(
+  unit
+)
+"xenstored.ml" 423 14506 14511 "xenstored.ml" 423 14506 14518
+type(
+  float
+)
+ident(
+  int_ref timeout "xenstored.ml" 409 13988 13994 "xenstored.ml" 409 13988 14001
+)
+"xenstored.ml" 423 14506 14519 "xenstored.ml" 423 14506 14521
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.<>
+)
+"xenstored.ml" 423 14506 14522 "xenstored.ml" 423 14506 14524
+type(
+  float
+)
+"xenstored.ml" 423 14506 14511 "xenstored.ml" 423 14506 14524
+type(
+  bool
+)
+"xenstored.ml" 424 14532 14539 "xenstored.ml" 424 14532 14542
+type(
+  float
+)
+"xenstored.ml" 424 14532 14545 "xenstored.ml" 424 14532 14562
+type(
+  unit -> float
+)
+ident(
+  ext_ref Unix.gettimeofday
+)
+"xenstored.ml" 424 14532 14563 "xenstored.ml" 424 14532 14565
+type(
+  unit
+)
+"xenstored.ml" 424 14532 14545 "xenstored.ml" 424 14532 14565
+type(
+  float
+)
+"xenstored.ml" 425 14569 14575 "xenstored.ml" 425 14569 14578
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 424 14532 14539 "xenstored.ml" 424 14532 14542
+)
+"xenstored.ml" 425 14569 14579 "xenstored.ml" 425 14569 14580
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"xenstored.ml" 425 14569 14581 "xenstored.ml" 425 14569 14582
+type(
+  float ref -> float
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 425 14569 14582 "xenstored.ml" 425 14569 14594
+type(
+  float ref
+)
+ident(
+  int_ref period_start "xenstored.ml" 399 13765 13771 "xenstored.ml" 399 13765 13783
+)
+"xenstored.ml" 425 14569 14581 "xenstored.ml" 425 14569 14594
+type(
+  float
+)
+"xenstored.ml" 425 14569 14595 "xenstored.ml" 425 14569 14597
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.+.
+)
+"xenstored.ml" 425 14569 14598 "xenstored.ml" 425 14569 14617
+type(
+  float
+)
+ident(
+  int_ref period_ops_interval "xenstored.ml" 398 13730 13736 "xenstored.ml" 398 13730 13755
+)
+"xenstored.ml" 425 14569 14581 "xenstored.ml" 425 14569 14617
+type(
+  float
+)
+"xenstored.ml" 425 14569 14575 "xenstored.ml" 425 14569 14617
+type(
+  bool
+)
+"xenstored.ml" 426 14623 14628 "xenstored.ml" 426 14623 14640
+type(
+  float ref
+)
+ident(
+  int_ref period_start "xenstored.ml" 399 13765 13771 "xenstored.ml" 399 13765 13783
+)
+"xenstored.ml" 426 14623 14641 "xenstored.ml" 426 14623 14643
+type(
+  float ref -> float -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"xenstored.ml" 426 14623 14644 "xenstored.ml" 426 14623 14647
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 424 14532 14539 "xenstored.ml" 424 14532 14542
+)
+"xenstored.ml" 426 14623 14628 "xenstored.ml" 426 14623 14647
+type(
+  unit
+)
+"xenstored.ml" 426 14623 14649 "xenstored.ml" 426 14623 14661
+type(
+  float -> unit
+)
+ident(
+  int_ref periodic_ops "xenstored.ml" 358 12097 12102 "xenstored.ml" 358 12097 12114
+)
+"xenstored.ml" 426 14623 14662 "xenstored.ml" 426 14623 14665
+type(
+  float
+)
+ident(
+  int_ref now "xenstored.ml" 424 14532 14539 "xenstored.ml" 424 14532 14542
+)
+"xenstored.ml" 426 14623 14649 "xenstored.ml" 426 14623 14665
+type(
+  unit
+)
+"xenstored.ml" 426 14623 14627 "xenstored.ml" 426 14623 14666
+type(
+  unit
+)
+"xenstored.ml" 425 14569 14572 "xenstored.ml" 426 14623 14666
+type(
+  unit
+)
+"xenstored.ml" 423 14506 14530 "xenstored.ml" 427 14667 14670
+type(
+  unit
+)
+"xenstored.ml" 423 14506 14508 "xenstored.ml" 427 14667 14670
+type(
+  unit
+)
+"xenstored.ml" 428 14672 14674 "xenstored.ml" 428 14672 14689
+type(
+  Store.t -> Connections.t -> Domains.domains -> unit
+)
+ident(
+  int_ref process_domains "xenstored.ml" 54 1791 1795 "xenstored.ml" 54 1791 1810
+)
+"xenstored.ml" 428 14672 14690 "xenstored.ml" 428 14672 14695
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 428 14672 14696 "xenstored.ml" 428 14672 14700
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 428 14672 14701 "xenstored.ml" 428 14672 14708
+type(
+  Domains.domains
+)
+ident(
+  int_ref domains "xenstored.ml" 262 8703 8708 "xenstored.ml" 262 8703 8715
+)
+"xenstored.ml" 428 14672 14674 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 423 14506 14508 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 421 14395 14397 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 419 14335 14337 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 417 14257 14259 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 412 14114 14116 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 411 14065 14067 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 409 13988 13990 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 404 13863 13865 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 403 13818 13820 "xenstored.ml" 428 14672 14708
+type(
+  unit
+)
+"xenstored.ml" 431 14715 14722 "xenstored.ml" 431 14715 14725
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"xenstored.ml" 431 14715 14726 "xenstored.ml" 431 14715 14727
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.!
+)
+"xenstored.ml" 431 14715 14727 "xenstored.ml" 431 14715 14731
+type(
+  bool ref
+)
+ident(
+  int_ref quit "xenstored.ml" 265 8781 8786 "xenstored.ml" 265 8781 8790
+)
+"xenstored.ml" 431 14715 14726 "xenstored.ml" 431 14715 14731
+type(
+  bool
+)
+"xenstored.ml" 431 14715 14722 "xenstored.ml" 431 14715 14731
+type(
+  bool
+)
+"xenstored.ml" 434 14742 14769 "xenstored.ml" 434 14742 14786
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Systemd.sd_booted
+)
+"xenstored.ml" 434 14742 14786 "xenstored.ml" 434 14742 14788
+type(
+  unit
+)
+"xenstored.ml" 434 14742 14769 "xenstored.ml" 434 14742 14788
+type(
+  bool
+)
+"xenstored.ml" 435 14794 14826 "xenstored.ml" 435 14794 14849
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Systemd.sd_notify_ready
+)
+"xenstored.ml" 435 14794 14850 "xenstored.ml" 435 14794 14852
+type(
+  unit
+)
+"xenstored.ml" 435 14794 14826 "xenstored.ml" 435 14794 14852
+type(
+  unit
+)
+"xenstored.ml" 434 14742 14766 "xenstored.ml" 435 14794 14852
+type(
+  unit
+)
+"xenstored.ml" 436 14854 14857 "xenstored.ml" 436 14854 14866
+type(
+  unit -> unit
+)
+ident(
+  int_ref main_loop "xenstored.ml" 401 13797 13802 "xenstored.ml" 401 13797 13811
+)
+"xenstored.ml" 436 14854 14867 "xenstored.ml" 436 14854 14869
+type(
+  unit
+)
+"xenstored.ml" 436 14854 14857 "xenstored.ml" 436 14854 14869
+type(
+  unit
+)
+"xenstored.ml" 434 14742 14766 "xenstored.ml" 436 14854 14869
+type(
+  unit
+)
+"xenstored.ml" 437 14870 14877 "xenstored.ml" 437 14870 14880
+type(
+  exn
+)
+ident(
+  def exc "xenstored.ml" 438 14884 14887 "xenstored.ml" 440 14973 14986
+)
+"xenstored.ml" 438 14884 14887 "xenstored.ml" 438 14884 14892
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  int_ref error "xenstored.ml" 22 778 782 "xenstored.ml" 22 778 787
+)
+"xenstored.ml" 438 14884 14893 "xenstored.ml" 438 14884 14914
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"xenstored.ml" 438 14884 14916 "xenstored.ml" 438 14884 14934
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"xenstored.ml" 438 14884 14935 "xenstored.ml" 438 14884 14938
+type(
+  exn
+)
+ident(
+  int_ref exc "xenstored.ml" 437 14870 14877 "xenstored.ml" 437 14870 14880
+)
+"xenstored.ml" 438 14884 14915 "xenstored.ml" 438 14884 14939
+type(
+  string
+)
+"xenstored.ml" 438 14884 14887 "xenstored.ml" 438 14884 14939
+type(
+  unit
+)
+"xenstored.ml" 439 14941 14947 "xenstored.ml" 439 14941 14949
+type(
+  Parse_arg.config
+)
+ident(
+  int_ref cf "xenstored.ml" 225 7803 7808 "xenstored.ml" 225 7803 7810
+)
+"xenstored.ml" 439 14941 14947 "xenstored.ml" 439 14941 14967
+type(
+  bool
+)
+"xenstored.ml" 440 14973 14977 "xenstored.ml" 440 14973 14982
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"xenstored.ml" 440 14973 14983 "xenstored.ml" 440 14973 14986
+type(
+  exn
+)
+ident(
+  int_ref exc "xenstored.ml" 437 14870 14877 "xenstored.ml" 437 14870 14880
+)
+"xenstored.ml" 440 14973 14977 "xenstored.ml" 440 14973 14986
+type(
+  unit
+)
+"xenstored.ml" 439 14941 14944 "xenstored.ml" 440 14973 14986
+type(
+  unit
+)
+"xenstored.ml" 438 14884 14887 "xenstored.ml" 440 14973 14986
+type(
+  unit
+)
+"xenstored.ml" 433 14736 14738 "xenstored.ml" 440 14973 14986
+type(
+  unit
+)
+"xenstored.ml" 431 14715 14716 "xenstored.ml" 441 14987 14992
+type(
+  unit
+)
+"xenstored.ml" 442 14994 14995 "xenstored.ml" 442 14994 14999
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  int_ref info "xenstored.ml" 24 870 874 "xenstored.ml" 24 870 878
+)
+"xenstored.ml" 442 14994 15000 "xenstored.ml" 442 14994 15020
+type(
+  (unit, unit, string, unit) format4
+)
+"xenstored.ml" 442 14994 14995 "xenstored.ml" 442 14994 15020
+type(
+  unit
+)
+"xenstored.ml" 443 15022 15023 "xenstored.ml" 443 15022 15033
+type(
+  Store.t -> Connections.t -> string -> unit
+)
+ident(
+  ext_ref DB.to_file
+)
+"xenstored.ml" 443 15022 15034 "xenstored.ml" 443 15022 15039
+type(
+  Store.t
+)
+ident(
+  int_ref store "xenstored.ml" 260 8638 8643 "xenstored.ml" 260 8638 8648
+)
+"xenstored.ml" 443 15022 15040 "xenstored.ml" 443 15022 15044
+type(
+  Connections.t
+)
+ident(
+  int_ref cons "xenstored.ml" 263 8743 8748 "xenstored.ml" 263 8743 8752
+)
+"xenstored.ml" 443 15022 15045 "xenstored.ml" 443 15022 15068
+type(
+  string
+)
+"xenstored.ml" 443 15022 15023 "xenstored.ml" 443 15022 15068
+type(
+  unit
+)
+"xenstored.ml" 444 15070 15071 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 443 15022 15023 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 442 14994 14995 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 431 14715 14716 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 401 13797 13798 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 399 13765 13767 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 398 13730 13732 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 358 12097 12098 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 356 12064 12065 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 355 12032 12033 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 337 11172 11173 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 308 10078 10079 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 306 10038 10039 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 300 9851 9852 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 295 9696 9697 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 294 9665 9666 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 292 9617 9618 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 291 9535 9536 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 290 9462 9463 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 289 9399 9400 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 287 9360 9361 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 267 8807 8808 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 265 8781 8782 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 263 8743 8744 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 262 8703 8704 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 261 8670 8671 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 260 8638 8639 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 256 8532 8533 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 253 8436 8437 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 247 8284 8285 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 239 8036 8037 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 233 7955 7956 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 226 7824 7825 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)
+"xenstored.ml" 225 7803 7804 "xenstored.ml" 444 15070 15073
+type(
+  unit
+)

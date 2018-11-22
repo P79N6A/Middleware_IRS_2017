@@ -1,0 +1,1298 @@
+NAME
+    xl.cfg - XL Domain Configuration File Syntax
+
+SYNOPSIS
+     /etc/xen/xldomain
+
+DESCRIPTION
+    To create a VM (a domain in Xen terminology, sometimes called a guest)
+    with xl requires the provision of a domain config file. Typically these
+    live in `/etc/xen/DOMAIN.cfg` where DOMAIN is the name of the domain.
+
+SYNTAX
+    A domain config file consists of a series of "KEY=VALUE" pairs.
+
+    Some "KEY"s are mandatory, others are general options which apply to any
+    guest type while others relate only to specific guest types (e.g. PV or
+    HVM guests).
+
+    A value "VALUE" is one of:
+
+    "STRING"
+        A string, surrounded by either single or double quotes.
+
+    NUMBER
+        A number, in either decimal, octal (using a 0 prefix) or hexadecimal
+        (using an "0x" prefix).
+
+    BOOLEAN
+        A "NUMBER" interpreted as "False" (0) or "True" (any other value).
+
+    [ VALUE, VALUE, ... ]
+        A list of "VALUES" of the above types. Lists are homogeneous and are
+        not nested.
+
+    The semantics of each "KEY" defines which form of "VALUE" is required.
+
+    Pairs may be separated either by a newline or a semicolon. Both of the
+    following are valid:
+
+      name="h0"
+      builder="hvm"
+
+      name="h0"; builder="hvm"
+
+OPTIONS
+  Mandatory Configuration Items
+    The following key is mandatory for any guest type:
+
+    name="NAME"
+        Specifies the name of the domain. Names of domains existing on a
+        single host must be unique.
+
+  Selecting Guest Type
+    builder="generic"
+        Specifies that this is to be a PV domain. This is the default.
+
+    builder="hvm"
+        Specifies that this is to be an HVM domain. That is, a fully
+        virtualised computer with emulated BIOS, disk and network
+        peripherals, etc. The default is a PV domain, suitable for hosting
+        Xen-aware guest operating systems.
+
+  General Options
+    The following options apply to guests of any type.
+
+   CPU Allocation
+    pool="CPUPOOLNAME"
+        Put the guest's vcpus into the named cpu pool.
+
+    vcpus=N
+        Start the guest with N vcpus initially online.
+
+    maxvcpus=M
+        Allow the guest to bring up a maximum of M vcpus. At start of day if
+        `vcpus=N` is less than `maxvcpus=M` then the first `N` vcpus will be
+        created online and the remainder will be offline.
+
+    cpus="CPU-LIST"
+        List of which cpus the guest is allowed to use. Default is no
+        pinning at all (more on this below). A "CPU-LIST" may be specified
+        as follows:
+
+        "all"
+            To allow all the vcpus of the guest to run on all the cpus on
+            the host.
+
+        "0-3,5,^1"
+            To allow all the vcpus of the guest to run on cpus 0,2,3,5.
+            Combining this with "all" is possible, meaning "all,^7" results
+            in all the vcpus of the guest running on all the cpus on the
+            host except cpu 7.
+
+        "nodes:0-3,node:^2"
+            To allow all the vcpus of the guest to run on the cpus from NUMA
+            nodes 0,1,3 of the host. So, if cpus 0-3 belongs to node 0, cpus
+            4-7 belongs to node 1 and cpus 8-11 to node 3, the above would
+            mean all the vcpus of the guest will run on cpus 0-3,8-11.
+
+            Combining this notation with the one above is possible. For
+            instance, "1,node:2,^6", means all the vcpus of the guest will
+            run on cpu 1 and on all the cpus of NUMA node 2, but not on cpu
+            6. Following the same example as above, that would be cpus
+            1,4,5,7.
+
+            Combining this with "all" is also possible, meaning
+            "all,^nodes:1" results in all the vcpus of the guest running on
+            all the cpus on the host, except for the cpus belonging to the
+            host NUMA node 1.
+
+        ["2", "3-8,^5"]
+            To ask for specific vcpu mapping. That means (in this example),
+            vcpu 0 of the guest will run on cpu 2 of the host and vcpu 1 of
+            the guest will run on cpus 3,4,6,7,8 of the host.
+
+            More complex notation can be also used, exactly as described
+            above. So "all,^5-8", or just "all", or
+            "node:0,node:2,^9-11,18-20" are all legal, for each element of
+            the list.
+
+        If this option is not specified, no vcpu to cpu pinning is
+        established, and the vcpus of the guest can run on all the cpus of
+        the host. If this option is specified, the intersection of the vcpu
+        pinning mask, provided here, and the soft affinity mask, provided
+        via cpus\_soft= (if any), is utilized to compute the domain
+        node-affinity, for driving memory allocations.
+
+    cpus_soft="CPU-LIST"
+        Exactly as cpus=, but specifies soft affinity, rather than pinning
+        (hard affinity). When using the credit scheduler, this means what
+        cpus the vcpus of the domain prefer.
+
+        A "CPU-LIST" is specified exactly as above, for cpus=.
+
+        If this option is not specified, the vcpus of the guest will not
+        have any preference regarding on what cpu to run. If this option is
+        specified, the intersection of the soft affinity mask, provided
+        here, and the vcpu pinning, provided via cpus= (if any), is utilized
+        to compute the domain node-affinity, for driving memory allocations.
+
+        If this option is not specified (and cpus= is not specified either),
+        libxl automatically tries to place the guest on the least possible
+        number of nodes. A heuristic approach is used for choosing the best
+        node (or set of nodes), with the goal of maximizing performance for
+        the guest and, at the same time, achieving efficient utilization of
+        host cpus and memory. In that case, the soft affinity of all the
+        vcpus of the domain will be set to the pcpus belonging to the NUMA
+        nodes chosen during placement.
+
+        For more details, see docs/misc/xl-numa-placement.markdown.
+
+   CPU Scheduling
+    cpu_weight=WEIGHT
+        A domain with a weight of 512 will get twice as much CPU as a domain
+        with a weight of 256 on a contended host. Legal weights range from 1
+        to 65535 and the default is 256. Honoured by the credit, credit2 and
+        sedf schedulers.
+
+    cap=N
+        The cap optionally fixes the maximum amount of CPU a domain will be
+        able to consume, even if the host system has idle CPU cycles. The
+        cap is expressed in percentage of one physical CPU: 100 is 1
+        physical CPU, 50 is half a CPU, 400 is 4 CPUs, etc. The default, 0,
+        means there is no upper cap. Honoured by the credit and credit2
+        schedulers.
+
+        NB: Many systems have features that will scale down the computing
+        power of a cpu that is not 100% utilized. This can be in the
+        operating system, but can also sometimes be below the operating
+        system in the BIOS. If you set a cap such that individual cores are
+        running at less than 100%, this may have an impact on the
+        performance of your workload over and above the impact of the cap.
+        For example, if your processor runs at 2GHz, and you cap a vm at
+        50%, the power management system may also reduce the clock speed to
+        1GHz; the effect will be that your VM gets 25% of the available
+        power (50% of 1GHz) rather than 50% (50% of 2GHz). If you are not
+        getting the performance you expect, look at performance and cpufreq
+        options in your operating system and your BIOS.
+
+    period=NANOSECONDS
+        The normal EDF scheduling usage in nanoseconds. This means every
+        period the domain gets cpu time defined in slice. Honoured by the
+        sedf scheduler.
+
+    slice=NANOSECONDS
+        The normal EDF scheduling usage in nanoseconds. it defines the time
+        a domain get every period time. Honoured by the sedf scheduler.
+
+    latency=N
+        Scaled period if domain is doing heavy I/O. Honoured by the sedf
+        scheduler.
+
+    extratime=BOOLEAN
+        Flag for allowing domain to run in extra time. Honoured by the sedf
+        scheduler.
+
+   Memory Allocation
+    memory=MBYTES
+        Start the guest with MBYTES megabytes of RAM.
+
+    maxmem=MBYTES
+        Specifies the maximum amount of memory a guest can ever see. The
+        value of maxmem= must be equal or greater than memory=.
+
+        In combination with memory= it will start the guest "pre-ballooned",
+        if the values of memory= and maxmem= differ. A "pre-ballooned" HVM
+        guest needs a balloon driver, without a balloon driver it will
+        crash.
+
+   Event Actions
+    on_poweroff="ACTION"
+        Specifies what should be done with the domain if it shuts itself
+        down. The "ACTION"s are:
+
+        destroy
+            destroy the domain
+
+        restart
+            destroy the domain and immediately create a new domain with the
+            same configuration
+
+        rename-restart
+            rename the domain which terminated, and then immediately create
+            a new domain with the same configuration as the original
+
+        preserve
+            keep the domain. It can be examined, and later destroyed with
+            `xl destroy`.
+
+        coredump-destroy
+            write a "coredump" of the domain to /var/xen/dump/NAME and then
+            destroy the domain.
+
+        coredump-restart
+            write a "coredump" of the domain to /var/xen/dump/NAME and then
+            restart the domain.
+
+        The default for "on_poweroff" is "destroy".
+
+    on_reboot="ACTION"
+        Action to take if the domain shuts down with a reason code
+        requesting a reboot. Default is "restart".
+
+    on_watchdog="ACTION"
+        Action to take if the domain shuts down due to a Xen watchdog
+        timeout. Default is "destroy".
+
+    on_crash="ACTION"
+        Action to take if the domain crashes. Default is "destroy".
+
+   Direct Kernel Boot
+    Direct kernel boot allows booting directly from a kernel and initrd
+    stored in the host physical machine OS, allowing command line arguments
+    to be passed directly. PV guest direct kernel boot is supported. HVM
+    guest direct kernel boot is supported with limitation (it's supported
+    when using qemu-xen and default BIOS 'seabios'; not supported in case of
+    stubdom-dm and old rombios.)
+
+    kernel="PATHNAME"
+        Load the specified file as the kernel image.
+
+    ramdisk="PATHNAME"
+        Load the specified file as the ramdisk.
+
+    cmdline="STRING"
+        Append cmdline="STRING" to the kernel command line. (Note: it is
+        guest specific what meaning this has). It can replace root="STRING"
+        plus extra="STRING" and is preferred. When cmdline="STRING" is set,
+        root="STRING" and extra="STRING" will be ignored.
+
+    root="STRING"
+        Append root="STRING" to the kernel command line (Note: it is guest
+        specific what meaning this has).
+
+    extra="STRING"
+        Append STRING to the kernel command line. (Note: it is guest
+        specific what meaning this has).
+
+   Other Options
+    uuid="UUID"
+        Specifies the UUID of the domain. If not specified, a fresh unique
+        UUID will be generated.
+
+    seclabel="LABEL"
+        Assign an XSM security label to this domain.
+
+    init_seclabel="LABEL"
+        Specify an XSM security label used for this domain temporarily
+        during its build. The domain's XSM label will be changed to the
+        execution seclabel (specified by "seclabel") once the build is
+        complete, prior to unpausing the domain. With a properly constructed
+        security policy (such as nomigrate_t in the example policy), this
+        can be used to build a domain whose memory is not accessible to the
+        toolstack domain.
+
+    nomigrate=BOOLEAN
+        Disable migration of this domain. This enables certain other
+        features which are incompatible with migration. Currently this is
+        limited to enabling the invariant TSC feature flag in cpuid results
+        when TSC is not emulated.
+
+    driver_domain=BOOLEAN
+        Specify that this domain is a driver domain. This enables certain
+        features needed in order to run a driver domain.
+
+  Devices
+    The following options define the paravirtual, emulated and physical
+    devices which the guest will contain.
+
+    disk=[ "DISK_SPEC_STRING", "DISK_SPEC_STRING", ...]
+        Specifies the disks (both emulated disks and Xen virtual block
+        devices) which are to be provided to the guest, and what objects on
+        the they should map to. See docs/misc/xl-disk-configuration.txt.
+
+    vif=[ "NET_SPEC_STRING", "NET_SPEC_STRING", ...]
+        Specifies the networking provision (both emulated network adapters,
+        and Xen virtual interfaces) to provided to the guest. See
+        docs/misc/xl-network-configuration.markdown.
+
+    vtpm=[ "VTPM_SPEC_STRING", "VTPM_SPEC_STRING", ...]
+        Specifies the virtual trusted platform module to be provided to the
+        guest. Please see docs/misc/vtpm.txt for more details.
+
+        Each VTPM_SPEC_STRING is a comma-separated list of "KEY=VALUE"
+        settings, from the following list:
+
+        "backend=DOMAIN"
+            Specify the backend domain name of id. This value is required!
+            If this domain is a guest, the backend should be set to the vtpm
+            domain name. If this domain is a vtpm, the backend should be set
+            to the vtpm manager domain name.
+
+        "uuid=UUID"
+            Specify the uuid of this vtpm device. The uuid is used to
+            uniquely identify the vtpm device. You can create one using the
+            uuidgen program on unix systems. If left unspecified, a new uuid
+            will be randomly generated every time the domain boots. If this
+            is a vtpm domain, you should specify a value. The value is
+            optional if this is a guest domain.
+
+    vfb=[ "VFB_SPEC_STRING", "VFB_SPEC_STRING", ...]
+        Specifies the paravirtual framebuffer devices which should be
+        supplied to the domain.
+
+        This options does not control the emulated graphics card presented
+        to an HVM guest. See "Emulated VGA Graphics Device" below for how to
+        configure the emulated device. If "Emulated VGA Graphics Device"
+        options are used in a PV guest configuration, xl will pick up vnc,
+        vnclisten, vncpasswd, vncdisplay, vncunused, sdl, opengl and keymap
+        to construct paravirtual framebuffer device for the guest.
+
+        Each VFB_SPEC_STRING is a comma-separated list of "KEY=VALUE"
+        settings, from the following list:
+
+        "vnc=BOOLEAN"
+            Allow access to the display via the VNC protocol. This enables
+            the other VNC-related settings. The default is to enable this.
+
+        "vnclisten="ADDRESS[:DISPLAYNUM]""
+            Specifies the IP address, and optionally VNC display number, to
+            use.
+
+            NB that if you specify the display number here, you should not
+            use vncdisplay.
+
+        "vncdisplay=DISPLAYNUM"
+            Specifies the VNC display number to use. The actual TCP port
+            number will be DISPLAYNUM+5900.
+
+            NB that you should not use this option if you set the displaynum
+            in the vnclisten string.
+
+        "vncunused=BOOLEAN"
+            Requests that the VNC display setup search for a free TCP port
+            to use. The actual display used can be accessed with "xl
+            vncviewer".
+
+        "vncpasswd="PASSWORD""
+            Specifies the password for the VNC server.
+
+        "sdl=BOOLEAN"
+            Specifies that the display should be presented via an X window
+            (using Simple DirectMedia Layer). The default is to not enable
+            this mode.
+
+        "display=DISPLAY"
+            Specifies the X Window display that should be used when the sdl
+            option is used. Note: passing this value to the device-model is
+            not currently implemented, so providing this option will have no
+            effect.
+
+        "xauthority=XAUTHORITY"
+            Specifies the path to the X authority file that should be used
+            to connect to the X server when the sdl option is used. Note:
+            passing this value to the device-model is not currently
+            implemented, so providing this option will have no effect.
+
+        "opengl=BOOLEAN"
+            Enable OpenGL acceleration of the SDL display. Only effects
+            machines using "device_model_version="qemu-xen-traditional"" and
+            only if the device-model was compiled with OpenGL support.
+            Disabled by default.
+
+        "keymap="LANG""
+            Configure the keymap to use for the keyboard associated with
+            this display. If the input method does not easily support raw
+            keycodes (e.g. this is often the case when using VNC) then this
+            allows us to correctly map the input keys into keycodes seen by
+            the guest. The specific values which are accepted are defined by
+            the version of the device-model which you are using. See
+            "Keymaps" below or consult the qemu(1) manpage. The default is
+            en-us.
+
+    channel=[ "CHANNEL_SPEC_STRING", "CHANNEL_SPEC_STRING", ...]
+        Specifies the virtual channels to be provided to the guest. A
+        channel is a low-bandwidth, bidirectional byte stream, which
+        resembles a serial link. Typical uses for channels include
+        transmitting VM configuration after boot and signalling to in-guest
+        agents. Please see docs/misc/channels.txt for more details.
+
+        Each CHANNEL_SPEC_STRING is a comma-separated list of "KEY=VALUE"
+        seettings. Leading and trailing whitespace is ignored in both KEY
+        and VALUE. Neither KEY nor VALUE may contain ',', '=' or '"'.
+        Defined values are:
+
+        "backend=DOMAIN"
+            Specify the backend domain name or id. This parameter is
+            optional. If this parameter is omitted then the toolstack domain
+            will be assumed.
+
+        "name=NAME"
+            Specify the string name for this device. This parameter is
+            mandatory. This should be a well-known name for the specific
+            application (e.g. guest agent) and should be used by the
+            frontend to connect the application to the right channel device.
+            There is no formal registry of channel names, so application
+            authors are encouraged to make their names unique by including
+            domain name and version number in the string (e.g.
+            org.mydomain.guestagent.1).
+
+        "connection=CONNECTION"
+            Specify how the backend will be implemented. This following
+            options are available:
+
+            connection=SOCKET
+                The backend will bind a Unix domain socket (at the path
+                given by path=PATH), call listen and accept connections. The
+                backend will proxy data between the channel and the
+                connected socket.
+
+            connection=PTY
+                The backend will create a pty and proxy data between the
+                channel and the master device. The command xl channel-list
+                can be used to discover the assigned slave device.
+
+    pci=[ "PCI_SPEC_STRING", "PCI_SPEC_STRING", ... ]
+        Specifies the host PCI devices to passthrough to this guest. Each
+        PCI_SPEC_STRING has the form
+        "[DDDD:]BB:DD.F[@VSLOT],KEY=VALUE,KEY=VALUE,..." where:
+
+        DDDD:BB:DD.F
+            Identifies the PCI device from the host perspective in domain
+            (DDDD), Bus (BB), Device (DD) and Function (F) syntax. This is
+            the same scheme as used in the output of "lspci" for the device
+            in question. Note: By default "lspci" will omit the domain
+            (DDDD) if it is zero and it is optional here also. You may
+            specify the function (F) as * to indicate all functions.
+
+        @VSLOT
+            Specifies the virtual device where the guest will see this
+            device. This is equivalent to the DD which the guest sees. In a
+            guest DDDD and BB are "0000:00".
+
+        KEY=VALUE
+            Possible KEYs are:
+
+            permissive=BOOLEAN
+                (PV only) By default pciback only allows PV guests to write
+                "known safe" values into PCI config space. But many devices
+                require writes to other areas of config space in order to
+                operate properly. This tells the pciback driver to allow all
+                writes to PCI config space of this device by this domain.
+                This option should be enabled with caution: it gives the
+                guest much more control over the device, which may have
+                security or stability implications. It is recommended to
+                enable this option only for trusted VMs under administrator
+                control.
+
+            msitranslate=BOOLEAN
+                Specifies that MSI-INTx translation should be turned on for
+                the PCI device. When enabled, MSI-INTx translation will
+                always enable MSI on the PCI device regardless whether the
+                guest uses INTx or MSI. Some device drivers, such as
+                NVIDIA's, detect an inconsistency and do not function when
+                this option is enabled. Therefore the default is false (0).
+
+            seize=BOOLEAN
+                Tells xl to automatically attempt to re-assign a device to
+                pciback if it is not already assigned.
+
+                WARNING: If you set this option, xl will gladly re-assign a
+                critical system device, such as a network or a disk
+                controller being used by dom0 without confirmation. Please
+                use with care.
+
+            power_mgmt=BOOLEAN
+                (HVM only) Specifies that the VM should be able to program
+                the D0-D3hot power management states for the PCI device.
+                False (0) by default.
+
+    pci_permissive=BOOLEAN
+        (PV only) Changes the default value of 'permissive' for all PCI
+        devices passed through to this VM. See permissive above.
+
+    pci_msitranslate=BOOLEAN
+        Changes the default value of 'msitranslate' for all PCI devices
+        passed through to this VM. See msitranslate above.
+
+    pci_seize=BOOLEAN
+        Changes the default value of 'seize' for all PCI devices passed
+        through to this VM. See seize above.
+
+    pci_power_mgmt=BOOLEAN
+        (HVM only) Changes the default value of 'power_mgmt' for all PCI
+        devices passed through to this VM. See power_mgt above.
+
+    gfx_passthru=BOOLEAN
+        Enable graphics device PCI passthrough. This option makes an
+        assigned PCI graphics card become primary graphics card in the VM.
+        The QEMU emulated graphics adapter is disabled and the VNC console
+        for the VM will not have any graphics output. All graphics output,
+        including boot time QEMU BIOS messages from the VM, will go to the
+        physical outputs of the passedthrough physical graphics card.
+
+        The graphics card PCI device to passthrough is chosen with pci
+        option, exactly in the same way as normal Xen PCI device
+        passthrough/assignment is done. Note that gfx_passthru does not do
+        any kind of sharing of the GPU, so you can only assign the GPU to
+        one single VM at a time.
+
+        gfx_passthru also enables various legacy VGA memory ranges, BARs,
+        MMIOs, and ioports to be passed thru to the VM, since those are
+        required for correct operation of things like VGA BIOS, text mode,
+        VBE, etc.
+
+        Enabling gfx_passthru option also copies the physical graphics card
+        video BIOS to the guest memory, and executes the VBIOS in the guest
+        to initialize the graphics card.
+
+        Most graphics adapters require vendor specific tweaks for properly
+        working graphics passthrough. See the
+        XenVGAPassthroughTestedAdapters
+        <http://wiki.xen.org/wiki/XenVGAPassthroughTestedAdapters> wiki page
+        for currently supported graphics cards for gfx_passthru.
+
+        gfx_passthru is currently only supported with the
+        qemu-xen-traditional device-model. Upstream qemu-xen device-model
+        currently does not have support for gfx_passthru.
+
+        Note that some graphics adapters (AMD/ATI cards, for example) do not
+        necessarily require gfx_passthru option, so you can use the normal
+        Xen PCI passthrough to assign the graphics card as a secondary
+        graphics card to the VM. The QEMU-emulated graphics card remains the
+        primary graphics card, and VNC output is available from the
+        QEMU-emulated primary adapter.
+
+        More information about Xen gfx_passthru feature is available on the
+        XenVGAPassthrough <http://wiki.xen.org/wiki/XenVGAPassthrough> wiki
+        page.
+
+    ioports=[ "IOPORT_RANGE", "IOPORT_RANGE", ... ]
+        Allow guest to access specific legacy I/O ports. Each IOPORT_RANGE
+        is given in hexadecimal and may either a span e.g. "2f8-2ff"
+        (inclusive) or a single I/O port "2f8".
+
+        It is recommended to use this option only for trusted VMs under
+        administrator control.
+
+    iomem=[ "IOMEM_START,NUM_PAGES[@GFN]", "IOMEM_START,NUM_PAGES[@GFN]",
+    ... ]
+        Allow auto-translated domains to access specific hardware I/O memory
+        pages.
+
+        IOMEM_START is a physical page number. NUM_PAGES is the number of
+        pages beginning with START_PAGE to allow access. GFN specifies the
+        guest frame number where the mapping will start in the domU's
+        address space. If GFN is not given, the mapping will be performed
+        using IOMEM_START as a start in the domU's address space, therefore
+        performing an 1:1 mapping as default. All of these values must be
+        given in hexadecimal.
+
+        Note that the IOMMU won't be updated with the mappings specified
+        with this option. This option therefore should not be used to
+        passthrough any IOMMU-protected device.
+
+        It is recommended to use this option only for trusted VMs under
+        administrator control.
+
+    irqs=[ NUMBER, NUMBER, ... ]
+        Allow a guest to access specific physical IRQs.
+
+        It is recommended to use this option only for trusted VMs under
+        administrator control.
+
+    max_event_channels=N
+        Limit the guest to using at most N event channels (PV interrupts).
+        Guests use hypervisor resources for each event channel they use.
+
+        The default of 1023 should be sufficient for typical guests. The
+        maximum value depends what the guest supports. Guests supporting the
+        FIFO-based event channel ABI support up to 131,071 event channels.
+        Other guests are limited to 4095 (64-bit x86 and ARM) or 1023
+        (32-bit x86).
+
+  Paravirtualised (PV) Guest Specific Options
+    The following options apply only to Paravirtual guests.
+
+    bootloader="PROGRAM"
+        Run "PROGRAM" to find the kernel image and ramdisk to use. Normally
+        "PROGRAM" would be "pygrub", which is an emulation of
+        grub/grub2/syslinux. Either kernel or bootloader must be specified
+        for PV guests.
+
+    bootloader_args=[ "ARG", "ARG", ...]
+        Append ARGs to the arguments to the bootloader program.
+        Alternatively if the argument is a simple string then it will be
+        split into words at whitespace (this second option is deprecated).
+
+    e820_host=BOOLEAN
+        Selects whether to expose the host e820 (memory map) to the guest
+        via the virtual e820. When this option is false (0) the guest
+        pseudo-physical address space consists of a single contiguous RAM
+        region. When this option is specified the virtual e820 instead
+        reflects the host e820 and contains the same PCI holes. The total
+        amount of RAM represented by the memory map is always the same, this
+        option configures only how it is laid out.
+
+        Exposing the host e820 to the guest gives the guest kernel the
+        opportunity to set aside the required part of its pseudo-physical
+        address space in order to provide address space to map passedthrough
+        PCI devices. It is guest Operating System dependent whether this
+        option is required, specifically it is required when using a
+        mainline Linux ("pvops") kernel. This option defaults to true (1) if
+        any PCI passthrough devices are configured and false (0) otherwise.
+        If you do not configure any passthrough devices at domain creation
+        time but expect to hotplug devices later then you should set this
+        option. Conversely if your particular guest kernel does not require
+        this behaviour then it is safe to allow this to be enabled but you
+        may wish to disable it anyway.
+
+    pvh=BOOLEAN
+        Selects whether to run this PV guest in an HVM container. Default is
+        0.
+
+  Fully-virtualised (HVM) Guest Specific Options
+    The following options apply only to HVM guests.
+
+   Boot Device
+    boot=[c|d|n]
+        Selects the emulated virtual device to boot from. Options are hard
+        disk (c), cd-rom (d) or network/PXE (n). Multiple options can be
+        given and will be attempted in the order they are given. e.g. to
+        boot from cd-rom but fallback to the hard disk you can give dc. The
+        default is cd.
+
+   Paging
+    The following options control the mechanisms used to virtualise guest
+    memory. The defaults are selected to give the best results for the
+    common case and so you should normally leave these options unspecified.
+
+    hap=BOOLEAN
+        Turns "hardware assisted paging" (the use of the hardware nested
+        page table feature) on or off. This feature is called EPT (Extended
+        Page Tables) by Intel and NPT (Nested Page Tables) or RVI (Rapid
+        Virtualisation Indexing) by AMD. Affects HVM guests only. If turned
+        off, Xen will run the guest in "shadow page table" mode where the
+        guest's page table updates and/or TLB flushes etc. will be emulated.
+        Use of HAP is the default when available.
+
+    oos=BOOLEAN
+        Turns "out of sync pagetables" on or off. When running in shadow
+        page table mode, the guest's page table updates may be deferred as
+        specified in the Intel/AMD architecture manuals. However this may
+        expose unexpected bugs in the guest, or find bugs in Xen, so it is
+        possible to disable this feature. Use of out of sync page tables,
+        when Xen thinks it appropriate, is the default.
+
+    shadow_memory=MBYTES
+        Number of megabytes to set aside for shadowing guest pagetable pages
+        (effectively acting as a cache of translated pages) or to use for
+        HAP state. By default this is 1MB per guest vcpu plus 8KB per MB of
+        guest RAM. You should not normally need to adjust this value.
+        However if you are not using hardware assisted paging (i.e. you are
+        using shadow mode) and your guest workload consists of a a very
+        large number of similar processes then increasing this value may
+        improve performance.
+
+   Processor and Platform Features
+    The following options allow various processor and platform level
+    features to be hidden or exposed from the guest's point of view. This
+    can be useful when running older guest Operating Systems which may
+    misbehave when faced with more modern features. In general you should
+    accept the defaults for these options wherever possible.
+
+    bios="STRING"
+        Select the virtual firmware that is exposed to the guest. By
+        default, a guess is made based on the device model, but sometimes it
+        may be useful to request a different one, like UEFI.
+
+        rombios
+            Loads ROMBIOS, a 16-bit x86 compatible BIOS. This is used by
+            default when device_model_version=qemu-xen-traditional. This is
+            the only BIOS option supported when
+            device_model_version=qemu-xen-traditional. This is the BIOS used
+            by all previous Xen versions.
+
+        seabios
+            Loads SeaBIOS, a 16-bit x86 compatible BIOS. This is used by
+            default with device_model_version=qemu-xen.
+
+        ovmf
+            Loads OVMF, a standard UEFI firmware by Tianocore project.
+            Requires device_model_version=qemu-xen.
+
+    pae=BOOLEAN
+        Hide or expose the IA32 Physical Address Extensions. These
+        extensions make it possible for a 32 bit guest Operating System to
+        access more than 4GB of RAM. Enabling PAE also enabled other
+        features such as NX. PAE is required if you wish to run a 64-bit
+        guest Operating System. In general you should leave this enabled and
+        allow the guest Operating System to choose whether or not to use
+        PAE. (X86 only)
+
+    acpi=BOOLEAN
+        Expose ACPI (Advanced Configuration and Power Interface) tables from
+        the virtual firmware to the guest Operating System. ACPI is required
+        by most modern guest Operating Systems. This option is enabled by
+        default and usually you should omit it. However it may be necessary
+        to disable ACPI for compatibility with some guest Operating Systems.
+
+    acpi_s3=BOOLEAN
+        Include the S3 (suspend-to-ram) power state in the virtual firmware
+        ACPI table. True (1) by default.
+
+    acpi_s4=BOOLEAN
+        Include S4 (suspend-to-disk) power state in the virtual firmware
+        ACPI table. True (1) by default.
+
+    apic=BOOLEAN
+        Include information regarding APIC (Advanced Programmable Interrupt
+        Controller) in the firmware/BIOS tables on a single processor guest.
+        This causes the MP (multiprocessor) and PIR (PCI Interrupt Routing)
+        tables to be exported by the virtual firmware. This option has no
+        effect on a guest with multiple virtual CPUS as they must always
+        include these tables. This option is enabled by default and you
+        should usually omit it but it may be necessary to disable these
+        firmware tables when using certain older guest Operating Systems.
+        These tables have been superseded by newer constructs within the
+        ACPI tables. (X86 only)
+
+    nx=BOOLEAN
+        Hides or exposes the No-eXecute capability. This allows a guest
+        Operating system to map pages such that they cannot be executed
+        which can enhance security. This options requires that PAE also be
+        enabled. (X86 only)
+
+    hpet=BOOLEAN
+        Enables or disables HPET (High Precision Event Timer). This option
+        is enabled by default and you should usually omit it. It may be
+        necessary to disable the HPET in order to improve compatibility with
+        guest Operating Systems (X86 only)
+
+    nestedhvm=BOOLEAN
+        Enable or disables guest access to hardware virtualisation features,
+        e.g. it allows a guest Operating System to also function as a
+        hypervisor. This option is disabled by default. You may want this
+        option if you want to run another hypervisor (including another copy
+        of Xen) within a Xen guest or to support a guest Operating System
+        which uses hardware virtualisation extensions (e.g. Windows XP
+        compatibility mode on more modern Windows OS).
+
+    cpuid="LIBXL_STRING" or cpuid=[ "XEND_STRING", "XEND_STRING" ]
+        Configure the value returned when a guest executes CPUID
+        instruction. Two versions of config syntax are recognized: libxl and
+        xend.
+
+        The libxl syntax is a comma separated list of key=value pairs,
+        preceded by the word "host". A few keys take a numerical value, all
+        others take a single character which describes what to do with the
+        feature bit.
+
+        Possible values for a single feature bit: '1' -> force the
+        corresponding bit to 1 '0' -> force to 0 'x' -> Get a safe value
+        (pass through and mask with the default policy) 'k' -> pass through
+        the host bit value 's' -> as 'k' but preserve across save/restore
+        and migration (not implemented)
+
+        Note: when specifying cpuid for hypervisor leaves (0x4000xxxx major
+        group) only the lowest 8 bits of leaf's 0x4000xx00 EAX register are
+        processed, the rest are ignored (these 8 bits signify maximum number
+        of hypervisor leaves).
+
+        List of keys taking a value: apicidsize brandid clflush family
+        localapicid maxleaf maxhvleaf model nc proccount procpkg stepping
+
+        List of keys taking a character: 3dnow 3dnowext 3dnowprefetch abm
+        acpi aes altmovcr8 apic avx clfsh cmov cmplegacy cmpxchg16 cmpxchg8
+        cntxid dca de ds dscpl dtes64 est extapic f16c ffxsr fma4 fpu fxsr
+        htt hypervisor ia64 ibs lahfsahf lm lwp mca mce misalignsse mmx
+        mmxext monitor movbe msr mtrr nodeid nx osvw osxsave pae page1gb pat
+        pbe pclmulqdq pdcm pge popcnt pse pse36 psn rdtscp skinit smx ss sse
+        sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm svm_decode svm_lbrv svm_npt
+        svm_nrips svm_pausefilt svm_tscrate svm_vmcbclean syscall sysenter
+        tbm tm tm2 topoext tsc vme vmx wdt x2apic xop xsave xtpr
+
+        The xend syntax is a list of values in the form of
+        'leafnum:register=bitstring,register=bitstring' "leafnum" is the
+        requested function, "register" is the response register to modify
+        "bitstring" represents all bits in the register, its length must be
+        32 chars. Each successive character represent a lesser-significant
+        bit, possible values are listed above in the libxl section.
+
+        Example to hide two features from the guest: 'tm', which is bit #29
+        in EDX, and 'pni' (SSE3), which is bit #0 in ECX:
+
+        xend: [
+        '1:ecx=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0,edx=xx0xxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxx' ]
+
+        libxl: 'host,tm=0,sse3=0'
+
+        More info about the CPUID instruction can be found in the processor
+        manuals, and in Wikipedia: <http://en.wikipedia.org/wiki/CPUID>
+
+    acpi_firmware="STRING"
+        Specify a path to a file that contains extra ACPI firmware tables to
+        pass in to a guest. The file can contain several tables in their
+        binary AML form concatenated together. Each table self describes its
+        length so no additional information is needed. These tables will be
+        added to the ACPI table set in the guest. Note that existing tables
+        cannot be overridden by this feature. For example this cannot be
+        used to override tables like DSDT, FADT, etc.
+
+    smbios_firmware="STRING"
+        Specify a path to a file that contains extra SMBIOS firmware
+        structures to pass in to a guest. The file can contain a set DMTF
+        predefined structures which will override the internal defaults. Not
+        all predefined structures can be overridden, only the following
+        types: 0, 1, 2, 3, 11, 22, 39. The file can also contain any number
+        of vendor defined SMBIOS structures (type 128 - 255). Since SMBIOS
+        structures do not present their overall size, each entry in the file
+        must be preceded by a 32b integer indicating the size of the next
+        structure.
+
+    ms_vm_genid="OPTION"
+        Provide a VM generation ID to the guest.
+
+        The VM generation ID as a 128-bit random number that a guest may use
+        to determine if the guest has been restored from an earlier snapshot
+        or cloned.
+
+        This is required for Microsoft Windows Server 2012 (and later)
+        domain controllers.
+
+        Valid options are:
+
+        "generate"
+            Generate a random VM generation ID every time the domain is
+            created or restored.
+
+        "none"
+            Do not provide a VM generation ID.
+
+        See also "Virtual Machine Generation ID" by Microsoft
+        (http://www.microsoft.com/en-us/download/details.aspx?id=30707).
+
+   Guest Virtual Time Controls
+    tsc_mode="MODE"
+        Specifies how the TSC (Time Stamp Counter) should be provided to the
+        guest (X86 only). Specifying this option as a number is deprecated.
+        Options are:
+
+        "default"
+            Guest rdtsc/p executed natively when monotonicity can be
+            guaranteed and emulated otherwise (with frequency scaled if
+            necessary).
+
+        "always_emulate"
+            Guest rdtsc/p always emulated at 1GHz (kernel and user). Guest
+            rdtsc/p always emulated and the virtual TSC will appear to
+            increment (kernel and user) at a fixed 1GHz rate, regardless of
+            the PCPU HZ rate or power state; Although there is an overhead
+            associated with emulation this will NOT affect underlying CPU
+            performance.
+
+        "native"
+            Guest rdtsc always executed natively (no monotonicity/frequency
+            guarantees); guest rdtscp emulated at native frequency if
+            unsupported by h/w, else executed natively.
+
+        "native_paravirt"
+            Same as native, except xen manages TSC_AUX register so guest can
+            determine when a restore/migration has occurred and assumes
+            guest obtains/uses pvclock-like mechanism to adjust for
+            monotonicity and frequency changes.
+
+        Please see docs/misc/tscmode.txt for more information on this
+        option.
+
+    localtime=BOOLEAN
+        Set the real time clock to local time or to UTC. False (0) by
+        default, i.e. set to UTC.
+
+    rtc_timeoffset=SECONDS
+        Set the real time clock offset in seconds. False (0) by default.
+
+    vpt_align=BOOLEAN
+        Specifies that periodic Virtual Platform Timers should be aligned to
+        reduce guest interrupts. Enabling this option can reduce power
+        consumption, especially when a guest uses a high timer interrupt
+        frequency (HZ) values. The default is true (1).
+
+    timer_mode=MODE
+        Specifies the mode for Virtual Timers. The valid values are as
+        follows:
+
+        "delay_for_missed_ticks"
+            Delay for missed ticks. Do not advance a vcpu's time beyond the
+            correct delivery time for interrupts that have been missed due
+            to preemption. Deliver missed interrupts when the vcpu is
+            rescheduled and advance the vcpu's virtual time stepwise for
+            each one.
+
+        "no_delay_for_missed_ticks"
+            No delay for missed ticks. As above, missed interrupts are
+            delivered, but guest time always tracks wallclock (i.e., real)
+            time while doing so.
+
+        "no_missed_ticks_pending"
+            No missed interrupts are held pending. Instead, to ensure ticks
+            are delivered at some non-zero rate, if we detect missed ticks
+            then the internal tick alarm is not disabled if the VCPU is
+            preempted during the next tick period.
+
+        "one_missed_tick_pending"
+            One missed tick pending. Missed interrupts are collapsed
+            together and delivered as one 'late tick'. Guest time always
+            tracks wallclock (i.e., real) time.
+
+   Memory layout
+    mmio_hole=MBYTES
+        Specifies the size the MMIO hole below 4GiB will be. Only valid for
+        device_model_version = "qemu-xen".
+
+        Cannot be smaller than 256. Cannot be larger than 3840.
+
+        Known good large value is 3072.
+
+   Support for Paravirtualisation of HVM Guests
+    The following options allow Paravirtualised features (such as devices)
+    to be exposed to the guest Operating System in an HVM guest. Utilising
+    these features requires specific guest support but when available they
+    will result in improved performance.
+
+    xen_platform_pci=BOOLEAN
+        Enable or disable the Xen platform PCI device. The presence of this
+        virtual device enables a guest Operating System (subject to the
+        availability of suitable drivers) to make use of paravirtualisation
+        features such as disk and network devices etc. Enabling these
+        drivers improves performance and is strongly recommended when
+        available. PV drivers are available for various Operating Systems
+        including HVM Linux
+        <http://wiki.xen.org/wiki/XenLinuxPVonHVMdrivers> and Microsoft
+        Windows <http://wiki.xen.org/wiki/XenWindowsGplPv>.
+
+        Setting xen_platform_pci=0 with the default device_model "qemu-xen"
+        requires at least QEMU 1.6.
+
+    viridian=[ "GROUP", "GROUP", ...]
+        The groups of Microsoft Hyper-V (AKA viridian) compatible
+        enlightenments exposed to the guest. The following groups of
+        enlightenments may be specified:
+
+        base
+            This group incorporates the Hypercall MSRs, Virtual processor
+            index MSR, and APIC access MSRs. These enlightenments can
+            improve performance of Windows Vista and Windows Server 2008
+            onwards and setting this option for such guests is strongly
+            recommended. This group is also a pre-requisite for all others.
+            If it is disabled then it is an error to attempt to enable any
+            other group.
+
+        freq
+            This group incorporates the TSC and APIC frequency MSRs. These
+            enlightenments can improve performance of Windows 7 and Windows
+            Server 2008 R2 onwards.
+
+        time_ref_count
+            This group incorporates Partition Time Reference Counter MSR.
+            This enlightenment can improve performance of Windows 8 and
+            Windows Server 2012 onwards.
+
+        defaults
+            This is a special value that enables the default set of groups,
+            which is currently the base, freq and time_ref_count groups.
+
+        all This is a special value that enables all available groups.
+
+        Groups can be disabled by prefixing the name with '!'. So, for
+        example, to enable all groups except freq, specify:
+
+            viridian=[ "all", "!freq" ]
+
+        For details of the enlightenments see the latest version of
+        Microsoft's Hypervisor Top-Level Functional Specification.
+
+        The enlightenments should be harmless for other versions of Windows
+        (although they will not give any benefit) and the majority of other
+        non-Windows OSes. However it is known that they are incompatible
+        with some other Operating Systems and in some circumstance can
+        prevent Xen's own paravirtualisation interfaces for HVM guests from
+        being used.
+
+        The viridian option can be specified as a boolean. A value of true
+        (1) is equivalent to the list [ "defaults" ], and a value of false
+        (0) is equivalent to an empty list.
+
+   Emulated VGA Graphics Device
+    The following options control the features of the emulated graphics
+    device. Many of these options behave similarly to the equivalent key in
+    the VFB_SPEC_STRING for configuring virtual frame buffer devices (see
+    above).
+
+    videoram=MBYTES
+        Sets the amount of RAM which the emulated video card will contain,
+        which in turn limits the resolutions and bit depths which will be
+        available.
+
+        When using the qemu-xen-traditional device-model, the default as
+        well as minimum amount of video RAM for stdvga is 8 MB, which is
+        sufficient for e.g. 1600x1200 at 32bpp. For the upstream qemu-xen
+        device-model, the default and minimum is 16 MB.
+
+        When using the emulated Cirrus graphics card (vga="cirrus") and the
+        qemu-xen-traditional device-model, the amount of video RAM is fixed
+        at 4 MB, which is sufficient for 1024x768 at 32 bpp. For the
+        upstream qemu-xen device-model, the default and minimum is 8 MB.
+
+    stdvga=BOOLEAN
+        Select a standard VGA card with VBE (VESA BIOS Extensions) as the
+        emulated graphics device. The default is false (0) which means to
+        emulate a Cirrus Logic GD5446 VGA card. If your guest supports VBE
+        2.0 or later (e.g. Windows XP onwards) then you should enable this.
+        stdvga supports more video ram and bigger resolutions than Cirrus.
+        This option is deprecated, use vga="stdvga" instead.
+
+    vga="STRING"
+        Selects the emulated video card (none|stdvga|cirrus). The default is
+        cirrus.
+
+    vnc=BOOLEAN
+        Allow access to the display via the VNC protocol. This enables the
+        other VNC-related settings. The default is to enable this.
+
+    vnclisten="ADDRESS[:DISPLAYNUM]"
+        Specifies the IP address, and optionally VNC display number, to use.
+
+    vncdisplay=DISPLAYNUM
+        Specifies the VNC display number to use. The actual TCP port number
+        will be DISPLAYNUM+5900.
+
+    vncunused=BOOLEAN
+        Requests that the VNC display setup search for a free TCP port to
+        use. The actual display used can be accessed with "xl vncviewer".
+
+    vncpasswd="PASSWORD"
+        Specifies the password for the VNC server.
+
+    keymap="LANG"
+        Configure the keymap to use for the keyboard associated with this
+        display. If the input method does not easily support raw keycodes
+        (e.g. this is often the case when using VNC) then this allows us to
+        correctly map the input keys into keycodes seen by the guest. The
+        specific values which are accepted are defined by the version of the
+        device-model which you are using. See "Keymaps" below or consult the
+        qemu(1) manpage. The default is en-us.
+
+    sdl=BOOLEAN
+        Specifies that the display should be presented via an X window
+        (using Simple DirectMedia Layer). The default is not to enable this
+        mode.
+
+    opengl=BOOLEAN
+        Enable OpenGL acceleration of the SDL display. Only effects machines
+        using device_model_version="qemu-xen-traditional" and only if the
+        device-model was compiled with OpenGL support. False (0) by default.
+
+    nographic=BOOLEAN
+        Enable or disable the virtual graphics device. The default is to
+        provide a VGA graphics device but this option can be used to disable
+        it.
+
+   Spice Graphics Support
+    The following options control the features of SPICE.
+
+    spice=BOOLEAN
+        Allow access to the display via the SPICE protocol. This enables the
+        other SPICE-related settings.
+
+    spicehost="ADDRESS"
+        Specify the interface address to listen on if given, otherwise any
+        interface.
+
+    spiceport=NUMBER
+        Specify the port to listen on by the SPICE server if the SPICE is
+        enabled.
+
+    spicetls_port=NUMBER
+        Specify the secure port to listen on by the SPICE server if the
+        SPICE is enabled. At least one of the spiceport or spicetls_port
+        must be given if SPICE is enabled. NB. the options depending on
+        spicetls_port have not been supported.
+
+    spicedisable_ticketing=BOOLEAN
+        Enable client connection without password. When disabled,
+        spicepasswd must be set. The default is false (0).
+
+    spicepasswd="PASSWORD"
+        Specify the ticket password which is used by a client for
+        connection.
+
+    spiceagent_mouse=BOOLEAN
+        Whether SPICE agent is used for client mouse mode. The default is
+        true (1) (turn on)
+
+    spicevdagent=BOOLEAN
+        Enables spice vdagent. The Spice vdagent is an optional component
+        for enhancing user experience and performing guest-oriented
+        management tasks. Its features includes: client mouse mode (no need
+        to grab mouse by client, no mouse lag), automatic adjustment of
+        screen resolution, copy and paste (text and image) between client
+        and domU. It also requires vdagent service installed on domU o.s. to
+        work. The default is 0.
+
+    spice_clipboard_sharing=BOOLEAN
+        Enables Spice clipboard sharing (copy/paste). It requires
+        spicevdagent enabled. The default is false (0).
+
+    spiceusbredirection=NUMBER
+        Enables spice usbredirection. Creates NUMBER usbredirection channels
+        for redirection of up to 4 usb devices from spice client to domU's
+        qemu. It requires an usb controller and if not defined it will
+        automatically adds an usb2 controller. The default is disabled (0).
+
+   Miscellaneous Emulated Hardware
+    serial=[ "DEVICE", "DEVICE", ...]
+        Redirect virtual serial ports to DEVICEs. Please see the -serial
+        option in the qemu(1) manpage for details of the valid DEVICE
+        options. Default is vc when in graphical mode and stdio if
+        nographics=1 is used.
+
+        The form serial=DEVICE is also accepted for backwards compatibilty.
+
+    soundhw=DEVICE
+        Select the virtual sound card to expose to the guest. The valid
+        devices are defined by the device model configuration, please see
+        the qemu(1) manpage for details. The default is not to export any
+        sound device.
+
+    usb=BOOLEAN
+        Enables or disables an emulated USB bus in the guest.
+
+    usbversion=NUMBER
+        Specifies the type of an emulated USB bus in the guest. 1 for usb1,
+        2 for usb2 and 3 for usb3, it is available only with upstream qemu.
+        Due to implementation limitations this is not compatible with the
+        usb and usbdevice parameters. Default is 0 (no usb controller
+        defined).
+
+    usbdevice=[ "DEVICE", "DEVICE", ...]
+        Adds DEVICEs to the emulated USB bus. The USB bus must also be
+        enabled using usb=1. The most common use for this option is
+        usbdevice=['tablet'] which adds pointer device using absolute
+        coordinates. Such devices function better than relative coordinate
+        devices (such as a standard mouse) since many methods of exporting
+        guest graphics (such as VNC) work better in this mode. Note that
+        this is independent of the actual pointer device you are using on
+        the host/client side.
+
+        Host devices can also be passed through in this way, by specifying
+        host:USBID, where USBID is of the form xxxx:yyyy. The USBID can
+        typically be found by using lsusb or usb-devices.
+
+        If you wish to use the "host:bus.addr" format, remove any leading
+        '0' from the bus and addr. For example, for the USB device on bus
+        008 dev 002, you should write "host:8.2".
+
+        The form usbdevice=DEVICE is also accepted for backwards
+        compatibility.
+
+        More valid options can be found in the "usbdevice" section of the
+        qemu documentation.
+
+    vendor_device="VENDOR_DEVICE"
+        Selects which variant of the QEMU xen-pvdevice should be used for
+        this guest. Valid values are:
+
+        none
+            The xen-pvdevice should be omitted. This is the default.
+
+        xenserver
+            The xenserver variant of the xen-pvdevice (device-id=C000) will
+            be specified, enabling the use of XenServer PV drivers in the
+            guest.
+
+        This parameter only takes effect when device_model_version=qemu-xen.
+        See docs/misc/pci-device-reservations.txt for more information.
+
+  Device-Model Options
+    The following options control the selection of the device-model. This is
+    the component which provides emulation of the virtual devices to an HVM
+    guest. For a PV guest a device-model is sometimes used to provide
+    backends for certain PV devices (most usually a virtual framebuffer
+    device).
+
+    device_model_version="DEVICE-MODEL"
+        Selects which variant of the device-model should be used for this
+        guest. Valid values are:
+
+        qemu-xen
+            Use the device-model merged into the upstream QEMU project. This
+            device-model is the default for Linux dom0.
+
+        qemu-xen-traditional
+            Use the device-model based upon the historical Xen fork of Qemu.
+            This device-model is still the default for NetBSD dom0.
+
+        It is recommended to accept the default value for new guests. If you
+        have existing guests then, depending on the nature of the guest
+        Operating System, you may wish to force them to use the device model
+        which they were installed with.
+
+    device_model_override="PATH"
+        Override the path to the binary to be used as the device-model. The
+        binary provided here MUST be consistent with the
+        `device_model_version` which you have specified. You should not
+        normally need to specify this option.
+
+    device_model_stubdomain_override=BOOLEAN
+        Override the use of stubdomain based device-model. Normally this
+        will be automatically selected based upon the other features and
+        options you have selected.
+
+    device_model_stubdomain_seclabel="LABEL"
+        Assign an XSM security label to the device-model stubdomain.
+
+    device_model_args=[ "ARG", "ARG", ...]
+        Pass additional arbitrary options on the device-model command line.
+        Each element in the list is passed as an option to the device-model.
+
+    device_model_args_pv=[ "ARG", "ARG", ...]
+        Pass additional arbitrary options on the device-model command line
+        for a PV device model only. Each element in the list is passed as an
+        option to the device-model.
+
+    device_model_args_hvm=[ "ARG", "ARG", ...]
+        Pass additional arbitrary options on the device-model command line
+        for an HVM device model only. Each element in the list is passed as
+        an option to the device-model.
+
+  Keymaps
+    The keymaps available are defined by the device-model which you are
+    using. Commonly this includes:
+
+            ar  de-ch  es  fo     fr-ca  hu  ja  mk     no  pt-br  sv
+            da  en-gb  et  fr     fr-ch  is  lt  nl     pl  ru     th
+            de  en-us  fi  fr-be  hr     it  lv  nl-be  pt  sl     tr
+
+    The default is en-us.
+
+    See qemu(1) for more information.
+
+SEE ALSO
+    xl(1)
+    xlcpupool.cfg(5)
+    xl-disk-configuration
+    xl-network-configuration
+    docs/misc/tscmode.txt
+
+FILES
+    /etc/xen/NAME.cfg /var/xen/dump/NAME
+
+BUGS
+    This document may contain items which require further documentation.
+    Patches to improve incomplete items (or any other item) are gratefully
+    received on the xen-devel@lists.xen.org mailing list. Please see
+    <http://wiki.xen.org/wiki/SubmittingXenPatches> for information on how
+    to submit a patch to Xen.
+

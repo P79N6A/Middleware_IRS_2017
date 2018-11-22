@@ -1,0 +1,9064 @@
+"store.ml" 28 860 864 "store.ml" 28 860 870
+type(
+  string -> Perms.Node.t -> string -> t
+)
+ident(
+  def create "store.ml" 31 977 977 "store.ml" 94 3076 3079
+)
+"store.ml" 28 860 871 "store.ml" 28 860 876
+type(
+  string
+)
+ident(
+  def _name "store.ml" 28 860 877 "store.ml" 29 893 975
+)
+"store.ml" 28 860 877 "store.ml" 28 860 883
+type(
+  Perms.Node.t
+)
+ident(
+  def _perms "store.ml" 28 860 884 "store.ml" 29 893 975
+)
+"store.ml" 28 860 884 "store.ml" 28 860 890
+type(
+  string
+)
+ident(
+  def _value "store.ml" 29 893 894 "store.ml" 29 893 975
+)
+"store.ml" 29 893 903 "store.ml" 29 893 919
+type(
+  string -> Symbol.t
+)
+ident(
+  ext_ref Symbol.of_string
+)
+"store.ml" 29 893 920 "store.ml" 29 893 925
+type(
+  string
+)
+ident(
+  int_ref _name "store.ml" 28 860 871 "store.ml" 28 860 876
+)
+"store.ml" 29 893 903 "store.ml" 29 893 925
+type(
+  Symbol.t
+)
+"store.ml" 29 893 935 "store.ml" 29 893 941
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref _perms "store.ml" 28 860 877 "store.ml" 28 860 883
+)
+"store.ml" 29 893 951 "store.ml" 29 893 957
+type(
+  string
+)
+ident(
+  int_ref _value "store.ml" 28 860 884 "store.ml" 28 860 890
+)
+"store.ml" 29 893 970 "store.ml" 29 893 972
+type(
+  t list
+)
+"store.ml" 29 893 894 "store.ml" 29 893 975
+type(
+  t
+)
+"store.ml" 31 977 981 "store.ml" 31 977 990
+type(
+  t -> Xenctrl.domid
+)
+ident(
+  def get_owner "store.ml" 32 1030 1030 "store.ml" 94 3076 3079
+)
+"store.ml" 31 977 991 "store.ml" 31 977 995
+type(
+  t
+)
+ident(
+  def node "store.ml" 31 977 998 "store.ml" 31 977 1029
+)
+"store.ml" 31 977 998 "store.ml" 31 977 1018
+type(
+  Perms.Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Perms.Node.get_owner
+)
+"store.ml" 31 977 1019 "store.ml" 31 977 1023
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 31 977 991 "store.ml" 31 977 995
+)
+"store.ml" 31 977 1019 "store.ml" 31 977 1029
+type(
+  Perms.Node.t
+)
+"store.ml" 31 977 998 "store.ml" 31 977 1029
+type(
+  Xenctrl.domid
+)
+"store.ml" 32 1030 1034 "store.ml" 32 1030 1046
+type(
+  t -> t list
+)
+ident(
+  def get_children "store.ml" 33 1068 1068 "store.ml" 94 3076 3079
+)
+"store.ml" 32 1030 1047 "store.ml" 32 1030 1051
+type(
+  t
+)
+ident(
+  def node "store.ml" 32 1030 1054 "store.ml" 32 1030 1067
+)
+"store.ml" 32 1030 1054 "store.ml" 32 1030 1058
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 32 1030 1047 "store.ml" 32 1030 1051
+)
+"store.ml" 32 1030 1054 "store.ml" 32 1030 1067
+type(
+  t list
+)
+"store.ml" 33 1068 1072 "store.ml" 33 1068 1081
+type(
+  t -> string
+)
+ident(
+  def get_value "store.ml" 34 1100 1100 "store.ml" 94 3076 3079
+)
+"store.ml" 33 1068 1082 "store.ml" 33 1068 1086
+type(
+  t
+)
+ident(
+  def node "store.ml" 33 1068 1089 "store.ml" 33 1068 1099
+)
+"store.ml" 33 1068 1089 "store.ml" 33 1068 1093
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 33 1068 1082 "store.ml" 33 1068 1086
+)
+"store.ml" 33 1068 1089 "store.ml" 33 1068 1099
+type(
+  string
+)
+"store.ml" 34 1100 1104 "store.ml" 34 1100 1113
+type(
+  t -> Perms.Node.t
+)
+ident(
+  def get_perms "store.ml" 35 1132 1132 "store.ml" 94 3076 3079
+)
+"store.ml" 34 1100 1114 "store.ml" 34 1100 1118
+type(
+  t
+)
+ident(
+  def node "store.ml" 34 1100 1121 "store.ml" 34 1100 1131
+)
+"store.ml" 34 1100 1121 "store.ml" 34 1100 1125
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 34 1100 1114 "store.ml" 34 1100 1118
+)
+"store.ml" 34 1100 1121 "store.ml" 34 1100 1131
+type(
+  Perms.Node.t
+)
+"store.ml" 35 1132 1136 "store.ml" 35 1132 1144
+type(
+  t -> string
+)
+ident(
+  def get_name "store.ml" 37 1180 1180 "store.ml" 94 3076 3079
+)
+"store.ml" 35 1132 1145 "store.ml" 35 1132 1149
+type(
+  t
+)
+ident(
+  def node "store.ml" 35 1132 1152 "store.ml" 35 1132 1178
+)
+"store.ml" 35 1132 1152 "store.ml" 35 1132 1168
+type(
+  Symbol.t -> string
+)
+ident(
+  ext_ref Symbol.to_string
+)
+"store.ml" 35 1132 1169 "store.ml" 35 1132 1173
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 35 1132 1145 "store.ml" 35 1132 1149
+)
+"store.ml" 35 1132 1169 "store.ml" 35 1132 1178
+type(
+  Symbol.t
+)
+"store.ml" 35 1132 1152 "store.ml" 35 1132 1178
+type(
+  string
+)
+"store.ml" 37 1180 1184 "store.ml" 37 1180 1193
+type(
+  t -> string -> t
+)
+ident(
+  def set_value "store.ml" 42 1280 1280 "store.ml" 94 3076 3079
+)
+"store.ml" 37 1180 1194 "store.ml" 37 1180 1198
+type(
+  t
+)
+ident(
+  def node "store.ml" 37 1180 1199 "store.ml" 40 1244 1278
+)
+"store.ml" 37 1180 1199 "store.ml" 37 1180 1205
+type(
+  string
+)
+ident(
+  def nvalue "store.ml" 38 1209 1210 "store.ml" 40 1244 1278
+)
+"store.ml" 38 1209 1213 "store.ml" 38 1209 1217
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 37 1180 1194 "store.ml" 37 1180 1198
+)
+"store.ml" 38 1209 1213 "store.ml" 38 1209 1223
+type(
+  string
+)
+"store.ml" 38 1209 1224 "store.ml" 38 1209 1225
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 38 1209 1226 "store.ml" 38 1209 1232
+type(
+  string
+)
+ident(
+  int_ref nvalue "store.ml" 37 1180 1199 "store.ml" 37 1180 1205
+)
+"store.ml" 38 1209 1213 "store.ml" 38 1209 1232
+type(
+  bool
+)
+"store.ml" 39 1233 1239 "store.ml" 39 1233 1243
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 37 1180 1194 "store.ml" 37 1180 1198
+)
+"store.ml" 40 1244 1252 "store.ml" 40 1244 1256
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 37 1180 1194 "store.ml" 37 1180 1198
+)
+"store.ml" 40 1244 1270 "store.ml" 40 1244 1276
+type(
+  string
+)
+ident(
+  int_ref nvalue "store.ml" 37 1180 1199 "store.ml" 37 1180 1205
+)
+"store.ml" 40 1244 1250 "store.ml" 40 1244 1278
+type(
+  t
+)
+"store.ml" 38 1209 1210 "store.ml" 40 1244 1278
+type(
+  t
+)
+"store.ml" 42 1280 1284 "store.ml" 42 1280 1293
+type(
+  t -> Perms.Node.t -> t
+)
+ident(
+  def set_perms "store.ml" 44 1338 1338 "store.ml" 94 3076 3079
+)
+"store.ml" 42 1280 1294 "store.ml" 42 1280 1298
+type(
+  t
+)
+ident(
+  def node "store.ml" 42 1280 1299 "store.ml" 42 1280 1336
+)
+"store.ml" 42 1280 1299 "store.ml" 42 1280 1305
+type(
+  Perms.Node.t
+)
+ident(
+  def nperms "store.ml" 42 1280 1308 "store.ml" 42 1280 1336
+)
+"store.ml" 42 1280 1310 "store.ml" 42 1280 1314
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 42 1280 1294 "store.ml" 42 1280 1298
+)
+"store.ml" 42 1280 1328 "store.ml" 42 1280 1334
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref nperms "store.ml" 42 1280 1299 "store.ml" 42 1280 1305
+)
+"store.ml" 42 1280 1308 "store.ml" 42 1280 1336
+type(
+  t
+)
+"store.ml" 44 1338 1342 "store.ml" 44 1338 1351
+type(
+  t -> t -> t
+)
+ident(
+  def add_child "store.ml" 47 1415 1415 "store.ml" 94 3076 3079
+)
+"store.ml" 44 1338 1352 "store.ml" 44 1338 1356
+type(
+  t
+)
+ident(
+  def node "store.ml" 44 1338 1357 "store.ml" 45 1365 1413
+)
+"store.ml" 44 1338 1357 "store.ml" 44 1338 1362
+type(
+  t
+)
+ident(
+  def child "store.ml" 45 1365 1366 "store.ml" 45 1365 1413
+)
+"store.ml" 45 1365 1368 "store.ml" 45 1365 1372
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 44 1338 1352 "store.ml" 44 1338 1356
+)
+"store.ml" 45 1365 1389 "store.ml" 45 1365 1394
+type(
+  t
+)
+ident(
+  int_ref child "store.ml" 44 1338 1357 "store.ml" 44 1338 1362
+)
+"store.ml" 45 1365 1398 "store.ml" 45 1365 1402
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 44 1338 1352 "store.ml" 44 1338 1356
+)
+"store.ml" 45 1365 1398 "store.ml" 45 1365 1411
+type(
+  t list
+)
+"store.ml" 45 1365 1389 "store.ml" 45 1365 1411
+type(
+  t list
+)
+"store.ml" 45 1365 1366 "store.ml" 45 1365 1413
+type(
+  t
+)
+"store.ml" 47 1415 1419 "store.ml" 47 1415 1425
+type(
+  t -> string -> bool
+)
+ident(
+  def exists "store.ml" 51 1548 1548 "store.ml" 94 3076 3079
+)
+"store.ml" 47 1415 1426 "store.ml" 47 1415 1430
+type(
+  t
+)
+ident(
+  def node "store.ml" 47 1415 1431 "store.ml" 49 1490 1546
+)
+"store.ml" 47 1415 1431 "store.ml" 47 1415 1440
+type(
+  string
+)
+ident(
+  def childname "store.ml" 48 1443 1444 "store.ml" 49 1490 1546
+)
+"store.ml" 48 1443 1448 "store.ml" 48 1443 1457
+type(
+  Symbol.t
+)
+"store.ml" 48 1443 1460 "store.ml" 48 1443 1476
+type(
+  string -> Symbol.t
+)
+ident(
+  ext_ref Symbol.of_string
+)
+"store.ml" 48 1443 1477 "store.ml" 48 1443 1486
+type(
+  string
+)
+ident(
+  int_ref childname "store.ml" 47 1415 1431 "store.ml" 47 1415 1440
+)
+"store.ml" 48 1443 1460 "store.ml" 48 1443 1486
+type(
+  Symbol.t
+)
+"store.ml" 49 1490 1491 "store.ml" 49 1490 1502
+type(
+  (t -> bool) -> t list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"store.ml" 49 1490 1508 "store.ml" 49 1490 1509
+type(
+  t
+)
+ident(
+  def n "store.ml" 49 1490 1513 "store.ml" 49 1490 1531
+)
+"store.ml" 49 1490 1513 "store.ml" 49 1490 1514
+type(
+  t
+)
+ident(
+  int_ref n "store.ml" 49 1490 1508 "store.ml" 49 1490 1509
+)
+"store.ml" 49 1490 1513 "store.ml" 49 1490 1519
+type(
+  Symbol.t
+)
+"store.ml" 49 1490 1520 "store.ml" 49 1490 1521
+type(
+  Symbol.t -> Symbol.t -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 49 1490 1522 "store.ml" 49 1490 1531
+type(
+  Symbol.t
+)
+ident(
+  int_ref childname "store.ml" 48 1443 1448 "store.ml" 48 1443 1457
+)
+"store.ml" 49 1490 1513 "store.ml" 49 1490 1531
+type(
+  bool
+)
+"store.ml" 49 1490 1503 "store.ml" 49 1490 1532
+type(
+  t -> bool
+)
+"store.ml" 49 1490 1533 "store.ml" 49 1490 1537
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 47 1415 1426 "store.ml" 47 1415 1430
+)
+"store.ml" 49 1490 1533 "store.ml" 49 1490 1546
+type(
+  t list
+)
+"store.ml" 49 1490 1491 "store.ml" 49 1490 1546
+type(
+  bool
+)
+"store.ml" 48 1443 1444 "store.ml" 49 1490 1546
+type(
+  bool
+)
+"store.ml" 51 1548 1552 "store.ml" 51 1548 1556
+type(
+  t -> string -> t
+)
+ident(
+  def find "store.ml" 55 1677 1677 "store.ml" 94 3076 3079
+)
+"store.ml" 51 1548 1557 "store.ml" 51 1548 1561
+type(
+  t
+)
+ident(
+  def node "store.ml" 51 1548 1562 "store.ml" 53 1621 1675
+)
+"store.ml" 51 1548 1562 "store.ml" 51 1548 1571
+type(
+  string
+)
+ident(
+  def childname "store.ml" 52 1574 1575 "store.ml" 53 1621 1675
+)
+"store.ml" 52 1574 1579 "store.ml" 52 1574 1588
+type(
+  Symbol.t
+)
+"store.ml" 52 1574 1591 "store.ml" 52 1574 1607
+type(
+  string -> Symbol.t
+)
+ident(
+  ext_ref Symbol.of_string
+)
+"store.ml" 52 1574 1608 "store.ml" 52 1574 1617
+type(
+  string
+)
+ident(
+  int_ref childname "store.ml" 51 1548 1562 "store.ml" 51 1548 1571
+)
+"store.ml" 52 1574 1591 "store.ml" 52 1574 1617
+type(
+  Symbol.t
+)
+"store.ml" 53 1621 1622 "store.ml" 53 1621 1631
+type(
+  (t -> bool) -> t list -> t
+)
+ident(
+  ext_ref List.find
+)
+"store.ml" 53 1621 1637 "store.ml" 53 1621 1638
+type(
+  t
+)
+ident(
+  def n "store.ml" 53 1621 1642 "store.ml" 53 1621 1660
+)
+"store.ml" 53 1621 1642 "store.ml" 53 1621 1643
+type(
+  t
+)
+ident(
+  int_ref n "store.ml" 53 1621 1637 "store.ml" 53 1621 1638
+)
+"store.ml" 53 1621 1642 "store.ml" 53 1621 1648
+type(
+  Symbol.t
+)
+"store.ml" 53 1621 1649 "store.ml" 53 1621 1650
+type(
+  Symbol.t -> Symbol.t -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 53 1621 1651 "store.ml" 53 1621 1660
+type(
+  Symbol.t
+)
+ident(
+  int_ref childname "store.ml" 52 1574 1579 "store.ml" 52 1574 1588
+)
+"store.ml" 53 1621 1642 "store.ml" 53 1621 1660
+type(
+  bool
+)
+"store.ml" 53 1621 1632 "store.ml" 53 1621 1661
+type(
+  t -> bool
+)
+"store.ml" 53 1621 1662 "store.ml" 53 1621 1666
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 51 1548 1557 "store.ml" 51 1548 1561
+)
+"store.ml" 53 1621 1662 "store.ml" 53 1621 1675
+type(
+  t list
+)
+"store.ml" 53 1621 1622 "store.ml" 53 1621 1675
+type(
+  t
+)
+"store.ml" 52 1574 1575 "store.ml" 53 1621 1675
+type(
+  t
+)
+"store.ml" 55 1677 1681 "store.ml" 55 1677 1694
+type(
+  t -> t -> t -> t
+)
+ident(
+  def replace_child "store.ml" 65 2063 2063 "store.ml" 94 3076 3079
+)
+"store.ml" 55 1677 1695 "store.ml" 55 1677 1699
+type(
+  t
+)
+ident(
+  def node "store.ml" 55 1677 1700 "store.ml" 63 2000 2061
+)
+"store.ml" 55 1677 1700 "store.ml" 55 1677 1705
+type(
+  t
+)
+ident(
+  def child "store.ml" 55 1677 1706 "store.ml" 63 2000 2061
+)
+"store.ml" 55 1677 1706 "store.ml" 55 1677 1712
+type(
+  t
+)
+ident(
+  def nchild "store.ml" 57 1783 1784 "store.ml" 63 2000 2061
+)
+"store.ml" 57 1783 1792 "store.ml" 57 1783 1811
+type(
+  t list -> t list
+)
+"store.ml" 57 1783 1812 "store.ml" 57 1783 1813
+type(
+  t list
+)
+ident(
+  def l "store.ml" 58 1816 1818 "store.ml" 61 1927 1994
+)
+"store.ml" 58 1816 1824 "store.ml" 58 1816 1825
+type(
+  t list
+)
+ident(
+  int_ref l "store.ml" 57 1783 1812 "store.ml" 57 1783 1813
+)
+"store.ml" 59 1831 1835 "store.ml" 59 1831 1837
+type(
+  t list
+)
+"store.ml" 59 1831 1871 "store.ml" 59 1831 1873
+type(
+  t list
+)
+"store.ml" 60 1874 1878 "store.ml" 60 1874 1879
+type(
+  t
+)
+ident(
+  def h "store.ml" 60 1874 1886 "store.ml" 60 1874 1926
+)
+"store.ml" 60 1874 1883 "store.ml" 60 1874 1885
+type(
+  t list
+)
+ident(
+  def tl "store.ml" 60 1874 1886 "store.ml" 60 1874 1926
+)
+"store.ml" 60 1874 1878 "store.ml" 60 1874 1885
+type(
+  t list
+)
+"store.ml" 60 1874 1891 "store.ml" 60 1874 1892
+type(
+  t
+)
+ident(
+  int_ref h "store.ml" 60 1874 1878 "store.ml" 60 1874 1879
+)
+"store.ml" 60 1874 1891 "store.ml" 60 1874 1897
+type(
+  Symbol.t
+)
+"store.ml" 60 1874 1898 "store.ml" 60 1874 1899
+type(
+  Symbol.t -> Symbol.t -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 60 1874 1900 "store.ml" 60 1874 1905
+type(
+  t
+)
+ident(
+  int_ref child "store.ml" 55 1677 1700 "store.ml" 55 1677 1705
+)
+"store.ml" 60 1874 1900 "store.ml" 60 1874 1910
+type(
+  Symbol.t
+)
+"store.ml" 60 1874 1891 "store.ml" 60 1874 1910
+type(
+  bool
+)
+"store.ml" 60 1874 1914 "store.ml" 60 1874 1920
+type(
+  t
+)
+ident(
+  int_ref nchild "store.ml" 55 1677 1706 "store.ml" 55 1677 1712
+)
+"store.ml" 60 1874 1924 "store.ml" 60 1874 1926
+type(
+  t list
+)
+ident(
+  int_ref tl "store.ml" 60 1874 1883 "store.ml" 60 1874 1885
+)
+"store.ml" 60 1874 1914 "store.ml" 60 1874 1926
+type(
+  t list
+)
+"store.ml" 60 1874 1886 "store.ml" 60 1874 1926
+type(
+  t list
+)
+"store.ml" 61 1927 1931 "store.ml" 61 1927 1932
+type(
+  t
+)
+ident(
+  def h "store.ml" 61 1927 1967 "store.ml" 61 1927 1994
+)
+"store.ml" 61 1927 1936 "store.ml" 61 1927 1938
+type(
+  t list
+)
+ident(
+  def tl "store.ml" 61 1927 1967 "store.ml" 61 1927 1994
+)
+"store.ml" 61 1927 1931 "store.ml" 61 1927 1938
+type(
+  t list
+)
+"store.ml" 61 1927 1967 "store.ml" 61 1927 1968
+type(
+  t
+)
+ident(
+  int_ref h "store.ml" 61 1927 1931 "store.ml" 61 1927 1932
+)
+"store.ml" 61 1927 1972 "store.ml" 61 1927 1991
+type(
+  t list -> t list
+)
+ident(
+  int_ref replace_one_in_list "store.ml" 57 1783 1792 "store.ml" 57 1783 1811
+)
+"store.ml" 61 1927 1992 "store.ml" 61 1927 1994
+type(
+  t list
+)
+ident(
+  int_ref tl "store.ml" 61 1927 1936 "store.ml" 61 1927 1938
+)
+"store.ml" 61 1927 1972 "store.ml" 61 1927 1994
+type(
+  t list
+)
+"store.ml" 61 1927 1967 "store.ml" 61 1927 1994
+type(
+  t list
+)
+"store.ml" 58 1816 1818 "store.ml" 61 1927 1994
+type(
+  t list
+)
+"store.ml" 63 2000 2003 "store.ml" 63 2000 2007
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 55 1677 1695 "store.ml" 55 1677 1699
+)
+"store.ml" 63 2000 2025 "store.ml" 63 2000 2044
+type(
+  t list -> t list
+)
+ident(
+  int_ref replace_one_in_list "store.ml" 57 1783 1792 "store.ml" 57 1783 1811
+)
+"store.ml" 63 2000 2045 "store.ml" 63 2000 2049
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 55 1677 1695 "store.ml" 55 1677 1699
+)
+"store.ml" 63 2000 2045 "store.ml" 63 2000 2058
+type(
+  t list
+)
+"store.ml" 63 2000 2024 "store.ml" 63 2000 2059
+type(
+  t list
+)
+"store.ml" 63 2000 2001 "store.ml" 63 2000 2061
+type(
+  t
+)
+"store.ml" 57 1783 1784 "store.ml" 63 2000 2061
+type(
+  t
+)
+"store.ml" 65 2063 2067 "store.ml" 65 2063 2080
+type(
+  t -> string -> t
+)
+ident(
+  def del_childname "store.ml" 75 2398 2398 "store.ml" 94 3076 3079
+)
+"store.ml" 65 2063 2081 "store.ml" 65 2063 2085
+type(
+  t
+)
+ident(
+  def node "store.ml" 65 2063 2086 "store.ml" 73 2336 2396
+)
+"store.ml" 65 2063 2086 "store.ml" 65 2063 2095
+type(
+  string
+)
+ident(
+  def childname "store.ml" 66 2098 2099 "store.ml" 73 2336 2396
+)
+"store.ml" 66 2098 2103 "store.ml" 66 2098 2106
+type(
+  Symbol.t
+)
+"store.ml" 66 2098 2109 "store.ml" 66 2098 2125
+type(
+  string -> Symbol.t
+)
+ident(
+  ext_ref Symbol.of_string
+)
+"store.ml" 66 2098 2126 "store.ml" 66 2098 2135
+type(
+  string
+)
+ident(
+  int_ref childname "store.ml" 65 2063 2086 "store.ml" 65 2063 2095
+)
+"store.ml" 66 2098 2109 "store.ml" 66 2098 2135
+type(
+  Symbol.t
+)
+"store.ml" 67 2139 2148 "store.ml" 67 2139 2166
+type(
+  t list -> t list
+)
+"store.ml" 67 2139 2167 "store.ml" 67 2139 2168
+type(
+  t list
+)
+ident(
+  def l "store.ml" 68 2171 2173 "store.ml" 71 2271 2330
+)
+"store.ml" 68 2171 2179 "store.ml" 68 2171 2180
+type(
+  t list
+)
+ident(
+  int_ref l "store.ml" 67 2139 2167 "store.ml" 67 2139 2168
+)
+"store.ml" 69 2186 2190 "store.ml" 69 2186 2192
+type(
+  t list
+)
+"store.ml" 69 2186 2219 "store.ml" 69 2186 2224
+type(
+  exn -> t list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 69 2186 2225 "store.ml" 69 2186 2234
+type(
+  exn
+)
+"store.ml" 69 2186 2219 "store.ml" 69 2186 2234
+type(
+  t list
+)
+"store.ml" 70 2235 2239 "store.ml" 70 2235 2240
+type(
+  t
+)
+ident(
+  def h "store.ml" 70 2235 2247 "store.ml" 70 2235 2270
+)
+"store.ml" 70 2235 2244 "store.ml" 70 2235 2246
+type(
+  t list
+)
+ident(
+  def tl "store.ml" 70 2235 2247 "store.ml" 70 2235 2270
+)
+"store.ml" 70 2235 2239 "store.ml" 70 2235 2246
+type(
+  t list
+)
+"store.ml" 70 2235 2252 "store.ml" 70 2235 2253
+type(
+  t
+)
+ident(
+  int_ref h "store.ml" 70 2235 2239 "store.ml" 70 2235 2240
+)
+"store.ml" 70 2235 2252 "store.ml" 70 2235 2258
+type(
+  Symbol.t
+)
+"store.ml" 70 2235 2259 "store.ml" 70 2235 2260
+type(
+  Symbol.t -> Symbol.t -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 70 2235 2261 "store.ml" 70 2235 2264
+type(
+  Symbol.t
+)
+ident(
+  int_ref sym "store.ml" 66 2098 2103 "store.ml" 66 2098 2106
+)
+"store.ml" 70 2235 2252 "store.ml" 70 2235 2264
+type(
+  bool
+)
+"store.ml" 70 2235 2268 "store.ml" 70 2235 2270
+type(
+  t list
+)
+ident(
+  int_ref tl "store.ml" 70 2235 2244 "store.ml" 70 2235 2246
+)
+"store.ml" 70 2235 2247 "store.ml" 70 2235 2270
+type(
+  t list
+)
+"store.ml" 71 2271 2275 "store.ml" 71 2271 2276
+type(
+  t
+)
+ident(
+  def h "store.ml" 71 2271 2304 "store.ml" 71 2271 2330
+)
+"store.ml" 71 2271 2280 "store.ml" 71 2271 2282
+type(
+  t list
+)
+ident(
+  def tl "store.ml" 71 2271 2304 "store.ml" 71 2271 2330
+)
+"store.ml" 71 2271 2275 "store.ml" 71 2271 2282
+type(
+  t list
+)
+"store.ml" 71 2271 2304 "store.ml" 71 2271 2305
+type(
+  t
+)
+ident(
+  int_ref h "store.ml" 71 2271 2275 "store.ml" 71 2271 2276
+)
+"store.ml" 71 2271 2309 "store.ml" 71 2271 2327
+type(
+  t list -> t list
+)
+ident(
+  int_ref delete_one_in_list "store.ml" 67 2139 2148 "store.ml" 67 2139 2166
+)
+"store.ml" 71 2271 2328 "store.ml" 71 2271 2330
+type(
+  t list
+)
+ident(
+  int_ref tl "store.ml" 71 2271 2280 "store.ml" 71 2271 2282
+)
+"store.ml" 71 2271 2309 "store.ml" 71 2271 2330
+type(
+  t list
+)
+"store.ml" 71 2271 2304 "store.ml" 71 2271 2330
+type(
+  t list
+)
+"store.ml" 68 2171 2173 "store.ml" 71 2271 2330
+type(
+  t list
+)
+"store.ml" 73 2336 2339 "store.ml" 73 2336 2343
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 65 2063 2081 "store.ml" 65 2063 2085
+)
+"store.ml" 73 2336 2361 "store.ml" 73 2336 2379
+type(
+  t list -> t list
+)
+ident(
+  int_ref delete_one_in_list "store.ml" 67 2139 2148 "store.ml" 67 2139 2166
+)
+"store.ml" 73 2336 2380 "store.ml" 73 2336 2384
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 65 2063 2081 "store.ml" 65 2063 2085
+)
+"store.ml" 73 2336 2380 "store.ml" 73 2336 2393
+type(
+  t list
+)
+"store.ml" 73 2336 2360 "store.ml" 73 2336 2394
+type(
+  t list
+)
+"store.ml" 73 2336 2337 "store.ml" 73 2336 2396
+type(
+  t
+)
+"store.ml" 67 2139 2140 "store.ml" 73 2336 2396
+type(
+  t
+)
+"store.ml" 66 2098 2099 "store.ml" 73 2336 2396
+type(
+  t
+)
+"store.ml" 75 2398 2402 "store.ml" 75 2398 2418
+type(
+  t -> t
+)
+ident(
+  def del_all_children "store.ml" 79 2553 2553 "store.ml" 94 3076 3079
+)
+"store.ml" 75 2398 2419 "store.ml" 75 2398 2423
+type(
+  t
+)
+ident(
+  def node "store.ml" 76 2426 2427 "store.ml" 76 2426 2454
+)
+"store.ml" 76 2426 2429 "store.ml" 76 2426 2433
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 75 2398 2419 "store.ml" 75 2398 2423
+)
+"store.ml" 76 2426 2450 "store.ml" 76 2426 2452
+type(
+  t list
+)
+"store.ml" 76 2426 2427 "store.ml" 76 2426 2454
+type(
+  t
+)
+"store.ml" 79 2553 2557 "store.ml" 79 2553 2567
+type(
+  t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  def check_perm "store.ml" 83 2705 2705 "store.ml" 94 3076 3079
+)
+"store.ml" 79 2553 2568 "store.ml" 79 2553 2572
+type(
+  t
+)
+ident(
+  def node "store.ml" 79 2553 2573 "store.ml" 80 2594 2636
+)
+"store.ml" 79 2553 2573 "store.ml" 79 2553 2583
+type(
+  Perms.Connection.t
+)
+ident(
+  def connection "store.ml" 79 2553 2584 "store.ml" 80 2594 2636
+)
+"store.ml" 79 2553 2584 "store.ml" 79 2553 2591
+type(
+  Perms.permty
+)
+ident(
+  def request "store.ml" 80 2594 2595 "store.ml" 80 2594 2636
+)
+"store.ml" 80 2594 2595 "store.ml" 80 2594 2606
+type(
+  Perms.Connection.t -> Perms.permty -> Perms.Node.t -> unit
+)
+ident(
+  ext_ref Perms.check
+)
+"store.ml" 80 2594 2607 "store.ml" 80 2594 2617
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref connection "store.ml" 79 2553 2573 "store.ml" 79 2553 2583
+)
+"store.ml" 80 2594 2618 "store.ml" 80 2594 2625
+type(
+  Perms.permty
+)
+ident(
+  int_ref request "store.ml" 79 2553 2584 "store.ml" 79 2553 2591
+)
+"store.ml" 80 2594 2626 "store.ml" 80 2594 2630
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 79 2553 2568 "store.ml" 79 2553 2572
+)
+"store.ml" 80 2594 2626 "store.ml" 80 2594 2636
+type(
+  Perms.Node.t
+)
+"store.ml" 80 2594 2595 "store.ml" 80 2594 2636
+type(
+  unit
+)
+"store.ml" 83 2705 2709 "store.ml" 83 2705 2720
+type(
+  t -> Perms.Connection.t -> unit
+)
+ident(
+  def check_owner "store.ml" 90 2928 2928 "store.ml" 94 3076 3079
+)
+"store.ml" 83 2705 2721 "store.ml" 83 2705 2725
+type(
+  t
+)
+ident(
+  def node "store.ml" 83 2705 2726 "store.ml" 88 2922 2926
+)
+"store.ml" 83 2705 2726 "store.ml" 83 2705 2736
+type(
+  Perms.Connection.t
+)
+ident(
+  def connection "store.ml" 84 2739 2740 "store.ml" 88 2922 2926
+)
+"store.ml" 84 2739 2743 "store.ml" 84 2739 2746
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"store.ml" 84 2739 2748 "store.ml" 84 2739 2765
+type(
+  Perms.Connection.t -> Perms.Node.t -> bool
+)
+ident(
+  ext_ref Perms.check_owner
+)
+"store.ml" 84 2739 2766 "store.ml" 84 2739 2776
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref connection "store.ml" 83 2705 2726 "store.ml" 83 2705 2736
+)
+"store.ml" 84 2739 2777 "store.ml" 84 2739 2781
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 83 2705 2721 "store.ml" 83 2705 2725
+)
+"store.ml" 84 2739 2777 "store.ml" 84 2739 2787
+type(
+  Perms.Node.t
+)
+"store.ml" 84 2739 2747 "store.ml" 84 2739 2788
+type(
+  bool
+)
+"store.ml" 84 2739 2743 "store.ml" 84 2739 2788
+type(
+  bool
+)
+"store.ml" 86 2801 2803 "store.ml" 86 2801 2815
+type(
+  string ->
+  (Xenctrl.domid -> unit, unit, string, unit) format4 ->
+  Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Logging.info
+)
+"store.ml" 86 2801 2816 "store.ml" 86 2801 2828
+type(
+  string
+)
+"store.ml" 86 2801 2829 "store.ml" 86 2801 2869
+type(
+  (Xenctrl.domid -> unit, unit, string, unit) format4
+)
+"store.ml" 86 2801 2871 "store.ml" 86 2801 2880
+type(
+  t -> Xenctrl.domid
+)
+ident(
+  int_ref get_owner "store.ml" 31 977 981 "store.ml" 31 977 990
+)
+"store.ml" 86 2801 2881 "store.ml" 86 2801 2885
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 83 2705 2721 "store.ml" 83 2705 2725
+)
+"store.ml" 86 2801 2870 "store.ml" 86 2801 2886
+type(
+  Xenctrl.domid
+)
+"store.ml" 86 2801 2803 "store.ml" 86 2801 2886
+type(
+  unit
+)
+"store.ml" 87 2888 2890 "store.ml" 87 2888 2895
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 87 2888 2896 "store.ml" 87 2888 2920
+type(
+  exn
+)
+"store.ml" 87 2888 2890 "store.ml" 87 2888 2921
+type(
+  unit
+)
+"store.ml" 85 2789 2795 "store.ml" 88 2922 2926
+type(
+  unit
+)
+"store.ml" 84 2739 2740 "store.ml" 88 2922 2926
+type(
+  unit
+)
+"store.ml" 90 2928 2936 "store.ml" 90 2928 2943
+type(
+  (t -> 'a) -> t -> unit
+)
+ident(
+  def recurse "store.ml" 90 2928 2928 "store.ml" 94 3076 3079
+)
+"store.ml" 90 2928 2944 "store.ml" 90 2928 2947
+type(
+  t -> 'a
+)
+ident(
+  def fct "store.ml" 90 2928 2948 "store.ml" 90 2928 3002
+)
+"store.ml" 90 2928 2948 "store.ml" 90 2928 2952
+type(
+  t
+)
+ident(
+  def node "store.ml" 90 2928 2955 "store.ml" 90 2928 3002
+)
+"store.ml" 90 2928 2955 "store.ml" 90 2928 2958
+type(
+  t -> 'a
+)
+ident(
+  int_ref fct "store.ml" 90 2928 2944 "store.ml" 90 2928 2947
+)
+"store.ml" 90 2928 2959 "store.ml" 90 2928 2963
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 90 2928 2948 "store.ml" 90 2928 2952
+)
+"store.ml" 90 2928 2955 "store.ml" 90 2928 2963
+type(
+  'a
+)
+"store.ml" 90 2928 2965 "store.ml" 90 2928 2974
+type(
+  (t -> unit) -> t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"store.ml" 90 2928 2976 "store.ml" 90 2928 2983
+type(
+  (t -> 'a) -> t -> unit
+)
+ident(
+  int_ref recurse "store.ml" 90 2928 2936 "store.ml" 90 2928 2943
+)
+"store.ml" 90 2928 2984 "store.ml" 90 2928 2987
+type(
+  t -> 'a
+)
+ident(
+  int_ref fct "store.ml" 90 2928 2944 "store.ml" 90 2928 2947
+)
+"store.ml" 90 2928 2975 "store.ml" 90 2928 2988
+type(
+  t -> unit
+)
+"store.ml" 90 2928 2989 "store.ml" 90 2928 2993
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 90 2928 2948 "store.ml" 90 2928 2952
+)
+"store.ml" 90 2928 2989 "store.ml" 90 2928 3002
+type(
+  t list
+)
+"store.ml" 90 2928 2965 "store.ml" 90 2928 3002
+type(
+  unit
+)
+"store.ml" 90 2928 2955 "store.ml" 90 2928 3002
+type(
+  unit
+)
+"store.ml" 92 3004 3008 "store.ml" 92 3004 3014
+type(
+  t -> string * Perms.Node.t * string
+)
+ident(
+  def unpack "store.ml" 92 3004 3074 "store.ml" 94 3076 3079
+)
+"store.ml" 92 3004 3015 "store.ml" 92 3004 3019
+type(
+  t
+)
+ident(
+  def node "store.ml" 92 3004 3022 "store.ml" 92 3004 3074
+)
+"store.ml" 92 3004 3023 "store.ml" 92 3004 3039
+type(
+  Symbol.t -> string
+)
+ident(
+  ext_ref Symbol.to_string
+)
+"store.ml" 92 3004 3040 "store.ml" 92 3004 3044
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 92 3004 3015 "store.ml" 92 3004 3019
+)
+"store.ml" 92 3004 3040 "store.ml" 92 3004 3049
+type(
+  Symbol.t
+)
+"store.ml" 92 3004 3023 "store.ml" 92 3004 3049
+type(
+  string
+)
+"store.ml" 92 3004 3051 "store.ml" 92 3004 3055
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 92 3004 3015 "store.ml" 92 3004 3019
+)
+"store.ml" 92 3004 3051 "store.ml" 92 3004 3061
+type(
+  Perms.Node.t
+)
+"store.ml" 92 3004 3063 "store.ml" 92 3004 3067
+type(
+  t
+)
+ident(
+  int_ref node "store.ml" 92 3004 3015 "store.ml" 92 3004 3019
+)
+"store.ml" 92 3004 3063 "store.ml" 92 3004 3073
+type(
+  string
+)
+"store.ml" 92 3004 3022 "store.ml" 92 3004 3074
+type(
+  string * Perms.Node.t * string
+)
+"store.ml" 104 3225 3229 "store.ml" 104 3225 3242
+type(
+  char -> bool
+)
+ident(
+  def char_is_valid "store.ml" 110 3360 3360 "store.ml" 212 5861 5864
+)
+"store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+type(
+  char
+)
+ident(
+  def c "store.ml" 105 3247 3248 "store.ml" 108 3328 3358
+)
+"store.ml" 105 3247 3249 "store.ml" 105 3247 3250
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 105 3247 3251 "store.ml" 105 3247 3253
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.>=
+)
+"store.ml" 105 3247 3254 "store.ml" 105 3247 3257
+type(
+  char
+)
+"store.ml" 105 3247 3249 "store.ml" 105 3247 3257
+type(
+  bool
+)
+"store.ml" 105 3247 3258 "store.ml" 105 3247 3260
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"store.ml" 105 3247 3261 "store.ml" 105 3247 3262
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 105 3247 3263 "store.ml" 105 3247 3265
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.<=
+)
+"store.ml" 105 3247 3266 "store.ml" 105 3247 3269
+type(
+  char
+)
+"store.ml" 105 3247 3261 "store.ml" 105 3247 3269
+type(
+  bool
+)
+"store.ml" 105 3247 3248 "store.ml" 105 3247 3270
+type(
+  bool
+)
+"store.ml" 105 3247 3271 "store.ml" 105 3247 3273
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 106 3274 3276 "store.ml" 106 3274 3277
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 106 3274 3278 "store.ml" 106 3274 3280
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.>=
+)
+"store.ml" 106 3274 3281 "store.ml" 106 3274 3284
+type(
+  char
+)
+"store.ml" 106 3274 3276 "store.ml" 106 3274 3284
+type(
+  bool
+)
+"store.ml" 106 3274 3285 "store.ml" 106 3274 3287
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"store.ml" 106 3274 3288 "store.ml" 106 3274 3289
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 106 3274 3290 "store.ml" 106 3274 3292
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.<=
+)
+"store.ml" 106 3274 3293 "store.ml" 106 3274 3296
+type(
+  char
+)
+"store.ml" 106 3274 3288 "store.ml" 106 3274 3296
+type(
+  bool
+)
+"store.ml" 106 3274 3275 "store.ml" 106 3274 3297
+type(
+  bool
+)
+"store.ml" 106 3274 3298 "store.ml" 106 3274 3300
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 107 3301 3303 "store.ml" 107 3301 3304
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 107 3301 3305 "store.ml" 107 3301 3307
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.>=
+)
+"store.ml" 107 3301 3308 "store.ml" 107 3301 3311
+type(
+  char
+)
+"store.ml" 107 3301 3303 "store.ml" 107 3301 3311
+type(
+  bool
+)
+"store.ml" 107 3301 3312 "store.ml" 107 3301 3314
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"store.ml" 107 3301 3315 "store.ml" 107 3301 3316
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 107 3301 3317 "store.ml" 107 3301 3319
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.<=
+)
+"store.ml" 107 3301 3320 "store.ml" 107 3301 3323
+type(
+  char
+)
+"store.ml" 107 3301 3315 "store.ml" 107 3301 3323
+type(
+  bool
+)
+"store.ml" 107 3301 3302 "store.ml" 107 3301 3324
+type(
+  bool
+)
+"store.ml" 107 3301 3325 "store.ml" 107 3301 3327
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 108 3328 3329 "store.ml" 108 3328 3330
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 108 3328 3331 "store.ml" 108 3328 3332
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 108 3328 3333 "store.ml" 108 3328 3336
+type(
+  char
+)
+"store.ml" 108 3328 3329 "store.ml" 108 3328 3336
+type(
+  bool
+)
+"store.ml" 108 3328 3337 "store.ml" 108 3328 3339
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 108 3328 3340 "store.ml" 108 3328 3341
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 108 3328 3342 "store.ml" 108 3328 3343
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 108 3328 3344 "store.ml" 108 3328 3347
+type(
+  char
+)
+"store.ml" 108 3328 3340 "store.ml" 108 3328 3347
+type(
+  bool
+)
+"store.ml" 108 3328 3348 "store.ml" 108 3328 3350
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 108 3328 3351 "store.ml" 108 3328 3352
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 104 3225 3243 "store.ml" 104 3225 3244
+)
+"store.ml" 108 3328 3353 "store.ml" 108 3328 3354
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 108 3328 3355 "store.ml" 108 3328 3358
+type(
+  char
+)
+"store.ml" 108 3328 3351 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 108 3328 3340 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 108 3328 3329 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 107 3301 3302 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 106 3274 3275 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 105 3247 3248 "store.ml" 108 3328 3358
+type(
+  bool
+)
+"store.ml" 110 3360 3364 "store.ml" 110 3360 3377
+type(
+  string -> bool
+)
+ident(
+  def name_is_valid "store.ml" 113 3468 3468 "store.ml" 212 5861 5864
+)
+"store.ml" 110 3360 3378 "store.ml" 110 3360 3382
+type(
+  string
+)
+ident(
+  def name "store.ml" 111 3385 3386 "store.ml" 111 3385 3466
+)
+"store.ml" 111 3385 3386 "store.ml" 111 3385 3390
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 110 3360 3378 "store.ml" 110 3360 3382
+)
+"store.ml" 111 3385 3391 "store.ml" 111 3385 3393
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.<>
+)
+"store.ml" 111 3385 3394 "store.ml" 111 3385 3396
+type(
+  string
+)
+"store.ml" 111 3385 3386 "store.ml" 111 3385 3396
+type(
+  bool
+)
+"store.ml" 111 3385 3397 "store.ml" 111 3385 3399
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"store.ml" 111 3385 3400 "store.ml" 111 3385 3416
+type(
+  (bool -> char -> bool) -> bool -> string -> bool
+)
+ident(
+  ext_ref Stdext.String.fold_left
+)
+"store.ml" 111 3385 3422 "store.ml" 111 3385 3426
+type(
+  bool
+)
+ident(
+  def accu "store.ml" 111 3385 3427 "store.ml" 111 3385 3455
+)
+"store.ml" 111 3385 3427 "store.ml" 111 3385 3428
+type(
+  char
+)
+ident(
+  def c "store.ml" 111 3385 3432 "store.ml" 111 3385 3455
+)
+"store.ml" 111 3385 3432 "store.ml" 111 3385 3436
+type(
+  bool
+)
+ident(
+  int_ref accu "store.ml" 111 3385 3422 "store.ml" 111 3385 3426
+)
+"store.ml" 111 3385 3437 "store.ml" 111 3385 3439
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.&&
+)
+"store.ml" 111 3385 3440 "store.ml" 111 3385 3453
+type(
+  char -> bool
+)
+ident(
+  int_ref char_is_valid "store.ml" 104 3225 3229 "store.ml" 104 3225 3242
+)
+"store.ml" 111 3385 3454 "store.ml" 111 3385 3455
+type(
+  char
+)
+ident(
+  int_ref c "store.ml" 111 3385 3427 "store.ml" 111 3385 3428
+)
+"store.ml" 111 3385 3440 "store.ml" 111 3385 3455
+type(
+  bool
+)
+"store.ml" 111 3385 3432 "store.ml" 111 3385 3455
+type(
+  bool
+)
+"store.ml" 111 3385 3417 "store.ml" 111 3385 3456
+type(
+  bool -> char -> bool
+)
+"store.ml" 111 3385 3457 "store.ml" 111 3385 3461
+type(
+  bool
+)
+"store.ml" 111 3385 3462 "store.ml" 111 3385 3466
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 110 3360 3378 "store.ml" 110 3360 3382
+)
+"store.ml" 111 3385 3400 "store.ml" 111 3385 3466
+type(
+  bool
+)
+"store.ml" 111 3385 3386 "store.ml" 111 3385 3466
+type(
+  bool
+)
+"store.ml" 113 3468 3472 "store.ml" 113 3468 3480
+type(
+  string list -> bool
+)
+ident(
+  def is_valid "store.ml" 116 3522 3522 "store.ml" 212 5861 5864
+)
+"store.ml" 113 3468 3481 "store.ml" 113 3468 3485
+type(
+  string list
+)
+ident(
+  def path "store.ml" 114 3488 3489 "store.ml" 114 3488 3520
+)
+"store.ml" 114 3488 3489 "store.ml" 114 3488 3501
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref List.for_all
+)
+"store.ml" 114 3488 3502 "store.ml" 114 3488 3515
+type(
+  string -> bool
+)
+ident(
+  int_ref name_is_valid "store.ml" 110 3360 3364 "store.ml" 110 3360 3377
+)
+"store.ml" 114 3488 3516 "store.ml" 114 3488 3520
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 113 3468 3481 "store.ml" 113 3468 3485
+)
+"store.ml" 114 3488 3489 "store.ml" 114 3488 3520
+type(
+  bool
+)
+"store.ml" 116 3522 3526 "store.ml" 116 3522 3535
+type(
+  string -> string list
+)
+ident(
+  def of_string "store.ml" 125 3706 3706 "store.ml" 212 5861 5864
+)
+"store.ml" 116 3522 3536 "store.ml" 116 3522 3537
+type(
+  string
+)
+ident(
+  def s "store.ml" 117 3540 3541 "store.ml" 123 3670 3704
+)
+"store.ml" 117 3540 3544 "store.ml" 117 3540 3545
+type(
+  string
+)
+ident(
+  int_ref s "store.ml" 116 3522 3536 "store.ml" 116 3522 3537
+)
+"store.ml" 117 3540 3547 "store.ml" 117 3540 3548
+type(
+  int
+)
+"store.ml" 117 3540 3544 "store.ml" 117 3540 3549
+type(
+  char
+)
+"store.ml" 117 3540 3550 "store.ml" 117 3540 3551
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 117 3540 3552 "store.ml" 117 3540 3555
+type(
+  char
+)
+"store.ml" 117 3540 3544 "store.ml" 117 3540 3555
+type(
+  bool
+)
+"store.ml" 118 3556 3563 "store.ml" 118 3556 3564
+type(
+  string
+)
+ident(
+  int_ref s "store.ml" 116 3522 3536 "store.ml" 116 3522 3537
+)
+"store.ml" 118 3556 3562 "store.ml" 118 3556 3565
+type(
+  string list
+)
+"store.ml" 119 3566 3575 "store.ml" 119 3566 3576
+type(
+  string
+)
+ident(
+  int_ref s "store.ml" 116 3522 3536 "store.ml" 116 3522 3537
+)
+"store.ml" 119 3566 3577 "store.ml" 119 3566 3578
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 119 3566 3579 "store.ml" 119 3566 3582
+type(
+  string
+)
+"store.ml" 119 3566 3575 "store.ml" 119 3566 3582
+type(
+  bool
+)
+"store.ml" 120 3583 3589 "store.ml" 120 3583 3591
+type(
+  string list
+)
+"store.ml" 121 3592 3604 "store.ml" 121 3592 3616
+type(
+  ?limit:int -> char -> string -> string list
+)
+ident(
+  ext_ref Stdext.String.split
+)
+"store.ml" 121 3592 3617 "store.ml" 121 3592 3620
+type(
+  char
+)
+"store.ml" 121 3592 3621 "store.ml" 121 3592 3622
+type(
+  string
+)
+ident(
+  int_ref s "store.ml" 116 3522 3536 "store.ml" 116 3522 3537
+)
+"store.ml" 121 3592 3604 "store.ml" 121 3592 3622
+type(
+  string list
+)
+"store.ml" 122 3628 3632 "store.ml" 122 3628 3634
+type(
+  string
+)
+"store.ml" 122 3628 3638 "store.ml" 122 3628 3642
+type(
+  string list
+)
+ident(
+  def path "store.ml" 122 3628 3643 "store.ml" 122 3628 3669
+)
+"store.ml" 122 3628 3632 "store.ml" 122 3628 3642
+type(
+  string list
+)
+"store.ml" 122 3628 3648 "store.ml" 122 3628 3656
+type(
+  string list -> bool
+)
+ident(
+  int_ref is_valid "store.ml" 113 3468 3472 "store.ml" 113 3468 3480
+)
+"store.ml" 122 3628 3657 "store.ml" 122 3628 3661
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 122 3628 3638 "store.ml" 122 3628 3642
+)
+"store.ml" 122 3628 3648 "store.ml" 122 3628 3661
+type(
+  bool
+)
+"store.ml" 122 3628 3665 "store.ml" 122 3628 3669
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 122 3628 3638 "store.ml" 122 3628 3642
+)
+"store.ml" 122 3628 3643 "store.ml" 122 3628 3669
+type(
+  string list
+)
+"store.ml" 123 3670 3674 "store.ml" 123 3670 3675
+type(
+  string list
+)
+"store.ml" 123 3670 3679 "store.ml" 123 3670 3684
+type(
+  exn -> string list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 123 3670 3685 "store.ml" 123 3670 3704
+type(
+  exn
+)
+"store.ml" 123 3670 3679 "store.ml" 123 3670 3704
+type(
+  string list
+)
+"store.ml" 121 3592 3598 "store.ml" 123 3670 3704
+type(
+  string list
+)
+"store.ml" 119 3566 3572 "store.ml" 123 3670 3704
+type(
+  string list
+)
+"store.ml" 117 3540 3541 "store.ml" 123 3670 3704
+type(
+  string list
+)
+"store.ml" 125 3706 3710 "store.ml" 125 3706 3716
+type(
+  string -> string -> string list
+)
+ident(
+  def create "store.ml" 128 3795 3795 "store.ml" 212 5861 5864
+)
+"store.ml" 125 3706 3717 "store.ml" 125 3706 3721
+type(
+  string
+)
+ident(
+  def path "store.ml" 125 3706 3722 "store.ml" 126 3740 3793
+)
+"store.ml" 125 3706 3722 "store.ml" 125 3706 3737
+type(
+  string
+)
+ident(
+  def connection_path "store.ml" 126 3740 3741 "store.ml" 126 3740 3793
+)
+"store.ml" 126 3740 3741 "store.ml" 126 3740 3750
+type(
+  string -> string list
+)
+ident(
+  int_ref of_string "store.ml" 116 3522 3526 "store.ml" 116 3522 3535
+)
+"store.ml" 126 3740 3752 "store.ml" 126 3740 3771
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Utils.path_validate
+)
+"store.ml" 126 3740 3772 "store.ml" 126 3740 3776
+type(
+  string
+)
+ident(
+  int_ref path "store.ml" 125 3706 3717 "store.ml" 125 3706 3721
+)
+"store.ml" 126 3740 3777 "store.ml" 126 3740 3792
+type(
+  string
+)
+ident(
+  int_ref connection_path "store.ml" 125 3706 3722 "store.ml" 125 3706 3737
+)
+"store.ml" 126 3740 3751 "store.ml" 126 3740 3793
+type(
+  string
+)
+"store.ml" 126 3740 3741 "store.ml" 126 3740 3793
+type(
+  string list
+)
+"store.ml" 128 3795 3799 "store.ml" 128 3795 3808
+type(
+  string list -> string
+)
+ident(
+  def to_string "store.ml" 131 3843 3843 "store.ml" 212 5861 5864
+)
+"store.ml" 128 3795 3809 "store.ml" 128 3795 3810
+type(
+  string list
+)
+ident(
+  def t "store.ml" 129 3813 3814 "store.ml" 129 3813 3841
+)
+"store.ml" 129 3813 3814 "store.ml" 129 3813 3817
+type(
+  string
+)
+"store.ml" 129 3813 3818 "store.ml" 129 3813 3819
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"store.ml" 129 3813 3821 "store.ml" 129 3813 3834
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref Stdext.String.concat
+)
+"store.ml" 129 3813 3835 "store.ml" 129 3813 3838
+type(
+  string
+)
+"store.ml" 129 3813 3839 "store.ml" 129 3813 3840
+type(
+  string list
+)
+ident(
+  int_ref t "store.ml" 128 3795 3809 "store.ml" 128 3795 3810
+)
+"store.ml" 129 3813 3820 "store.ml" 129 3813 3841
+type(
+  string
+)
+"store.ml" 129 3813 3814 "store.ml" 129 3813 3841
+type(
+  string
+)
+"store.ml" 131 3843 3847 "store.ml" 131 3843 3861
+type(
+  'a -> 'a
+)
+ident(
+  def to_string_list "store.ml" 133 3869 3869 "store.ml" 212 5861 5864
+)
+"store.ml" 131 3843 3862 "store.ml" 131 3843 3863
+type(
+  'a
+)
+ident(
+  def x "store.ml" 131 3843 3866 "store.ml" 131 3843 3867
+)
+"store.ml" 131 3843 3866 "store.ml" 131 3843 3867
+type(
+  'a
+)
+ident(
+  int_ref x "store.ml" 131 3843 3862 "store.ml" 131 3843 3863
+)
+"store.ml" 133 3869 3873 "store.ml" 133 3869 3883
+type(
+  'b list -> 'b list
+)
+ident(
+  def get_parent "store.ml" 136 3945 3945 "store.ml" 212 5861 5864
+)
+"store.ml" 133 3869 3884 "store.ml" 133 3869 3885
+type(
+  'b list
+)
+ident(
+  def t "store.ml" 134 3888 3889 "store.ml" 134 3888 3943
+)
+"store.ml" 134 3888 3892 "store.ml" 134 3888 3893
+type(
+  'b list
+)
+ident(
+  int_ref t "store.ml" 133 3869 3884 "store.ml" 133 3869 3885
+)
+"store.ml" 134 3888 3894 "store.ml" 134 3888 3895
+type(
+  'b list -> 'b list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 134 3888 3896 "store.ml" 134 3888 3898
+type(
+  'b list
+)
+"store.ml" 134 3888 3892 "store.ml" 134 3888 3898
+type(
+  bool
+)
+"store.ml" 134 3888 3904 "store.ml" 134 3888 3906
+type(
+  'b list
+)
+"store.ml" 134 3888 3912 "store.ml" 134 3888 3920
+type(
+  'b list -> 'b list
+)
+ident(
+  ext_ref List.rev
+)
+"store.ml" 134 3888 3922 "store.ml" 134 3888 3929
+type(
+  'b list -> 'b list
+)
+ident(
+  ext_ref List.tl
+)
+"store.ml" 134 3888 3931 "store.ml" 134 3888 3939
+type(
+  'b list -> 'b list
+)
+ident(
+  ext_ref List.rev
+)
+"store.ml" 134 3888 3940 "store.ml" 134 3888 3941
+type(
+  'b list
+)
+ident(
+  int_ref t "store.ml" 133 3869 3884 "store.ml" 133 3869 3885
+)
+"store.ml" 134 3888 3930 "store.ml" 134 3888 3942
+type(
+  'b list
+)
+"store.ml" 134 3888 3921 "store.ml" 134 3888 3943
+type(
+  'b list
+)
+"store.ml" 134 3888 3912 "store.ml" 134 3888 3943
+type(
+  'b list
+)
+"store.ml" 134 3888 3889 "store.ml" 134 3888 3943
+type(
+  'b list
+)
+"store.ml" 136 3945 3949 "store.ml" 136 3945 3962
+type(
+  'c list -> 'c list list
+)
+ident(
+  def get_hierarchy "store.ml" 139 3997 3997 "store.ml" 212 5861 5864
+)
+"store.ml" 136 3945 3963 "store.ml" 136 3945 3967
+type(
+  'c list
+)
+ident(
+  def path "store.ml" 137 3970 3971 "store.ml" 137 3970 3995
+)
+"store.ml" 137 3970 3971 "store.ml" 137 3970 3990
+type(
+  'c list -> 'c list list
+)
+ident(
+  ext_ref Utils.get_hierarchy
+)
+"store.ml" 137 3970 3991 "store.ml" 137 3970 3995
+type(
+  'c list
+)
+ident(
+  int_ref path "store.ml" 136 3945 3963 "store.ml" 136 3945 3967
+)
+"store.ml" 137 3970 3971 "store.ml" 137 3970 3995
+type(
+  'c list list
+)
+"store.ml" 139 3997 4001 "store.ml" 139 3997 4018
+type(
+  'd list -> 'd list -> 'd list
+)
+ident(
+  def get_common_prefix "store.ml" 150 4262 4262 "store.ml" 212 5861 5864
+)
+"store.ml" 139 3997 4019 "store.ml" 139 3997 4021
+type(
+  'd list
+)
+ident(
+  def p1 "store.ml" 139 3997 4022 "store.ml" 148 4246 4260
+)
+"store.ml" 139 3997 4022 "store.ml" 139 3997 4024
+type(
+  'd list
+)
+ident(
+  def p2 "store.ml" 140 4027 4028 "store.ml" 148 4246 4260
+)
+"store.ml" 140 4027 4036 "store.ml" 140 4027 4043
+type(
+  'e list -> 'e list -> 'e list
+)
+"store.ml" 140 4027 4044 "store.ml" 140 4027 4046
+type(
+  'e list
+)
+ident(
+  def l1 "store.ml" 140 4027 4047 "store.ml" 146 4235 4240
+)
+"store.ml" 140 4027 4047 "store.ml" 140 4027 4049
+type(
+  'e list
+)
+ident(
+  def l2 "store.ml" 141 4052 4054 "store.ml" 146 4235 4240
+)
+"store.ml" 141 4052 4060 "store.ml" 141 4052 4062
+type(
+  'e list
+)
+ident(
+  int_ref l1 "store.ml" 140 4027 4044 "store.ml" 140 4027 4046
+)
+"store.ml" 141 4052 4064 "store.ml" 141 4052 4066
+type(
+  'e list
+)
+ident(
+  int_ref l2 "store.ml" 140 4027 4047 "store.ml" 140 4027 4049
+)
+"store.ml" 141 4052 4060 "store.ml" 141 4052 4066
+type(
+  'e list * 'e list
+)
+"store.ml" 142 4072 4076 "store.ml" 142 4072 4078
+type(
+  'e
+)
+ident(
+  def h1 "store.ml" 143 4100 4103 "store.ml" 143 4100 4150
+)
+"store.ml" 142 4072 4082 "store.ml" 142 4072 4085
+type(
+  'e list
+)
+ident(
+  def tl1 "store.ml" 143 4100 4103 "store.ml" 143 4100 4150
+)
+"store.ml" 142 4072 4076 "store.ml" 142 4072 4085
+type(
+  'e list
+)
+"store.ml" 142 4072 4087 "store.ml" 142 4072 4089
+type(
+  'e
+)
+ident(
+  def h2 "store.ml" 143 4100 4103 "store.ml" 143 4100 4150
+)
+"store.ml" 142 4072 4093 "store.ml" 142 4072 4096
+type(
+  'e list
+)
+ident(
+  def tl2 "store.ml" 143 4100 4103 "store.ml" 143 4100 4150
+)
+"store.ml" 142 4072 4087 "store.ml" 142 4072 4096
+type(
+  'e list
+)
+"store.ml" 142 4072 4076 "store.ml" 142 4072 4096
+type(
+  'e list * 'e list
+)
+"store.ml" 143 4100 4106 "store.ml" 143 4100 4108
+type(
+  'e
+)
+ident(
+  int_ref h1 "store.ml" 142 4072 4076 "store.ml" 142 4072 4078
+)
+"store.ml" 143 4100 4109 "store.ml" 143 4100 4110
+type(
+  'e -> 'e -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 143 4100 4111 "store.ml" 143 4100 4113
+type(
+  'e
+)
+ident(
+  int_ref h2 "store.ml" 142 4072 4087 "store.ml" 142 4072 4089
+)
+"store.ml" 143 4100 4106 "store.ml" 143 4100 4113
+type(
+  bool
+)
+"store.ml" 143 4100 4119 "store.ml" 143 4100 4121
+type(
+  'e
+)
+ident(
+  int_ref h1 "store.ml" 142 4072 4076 "store.ml" 142 4072 4078
+)
+"store.ml" 143 4100 4126 "store.ml" 143 4100 4133
+type(
+  'e list -> 'e list -> 'e list
+)
+ident(
+  int_ref compare "store.ml" 140 4027 4036 "store.ml" 140 4027 4043
+)
+"store.ml" 143 4100 4134 "store.ml" 143 4100 4137
+type(
+  'e list
+)
+ident(
+  int_ref tl1 "store.ml" 142 4072 4082 "store.ml" 142 4072 4085
+)
+"store.ml" 143 4100 4138 "store.ml" 143 4100 4141
+type(
+  'e list
+)
+ident(
+  int_ref tl2 "store.ml" 142 4072 4093 "store.ml" 142 4072 4096
+)
+"store.ml" 143 4100 4125 "store.ml" 143 4100 4142
+type(
+  'e list
+)
+"store.ml" 143 4100 4119 "store.ml" 143 4100 4142
+type(
+  'e list
+)
+"store.ml" 143 4100 4148 "store.ml" 143 4100 4150
+type(
+  'e list
+)
+"store.ml" 143 4100 4103 "store.ml" 143 4100 4150
+type(
+  'e list
+)
+"store.ml" 144 4151 4155 "store.ml" 144 4151 4156
+type(
+  'e list
+)
+"store.ml" 144 4151 4158 "store.ml" 144 4151 4160
+type(
+  'e list
+)
+"store.ml" 144 4151 4155 "store.ml" 144 4151 4160
+type(
+  'e list * 'e list
+)
+"store.ml" 144 4151 4163 "store.ml" 144 4151 4165
+type(
+  'e list
+)
+"store.ml" 144 4151 4167 "store.ml" 144 4151 4168
+type(
+  'e list
+)
+"store.ml" 144 4151 4163 "store.ml" 144 4151 4168
+type(
+  'e list * 'e list
+)
+"store.ml" 144 4151 4155 "store.ml" 144 4151 4168
+type(
+  'e list * 'e list
+)
+"store.ml" 146 4235 4238 "store.ml" 146 4235 4240
+type(
+  'e list
+)
+"store.ml" 141 4052 4054 "store.ml" 146 4235 4240
+type(
+  'e list
+)
+"store.ml" 148 4246 4247 "store.ml" 148 4246 4254
+type(
+  'd list -> 'd list -> 'd list
+)
+ident(
+  int_ref compare "store.ml" 140 4027 4036 "store.ml" 140 4027 4043
+)
+"store.ml" 148 4246 4255 "store.ml" 148 4246 4257
+type(
+  'd list
+)
+ident(
+  int_ref p1 "store.ml" 139 3997 4019 "store.ml" 139 3997 4021
+)
+"store.ml" 148 4246 4258 "store.ml" 148 4246 4260
+type(
+  'd list
+)
+ident(
+  int_ref p2 "store.ml" 139 3997 4022 "store.ml" 139 3997 4024
+)
+"store.ml" 148 4246 4247 "store.ml" 148 4246 4260
+type(
+  'd list
+)
+"store.ml" 140 4027 4028 "store.ml" 148 4246 4260
+type(
+  'd list
+)
+"store.ml" 150 4262 4270 "store.ml" 150 4262 4283
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  def lookup_modify "store.ml" 150 4262 4262 "store.ml" 212 5861 5864
+)
+"store.ml" 150 4262 4284 "store.ml" 150 4262 4288
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 150 4262 4289 "store.ml" 161 4566 4593
+)
+"store.ml" 150 4262 4289 "store.ml" 150 4262 4293
+type(
+  string list
+)
+ident(
+  def path "store.ml" 150 4262 4294 "store.ml" 161 4566 4593
+)
+"store.ml" 150 4262 4294 "store.ml" 150 4262 4297
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  def fct "store.ml" 151 4300 4301 "store.ml" 161 4566 4593
+)
+"store.ml" 151 4300 4307 "store.ml" 151 4300 4311
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 150 4262 4289 "store.ml" 150 4262 4293
+)
+"store.ml" 152 4317 4320 "store.ml" 152 4317 4322
+type(
+  string list
+)
+"store.ml" 152 4317 4331 "store.ml" 152 4317 4336
+type(
+  exn -> Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 152 4317 4337 "store.ml" 152 4317 4358
+type(
+  exn
+)
+"store.ml" 152 4317 4331 "store.ml" 152 4317 4358
+type(
+  Node.t
+)
+"store.ml" 153 4359 4362 "store.ml" 153 4359 4363
+type(
+  string
+)
+ident(
+  def h "store.ml" 153 4359 4373 "store.ml" 153 4359 4383
+)
+"store.ml" 153 4359 4367 "store.ml" 153 4359 4369
+type(
+  string list
+)
+"store.ml" 153 4359 4362 "store.ml" 153 4359 4369
+type(
+  string list
+)
+"store.ml" 153 4359 4373 "store.ml" 153 4359 4376
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref fct "store.ml" 150 4262 4294 "store.ml" 150 4262 4297
+)
+"store.ml" 153 4359 4377 "store.ml" 153 4359 4381
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 150 4262 4284 "store.ml" 150 4262 4288
+)
+"store.ml" 153 4359 4382 "store.ml" 153 4359 4383
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 153 4359 4362 "store.ml" 153 4359 4363
+)
+"store.ml" 153 4359 4373 "store.ml" 153 4359 4383
+type(
+  Node.t
+)
+"store.ml" 154 4384 4387 "store.ml" 154 4384 4388
+type(
+  string
+)
+ident(
+  def h "store.ml" 155 4398 4400 "store.ml" 161 4566 4593
+)
+"store.ml" 154 4384 4392 "store.ml" 154 4384 4393
+type(
+  string list
+)
+ident(
+  def l "store.ml" 155 4398 4400 "store.ml" 161 4566 4593
+)
+"store.ml" 154 4384 4387 "store.ml" 154 4384 4393
+type(
+  string list
+)
+"store.ml" 155 4398 4405 "store.ml" 155 4398 4406
+type(
+  Node.t
+)
+"store.ml" 155 4398 4408 "store.ml" 155 4398 4409
+type(
+  Node.t
+)
+"store.ml" 155 4398 4404 "store.ml" 155 4398 4410
+type(
+  Node.t * Node.t
+)
+"store.ml" 156 4413 4419 "store.ml" 156 4413 4422
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"store.ml" 156 4413 4424 "store.ml" 156 4413 4435
+type(
+  Node.t -> string -> bool
+)
+ident(
+  ext_ref Node.exists
+)
+"store.ml" 156 4413 4436 "store.ml" 156 4413 4440
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 150 4262 4284 "store.ml" 150 4262 4288
+)
+"store.ml" 156 4413 4441 "store.ml" 156 4413 4442
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 154 4384 4387 "store.ml" 154 4384 4388
+)
+"store.ml" 156 4413 4423 "store.ml" 156 4413 4443
+type(
+  bool
+)
+"store.ml" 156 4413 4419 "store.ml" 156 4413 4443
+type(
+  bool
+)
+"store.ml" 157 4449 4453 "store.ml" 157 4449 4458
+type(
+  exn -> Node.t * Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 157 4449 4487 "store.ml" 157 4449 4488
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 154 4384 4387 "store.ml" 154 4384 4388
+)
+"store.ml" 157 4449 4459 "store.ml" 157 4449 4489
+type(
+  exn
+)
+"store.ml" 157 4449 4453 "store.ml" 157 4449 4489
+type(
+  Node.t * Node.t
+)
+"store.ml" 159 4498 4503 "store.ml" 159 4498 4507
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 150 4262 4284 "store.ml" 150 4262 4288
+)
+"store.ml" 159 4498 4509 "store.ml" 159 4498 4518
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 159 4498 4519 "store.ml" 159 4498 4523
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 150 4262 4284 "store.ml" 150 4262 4288
+)
+"store.ml" 159 4498 4524 "store.ml" 159 4498 4525
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 154 4384 4387 "store.ml" 154 4384 4388
+)
+"store.ml" 159 4498 4509 "store.ml" 159 4498 4525
+type(
+  Node.t
+)
+"store.ml" 159 4498 4502 "store.ml" 159 4498 4526
+type(
+  Node.t * Node.t
+)
+"store.ml" 156 4413 4416 "store.ml" 159 4498 4526
+type(
+  Node.t * Node.t
+)
+"store.ml" 160 4530 4536 "store.ml" 160 4530 4538
+type(
+  Node.t
+)
+"store.ml" 160 4530 4541 "store.ml" 160 4530 4554
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  int_ref lookup_modify "store.ml" 150 4262 4270 "store.ml" 150 4262 4283
+)
+"store.ml" 160 4530 4555 "store.ml" 160 4530 4556
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 155 4398 4408 "store.ml" 155 4398 4409
+)
+"store.ml" 160 4530 4557 "store.ml" 160 4530 4558
+type(
+  string list
+)
+ident(
+  int_ref l "store.ml" 154 4384 4392 "store.ml" 154 4384 4393
+)
+"store.ml" 160 4530 4559 "store.ml" 160 4530 4562
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref fct "store.ml" 150 4262 4294 "store.ml" 150 4262 4297
+)
+"store.ml" 160 4530 4541 "store.ml" 160 4530 4562
+type(
+  Node.t
+)
+"store.ml" 161 4566 4568 "store.ml" 161 4566 4586
+type(
+  Node.t -> Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.replace_child
+)
+"store.ml" 161 4566 4587 "store.ml" 161 4566 4588
+type(
+  Node.t
+)
+ident(
+  int_ref n "store.ml" 155 4398 4405 "store.ml" 155 4398 4406
+)
+"store.ml" 161 4566 4589 "store.ml" 161 4566 4590
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 155 4398 4408 "store.ml" 155 4398 4409
+)
+"store.ml" 161 4566 4591 "store.ml" 161 4566 4593
+type(
+  Node.t
+)
+ident(
+  int_ref nc "store.ml" 160 4530 4536 "store.ml" 160 4530 4538
+)
+"store.ml" 161 4566 4568 "store.ml" 161 4566 4593
+type(
+  Node.t
+)
+"store.ml" 160 4530 4532 "store.ml" 161 4566 4593
+type(
+  Node.t
+)
+"store.ml" 155 4398 4400 "store.ml" 161 4566 4593
+type(
+  Node.t
+)
+"store.ml" 151 4300 4301 "store.ml" 161 4566 4593
+type(
+  Node.t
+)
+"store.ml" 163 4595 4599 "store.ml" 163 4595 4611
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  def apply_modify "store.ml" 166 4660 4660 "store.ml" 212 5861 5864
+)
+"store.ml" 163 4595 4612 "store.ml" 163 4595 4617
+type(
+  Node.t
+)
+ident(
+  def rnode "store.ml" 163 4595 4618 "store.ml" 164 4629 4658
+)
+"store.ml" 163 4595 4618 "store.ml" 163 4595 4622
+type(
+  string list
+)
+ident(
+  def path "store.ml" 163 4595 4623 "store.ml" 164 4629 4658
+)
+"store.ml" 163 4595 4623 "store.ml" 163 4595 4626
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  def fct "store.ml" 164 4629 4630 "store.ml" 164 4629 4658
+)
+"store.ml" 164 4629 4630 "store.ml" 164 4629 4643
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  int_ref lookup_modify "store.ml" 150 4262 4270 "store.ml" 150 4262 4283
+)
+"store.ml" 164 4629 4644 "store.ml" 164 4629 4649
+type(
+  Node.t
+)
+ident(
+  int_ref rnode "store.ml" 163 4595 4612 "store.ml" 163 4595 4617
+)
+"store.ml" 164 4629 4650 "store.ml" 164 4629 4654
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 163 4595 4618 "store.ml" 163 4595 4622
+)
+"store.ml" 164 4629 4655 "store.ml" 164 4629 4658
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref fct "store.ml" 163 4595 4623 "store.ml" 163 4595 4626
+)
+"store.ml" 164 4629 4630 "store.ml" 164 4629 4658
+type(
+  Node.t
+)
+"store.ml" 166 4660 4668 "store.ml" 166 4660 4678
+type(
+  Node.t -> string list -> Node.t
+)
+ident(
+  def lookup_get "store.ml" 166 4660 4660 "store.ml" 212 5861 5864
+)
+"store.ml" 166 4660 4679 "store.ml" 166 4660 4683
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 166 4660 4684 "store.ml" 174 4841 4905
+)
+"store.ml" 166 4660 4684 "store.ml" 166 4660 4688
+type(
+  string list
+)
+ident(
+  def path "store.ml" 167 4691 4692 "store.ml" 174 4841 4905
+)
+"store.ml" 167 4691 4698 "store.ml" 167 4691 4702
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 166 4660 4684 "store.ml" 166 4660 4688
+)
+"store.ml" 168 4708 4711 "store.ml" 168 4708 4713
+type(
+  string list
+)
+"store.ml" 168 4708 4722 "store.ml" 168 4708 4727
+type(
+  exn -> Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 168 4708 4728 "store.ml" 168 4708 4749
+type(
+  exn
+)
+"store.ml" 168 4708 4722 "store.ml" 168 4708 4749
+type(
+  Node.t
+)
+"store.ml" 169 4750 4753 "store.ml" 169 4750 4754
+type(
+  string
+)
+ident(
+  def h "store.ml" 170 4764 4766 "store.ml" 173 4811 4840
+)
+"store.ml" 169 4750 4758 "store.ml" 169 4750 4760
+type(
+  string list
+)
+"store.ml" 169 4750 4753 "store.ml" 169 4750 4760
+type(
+  string list
+)
+"store.ml" 171 4771 4774 "store.ml" 171 4771 4783
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 171 4771 4784 "store.ml" 171 4771 4788
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 166 4660 4679 "store.ml" 166 4660 4683
+)
+"store.ml" 171 4771 4789 "store.ml" 171 4771 4790
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 169 4750 4753 "store.ml" 169 4750 4754
+)
+"store.ml" 171 4771 4774 "store.ml" 171 4771 4790
+type(
+  Node.t
+)
+"store.ml" 172 4791 4798 "store.ml" 172 4791 4807
+type(
+  exn
+)
+"store.ml" 173 4811 4814 "store.ml" 173 4811 4819
+type(
+  exn -> Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 173 4811 4820 "store.ml" 173 4811 4839
+type(
+  exn
+)
+"store.ml" 173 4811 4814 "store.ml" 173 4811 4839
+type(
+  Node.t
+)
+"store.ml" 170 4764 4766 "store.ml" 173 4811 4840
+type(
+  Node.t
+)
+"store.ml" 174 4841 4844 "store.ml" 174 4841 4845
+type(
+  string
+)
+ident(
+  def h "store.ml" 174 4841 4855 "store.ml" 174 4841 4905
+)
+"store.ml" 174 4841 4849 "store.ml" 174 4841 4850
+type(
+  string list
+)
+ident(
+  def l "store.ml" 174 4841 4855 "store.ml" 174 4841 4905
+)
+"store.ml" 174 4841 4844 "store.ml" 174 4841 4850
+type(
+  string list
+)
+"store.ml" 174 4841 4859 "store.ml" 174 4841 4864
+type(
+  Node.t
+)
+"store.ml" 174 4841 4867 "store.ml" 174 4841 4876
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 174 4841 4877 "store.ml" 174 4841 4881
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 166 4660 4679 "store.ml" 166 4660 4683
+)
+"store.ml" 174 4841 4882 "store.ml" 174 4841 4883
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 174 4841 4844 "store.ml" 174 4841 4845
+)
+"store.ml" 174 4841 4867 "store.ml" 174 4841 4883
+type(
+  Node.t
+)
+"store.ml" 174 4841 4887 "store.ml" 174 4841 4897
+type(
+  Node.t -> string list -> Node.t
+)
+ident(
+  int_ref lookup_get "store.ml" 166 4660 4668 "store.ml" 166 4660 4678
+)
+"store.ml" 174 4841 4898 "store.ml" 174 4841 4903
+type(
+  Node.t
+)
+ident(
+  int_ref cnode "store.ml" 174 4841 4859 "store.ml" 174 4841 4864
+)
+"store.ml" 174 4841 4904 "store.ml" 174 4841 4905
+type(
+  string list
+)
+ident(
+  int_ref l "store.ml" 174 4841 4849 "store.ml" 174 4841 4850
+)
+"store.ml" 174 4841 4887 "store.ml" 174 4841 4905
+type(
+  Node.t
+)
+"store.ml" 174 4841 4855 "store.ml" 174 4841 4905
+type(
+  Node.t
+)
+"store.ml" 167 4691 4692 "store.ml" 174 4841 4905
+type(
+  Node.t
+)
+"store.ml" 176 4907 4911 "store.ml" 176 4907 4919
+type(
+  Node.t -> string list -> Node.t option
+)
+ident(
+  def get_node "store.ml" 184 5157 5157 "store.ml" 212 5861 5864
+)
+"store.ml" 176 4907 4920 "store.ml" 176 4907 4925
+type(
+  Node.t
+)
+ident(
+  def rnode "store.ml" 176 4907 4926 "store.ml" 181 5041 5043
+)
+"store.ml" 176 4907 4926 "store.ml" 176 4907 4930
+type(
+  string list
+)
+ident(
+  def path "store.ml" 177 4933 4934 "store.ml" 181 5041 5043
+)
+"store.ml" 177 4933 4937 "store.ml" 177 4933 4941
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 176 4907 4926 "store.ml" 176 4907 4930
+)
+"store.ml" 177 4933 4942 "store.ml" 177 4933 4943
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 177 4933 4944 "store.ml" 177 4933 4946
+type(
+  string list
+)
+"store.ml" 177 4933 4937 "store.ml" 177 4933 4946
+type(
+  bool
+)
+"store.ml" 178 4952 4959 "store.ml" 178 4952 4964
+type(
+  Node.t
+)
+ident(
+  int_ref rnode "store.ml" 176 4907 4920 "store.ml" 176 4907 4925
+)
+"store.ml" 178 4952 4954 "store.ml" 178 4952 4964
+type(
+  Node.t option
+)
+"store.ml" 180 4973 4985 "store.ml" 180 4973 4995
+type(
+  Node.t -> string list -> Node.t
+)
+ident(
+  int_ref lookup_get "store.ml" 166 4660 4668 "store.ml" 166 4660 4678
+)
+"store.ml" 180 4973 4996 "store.ml" 180 4973 5001
+type(
+  Node.t
+)
+ident(
+  int_ref rnode "store.ml" 176 4907 4920 "store.ml" 176 4907 4925
+)
+"store.ml" 180 4973 5002 "store.ml" 180 4973 5006
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 176 4907 4926 "store.ml" 176 4907 4930
+)
+"store.ml" 180 4973 4984 "store.ml" 180 4973 5007
+type(
+  Node.t
+)
+"store.ml" 180 4973 4979 "store.ml" 180 4973 5007
+type(
+  Node.t option
+)
+"store.ml" 180 4973 5013 "store.ml" 180 4973 5032
+type(
+  exn
+)
+"store.ml" 180 4973 5036 "store.ml" 180 4973 5040
+type(
+  Node.t option
+)
+"store.ml" 179 4965 4971 "store.ml" 181 5041 5043
+type(
+  Node.t option
+)
+"store.ml" 177 4933 4934 "store.ml" 181 5041 5043
+type(
+  Node.t option
+)
+"store.ml" 184 5157 5165 "store.ml" 184 5157 5190
+type(
+  Node.t -> string list -> Node.t * bool
+)
+ident(
+  def get_deepest_existing_node "store.ml" 184 5157 5157 "store.ml" 212 5861 5864
+)
+"store.ml" 184 5157 5191 "store.ml" 184 5157 5195
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 184 5157 5198 "store.ml" 188 5294 5325
+)
+"store.ml" 185 5207 5210 "store.ml" 185 5207 5212
+type(
+  string list
+)
+"store.ml" 185 5207 5216 "store.ml" 185 5207 5220
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 184 5157 5191 "store.ml" 184 5157 5195
+)
+"store.ml" 185 5207 5222 "store.ml" 185 5207 5226
+type(
+  bool
+)
+"store.ml" 185 5207 5216 "store.ml" 185 5207 5226
+type(
+  Node.t * bool
+)
+"store.ml" 186 5227 5230 "store.ml" 186 5227 5231
+type(
+  string
+)
+ident(
+  def h "store.ml" 187 5240 5242 "store.ml" 188 5294 5325
+)
+"store.ml" 186 5227 5235 "store.ml" 186 5227 5236
+type(
+  string list
+)
+ident(
+  def t "store.ml" 187 5240 5242 "store.ml" 188 5294 5325
+)
+"store.ml" 186 5227 5230 "store.ml" 186 5227 5236
+type(
+  string list
+)
+"store.ml" 187 5240 5246 "store.ml" 187 5240 5271
+type(
+  Node.t -> string list -> Node.t * bool
+)
+ident(
+  int_ref get_deepest_existing_node "store.ml" 184 5157 5165 "store.ml" 184 5157 5190
+)
+"store.ml" 187 5240 5273 "store.ml" 187 5240 5282
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 187 5240 5283 "store.ml" 187 5240 5287
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 184 5157 5191 "store.ml" 184 5157 5195
+)
+"store.ml" 187 5240 5288 "store.ml" 187 5240 5289
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 186 5227 5230 "store.ml" 186 5227 5231
+)
+"store.ml" 187 5240 5272 "store.ml" 187 5240 5290
+type(
+  Node.t
+)
+"store.ml" 187 5240 5291 "store.ml" 187 5240 5292
+type(
+  string list
+)
+ident(
+  int_ref t "store.ml" 186 5227 5235 "store.ml" 186 5227 5236
+)
+"store.ml" 187 5240 5246 "store.ml" 187 5240 5292
+type(
+  Node.t * bool
+)
+"store.ml" 188 5294 5301 "store.ml" 188 5294 5310
+type(
+  exn
+)
+"store.ml" 188 5294 5314 "store.ml" 188 5294 5318
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 184 5157 5191 "store.ml" 184 5157 5195
+)
+"store.ml" 188 5294 5320 "store.ml" 188 5294 5325
+type(
+  bool
+)
+"store.ml" 188 5294 5314 "store.ml" 188 5294 5325
+type(
+  Node.t * bool
+)
+"store.ml" 187 5240 5242 "store.ml" 188 5294 5325
+type(
+  Node.t * bool
+)
+"store.ml" 184 5157 5198 "store.ml" 188 5294 5325
+type(
+  string list -> Node.t * bool
+)
+"store.ml" 190 5327 5331 "store.ml" 190 5327 5339
+type(
+  Node.t -> string list -> Node.t -> Node.t
+)
+ident(
+  def set_node "store.ml" 204 5630 5630 "store.ml" 212 5861 5864
+)
+"store.ml" 190 5327 5340 "store.ml" 190 5327 5345
+type(
+  Node.t
+)
+ident(
+  def rnode "store.ml" 190 5327 5346 "store.ml" 201 5558 5592
+)
+"store.ml" 190 5327 5346 "store.ml" 190 5327 5350
+type(
+  string list
+)
+ident(
+  def path "store.ml" 190 5327 5351 "store.ml" 201 5558 5592
+)
+"store.ml" 190 5327 5351 "store.ml" 190 5327 5356
+type(
+  Node.t
+)
+ident(
+  def nnode "store.ml" 191 5359 5360 "store.ml" 201 5558 5592
+)
+"store.ml" 191 5359 5363 "store.ml" 191 5359 5367
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 190 5327 5346 "store.ml" 190 5327 5350
+)
+"store.ml" 191 5359 5368 "store.ml" 191 5359 5369
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 191 5359 5370 "store.ml" 191 5359 5372
+type(
+  string list
+)
+"store.ml" 191 5359 5363 "store.ml" 191 5359 5372
+type(
+  bool
+)
+"store.ml" 192 5378 5380 "store.ml" 192 5378 5385
+type(
+  Node.t
+)
+ident(
+  int_ref nnode "store.ml" 190 5327 5351 "store.ml" 190 5327 5356
+)
+"store.ml" 194 5392 5398 "store.ml" 194 5392 5406
+type(
+  Node.t -> string -> Node.t
+)
+"store.ml" 194 5392 5407 "store.ml" 194 5392 5411
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 194 5392 5412 "store.ml" 199 5522 5551
+)
+"store.ml" 194 5392 5412 "store.ml" 194 5392 5416
+type(
+  string
+)
+ident(
+  def name "store.ml" 195 5419 5422 "store.ml" 199 5522 5551
+)
+"store.ml" 196 5426 5434 "store.ml" 196 5426 5437
+type(
+  Node.t
+)
+ident(
+  def ent "store.ml" 197 5463 5467 "store.ml" 197 5463 5500
+)
+"store.ml" 196 5426 5440 "store.ml" 196 5426 5449
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 196 5426 5450 "store.ml" 196 5426 5454
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 194 5392 5407 "store.ml" 194 5392 5411
+)
+"store.ml" 196 5426 5455 "store.ml" 196 5426 5459
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 194 5392 5412 "store.ml" 194 5392 5416
+)
+"store.ml" 196 5426 5440 "store.ml" 196 5426 5459
+type(
+  Node.t
+)
+"store.ml" 197 5463 5467 "store.ml" 197 5463 5485
+type(
+  Node.t -> Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.replace_child
+)
+"store.ml" 197 5463 5486 "store.ml" 197 5463 5490
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 194 5392 5407 "store.ml" 194 5392 5411
+)
+"store.ml" 197 5463 5491 "store.ml" 197 5463 5494
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 196 5426 5434 "store.ml" 196 5426 5437
+)
+"store.ml" 197 5463 5495 "store.ml" 197 5463 5500
+type(
+  Node.t
+)
+ident(
+  int_ref nnode "store.ml" 190 5327 5351 "store.ml" 190 5327 5356
+)
+"store.ml" 197 5463 5467 "store.ml" 197 5463 5500
+type(
+  Node.t
+)
+"store.ml" 196 5426 5430 "store.ml" 197 5463 5500
+type(
+  Node.t
+)
+"store.ml" 198 5501 5509 "store.ml" 198 5501 5518
+type(
+  exn
+)
+"store.ml" 199 5522 5526 "store.ml" 199 5522 5540
+type(
+  Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.add_child
+)
+"store.ml" 199 5522 5541 "store.ml" 199 5522 5545
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 194 5392 5407 "store.ml" 194 5392 5411
+)
+"store.ml" 199 5522 5546 "store.ml" 199 5522 5551
+type(
+  Node.t
+)
+ident(
+  int_ref nnode "store.ml" 190 5327 5351 "store.ml" 190 5327 5356
+)
+"store.ml" 199 5522 5526 "store.ml" 199 5522 5551
+type(
+  Node.t
+)
+"store.ml" 195 5419 5422 "store.ml" 199 5522 5551
+type(
+  Node.t
+)
+"store.ml" 201 5558 5560 "store.ml" 201 5558 5572
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  int_ref apply_modify "store.ml" 163 4595 4599 "store.ml" 163 4595 4611
+)
+"store.ml" 201 5558 5573 "store.ml" 201 5558 5578
+type(
+  Node.t
+)
+ident(
+  int_ref rnode "store.ml" 190 5327 5340 "store.ml" 190 5327 5345
+)
+"store.ml" 201 5558 5579 "store.ml" 201 5558 5583
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 190 5327 5346 "store.ml" 190 5327 5350
+)
+"store.ml" 201 5558 5584 "store.ml" 201 5558 5592
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref set_node "store.ml" 194 5392 5398 "store.ml" 194 5392 5406
+)
+"store.ml" 201 5558 5560 "store.ml" 201 5558 5592
+type(
+  Node.t
+)
+"store.ml" 194 5392 5394 "store.ml" 201 5558 5592
+type(
+  Node.t
+)
+"store.ml" 191 5359 5360 "store.ml" 201 5558 5592
+type(
+  Node.t
+)
+"store.ml" 204 5630 5638 "store.ml" 204 5630 5644
+type(
+  Node.t -> string list -> (Node.t -> string -> 'f) -> 'f
+)
+ident(
+  def lookup "store.ml" 204 5630 5630 "store.ml" 212 5861 5864
+)
+"store.ml" 204 5630 5645 "store.ml" 204 5630 5649
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 204 5630 5650 "store.ml" 208 5745 5809
+)
+"store.ml" 204 5630 5650 "store.ml" 204 5630 5654
+type(
+  string list
+)
+ident(
+  def path "store.ml" 204 5630 5655 "store.ml" 208 5745 5809
+)
+"store.ml" 204 5630 5655 "store.ml" 204 5630 5658
+type(
+  Node.t -> string -> 'f
+)
+ident(
+  def fct "store.ml" 205 5661 5662 "store.ml" 208 5745 5809
+)
+"store.ml" 205 5661 5668 "store.ml" 205 5661 5672
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 204 5630 5650 "store.ml" 204 5630 5654
+)
+"store.ml" 206 5678 5681 "store.ml" 206 5678 5683
+type(
+  string list
+)
+"store.ml" 206 5678 5692 "store.ml" 206 5678 5697
+type(
+  exn -> 'f
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 206 5678 5698 "store.ml" 206 5678 5719
+type(
+  exn
+)
+"store.ml" 206 5678 5692 "store.ml" 206 5678 5719
+type(
+  'f
+)
+"store.ml" 207 5720 5723 "store.ml" 207 5720 5724
+type(
+  string
+)
+ident(
+  def h "store.ml" 207 5720 5734 "store.ml" 207 5720 5744
+)
+"store.ml" 207 5720 5728 "store.ml" 207 5720 5730
+type(
+  string list
+)
+"store.ml" 207 5720 5723 "store.ml" 207 5720 5730
+type(
+  string list
+)
+"store.ml" 207 5720 5734 "store.ml" 207 5720 5737
+type(
+  Node.t -> string -> 'f
+)
+ident(
+  int_ref fct "store.ml" 204 5630 5655 "store.ml" 204 5630 5658
+)
+"store.ml" 207 5720 5738 "store.ml" 207 5720 5742
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 204 5630 5645 "store.ml" 204 5630 5649
+)
+"store.ml" 207 5720 5743 "store.ml" 207 5720 5744
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 207 5720 5723 "store.ml" 207 5720 5724
+)
+"store.ml" 207 5720 5734 "store.ml" 207 5720 5744
+type(
+  'f
+)
+"store.ml" 208 5745 5748 "store.ml" 208 5745 5749
+type(
+  string
+)
+ident(
+  def h "store.ml" 208 5745 5759 "store.ml" 208 5745 5809
+)
+"store.ml" 208 5745 5753 "store.ml" 208 5745 5754
+type(
+  string list
+)
+ident(
+  def l "store.ml" 208 5745 5759 "store.ml" 208 5745 5809
+)
+"store.ml" 208 5745 5748 "store.ml" 208 5745 5754
+type(
+  string list
+)
+"store.ml" 208 5745 5763 "store.ml" 208 5745 5768
+type(
+  Node.t
+)
+"store.ml" 208 5745 5771 "store.ml" 208 5745 5780
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 208 5745 5781 "store.ml" 208 5745 5785
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 204 5630 5645 "store.ml" 204 5630 5649
+)
+"store.ml" 208 5745 5786 "store.ml" 208 5745 5787
+type(
+  string
+)
+ident(
+  int_ref h "store.ml" 208 5745 5748 "store.ml" 208 5745 5749
+)
+"store.ml" 208 5745 5771 "store.ml" 208 5745 5787
+type(
+  Node.t
+)
+"store.ml" 208 5745 5791 "store.ml" 208 5745 5797
+type(
+  Node.t -> string list -> (Node.t -> string -> 'f) -> 'f
+)
+ident(
+  int_ref lookup "store.ml" 204 5630 5638 "store.ml" 204 5630 5644
+)
+"store.ml" 208 5745 5798 "store.ml" 208 5745 5803
+type(
+  Node.t
+)
+ident(
+  int_ref cnode "store.ml" 208 5745 5763 "store.ml" 208 5745 5768
+)
+"store.ml" 208 5745 5804 "store.ml" 208 5745 5805
+type(
+  string list
+)
+ident(
+  int_ref l "store.ml" 208 5745 5753 "store.ml" 208 5745 5754
+)
+"store.ml" 208 5745 5806 "store.ml" 208 5745 5809
+type(
+  Node.t -> string -> 'f
+)
+ident(
+  int_ref fct "store.ml" 204 5630 5655 "store.ml" 204 5630 5658
+)
+"store.ml" 208 5745 5791 "store.ml" 208 5745 5809
+type(
+  'f
+)
+"store.ml" 208 5745 5759 "store.ml" 208 5745 5809
+type(
+  'f
+)
+"store.ml" 205 5661 5662 "store.ml" 208 5745 5809
+type(
+  'f
+)
+"store.ml" 210 5811 5815 "store.ml" 210 5811 5820
+type(
+  Node.t -> string list -> (Node.t -> string -> 'g) -> 'g
+)
+ident(
+  def apply "store.ml" 211 5838 5860 "store.ml" 212 5861 5864
+)
+"store.ml" 210 5811 5821 "store.ml" 210 5811 5826
+type(
+  Node.t
+)
+ident(
+  def rnode "store.ml" 210 5811 5827 "store.ml" 211 5838 5860
+)
+"store.ml" 210 5811 5827 "store.ml" 210 5811 5831
+type(
+  string list
+)
+ident(
+  def path "store.ml" 210 5811 5832 "store.ml" 211 5838 5860
+)
+"store.ml" 210 5811 5832 "store.ml" 210 5811 5835
+type(
+  Node.t -> string -> 'g
+)
+ident(
+  def fct "store.ml" 211 5838 5839 "store.ml" 211 5838 5860
+)
+"store.ml" 211 5838 5839 "store.ml" 211 5838 5845
+type(
+  Node.t -> string list -> (Node.t -> string -> 'g) -> 'g
+)
+ident(
+  int_ref lookup "store.ml" 204 5630 5638 "store.ml" 204 5630 5644
+)
+"store.ml" 211 5838 5846 "store.ml" 211 5838 5851
+type(
+  Node.t
+)
+ident(
+  int_ref rnode "store.ml" 210 5811 5821 "store.ml" 210 5811 5826
+)
+"store.ml" 211 5838 5852 "store.ml" 211 5838 5856
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 210 5811 5827 "store.ml" 210 5811 5831
+)
+"store.ml" 211 5838 5857 "store.ml" 211 5838 5860
+type(
+  Node.t -> string -> 'g
+)
+ident(
+  int_ref fct "store.ml" 210 5811 5832 "store.ml" 210 5811 5835
+)
+"store.ml" 211 5838 5839 "store.ml" 211 5838 5860
+type(
+  'g
+)
+"store.ml" 222 6007 6011 "store.ml" 222 6007 6019
+type(
+  t -> Node.t
+)
+ident(
+  def get_root "store.ml" 223 6039 6039 --
+)
+"store.ml" 222 6007 6020 "store.ml" 222 6007 6025
+type(
+  t
+)
+ident(
+  def store "store.ml" 222 6007 6028 "store.ml" 222 6007 6038
+)
+"store.ml" 222 6007 6028 "store.ml" 222 6007 6033
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 222 6007 6020 "store.ml" 222 6007 6025
+)
+"store.ml" 222 6007 6028 "store.ml" 222 6007 6038
+type(
+  Node.t
+)
+"store.ml" 223 6039 6043 "store.ml" 223 6039 6051
+type(
+  t -> Node.t -> unit
+)
+ident(
+  def set_root "store.ml" 225 6085 6085 --
+)
+"store.ml" 223 6039 6052 "store.ml" 223 6039 6057
+type(
+  t
+)
+ident(
+  def store "store.ml" 223 6039 6058 "store.ml" 223 6039 6083
+)
+"store.ml" 223 6039 6058 "store.ml" 223 6039 6062
+type(
+  Node.t
+)
+ident(
+  def root "store.ml" 223 6039 6065 "store.ml" 223 6039 6083
+)
+"store.ml" 223 6039 6065 "store.ml" 223 6039 6070
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 223 6039 6052 "store.ml" 223 6039 6057
+)
+"store.ml" 223 6039 6079 "store.ml" 223 6039 6083
+type(
+  Node.t
+)
+ident(
+  int_ref root "store.ml" 223 6039 6058 "store.ml" 223 6039 6062
+)
+"store.ml" 223 6039 6065 "store.ml" 223 6039 6083
+type(
+  unit
+)
+"store.ml" 225 6085 6089 "store.ml" 225 6085 6098
+type(
+  t -> Quota.t
+)
+ident(
+  def get_quota "store.ml" 226 6119 6119 --
+)
+"store.ml" 225 6085 6099 "store.ml" 225 6085 6104
+type(
+  t
+)
+ident(
+  def store "store.ml" 225 6085 6107 "store.ml" 225 6085 6118
+)
+"store.ml" 225 6085 6107 "store.ml" 225 6085 6112
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 225 6085 6099 "store.ml" 225 6085 6104
+)
+"store.ml" 225 6085 6107 "store.ml" 225 6085 6118
+type(
+  Quota.t
+)
+"store.ml" 226 6119 6123 "store.ml" 226 6119 6132
+type(
+  t -> Quota.t -> unit
+)
+ident(
+  def set_quota "store.ml" 229 6195 6195 --
+)
+"store.ml" 226 6119 6133 "store.ml" 226 6119 6138
+type(
+  t
+)
+ident(
+  def store "store.ml" 226 6119 6139 "store.ml" 226 6119 6167
+)
+"store.ml" 226 6119 6139 "store.ml" 226 6119 6144
+type(
+  Quota.t
+)
+ident(
+  def quota "store.ml" 226 6119 6147 "store.ml" 226 6119 6167
+)
+"store.ml" 226 6119 6147 "store.ml" 226 6119 6152
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 226 6119 6133 "store.ml" 226 6119 6138
+)
+"store.ml" 226 6119 6162 "store.ml" 226 6119 6167
+type(
+  Quota.t
+)
+ident(
+  int_ref quota "store.ml" 226 6119 6139 "store.ml" 226 6119 6144
+)
+"store.ml" 226 6119 6147 "store.ml" 226 6119 6167
+type(
+  unit
+)
+"store.ml" 229 6195 6199 "store.ml" 229 6195 6209
+type(
+  t -> Perms.Connection.t -> string list -> Node.t
+)
+ident(
+  def path_mkdir "store.ml" 243 6577 6577 --
+)
+"store.ml" 229 6195 6210 "store.ml" 229 6195 6215
+type(
+  t
+)
+ident(
+  def store "store.ml" 229 6195 6216 "store.ml" 241 6531 6575
+)
+"store.ml" 229 6195 6216 "store.ml" 229 6195 6220
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 229 6195 6221 "store.ml" 241 6531 6575
+)
+"store.ml" 229 6195 6221 "store.ml" 229 6195 6225
+type(
+  string list
+)
+ident(
+  def path "store.ml" 230 6228 6229 "store.ml" 241 6531 6575
+)
+"store.ml" 230 6228 6233 "store.ml" 230 6228 6241
+type(
+  Node.t -> string -> Node.t
+)
+"store.ml" 230 6228 6242 "store.ml" 230 6228 6246
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 230 6228 6247 "store.ml" 237 6429 6489
+)
+"store.ml" 230 6228 6247 "store.ml" 230 6228 6251
+type(
+  string
+)
+ident(
+  def name "store.ml" 231 6254 6256 "store.ml" 237 6429 6489
+)
+"store.ml" 232 6260 6267 "store.ml" 232 6260 6270
+type(
+  Node.t
+)
+ident(
+  def ent "store.ml" 233 6296 6299 "store.ml" 234 6337 6366
+)
+"store.ml" 232 6260 6273 "store.ml" 232 6260 6282
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 232 6260 6283 "store.ml" 232 6260 6287
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 230 6228 6242 "store.ml" 230 6228 6246
+)
+"store.ml" 232 6260 6288 "store.ml" 232 6260 6292
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 230 6228 6247 "store.ml" 230 6228 6251
+)
+"store.ml" 232 6260 6273 "store.ml" 232 6260 6292
+type(
+  Node.t
+)
+"store.ml" 233 6296 6299 "store.ml" 233 6296 6314
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 233 6296 6315 "store.ml" 233 6296 6318
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 232 6260 6267 "store.ml" 232 6260 6270
+)
+"store.ml" 233 6296 6319 "store.ml" 233 6296 6323
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 229 6195 6216 "store.ml" 229 6195 6220
+)
+"store.ml" 233 6296 6324 "store.ml" 233 6296 6335
+type(
+  Perms.permty
+)
+"store.ml" 233 6296 6299 "store.ml" 233 6296 6335
+type(
+  unit
+)
+"store.ml" 234 6337 6340 "store.ml" 234 6337 6345
+type(
+  exn -> Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 234 6337 6346 "store.ml" 234 6337 6366
+type(
+  exn
+)
+"store.ml" 234 6337 6340 "store.ml" 234 6337 6366
+type(
+  Node.t
+)
+"store.ml" 233 6296 6299 "store.ml" 234 6337 6366
+type(
+  Node.t
+)
+"store.ml" 232 6260 6263 "store.ml" 234 6337 6366
+type(
+  Node.t
+)
+"store.ml" 235 6367 6374 "store.ml" 235 6367 6383
+type(
+  exn
+)
+"store.ml" 236 6387 6390 "store.ml" 236 6387 6405
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 236 6387 6406 "store.ml" 236 6387 6410
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 230 6228 6242 "store.ml" 230 6228 6246
+)
+"store.ml" 236 6387 6411 "store.ml" 236 6387 6415
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 229 6195 6216 "store.ml" 229 6195 6220
+)
+"store.ml" 236 6387 6416 "store.ml" 236 6387 6427
+type(
+  Perms.permty
+)
+"store.ml" 236 6387 6390 "store.ml" 236 6387 6427
+type(
+  unit
+)
+"store.ml" 237 6429 6432 "store.ml" 237 6429 6446
+type(
+  Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.add_child
+)
+"store.ml" 237 6429 6447 "store.ml" 237 6429 6451
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 230 6228 6242 "store.ml" 230 6228 6246
+)
+"store.ml" 237 6429 6453 "store.ml" 237 6429 6464
+type(
+  string -> Perms.Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.create
+)
+"store.ml" 237 6429 6465 "store.ml" 237 6429 6469
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 230 6228 6247 "store.ml" 230 6228 6251
+)
+"store.ml" 237 6429 6470 "store.ml" 237 6429 6474
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 230 6228 6242 "store.ml" 230 6228 6246
+)
+"store.ml" 237 6429 6470 "store.ml" 237 6429 6485
+type(
+  Perms.Node.t
+)
+"store.ml" 237 6429 6486 "store.ml" 237 6429 6488
+type(
+  string
+)
+"store.ml" 237 6429 6452 "store.ml" 237 6429 6489
+type(
+  Node.t
+)
+"store.ml" 237 6429 6432 "store.ml" 237 6429 6489
+type(
+  Node.t
+)
+"store.ml" 236 6387 6390 "store.ml" 237 6429 6489
+type(
+  Node.t
+)
+"store.ml" 231 6254 6256 "store.ml" 237 6429 6489
+type(
+  Node.t
+)
+"store.ml" 238 6493 6497 "store.ml" 238 6493 6501
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 229 6195 6221 "store.ml" 229 6195 6225
+)
+"store.ml" 238 6493 6502 "store.ml" 238 6493 6503
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 238 6493 6504 "store.ml" 238 6493 6506
+type(
+  string list
+)
+"store.ml" 238 6493 6497 "store.ml" 238 6493 6506
+type(
+  bool
+)
+"store.ml" 239 6512 6514 "store.ml" 239 6512 6519
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 229 6195 6210 "store.ml" 229 6195 6215
+)
+"store.ml" 239 6512 6514 "store.ml" 239 6512 6524
+type(
+  Node.t
+)
+"store.ml" 241 6531 6533 "store.ml" 241 6531 6550
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  ext_ref Path.apply_modify
+)
+"store.ml" 241 6531 6551 "store.ml" 241 6531 6556
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 229 6195 6210 "store.ml" 229 6195 6215
+)
+"store.ml" 241 6531 6551 "store.ml" 241 6531 6561
+type(
+  Node.t
+)
+"store.ml" 241 6531 6562 "store.ml" 241 6531 6566
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 229 6195 6221 "store.ml" 229 6195 6225
+)
+"store.ml" 241 6531 6567 "store.ml" 241 6531 6575
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref do_mkdir "store.ml" 230 6228 6233 "store.ml" 230 6228 6241
+)
+"store.ml" 241 6531 6533 "store.ml" 241 6531 6575
+type(
+  Node.t
+)
+"store.ml" 238 6493 6494 "store.ml" 241 6531 6575
+type(
+  Node.t
+)
+"store.ml" 230 6228 6229 "store.ml" 241 6531 6575
+type(
+  Node.t
+)
+"store.ml" 243 6577 6581 "store.ml" 243 6577 6591
+type(
+  t -> Perms.Connection.t -> string list -> string -> Node.t * bool
+)
+ident(
+  def path_write "store.ml" 261 7168 7168 --
+)
+"store.ml" 243 6577 6592 "store.ml" 243 6577 6597
+type(
+  t
+)
+ident(
+  def store "store.ml" 243 6577 6598 "store.ml" 259 7107 7166
+)
+"store.ml" 243 6577 6598 "store.ml" 243 6577 6602
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 243 6577 6603 "store.ml" 259 7107 7166
+)
+"store.ml" 243 6577 6603 "store.ml" 243 6577 6607
+type(
+  string list
+)
+ident(
+  def path "store.ml" 243 6577 6608 "store.ml" 259 7107 7166
+)
+"store.ml" 243 6577 6608 "store.ml" 243 6577 6613
+type(
+  string
+)
+ident(
+  def value "store.ml" 244 6616 6617 "store.ml" 259 7107 7166
+)
+"store.ml" 244 6616 6621 "store.ml" 244 6616 6633
+type(
+  bool ref
+)
+"store.ml" 244 6616 6636 "store.ml" 244 6616 6639
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"store.ml" 244 6616 6640 "store.ml" 244 6616 6645
+type(
+  bool
+)
+"store.ml" 244 6616 6636 "store.ml" 244 6616 6645
+type(
+  bool ref
+)
+"store.ml" 245 6649 6654 "store.ml" 245 6649 6662
+type(
+  Node.t -> string -> Node.t
+)
+"store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 245 6649 6668 "store.ml" 254 6923 6986
+)
+"store.ml" 245 6649 6668 "store.ml" 245 6649 6672
+type(
+  string
+)
+ident(
+  def name "store.ml" 246 6675 6677 "store.ml" 254 6923 6986
+)
+"store.ml" 247 6681 6688 "store.ml" 247 6681 6691
+type(
+  Node.t
+)
+ident(
+  def ent "store.ml" 248 6717 6720 "store.ml" 250 6800 6835
+)
+"store.ml" 247 6681 6694 "store.ml" 247 6681 6703
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 247 6681 6704 "store.ml" 247 6681 6708
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+)
+"store.ml" 247 6681 6709 "store.ml" 247 6681 6713
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 245 6649 6668 "store.ml" 245 6649 6672
+)
+"store.ml" 247 6681 6694 "store.ml" 247 6681 6713
+type(
+  Node.t
+)
+"store.ml" 248 6717 6720 "store.ml" 248 6717 6735
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 248 6717 6736 "store.ml" 248 6717 6739
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 247 6681 6688 "store.ml" 247 6681 6691
+)
+"store.ml" 248 6717 6740 "store.ml" 248 6717 6744
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 243 6577 6598 "store.ml" 243 6577 6602
+)
+"store.ml" 248 6717 6745 "store.ml" 248 6717 6756
+type(
+  Perms.permty
+)
+"store.ml" 248 6717 6720 "store.ml" 248 6717 6756
+type(
+  unit
+)
+"store.ml" 249 6758 6765 "store.ml" 249 6758 6769
+type(
+  Node.t
+)
+ident(
+  def nent "store.ml" 250 6800 6803 "store.ml" 250 6800 6835
+)
+"store.ml" 249 6758 6772 "store.ml" 249 6758 6786
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.set_value
+)
+"store.ml" 249 6758 6787 "store.ml" 249 6758 6790
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 247 6681 6688 "store.ml" 247 6681 6691
+)
+"store.ml" 249 6758 6791 "store.ml" 249 6758 6796
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 243 6577 6608 "store.ml" 243 6577 6613
+)
+"store.ml" 249 6758 6772 "store.ml" 249 6758 6796
+type(
+  Node.t
+)
+"store.ml" 250 6800 6803 "store.ml" 250 6800 6821
+type(
+  Node.t -> Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.replace_child
+)
+"store.ml" 250 6800 6822 "store.ml" 250 6800 6826
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+)
+"store.ml" 250 6800 6827 "store.ml" 250 6800 6830
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 247 6681 6688 "store.ml" 247 6681 6691
+)
+"store.ml" 250 6800 6831 "store.ml" 250 6800 6835
+type(
+  Node.t
+)
+ident(
+  int_ref nent "store.ml" 249 6758 6765 "store.ml" 249 6758 6769
+)
+"store.ml" 250 6800 6803 "store.ml" 250 6800 6835
+type(
+  Node.t
+)
+"store.ml" 249 6758 6761 "store.ml" 250 6800 6835
+type(
+  Node.t
+)
+"store.ml" 248 6717 6720 "store.ml" 250 6800 6835
+type(
+  Node.t
+)
+"store.ml" 247 6681 6684 "store.ml" 250 6800 6835
+type(
+  Node.t
+)
+"store.ml" 251 6836 6843 "store.ml" 251 6836 6852
+type(
+  exn
+)
+"store.ml" 252 6856 6859 "store.ml" 252 6856 6871
+type(
+  bool ref
+)
+ident(
+  int_ref node_created "store.ml" 244 6616 6621 "store.ml" 244 6616 6633
+)
+"store.ml" 252 6856 6872 "store.ml" 252 6856 6874
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.:=
+)
+"store.ml" 252 6856 6875 "store.ml" 252 6856 6879
+type(
+  bool
+)
+"store.ml" 252 6856 6859 "store.ml" 252 6856 6879
+type(
+  unit
+)
+"store.ml" 253 6881 6884 "store.ml" 253 6881 6899
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 253 6881 6900 "store.ml" 253 6881 6904
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+)
+"store.ml" 253 6881 6905 "store.ml" 253 6881 6909
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 243 6577 6598 "store.ml" 243 6577 6602
+)
+"store.ml" 253 6881 6910 "store.ml" 253 6881 6921
+type(
+  Perms.permty
+)
+"store.ml" 253 6881 6884 "store.ml" 253 6881 6921
+type(
+  unit
+)
+"store.ml" 254 6923 6926 "store.ml" 254 6923 6940
+type(
+  Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.add_child
+)
+"store.ml" 254 6923 6941 "store.ml" 254 6923 6945
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+)
+"store.ml" 254 6923 6947 "store.ml" 254 6923 6958
+type(
+  string -> Perms.Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.create
+)
+"store.ml" 254 6923 6959 "store.ml" 254 6923 6963
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 245 6649 6668 "store.ml" 245 6649 6672
+)
+"store.ml" 254 6923 6964 "store.ml" 254 6923 6968
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 245 6649 6663 "store.ml" 245 6649 6667
+)
+"store.ml" 254 6923 6964 "store.ml" 254 6923 6979
+type(
+  Perms.Node.t
+)
+"store.ml" 254 6923 6980 "store.ml" 254 6923 6985
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 243 6577 6608 "store.ml" 243 6577 6613
+)
+"store.ml" 254 6923 6946 "store.ml" 254 6923 6986
+type(
+  Node.t
+)
+"store.ml" 254 6923 6926 "store.ml" 254 6923 6986
+type(
+  Node.t
+)
+"store.ml" 253 6881 6884 "store.ml" 254 6923 6986
+type(
+  Node.t
+)
+"store.ml" 252 6856 6859 "store.ml" 254 6923 6986
+type(
+  Node.t
+)
+"store.ml" 246 6675 6677 "store.ml" 254 6923 6986
+type(
+  Node.t
+)
+"store.ml" 255 6990 6994 "store.ml" 255 6990 6998
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 243 6577 6603 "store.ml" 243 6577 6607
+)
+"store.ml" 255 6990 6999 "store.ml" 255 6990 7000
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 255 6990 7001 "store.ml" 255 6990 7003
+type(
+  string list
+)
+"store.ml" 255 6990 6994 "store.ml" 255 6990 7003
+type(
+  bool
+)
+"store.ml" 256 7011 7013 "store.ml" 256 7011 7028
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 256 7011 7029 "store.ml" 256 7011 7034
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 243 6577 6592 "store.ml" 243 6577 6597
+)
+"store.ml" 256 7011 7029 "store.ml" 256 7011 7039
+type(
+  Node.t
+)
+"store.ml" 256 7011 7040 "store.ml" 256 7011 7044
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 243 6577 6598 "store.ml" 243 6577 6602
+)
+"store.ml" 256 7011 7045 "store.ml" 256 7011 7056
+type(
+  Perms.permty
+)
+"store.ml" 256 7011 7013 "store.ml" 256 7011 7056
+type(
+  unit
+)
+"store.ml" 257 7058 7060 "store.ml" 257 7058 7074
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.set_value
+)
+"store.ml" 257 7058 7075 "store.ml" 257 7058 7080
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 243 6577 6592 "store.ml" 243 6577 6597
+)
+"store.ml" 257 7058 7075 "store.ml" 257 7058 7085
+type(
+  Node.t
+)
+"store.ml" 257 7058 7086 "store.ml" 257 7058 7091
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 243 6577 6608 "store.ml" 243 6577 6613
+)
+"store.ml" 257 7058 7060 "store.ml" 257 7058 7091
+type(
+  Node.t
+)
+"store.ml" 257 7058 7093 "store.ml" 257 7058 7098
+type(
+  bool
+)
+"store.ml" 257 7058 7060 "store.ml" 257 7058 7098
+type(
+  Node.t * bool
+)
+"store.ml" 255 6990 7009 "store.ml" 258 7099 7101
+type(
+  Node.t * bool
+)
+"store.ml" 259 7107 7109 "store.ml" 259 7107 7126
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  ext_ref Path.apply_modify
+)
+"store.ml" 259 7107 7127 "store.ml" 259 7107 7132
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 243 6577 6592 "store.ml" 243 6577 6597
+)
+"store.ml" 259 7107 7127 "store.ml" 259 7107 7137
+type(
+  Node.t
+)
+"store.ml" 259 7107 7138 "store.ml" 259 7107 7142
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 243 6577 6603 "store.ml" 243 6577 6607
+)
+"store.ml" 259 7107 7143 "store.ml" 259 7107 7151
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref do_write "store.ml" 245 6649 6654 "store.ml" 245 6649 6662
+)
+"store.ml" 259 7107 7109 "store.ml" 259 7107 7151
+type(
+  Node.t
+)
+"store.ml" 259 7107 7153 "store.ml" 259 7107 7154
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.!
+)
+"store.ml" 259 7107 7154 "store.ml" 259 7107 7166
+type(
+  bool ref
+)
+ident(
+  int_ref node_created "store.ml" 244 6616 6621 "store.ml" 244 6616 6633
+)
+"store.ml" 259 7107 7153 "store.ml" 259 7107 7166
+type(
+  bool
+)
+"store.ml" 259 7107 7109 "store.ml" 259 7107 7166
+type(
+  Node.t * bool
+)
+"store.ml" 255 6990 6991 "store.ml" 259 7107 7166
+type(
+  Node.t * bool
+)
+"store.ml" 245 6649 6650 "store.ml" 259 7107 7166
+type(
+  Node.t * bool
+)
+"store.ml" 244 6616 6617 "store.ml" 259 7107 7166
+type(
+  Node.t * bool
+)
+"store.ml" 261 7168 7172 "store.ml" 261 7168 7179
+type(
+  t -> Perms.Connection.t -> string list -> Node.t
+)
+ident(
+  def path_rm "store.ml" 274 7491 7491 --
+)
+"store.ml" 261 7168 7180 "store.ml" 261 7168 7185
+type(
+  t
+)
+ident(
+  def store "store.ml" 261 7168 7186 "store.ml" 272 7448 7489
+)
+"store.ml" 261 7168 7186 "store.ml" 261 7168 7190
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 261 7168 7191 "store.ml" 272 7448 7489
+)
+"store.ml" 261 7168 7191 "store.ml" 261 7168 7195
+type(
+  string list
+)
+ident(
+  def path "store.ml" 262 7198 7199 "store.ml" 272 7448 7489
+)
+"store.ml" 262 7198 7203 "store.ml" 262 7198 7208
+type(
+  Node.t -> string -> Node.t
+)
+"store.ml" 262 7198 7209 "store.ml" 262 7198 7213
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 262 7198 7214 "store.ml" 268 7356 7384
+)
+"store.ml" 262 7198 7214 "store.ml" 262 7198 7218
+type(
+  string
+)
+ident(
+  def name "store.ml" 263 7221 7223 "store.ml" 268 7356 7384
+)
+"store.ml" 264 7227 7234 "store.ml" 264 7227 7237
+type(
+  Node.t
+)
+ident(
+  def ent "store.ml" 265 7263 7266 "store.ml" 266 7304 7335
+)
+"store.ml" 264 7227 7240 "store.ml" 264 7227 7249
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 264 7227 7250 "store.ml" 264 7227 7254
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 262 7198 7209 "store.ml" 262 7198 7213
+)
+"store.ml" 264 7227 7255 "store.ml" 264 7227 7259
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 262 7198 7214 "store.ml" 262 7198 7218
+)
+"store.ml" 264 7227 7240 "store.ml" 264 7227 7259
+type(
+  Node.t
+)
+"store.ml" 265 7263 7266 "store.ml" 265 7263 7281
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 265 7263 7282 "store.ml" 265 7263 7285
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 264 7227 7234 "store.ml" 264 7227 7237
+)
+"store.ml" 265 7263 7286 "store.ml" 265 7263 7290
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 261 7168 7186 "store.ml" 261 7168 7190
+)
+"store.ml" 265 7263 7291 "store.ml" 265 7263 7302
+type(
+  Perms.permty
+)
+"store.ml" 265 7263 7266 "store.ml" 265 7263 7302
+type(
+  unit
+)
+"store.ml" 266 7304 7307 "store.ml" 266 7304 7325
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.del_childname
+)
+"store.ml" 266 7304 7326 "store.ml" 266 7304 7330
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 262 7198 7209 "store.ml" 262 7198 7213
+)
+"store.ml" 266 7304 7331 "store.ml" 266 7304 7335
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 262 7198 7214 "store.ml" 262 7198 7218
+)
+"store.ml" 266 7304 7307 "store.ml" 266 7304 7335
+type(
+  Node.t
+)
+"store.ml" 265 7263 7266 "store.ml" 266 7304 7335
+type(
+  Node.t
+)
+"store.ml" 264 7227 7230 "store.ml" 266 7304 7335
+type(
+  Node.t
+)
+"store.ml" 267 7336 7343 "store.ml" 267 7336 7352
+type(
+  exn
+)
+"store.ml" 268 7356 7359 "store.ml" 268 7356 7364
+type(
+  exn -> Node.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 268 7356 7365 "store.ml" 268 7356 7384
+type(
+  exn
+)
+"store.ml" 268 7356 7359 "store.ml" 268 7356 7384
+type(
+  Node.t
+)
+"store.ml" 263 7221 7223 "store.ml" 268 7356 7384
+type(
+  Node.t
+)
+"store.ml" 269 7388 7392 "store.ml" 269 7388 7396
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 261 7168 7191 "store.ml" 261 7168 7195
+)
+"store.ml" 269 7388 7397 "store.ml" 269 7388 7398
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 269 7388 7399 "store.ml" 269 7388 7401
+type(
+  string list
+)
+"store.ml" 269 7388 7392 "store.ml" 269 7388 7401
+type(
+  bool
+)
+"store.ml" 270 7407 7409 "store.ml" 270 7407 7430
+type(
+  Node.t -> Node.t
+)
+ident(
+  ext_ref Node.del_all_children
+)
+"store.ml" 270 7407 7431 "store.ml" 270 7407 7436
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 261 7168 7180 "store.ml" 261 7168 7185
+)
+"store.ml" 270 7407 7431 "store.ml" 270 7407 7441
+type(
+  Node.t
+)
+"store.ml" 270 7407 7409 "store.ml" 270 7407 7441
+type(
+  Node.t
+)
+"store.ml" 272 7448 7450 "store.ml" 272 7448 7467
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  ext_ref Path.apply_modify
+)
+"store.ml" 272 7448 7468 "store.ml" 272 7448 7473
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 261 7168 7180 "store.ml" 261 7168 7185
+)
+"store.ml" 272 7448 7468 "store.ml" 272 7448 7478
+type(
+  Node.t
+)
+"store.ml" 272 7448 7479 "store.ml" 272 7448 7483
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 261 7168 7191 "store.ml" 261 7168 7195
+)
+"store.ml" 272 7448 7484 "store.ml" 272 7448 7489
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref do_rm "store.ml" 262 7198 7203 "store.ml" 262 7198 7208
+)
+"store.ml" 272 7448 7450 "store.ml" 272 7448 7489
+type(
+  Node.t
+)
+"store.ml" 269 7388 7389 "store.ml" 272 7448 7489
+type(
+  Node.t
+)
+"store.ml" 262 7198 7199 "store.ml" 272 7448 7489
+type(
+  Node.t
+)
+"store.ml" 274 7491 7495 "store.ml" 274 7491 7508
+type(
+  t -> Perms.Connection.t -> string list -> Perms.Node.t -> Node.t
+)
+ident(
+  def path_setperms "store.ml" 288 7873 7873 --
+)
+"store.ml" 274 7491 7509 "store.ml" 274 7491 7514
+type(
+  t
+)
+ident(
+  def store "store.ml" 274 7491 7515 "store.ml" 285 7798 7845
+)
+"store.ml" 274 7491 7515 "store.ml" 274 7491 7519
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 274 7491 7520 "store.ml" 285 7798 7845
+)
+"store.ml" 274 7491 7520 "store.ml" 274 7491 7524
+type(
+  string list
+)
+ident(
+  def path "store.ml" 274 7491 7525 "store.ml" 285 7798 7845
+)
+"store.ml" 274 7491 7525 "store.ml" 274 7491 7530
+type(
+  Perms.Node.t
+)
+ident(
+  def perms "store.ml" 275 7533 7534 "store.ml" 285 7798 7845
+)
+"store.ml" 275 7533 7537 "store.ml" 275 7533 7541
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 274 7491 7520 "store.ml" 274 7491 7524
+)
+"store.ml" 275 7533 7542 "store.ml" 275 7533 7543
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 275 7533 7544 "store.ml" 275 7533 7546
+type(
+  string list
+)
+"store.ml" 275 7533 7537 "store.ml" 275 7533 7546
+type(
+  bool
+)
+"store.ml" 276 7552 7554 "store.ml" 276 7552 7568
+type(
+  Node.t -> Perms.Node.t -> Node.t
+)
+ident(
+  ext_ref Node.set_perms
+)
+"store.ml" 276 7552 7569 "store.ml" 276 7552 7574
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 274 7491 7509 "store.ml" 274 7491 7514
+)
+"store.ml" 276 7552 7569 "store.ml" 276 7552 7579
+type(
+  Node.t
+)
+"store.ml" 276 7552 7580 "store.ml" 276 7552 7585
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref perms "store.ml" 274 7491 7525 "store.ml" 274 7491 7530
+)
+"store.ml" 276 7552 7554 "store.ml" 276 7552 7585
+type(
+  Node.t
+)
+"store.ml" 278 7592 7598 "store.ml" 278 7592 7609
+type(
+  Node.t -> string -> Node.t
+)
+"store.ml" 278 7592 7610 "store.ml" 278 7592 7614
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 278 7592 7615 "store.ml" 283 7761 7792
+)
+"store.ml" 278 7592 7615 "store.ml" 278 7592 7619
+type(
+  string
+)
+ident(
+  def name "store.ml" 279 7622 7625 "store.ml" 283 7761 7792
+)
+"store.ml" 279 7622 7629 "store.ml" 279 7622 7630
+type(
+  Node.t
+)
+"store.ml" 279 7622 7633 "store.ml" 279 7622 7642
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 279 7622 7643 "store.ml" 279 7622 7647
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 278 7592 7610 "store.ml" 278 7592 7614
+)
+"store.ml" 279 7622 7648 "store.ml" 279 7622 7652
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 278 7592 7615 "store.ml" 278 7592 7619
+)
+"store.ml" 279 7622 7633 "store.ml" 279 7622 7652
+type(
+  Node.t
+)
+"store.ml" 280 7656 7659 "store.ml" 280 7656 7675
+type(
+  Node.t -> Perms.Connection.t -> unit
+)
+ident(
+  ext_ref Node.check_owner
+)
+"store.ml" 280 7656 7676 "store.ml" 280 7656 7677
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 279 7622 7629 "store.ml" 279 7622 7630
+)
+"store.ml" 280 7656 7678 "store.ml" 280 7656 7682
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 274 7491 7515 "store.ml" 274 7491 7519
+)
+"store.ml" 280 7656 7659 "store.ml" 280 7656 7682
+type(
+  unit
+)
+"store.ml" 281 7684 7687 "store.ml" 281 7684 7702
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 281 7684 7703 "store.ml" 281 7684 7704
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 279 7622 7629 "store.ml" 279 7622 7630
+)
+"store.ml" 281 7684 7705 "store.ml" 281 7684 7709
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 274 7491 7515 "store.ml" 274 7491 7519
+)
+"store.ml" 281 7684 7710 "store.ml" 281 7684 7721
+type(
+  Perms.permty
+)
+"store.ml" 281 7684 7687 "store.ml" 281 7684 7721
+type(
+  unit
+)
+"store.ml" 282 7723 7730 "store.ml" 282 7723 7732
+type(
+  Node.t
+)
+"store.ml" 282 7723 7735 "store.ml" 282 7723 7749
+type(
+  Node.t -> Perms.Node.t -> Node.t
+)
+ident(
+  ext_ref Node.set_perms
+)
+"store.ml" 282 7723 7750 "store.ml" 282 7723 7751
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 279 7622 7629 "store.ml" 279 7622 7630
+)
+"store.ml" 282 7723 7752 "store.ml" 282 7723 7757
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref perms "store.ml" 274 7491 7525 "store.ml" 274 7491 7530
+)
+"store.ml" 282 7723 7735 "store.ml" 282 7723 7757
+type(
+  Node.t
+)
+"store.ml" 283 7761 7764 "store.ml" 283 7761 7782
+type(
+  Node.t -> Node.t -> Node.t -> Node.t
+)
+ident(
+  ext_ref Node.replace_child
+)
+"store.ml" 283 7761 7783 "store.ml" 283 7761 7787
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 278 7592 7610 "store.ml" 278 7592 7614
+)
+"store.ml" 283 7761 7788 "store.ml" 283 7761 7789
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 279 7622 7629 "store.ml" 279 7622 7630
+)
+"store.ml" 283 7761 7790 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+ident(
+  int_ref nc "store.ml" 282 7723 7730 "store.ml" 282 7723 7732
+)
+"store.ml" 283 7761 7764 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+"store.ml" 282 7723 7726 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+"store.ml" 281 7684 7687 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+"store.ml" 280 7656 7659 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+"store.ml" 279 7622 7625 "store.ml" 283 7761 7792
+type(
+  Node.t
+)
+"store.ml" 285 7798 7800 "store.ml" 285 7798 7817
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t) -> Node.t
+)
+ident(
+  ext_ref Path.apply_modify
+)
+"store.ml" 285 7798 7818 "store.ml" 285 7798 7823
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 274 7491 7509 "store.ml" 274 7491 7514
+)
+"store.ml" 285 7798 7818 "store.ml" 285 7798 7828
+type(
+  Node.t
+)
+"store.ml" 285 7798 7829 "store.ml" 285 7798 7833
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 274 7491 7520 "store.ml" 274 7491 7524
+)
+"store.ml" 285 7798 7834 "store.ml" 285 7798 7845
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  int_ref do_setperms "store.ml" 278 7592 7598 "store.ml" 278 7592 7609
+)
+"store.ml" 285 7798 7800 "store.ml" 285 7798 7845
+type(
+  Node.t
+)
+"store.ml" 278 7592 7594 "store.ml" 285 7798 7845
+type(
+  Node.t
+)
+"store.ml" 275 7533 7534 "store.ml" 285 7798 7845
+type(
+  Node.t
+)
+"store.ml" 288 7873 7877 "store.ml" 288 7873 7885
+type(
+  t -> string list -> Node.t option
+)
+ident(
+  def get_node "store.ml" 291 7931 7931 --
+)
+"store.ml" 288 7873 7886 "store.ml" 288 7873 7891
+type(
+  t
+)
+ident(
+  def store "store.ml" 288 7873 7892 "store.ml" 289 7899 7929
+)
+"store.ml" 288 7873 7892 "store.ml" 288 7873 7896
+type(
+  string list
+)
+ident(
+  def path "store.ml" 289 7899 7900 "store.ml" 289 7899 7929
+)
+"store.ml" 289 7899 7900 "store.ml" 289 7899 7913
+type(
+  Node.t -> string list -> Node.t option
+)
+ident(
+  ext_ref Path.get_node
+)
+"store.ml" 289 7899 7914 "store.ml" 289 7899 7919
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 288 7873 7886 "store.ml" 288 7873 7891
+)
+"store.ml" 289 7899 7914 "store.ml" 289 7899 7924
+type(
+  Node.t
+)
+"store.ml" 289 7899 7925 "store.ml" 289 7899 7929
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 288 7873 7892 "store.ml" 288 7873 7896
+)
+"store.ml" 289 7899 7900 "store.ml" 289 7899 7929
+type(
+  Node.t option
+)
+"store.ml" 291 7931 7935 "store.ml" 291 7931 7960
+type(
+  t -> string list -> Node.t * bool
+)
+ident(
+  def get_deepest_existing_node "store.ml" 294 8023 8023 --
+)
+"store.ml" 291 7931 7961 "store.ml" 291 7931 7966
+type(
+  t
+)
+ident(
+  def store "store.ml" 291 7931 7967 "store.ml" 292 7974 8021
+)
+"store.ml" 291 7931 7967 "store.ml" 291 7931 7971
+type(
+  string list
+)
+ident(
+  def path "store.ml" 292 7974 7975 "store.ml" 292 7974 8021
+)
+"store.ml" 292 7974 7975 "store.ml" 292 7974 8005
+type(
+  Node.t -> string list -> Node.t * bool
+)
+ident(
+  ext_ref Path.get_deepest_existing_node
+)
+"store.ml" 292 7974 8006 "store.ml" 292 7974 8011
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 291 7931 7961 "store.ml" 291 7931 7966
+)
+"store.ml" 292 7974 8006 "store.ml" 292 7974 8016
+type(
+  Node.t
+)
+"store.ml" 292 7974 8017 "store.ml" 292 7974 8021
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 291 7931 7967 "store.ml" 291 7931 7971
+)
+"store.ml" 292 7974 7975 "store.ml" 292 7974 8021
+type(
+  Node.t * bool
+)
+"store.ml" 294 8023 8027 "store.ml" 294 8023 8031
+type(
+  t -> Perms.Connection.t -> string list -> string
+)
+ident(
+  def read "store.ml" 307 8319 8319 --
+)
+"store.ml" 294 8023 8032 "store.ml" 294 8023 8037
+type(
+  t
+)
+ident(
+  def store "store.ml" 294 8023 8038 "store.ml" 305 8281 8317
+)
+"store.ml" 294 8023 8038 "store.ml" 294 8023 8042
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 294 8023 8043 "store.ml" 305 8281 8317
+)
+"store.ml" 294 8023 8043 "store.ml" 294 8023 8047
+type(
+  string list
+)
+ident(
+  def path "store.ml" 295 8050 8051 "store.ml" 305 8281 8317
+)
+"store.ml" 295 8050 8055 "store.ml" 295 8050 8062
+type(
+  Node.t -> string -> string
+)
+"store.ml" 295 8050 8063 "store.ml" 295 8050 8067
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 295 8050 8068 "store.ml" 298 8149 8165
+)
+"store.ml" 295 8050 8068 "store.ml" 295 8050 8072
+type(
+  string
+)
+ident(
+  def name "store.ml" 296 8075 8077 "store.ml" 298 8149 8165
+)
+"store.ml" 296 8075 8081 "store.ml" 296 8075 8084
+type(
+  Node.t
+)
+"store.ml" 296 8075 8087 "store.ml" 296 8075 8096
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 296 8075 8097 "store.ml" 296 8075 8101
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 295 8050 8063 "store.ml" 295 8050 8067
+)
+"store.ml" 296 8075 8102 "store.ml" 296 8075 8106
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 295 8050 8068 "store.ml" 295 8050 8072
+)
+"store.ml" 296 8075 8087 "store.ml" 296 8075 8106
+type(
+  Node.t
+)
+"store.ml" 297 8110 8112 "store.ml" 297 8110 8127
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 297 8110 8128 "store.ml" 297 8110 8131
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 296 8075 8081 "store.ml" 296 8075 8084
+)
+"store.ml" 297 8110 8132 "store.ml" 297 8110 8136
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 294 8023 8038 "store.ml" 294 8023 8042
+)
+"store.ml" 297 8110 8137 "store.ml" 297 8110 8147
+type(
+  Perms.permty
+)
+"store.ml" 297 8110 8112 "store.ml" 297 8110 8147
+type(
+  unit
+)
+"store.ml" 298 8149 8151 "store.ml" 298 8149 8154
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 296 8075 8081 "store.ml" 296 8075 8084
+)
+"store.ml" 298 8149 8151 "store.ml" 298 8149 8165
+type(
+  string
+)
+"store.ml" 297 8110 8112 "store.ml" 298 8149 8165
+type(
+  string
+)
+"store.ml" 296 8075 8077 "store.ml" 298 8149 8165
+type(
+  string
+)
+"store.ml" 300 8170 8174 "store.ml" 300 8170 8178
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 294 8023 8043 "store.ml" 294 8023 8047
+)
+"store.ml" 300 8170 8179 "store.ml" 300 8170 8180
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 300 8170 8181 "store.ml" 300 8170 8183
+type(
+  string list
+)
+"store.ml" 300 8170 8174 "store.ml" 300 8170 8183
+type(
+  bool
+)
+"store.ml" 301 8191 8197 "store.ml" 301 8191 8200
+type(
+  Node.t
+)
+ident(
+  def ent "store.ml" 302 8217 8219 "store.ml" 303 8256 8272
+)
+"store.ml" 301 8191 8203 "store.ml" 301 8191 8208
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 294 8023 8032 "store.ml" 294 8023 8037
+)
+"store.ml" 301 8191 8203 "store.ml" 301 8191 8213
+type(
+  Node.t
+)
+"store.ml" 302 8217 8219 "store.ml" 302 8217 8234
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 302 8217 8235 "store.ml" 302 8217 8238
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 301 8191 8197 "store.ml" 301 8191 8200
+)
+"store.ml" 302 8217 8239 "store.ml" 302 8217 8243
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 294 8023 8038 "store.ml" 294 8023 8042
+)
+"store.ml" 302 8217 8244 "store.ml" 302 8217 8254
+type(
+  Perms.permty
+)
+"store.ml" 302 8217 8219 "store.ml" 302 8217 8254
+type(
+  unit
+)
+"store.ml" 303 8256 8258 "store.ml" 303 8256 8261
+type(
+  Node.t
+)
+ident(
+  int_ref ent "store.ml" 301 8191 8197 "store.ml" 301 8191 8200
+)
+"store.ml" 303 8256 8258 "store.ml" 303 8256 8272
+type(
+  string
+)
+"store.ml" 302 8217 8219 "store.ml" 303 8256 8272
+type(
+  string
+)
+"store.ml" 300 8170 8189 "store.ml" 304 8273 8275
+type(
+  string
+)
+"store.ml" 305 8281 8283 "store.ml" 305 8281 8293
+type(
+  Node.t -> string list -> (Node.t -> string -> string) -> string
+)
+ident(
+  ext_ref Path.apply
+)
+"store.ml" 305 8281 8294 "store.ml" 305 8281 8299
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 294 8023 8032 "store.ml" 294 8023 8037
+)
+"store.ml" 305 8281 8294 "store.ml" 305 8281 8304
+type(
+  Node.t
+)
+"store.ml" 305 8281 8305 "store.ml" 305 8281 8309
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 294 8023 8043 "store.ml" 294 8023 8047
+)
+"store.ml" 305 8281 8310 "store.ml" 305 8281 8317
+type(
+  Node.t -> string -> string
+)
+ident(
+  int_ref do_read "store.ml" 295 8050 8055 "store.ml" 295 8050 8062
+)
+"store.ml" 305 8281 8283 "store.ml" 305 8281 8317
+type(
+  string
+)
+"store.ml" 300 8170 8171 "store.ml" 305 8281 8317
+type(
+  string
+)
+"store.ml" 295 8050 8051 "store.ml" 305 8281 8317
+type(
+  string
+)
+"store.ml" 307 8319 8323 "store.ml" 307 8319 8325
+type(
+  t -> Perms.Connection.t -> string list -> string list
+)
+ident(
+  def ls "store.ml" 319 8665 8665 --
+)
+"store.ml" 307 8319 8326 "store.ml" 307 8319 8331
+type(
+  t
+)
+ident(
+  def store "store.ml" 307 8319 8332 "store.ml" 317 8594 8663
+)
+"store.ml" 307 8319 8332 "store.ml" 307 8319 8336
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 307 8319 8337 "store.ml" 317 8594 8663
+)
+"store.ml" 307 8319 8337 "store.ml" 307 8319 8341
+type(
+  string list
+)
+ident(
+  def path "store.ml" 308 8344 8345 "store.ml" 317 8594 8663
+)
+"store.ml" 308 8344 8349 "store.ml" 308 8344 8357
+type(
+  Node.t list
+)
+"store.ml" 309 8360 8365 "store.ml" 309 8360 8369
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 307 8319 8337 "store.ml" 307 8319 8341
+)
+"store.ml" 309 8360 8370 "store.ml" 309 8360 8371
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 309 8360 8372 "store.ml" 309 8360 8374
+type(
+  string list
+)
+"store.ml" 309 8360 8365 "store.ml" 309 8360 8374
+type(
+  bool
+)
+"store.ml" 310 8380 8384 "store.ml" 310 8380 8401
+type(
+  Node.t -> Node.t list
+)
+ident(
+  ext_ref Node.get_children
+)
+"store.ml" 310 8380 8402 "store.ml" 310 8380 8407
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 307 8319 8326 "store.ml" 307 8319 8331
+)
+"store.ml" 310 8380 8402 "store.ml" 310 8380 8412
+type(
+  Node.t
+)
+"store.ml" 310 8380 8383 "store.ml" 310 8380 8413
+type(
+  Node.t list
+)
+"store.ml" 312 8421 8428 "store.ml" 312 8421 8433
+type(
+  Node.t -> string -> Node.t list
+)
+"store.ml" 312 8421 8434 "store.ml" 312 8421 8438
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 312 8421 8439 "store.ml" 315 8528 8551
+)
+"store.ml" 312 8421 8439 "store.ml" 312 8421 8443
+type(
+  string
+)
+ident(
+  def name "store.ml" 313 8446 8450 "store.ml" 315 8528 8551
+)
+"store.ml" 313 8446 8454 "store.ml" 313 8446 8459
+type(
+  Node.t
+)
+"store.ml" 313 8446 8462 "store.ml" 313 8446 8471
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 313 8446 8472 "store.ml" 313 8446 8476
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 312 8421 8434 "store.ml" 312 8421 8438
+)
+"store.ml" 313 8446 8477 "store.ml" 313 8446 8481
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 312 8421 8439 "store.ml" 312 8421 8443
+)
+"store.ml" 313 8446 8462 "store.ml" 313 8446 8481
+type(
+  Node.t
+)
+"store.ml" 314 8485 8489 "store.ml" 314 8485 8504
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 314 8485 8505 "store.ml" 314 8485 8510
+type(
+  Node.t
+)
+ident(
+  int_ref cnode "store.ml" 313 8446 8454 "store.ml" 313 8446 8459
+)
+"store.ml" 314 8485 8511 "store.ml" 314 8485 8515
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 307 8319 8332 "store.ml" 307 8319 8336
+)
+"store.ml" 314 8485 8516 "store.ml" 314 8485 8526
+type(
+  Perms.permty
+)
+"store.ml" 314 8485 8489 "store.ml" 314 8485 8526
+type(
+  unit
+)
+"store.ml" 315 8528 8532 "store.ml" 315 8528 8537
+type(
+  Node.t
+)
+ident(
+  int_ref cnode "store.ml" 313 8446 8454 "store.ml" 313 8446 8459
+)
+"store.ml" 315 8528 8532 "store.ml" 315 8528 8551
+type(
+  Node.t list
+)
+"store.ml" 314 8485 8489 "store.ml" 315 8528 8551
+type(
+  Node.t list
+)
+"store.ml" 313 8446 8450 "store.ml" 315 8528 8551
+type(
+  Node.t list
+)
+"store.ml" 316 8555 8558 "store.ml" 316 8555 8568
+type(
+  Node.t -> string list -> (Node.t -> string -> Node.t list) -> Node.t list
+)
+ident(
+  ext_ref Path.apply
+)
+"store.ml" 316 8555 8569 "store.ml" 316 8555 8574
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 307 8319 8326 "store.ml" 307 8319 8331
+)
+"store.ml" 316 8555 8569 "store.ml" 316 8555 8579
+type(
+  Node.t
+)
+"store.ml" 316 8555 8580 "store.ml" 316 8555 8584
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 307 8319 8337 "store.ml" 307 8319 8341
+)
+"store.ml" 316 8555 8585 "store.ml" 316 8555 8590
+type(
+  Node.t -> string -> Node.t list
+)
+ident(
+  int_ref do_ls "store.ml" 312 8421 8428 "store.ml" 312 8421 8433
+)
+"store.ml" 316 8555 8558 "store.ml" 316 8555 8590
+type(
+  Node.t list
+)
+"store.ml" 312 8421 8424 "store.ml" 316 8555 8590
+type(
+  Node.t list
+)
+"store.ml" 309 8360 8362 "store.ml" 316 8555 8590
+type(
+  Node.t list
+)
+"store.ml" 317 8594 8595 "store.ml" 317 8594 8603
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"store.ml" 317 8594 8605 "store.ml" 317 8594 8613
+type(
+  (Node.t -> string) -> Node.t list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"store.ml" 317 8594 8619 "store.ml" 317 8594 8620
+type(
+  Node.t
+)
+ident(
+  def n "store.ml" 317 8594 8624 "store.ml" 317 8594 8652
+)
+"store.ml" 317 8594 8624 "store.ml" 317 8594 8640
+type(
+  Symbol.t -> string
+)
+ident(
+  ext_ref Symbol.to_string
+)
+"store.ml" 317 8594 8641 "store.ml" 317 8594 8642
+type(
+  Node.t
+)
+ident(
+  int_ref n "store.ml" 317 8594 8619 "store.ml" 317 8594 8620
+)
+"store.ml" 317 8594 8641 "store.ml" 317 8594 8652
+type(
+  Symbol.t
+)
+"store.ml" 317 8594 8624 "store.ml" 317 8594 8652
+type(
+  string
+)
+"store.ml" 317 8594 8614 "store.ml" 317 8594 8653
+type(
+  Node.t -> string
+)
+"store.ml" 317 8594 8654 "store.ml" 317 8594 8662
+type(
+  Node.t list
+)
+ident(
+  int_ref children "store.ml" 308 8344 8349 "store.ml" 308 8344 8357
+)
+"store.ml" 317 8594 8604 "store.ml" 317 8594 8663
+type(
+  string list
+)
+"store.ml" 317 8594 8595 "store.ml" 317 8594 8663
+type(
+  string list
+)
+"store.ml" 308 8344 8345 "store.ml" 317 8594 8663
+type(
+  string list
+)
+"store.ml" 319 8665 8669 "store.ml" 319 8665 8677
+type(
+  t -> Perms.Connection.t -> string list -> Perms.Node.t
+)
+ident(
+  def getperms "store.ml" 329 8892 8892 --
+)
+"store.ml" 319 8665 8678 "store.ml" 319 8665 8683
+type(
+  t
+)
+ident(
+  def store "store.ml" 319 8665 8684 "store.ml" 327 8858 8890
+)
+"store.ml" 319 8665 8684 "store.ml" 319 8665 8688
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 319 8665 8689 "store.ml" 327 8858 8890
+)
+"store.ml" 319 8665 8689 "store.ml" 319 8665 8693
+type(
+  string list
+)
+ident(
+  def path "store.ml" 320 8696 8697 "store.ml" 327 8858 8890
+)
+"store.ml" 320 8696 8700 "store.ml" 320 8696 8704
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 319 8665 8689 "store.ml" 319 8665 8693
+)
+"store.ml" 320 8696 8705 "store.ml" 320 8696 8706
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 320 8696 8707 "store.ml" 320 8696 8709
+type(
+  string list
+)
+"store.ml" 320 8696 8700 "store.ml" 320 8696 8709
+type(
+  bool
+)
+"store.ml" 321 8715 8718 "store.ml" 321 8715 8732
+type(
+  Node.t -> Perms.Node.t
+)
+ident(
+  ext_ref Node.get_perms
+)
+"store.ml" 321 8715 8733 "store.ml" 321 8715 8738
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 319 8665 8678 "store.ml" 319 8665 8683
+)
+"store.ml" 321 8715 8733 "store.ml" 321 8715 8743
+type(
+  Node.t
+)
+"store.ml" 321 8715 8717 "store.ml" 321 8715 8744
+type(
+  Perms.Node.t
+)
+"store.ml" 323 8751 8757 "store.ml" 323 8751 8760
+type(
+  Node.t -> string -> Perms.Node.t
+)
+"store.ml" 323 8751 8761 "store.ml" 323 8751 8762
+type(
+  Node.t
+)
+ident(
+  def n "store.ml" 323 8751 8763 "store.ml" 326 8839 8854
+)
+"store.ml" 323 8751 8763 "store.ml" 323 8751 8767
+type(
+  string
+)
+ident(
+  def name "store.ml" 324 8770 8773 "store.ml" 326 8839 8854
+)
+"store.ml" 324 8770 8777 "store.ml" 324 8770 8778
+type(
+  Node.t
+)
+"store.ml" 324 8770 8781 "store.ml" 324 8770 8790
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 324 8770 8791 "store.ml" 324 8770 8792
+type(
+  Node.t
+)
+ident(
+  int_ref n "store.ml" 323 8751 8761 "store.ml" 323 8751 8762
+)
+"store.ml" 324 8770 8793 "store.ml" 324 8770 8797
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 323 8751 8763 "store.ml" 323 8751 8767
+)
+"store.ml" 324 8770 8781 "store.ml" 324 8770 8797
+type(
+  Node.t
+)
+"store.ml" 325 8801 8804 "store.ml" 325 8801 8819
+type(
+  Node.t -> Perms.Connection.t -> Perms.permty -> unit
+)
+ident(
+  ext_ref Node.check_perm
+)
+"store.ml" 325 8801 8820 "store.ml" 325 8801 8821
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 324 8770 8777 "store.ml" 324 8770 8778
+)
+"store.ml" 325 8801 8822 "store.ml" 325 8801 8826
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 319 8665 8684 "store.ml" 319 8665 8688
+)
+"store.ml" 325 8801 8827 "store.ml" 325 8801 8837
+type(
+  Perms.permty
+)
+"store.ml" 325 8801 8804 "store.ml" 325 8801 8837
+type(
+  unit
+)
+"store.ml" 326 8839 8842 "store.ml" 326 8839 8843
+type(
+  Node.t
+)
+ident(
+  int_ref c "store.ml" 324 8770 8777 "store.ml" 324 8770 8778
+)
+"store.ml" 326 8839 8842 "store.ml" 326 8839 8854
+type(
+  Perms.Node.t
+)
+"store.ml" 325 8801 8804 "store.ml" 326 8839 8854
+type(
+  Perms.Node.t
+)
+"store.ml" 324 8770 8773 "store.ml" 326 8839 8854
+type(
+  Perms.Node.t
+)
+"store.ml" 327 8858 8860 "store.ml" 327 8858 8870
+type(
+  Node.t -> string list -> (Node.t -> string -> Perms.Node.t) -> Perms.Node.t
+)
+ident(
+  ext_ref Path.apply
+)
+"store.ml" 327 8858 8871 "store.ml" 327 8858 8876
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 319 8665 8678 "store.ml" 319 8665 8683
+)
+"store.ml" 327 8858 8871 "store.ml" 327 8858 8881
+type(
+  Node.t
+)
+"store.ml" 327 8858 8882 "store.ml" 327 8858 8886
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 319 8665 8689 "store.ml" 319 8665 8693
+)
+"store.ml" 327 8858 8887 "store.ml" 327 8858 8890
+type(
+  Node.t -> string -> Perms.Node.t
+)
+ident(
+  int_ref fct "store.ml" 323 8751 8757 "store.ml" 323 8751 8760
+)
+"store.ml" 327 8858 8860 "store.ml" 327 8858 8890
+type(
+  Perms.Node.t
+)
+"store.ml" 323 8751 8753 "store.ml" 327 8858 8890
+type(
+  Perms.Node.t
+)
+"store.ml" 320 8696 8697 "store.ml" 327 8858 8890
+type(
+  Perms.Node.t
+)
+"store.ml" 329 8892 8896 "store.ml" 329 8892 8907
+type(
+  t -> string list -> bool
+)
+ident(
+  def path_exists "store.ml" 342 9124 9124 --
+)
+"store.ml" 329 8892 8908 "store.ml" 329 8892 8913
+type(
+  t
+)
+ident(
+  def store "store.ml" 329 8892 8914 "store.ml" 338 9077 9102
+)
+"store.ml" 329 8892 8914 "store.ml" 329 8892 8918
+type(
+  string list
+)
+ident(
+  def path "store.ml" 330 8921 8922 "store.ml" 338 9077 9102
+)
+"store.ml" 330 8921 8925 "store.ml" 330 8921 8929
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 329 8892 8914 "store.ml" 329 8892 8918
+)
+"store.ml" 330 8921 8930 "store.ml" 330 8921 8931
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 330 8921 8932 "store.ml" 330 8921 8934
+type(
+  string list
+)
+"store.ml" 330 8921 8925 "store.ml" 330 8921 8934
+type(
+  bool
+)
+"store.ml" 331 8940 8942 "store.ml" 331 8940 8946
+type(
+  bool
+)
+"store.ml" 334 8959 8966 "store.ml" 334 8959 8977
+type(
+  Node.t -> string -> bool
+)
+ident(
+  def check_exist "store.ml" 337 9035 9038 "store.ml" 337 9035 9076
+)
+"store.ml" 334 8959 8978 "store.ml" 334 8959 8982
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 334 8959 8983 "store.ml" 336 9023 9031
+)
+"store.ml" 334 8959 8983 "store.ml" 334 8959 8987
+type(
+  string
+)
+ident(
+  def name "store.ml" 335 8990 8994 "store.ml" 336 9023 9031
+)
+"store.ml" 335 8990 8994 "store.ml" 335 8990 9000
+type(
+  Node.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"store.ml" 335 8990 9001 "store.ml" 335 8990 9010
+type(
+  Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.find
+)
+"store.ml" 335 8990 9011 "store.ml" 335 8990 9015
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 334 8959 8978 "store.ml" 334 8959 8982
+)
+"store.ml" 335 8990 9016 "store.ml" 335 8990 9020
+type(
+  string
+)
+ident(
+  int_ref name "store.ml" 334 8959 8983 "store.ml" 334 8959 8987
+)
+"store.ml" 335 8990 9000 "store.ml" 335 8990 9021
+type(
+  Node.t
+)
+"store.ml" 335 8990 8994 "store.ml" 335 8990 9021
+type(
+  unit
+)
+"store.ml" 336 9023 9027 "store.ml" 336 9023 9031
+type(
+  bool
+)
+"store.ml" 335 8990 8994 "store.ml" 336 9023 9031
+type(
+  bool
+)
+"store.ml" 337 9035 9038 "store.ml" 337 9035 9048
+type(
+  Node.t -> string list -> (Node.t -> string -> bool) -> bool
+)
+ident(
+  ext_ref Path.apply
+)
+"store.ml" 337 9035 9049 "store.ml" 337 9035 9054
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 329 8892 8908 "store.ml" 329 8892 8913
+)
+"store.ml" 337 9035 9049 "store.ml" 337 9035 9059
+type(
+  Node.t
+)
+"store.ml" 337 9035 9060 "store.ml" 337 9035 9064
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 329 8892 8914 "store.ml" 329 8892 8918
+)
+"store.ml" 337 9035 9065 "store.ml" 337 9035 9076
+type(
+  Node.t -> string -> bool
+)
+ident(
+  int_ref check_exist "store.ml" 334 8959 8966 "store.ml" 334 8959 8977
+)
+"store.ml" 337 9035 9038 "store.ml" 337 9035 9076
+type(
+  bool
+)
+"store.ml" 334 8959 8962 "store.ml" 337 9035 9076
+type(
+  bool
+)
+"store.ml" 338 9077 9084 "store.ml" 338 9077 9093
+type(
+  exn
+)
+"store.ml" 338 9077 9097 "store.ml" 338 9077 9102
+type(
+  bool
+)
+"store.ml" 333 8953 8955 "store.ml" 338 9077 9102
+type(
+  bool
+)
+"store.ml" 330 8921 8922 "store.ml" 338 9077 9102
+type(
+  bool
+)
+"store.ml" 342 9124 9128 "store.ml" 342 9124 9137
+type(
+  Node.t -> (string list -> Node.t -> 'a) -> unit
+)
+ident(
+  def traversal "store.ml" 349 9319 9319 --
+)
+"store.ml" 342 9124 9138 "store.ml" 342 9124 9147
+type(
+  Node.t
+)
+ident(
+  def root_node "store.ml" 342 9124 9148 "store.ml" 347 9293 9317
+)
+"store.ml" 342 9124 9148 "store.ml" 342 9124 9149
+type(
+  string list -> Node.t -> 'a
+)
+ident(
+  def f "store.ml" 343 9152 9153 "store.ml" 347 9293 9317
+)
+"store.ml" 343 9152 9161 "store.ml" 343 9152 9171
+type(
+  string list -> Node.t -> unit
+)
+"store.ml" 343 9152 9172 "store.ml" 343 9152 9176
+type(
+  string list
+)
+ident(
+  def path "store.ml" 343 9152 9177 "store.ml" 345 9199 9287
+)
+"store.ml" 343 9152 9177 "store.ml" 343 9152 9181
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 344 9184 9186 "store.ml" 345 9199 9287
+)
+"store.ml" 344 9184 9186 "store.ml" 344 9184 9187
+type(
+  string list -> Node.t -> 'a
+)
+ident(
+  int_ref f "store.ml" 342 9124 9148 "store.ml" 342 9124 9149
+)
+"store.ml" 344 9184 9188 "store.ml" 344 9184 9192
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 343 9152 9172 "store.ml" 343 9152 9176
+)
+"store.ml" 344 9184 9193 "store.ml" 344 9184 9197
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 343 9152 9177 "store.ml" 343 9152 9181
+)
+"store.ml" 344 9184 9186 "store.ml" 344 9184 9197
+type(
+  'a
+)
+"store.ml" 345 9199 9201 "store.ml" 345 9199 9210
+type(
+  (Node.t -> unit) -> Node.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"store.ml" 345 9199 9212 "store.ml" 345 9199 9222
+type(
+  string list -> Node.t -> unit
+)
+ident(
+  int_ref _traversal "store.ml" 343 9152 9161 "store.ml" 343 9152 9171
+)
+"store.ml" 345 9199 9224 "store.ml" 345 9199 9228
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 343 9152 9172 "store.ml" 343 9152 9176
+)
+"store.ml" 345 9199 9229 "store.ml" 345 9199 9230
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.@
+)
+"store.ml" 345 9199 9233 "store.ml" 345 9199 9249
+type(
+  Symbol.t -> string
+)
+ident(
+  ext_ref Symbol.to_string
+)
+"store.ml" 345 9199 9250 "store.ml" 345 9199 9254
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 343 9152 9177 "store.ml" 343 9152 9181
+)
+"store.ml" 345 9199 9250 "store.ml" 345 9199 9264
+type(
+  Symbol.t
+)
+"store.ml" 345 9199 9233 "store.ml" 345 9199 9264
+type(
+  string
+)
+"store.ml" 345 9199 9231 "store.ml" 345 9199 9266
+type(
+  string list
+)
+"store.ml" 345 9199 9223 "store.ml" 345 9199 9267
+type(
+  string list
+)
+"store.ml" 345 9199 9211 "store.ml" 345 9199 9268
+type(
+  Node.t -> unit
+)
+"store.ml" 345 9199 9269 "store.ml" 345 9199 9273
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 343 9152 9177 "store.ml" 343 9152 9181
+)
+"store.ml" 345 9199 9269 "store.ml" 345 9199 9287
+type(
+  Node.t list
+)
+"store.ml" 345 9199 9201 "store.ml" 345 9199 9287
+type(
+  unit
+)
+"store.ml" 344 9184 9186 "store.ml" 345 9199 9287
+type(
+  unit
+)
+"store.ml" 347 9293 9294 "store.ml" 347 9293 9304
+type(
+  string list -> Node.t -> unit
+)
+ident(
+  int_ref _traversal "store.ml" 343 9152 9161 "store.ml" 343 9152 9171
+)
+"store.ml" 347 9293 9305 "store.ml" 347 9293 9307
+type(
+  string list
+)
+"store.ml" 347 9293 9308 "store.ml" 347 9293 9317
+type(
+  Node.t
+)
+ident(
+  int_ref root_node "store.ml" 342 9124 9138 "store.ml" 342 9124 9147
+)
+"store.ml" 347 9293 9294 "store.ml" 347 9293 9317
+type(
+  unit
+)
+"store.ml" 343 9152 9153 "store.ml" 347 9293 9317
+type(
+  unit
+)
+"store.ml" 349 9319 9323 "store.ml" 349 9319 9337
+type(
+  Node.t -> Buffer.t
+)
+ident(
+  def dump_store_buf "store.ml" 363 9794 9794 --
+)
+"store.ml" 349 9319 9338 "store.ml" 349 9319 9347
+type(
+  Node.t
+)
+ident(
+  def root_node "store.ml" 350 9350 9351 "store.ml" 361 9788 9792
+)
+"store.ml" 350 9350 9355 "store.ml" 350 9350 9358
+type(
+  Buffer.t
+)
+"store.ml" 350 9350 9361 "store.ml" 350 9350 9374
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"store.ml" 350 9350 9375 "store.ml" 350 9350 9379
+type(
+  int
+)
+"store.ml" 350 9350 9361 "store.ml" 350 9350 9379
+type(
+  Buffer.t
+)
+"store.ml" 351 9383 9388 "store.ml" 351 9383 9397
+type(
+  string list -> Node.t -> unit
+)
+"store.ml" 351 9383 9398 "store.ml" 351 9383 9402
+type(
+  string list
+)
+ident(
+  def path "store.ml" 351 9383 9403 "store.ml" 358 9723 9750
+)
+"store.ml" 351 9383 9403 "store.ml" 351 9383 9407
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 352 9410 9412 "store.ml" 358 9723 9750
+)
+"store.ml" 352 9410 9416 "store.ml" 352 9410 9423
+type(
+  string
+)
+"store.ml" 352 9410 9426 "store.ml" 352 9410 9439
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref Stdext.String.concat
+)
+"store.ml" 352 9410 9440 "store.ml" 352 9410 9443
+type(
+  string
+)
+"store.ml" 352 9410 9444 "store.ml" 352 9410 9448
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 351 9383 9398 "store.ml" 351 9383 9402
+)
+"store.ml" 352 9410 9426 "store.ml" 352 9410 9448
+type(
+  string
+)
+"store.ml" 353 9452 9454 "store.ml" 353 9452 9468
+type(
+  Buffer.t ->
+  (string -> string -> string -> unit, Buffer.t, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"store.ml" 353 9452 9469 "store.ml" 353 9452 9472
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 350 9350 9355 "store.ml" 350 9350 9358
+)
+"store.ml" 353 9452 9473 "store.ml" 353 9452 9484
+type(
+  (string -> string -> string -> unit, Buffer.t, unit) format
+)
+"store.ml" 353 9452 9485 "store.ml" 353 9452 9492
+type(
+  string
+)
+ident(
+  int_ref pathstr "store.ml" 352 9410 9416 "store.ml" 352 9410 9423
+)
+"store.ml" 353 9452 9494 "store.ml" 353 9452 9510
+type(
+  Symbol.t -> string
+)
+ident(
+  ext_ref Symbol.to_string
+)
+"store.ml" 353 9452 9511 "store.ml" 353 9452 9515
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 351 9383 9403 "store.ml" 351 9383 9407
+)
+"store.ml" 353 9452 9511 "store.ml" 353 9452 9525
+type(
+  Symbol.t
+)
+"store.ml" 353 9452 9493 "store.ml" 353 9452 9526
+type(
+  string
+)
+"store.ml" 354 9527 9545 "store.ml" 354 9527 9559
+type(
+  string -> string
+)
+ident(
+  ext_ref Stdext.String.escaped
+)
+"store.ml" 354 9527 9561 "store.ml" 354 9527 9581
+type(
+  Perms.Node.t -> string
+)
+ident(
+  ext_ref Perms.Node.to_string
+)
+"store.ml" 354 9527 9583 "store.ml" 354 9527 9597
+type(
+  Node.t -> Perms.Node.t
+)
+ident(
+  ext_ref Node.get_perms
+)
+"store.ml" 354 9527 9598 "store.ml" 354 9527 9602
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 351 9383 9403 "store.ml" 351 9383 9407
+)
+"store.ml" 354 9527 9582 "store.ml" 354 9527 9603
+type(
+  Perms.Node.t
+)
+"store.ml" 354 9527 9560 "store.ml" 354 9527 9604
+type(
+  string
+)
+"store.ml" 354 9527 9544 "store.ml" 354 9527 9605
+type(
+  string
+)
+"store.ml" 353 9452 9454 "store.ml" 354 9527 9605
+type(
+  unit
+)
+"store.ml" 355 9607 9612 "store.ml" 355 9607 9625
+type(
+  string -> int
+)
+ident(
+  ext_ref Stdext.String.length
+)
+"store.ml" 355 9607 9626 "store.ml" 355 9607 9630
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 351 9383 9403 "store.ml" 351 9383 9407
+)
+"store.ml" 355 9607 9626 "store.ml" 355 9607 9641
+type(
+  string
+)
+"store.ml" 355 9607 9612 "store.ml" 355 9607 9641
+type(
+  int
+)
+"store.ml" 355 9607 9642 "store.ml" 355 9607 9643
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.>
+)
+"store.ml" 355 9607 9644 "store.ml" 355 9607 9645
+type(
+  int
+)
+"store.ml" 355 9607 9612 "store.ml" 355 9607 9645
+type(
+  bool
+)
+"store.ml" 356 9651 9654 "store.ml" 356 9651 9668
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"store.ml" 356 9651 9669 "store.ml" 356 9651 9672
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 350 9350 9355 "store.ml" 350 9350 9358
+)
+"store.ml" 356 9651 9673 "store.ml" 356 9651 9682
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"store.ml" 356 9651 9684 "store.ml" 356 9651 9698
+type(
+  string -> string
+)
+ident(
+  ext_ref Stdext.String.escaped
+)
+"store.ml" 356 9651 9699 "store.ml" 356 9651 9703
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 351 9383 9403 "store.ml" 351 9383 9407
+)
+"store.ml" 356 9651 9699 "store.ml" 356 9651 9714
+type(
+  string
+)
+"store.ml" 356 9651 9683 "store.ml" 356 9651 9715
+type(
+  string
+)
+"store.ml" 356 9651 9654 "store.ml" 356 9651 9715
+type(
+  unit
+)
+"store.ml" 358 9723 9726 "store.ml" 358 9723 9740
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"store.ml" 358 9723 9741 "store.ml" 358 9723 9744
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 350 9350 9355 "store.ml" 350 9350 9358
+)
+"store.ml" 358 9723 9745 "store.ml" 358 9723 9749
+type(
+  (unit, Buffer.t, unit) format
+)
+"store.ml" 358 9723 9726 "store.ml" 358 9723 9749
+type(
+  unit
+)
+"store.ml" 355 9607 9609 "store.ml" 358 9723 9750
+type(
+  unit
+)
+"store.ml" 353 9452 9454 "store.ml" 358 9723 9750
+type(
+  unit
+)
+"store.ml" 352 9410 9412 "store.ml" 358 9723 9750
+type(
+  unit
+)
+"store.ml" 360 9756 9757 "store.ml" 360 9756 9766
+type(
+  Node.t -> (string list -> Node.t -> unit) -> unit
+)
+ident(
+  int_ref traversal "store.ml" 342 9124 9128 "store.ml" 342 9124 9137
+)
+"store.ml" 360 9756 9767 "store.ml" 360 9756 9776
+type(
+  Node.t
+)
+ident(
+  int_ref root_node "store.ml" 349 9319 9338 "store.ml" 349 9319 9347
+)
+"store.ml" 360 9756 9777 "store.ml" 360 9756 9786
+type(
+  string list -> Node.t -> unit
+)
+ident(
+  int_ref dump_node "store.ml" 351 9383 9388 "store.ml" 351 9383 9397
+)
+"store.ml" 360 9756 9757 "store.ml" 360 9756 9786
+type(
+  unit
+)
+"store.ml" 361 9788 9789 "store.ml" 361 9788 9792
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 350 9350 9355 "store.ml" 350 9350 9358
+)
+"store.ml" 360 9756 9757 "store.ml" 361 9788 9792
+type(
+  Buffer.t
+)
+"store.ml" 351 9383 9384 "store.ml" 361 9788 9792
+type(
+  Buffer.t
+)
+"store.ml" 350 9350 9351 "store.ml" 361 9788 9792
+type(
+  Buffer.t
+)
+"store.ml" 363 9794 9798 "store.ml" 363 9794 9808
+type(
+  out_channel -> Node.t -> unit
+)
+ident(
+  def dump_store "store.ml" 368 9927 9927 --
+)
+"store.ml" 363 9794 9809 "store.ml" 363 9794 9813
+type(
+  out_channel
+)
+ident(
+  def chan "store.ml" 363 9794 9814 "store.ml" 366 9908 9925
+)
+"store.ml" 363 9794 9814 "store.ml" 363 9794 9823
+type(
+  Node.t
+)
+ident(
+  def root_node "store.ml" 364 9826 9827 "store.ml" 366 9908 9925
+)
+"store.ml" 364 9826 9831 "store.ml" 364 9826 9834
+type(
+  Buffer.t
+)
+"store.ml" 364 9826 9837 "store.ml" 364 9826 9851
+type(
+  Node.t -> Buffer.t
+)
+ident(
+  int_ref dump_store_buf "store.ml" 349 9319 9323 "store.ml" 349 9319 9337
+)
+"store.ml" 364 9826 9852 "store.ml" 364 9826 9861
+type(
+  Node.t
+)
+ident(
+  int_ref root_node "store.ml" 363 9794 9814 "store.ml" 363 9794 9823
+)
+"store.ml" 364 9826 9837 "store.ml" 364 9826 9861
+type(
+  Buffer.t
+)
+"store.ml" 365 9865 9866 "store.ml" 365 9865 9879
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"store.ml" 365 9865 9880 "store.ml" 365 9865 9884
+type(
+  out_channel
+)
+ident(
+  int_ref chan "store.ml" 363 9794 9809 "store.ml" 363 9794 9813
+)
+"store.ml" 365 9865 9886 "store.ml" 365 9865 9901
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"store.ml" 365 9865 9902 "store.ml" 365 9865 9905
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 364 9826 9831 "store.ml" 364 9826 9834
+)
+"store.ml" 365 9865 9885 "store.ml" 365 9865 9906
+type(
+  string
+)
+"store.ml" 365 9865 9866 "store.ml" 365 9865 9906
+type(
+  unit
+)
+"store.ml" 366 9908 9909 "store.ml" 366 9908 9921
+type(
+  Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.reset
+)
+"store.ml" 366 9908 9922 "store.ml" 366 9908 9925
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "store.ml" 364 9826 9831 "store.ml" 364 9826 9834
+)
+"store.ml" 366 9908 9909 "store.ml" 366 9908 9925
+type(
+  unit
+)
+"store.ml" 365 9865 9866 "store.ml" 366 9908 9925
+type(
+  unit
+)
+"store.ml" 364 9826 9827 "store.ml" 366 9908 9925
+type(
+  unit
+)
+"store.ml" 368 9927 9931 "store.ml" 368 9927 9939
+type(
+  t -> (string list -> Node.t -> 'a) -> unit
+)
+ident(
+  def dump_fct "store.ml" 369 9973 9973 --
+)
+"store.ml" 368 9927 9940 "store.ml" 368 9927 9945
+type(
+  t
+)
+ident(
+  def store "store.ml" 368 9927 9946 "store.ml" 368 9927 9972
+)
+"store.ml" 368 9927 9946 "store.ml" 368 9927 9947
+type(
+  string list -> Node.t -> 'a
+)
+ident(
+  def f "store.ml" 368 9927 9950 "store.ml" 368 9927 9972
+)
+"store.ml" 368 9927 9950 "store.ml" 368 9927 9959
+type(
+  Node.t -> (string list -> Node.t -> 'a) -> unit
+)
+ident(
+  int_ref traversal "store.ml" 342 9124 9128 "store.ml" 342 9124 9137
+)
+"store.ml" 368 9927 9960 "store.ml" 368 9927 9965
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 368 9927 9940 "store.ml" 368 9927 9945
+)
+"store.ml" 368 9927 9960 "store.ml" 368 9927 9970
+type(
+  Node.t
+)
+"store.ml" 368 9927 9971 "store.ml" 368 9927 9972
+type(
+  string list -> Node.t -> 'a
+)
+ident(
+  int_ref f "store.ml" 368 9927 9946 "store.ml" 368 9927 9947
+)
+"store.ml" 368 9927 9950 "store.ml" 368 9927 9972
+type(
+  unit
+)
+"store.ml" 369 9973 9977 "store.ml" 369 9973 9981
+type(
+  t -> out_channel -> unit
+)
+ident(
+  def dump "store.ml" 370 10030 10030 --
+)
+"store.ml" 369 9973 9982 "store.ml" 369 9973 9987
+type(
+  t
+)
+ident(
+  def store "store.ml" 369 9973 9988 "store.ml" 369 9973 10029
+)
+"store.ml" 369 9973 9988 "store.ml" 369 9973 9996
+type(
+  out_channel
+)
+ident(
+  def out_chan "store.ml" 369 9973 9999 "store.ml" 369 9973 10029
+)
+"store.ml" 369 9973 9999 "store.ml" 369 9973 10009
+type(
+  out_channel -> Node.t -> unit
+)
+ident(
+  int_ref dump_store "store.ml" 363 9794 9798 "store.ml" 363 9794 9808
+)
+"store.ml" 369 9973 10010 "store.ml" 369 9973 10018
+type(
+  out_channel
+)
+ident(
+  int_ref out_chan "store.ml" 369 9973 9988 "store.ml" 369 9973 9996
+)
+"store.ml" 369 9973 10019 "store.ml" 369 9973 10024
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 369 9973 9982 "store.ml" 369 9973 9987
+)
+"store.ml" 369 9973 10019 "store.ml" 369 9973 10029
+type(
+  Node.t
+)
+"store.ml" 369 9973 9999 "store.ml" 369 9973 10029
+type(
+  unit
+)
+"store.ml" 370 10030 10034 "store.ml" 370 10030 10045
+type(
+  t -> unit
+)
+ident(
+  def dump_stdout "store.ml" 371 10083 10083 --
+)
+"store.ml" 370 10030 10046 "store.ml" 370 10030 10051
+type(
+  t
+)
+ident(
+  def store "store.ml" 370 10030 10054 "store.ml" 370 10030 10082
+)
+"store.ml" 370 10030 10054 "store.ml" 370 10030 10064
+type(
+  out_channel -> Node.t -> unit
+)
+ident(
+  int_ref dump_store "store.ml" 363 9794 9798 "store.ml" 363 9794 9808
+)
+"store.ml" 370 10030 10065 "store.ml" 370 10030 10071
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"store.ml" 370 10030 10072 "store.ml" 370 10030 10077
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 370 10030 10046 "store.ml" 370 10030 10051
+)
+"store.ml" 370 10030 10072 "store.ml" 370 10030 10082
+type(
+  Node.t
+)
+"store.ml" 370 10030 10054 "store.ml" 370 10030 10082
+type(
+  unit
+)
+"store.ml" 371 10083 10087 "store.ml" 371 10083 10098
+type(
+  t -> Buffer.t
+)
+ident(
+  def dump_buffer "store.ml" 375 10179 10179 --
+)
+"store.ml" 371 10083 10099 "store.ml" 371 10083 10104
+type(
+  t
+)
+ident(
+  def store "store.ml" 371 10083 10107 "store.ml" 371 10083 10132
+)
+"store.ml" 371 10083 10107 "store.ml" 371 10083 10121
+type(
+  Node.t -> Buffer.t
+)
+ident(
+  int_ref dump_store_buf "store.ml" 349 9319 9323 "store.ml" 349 9319 9337
+)
+"store.ml" 371 10083 10122 "store.ml" 371 10083 10127
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 371 10083 10099 "store.ml" 371 10083 10104
+)
+"store.ml" 371 10083 10122 "store.ml" 371 10083 10132
+type(
+  Node.t
+)
+"store.ml" 371 10083 10107 "store.ml" 371 10083 10132
+type(
+  Buffer.t
+)
+"store.ml" 375 10179 10183 "store.ml" 375 10179 10191
+type(
+  t -> string list -> Node.t -> Quota.t -> Quota.t -> unit
+)
+ident(
+  def set_node "store.ml" 380 10349 10349 --
+)
+"store.ml" 375 10179 10192 "store.ml" 375 10179 10197
+type(
+  t
+)
+ident(
+  def store "store.ml" 375 10179 10198 "store.ml" 378 10302 10347
+)
+"store.ml" 375 10179 10198 "store.ml" 375 10179 10202
+type(
+  string list
+)
+ident(
+  def path "store.ml" 375 10179 10203 "store.ml" 378 10302 10347
+)
+"store.ml" 375 10179 10203 "store.ml" 375 10179 10207
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 375 10179 10208 "store.ml" 378 10302 10347
+)
+"store.ml" 375 10179 10208 "store.ml" 375 10179 10218
+type(
+  Quota.t
+)
+ident(
+  def orig_quota "store.ml" 375 10179 10219 "store.ml" 378 10302 10347
+)
+"store.ml" 375 10179 10219 "store.ml" 375 10179 10228
+type(
+  Quota.t
+)
+ident(
+  def mod_quota "store.ml" 376 10231 10232 "store.ml" 378 10302 10347
+)
+"store.ml" 376 10231 10236 "store.ml" 376 10231 10240
+type(
+  Node.t
+)
+"store.ml" 376 10231 10243 "store.ml" 376 10231 10256
+type(
+  Node.t -> string list -> Node.t -> Node.t
+)
+ident(
+  ext_ref Path.set_node
+)
+"store.ml" 376 10231 10257 "store.ml" 376 10231 10262
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 375 10179 10192 "store.ml" 375 10179 10197
+)
+"store.ml" 376 10231 10257 "store.ml" 376 10231 10267
+type(
+  Node.t
+)
+"store.ml" 376 10231 10268 "store.ml" 376 10231 10272
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 375 10179 10198 "store.ml" 375 10179 10202
+)
+"store.ml" 376 10231 10273 "store.ml" 376 10231 10277
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 375 10179 10203 "store.ml" 375 10179 10207
+)
+"store.ml" 376 10231 10243 "store.ml" 376 10231 10277
+type(
+  Node.t
+)
+"store.ml" 377 10281 10282 "store.ml" 377 10281 10287
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 375 10179 10192 "store.ml" 375 10179 10197
+)
+"store.ml" 377 10281 10296 "store.ml" 377 10281 10300
+type(
+  Node.t
+)
+ident(
+  int_ref root "store.ml" 376 10231 10236 "store.ml" 376 10231 10240
+)
+"store.ml" 377 10281 10282 "store.ml" 377 10281 10300
+type(
+  unit
+)
+"store.ml" 378 10302 10303 "store.ml" 378 10302 10314
+type(
+  Quota.t -> Quota.t -> Quota.t -> unit
+)
+ident(
+  ext_ref Quota.merge
+)
+"store.ml" 378 10302 10315 "store.ml" 378 10302 10325
+type(
+  Quota.t
+)
+ident(
+  int_ref orig_quota "store.ml" 375 10179 10208 "store.ml" 375 10179 10218
+)
+"store.ml" 378 10302 10326 "store.ml" 378 10302 10335
+type(
+  Quota.t
+)
+ident(
+  int_ref mod_quota "store.ml" 375 10179 10219 "store.ml" 375 10179 10228
+)
+"store.ml" 378 10302 10336 "store.ml" 378 10302 10341
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 375 10179 10192 "store.ml" 375 10179 10197
+)
+"store.ml" 378 10302 10336 "store.ml" 378 10302 10347
+type(
+  Quota.t
+)
+"store.ml" 378 10302 10303 "store.ml" 378 10302 10347
+type(
+  unit
+)
+"store.ml" 377 10281 10282 "store.ml" 378 10302 10347
+type(
+  unit
+)
+"store.ml" 376 10231 10232 "store.ml" 378 10302 10347
+type(
+  unit
+)
+"store.ml" 380 10349 10353 "store.ml" 380 10349 10358
+type(
+  t -> Perms.Connection.t -> string list -> string -> unit
+)
+ident(
+  def write "store.ml" 394 10875 10875 --
+)
+"store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+type(
+  t
+)
+ident(
+  def store "store.ml" 380 10349 10365 "store.ml" 392 10834 10873
+)
+"store.ml" 380 10349 10365 "store.ml" 380 10349 10369
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 380 10349 10370 "store.ml" 392 10834 10873
+)
+"store.ml" 380 10349 10370 "store.ml" 380 10349 10374
+type(
+  string list
+)
+ident(
+  def path "store.ml" 380 10349 10375 "store.ml" 392 10834 10873
+)
+"store.ml" 380 10349 10375 "store.ml" 380 10349 10380
+type(
+  string
+)
+ident(
+  def value "store.ml" 381 10383 10384 "store.ml" 392 10834 10873
+)
+"store.ml" 381 10383 10388 "store.ml" 381 10383 10392
+type(
+  Node.t
+)
+"store.ml" 381 10383 10394 "store.ml" 381 10383 10402
+type(
+  bool
+)
+"store.ml" 381 10383 10388 "store.ml" 381 10383 10402
+type(
+  Node.t * bool
+)
+"store.ml" 381 10383 10405 "store.ml" 381 10383 10430
+type(
+  t -> string list -> Node.t * bool
+)
+ident(
+  int_ref get_deepest_existing_node "store.ml" 291 7931 7935 "store.ml" 291 7931 7960
+)
+"store.ml" 381 10383 10431 "store.ml" 381 10383 10436
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 381 10383 10437 "store.ml" 381 10383 10441
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 380 10349 10370 "store.ml" 380 10349 10374
+)
+"store.ml" 381 10383 10405 "store.ml" 381 10383 10441
+type(
+  Node.t * bool
+)
+"store.ml" 382 10445 10450 "store.ml" 382 10445 10455
+type(
+  Xenctrl.domid
+)
+"store.ml" 382 10445 10458 "store.ml" 382 10445 10472
+type(
+  Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Node.get_owner
+)
+"store.ml" 382 10445 10473 "store.ml" 382 10445 10477
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 381 10383 10388 "store.ml" 381 10383 10392
+)
+"store.ml" 382 10445 10458 "store.ml" 382 10445 10477
+type(
+  Xenctrl.domid
+)
+"store.ml" 383 10481 10485 "store.ml" 383 10481 10493
+type(
+  bool
+)
+ident(
+  int_ref existing "store.ml" 381 10383 10394 "store.ml" 381 10383 10402
+)
+"store.ml" 383 10481 10494 "store.ml" 383 10481 10496
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 383 10481 10498 "store.ml" 383 10481 10522
+type(
+  Perms.Connection.t -> bool
+)
+ident(
+  ext_ref Perms.Connection.is_dom0
+)
+"store.ml" 383 10481 10523 "store.ml" 383 10481 10527
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 380 10349 10365 "store.ml" 380 10349 10369
+)
+"store.ml" 383 10481 10497 "store.ml" 383 10481 10528
+type(
+  bool
+)
+"store.ml" 383 10481 10485 "store.ml" 383 10481 10528
+type(
+  bool
+)
+"store.ml" 385 10577 10579 "store.ml" 385 10577 10590
+type(
+  Quota.t -> Xenctrl.domid -> int -> unit
+)
+ident(
+  ext_ref Quota.check
+)
+"store.ml" 385 10577 10591 "store.ml" 385 10577 10596
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 385 10577 10591 "store.ml" 385 10577 10602
+type(
+  Quota.t
+)
+"store.ml" 385 10577 10603 "store.ml" 385 10577 10607
+type(
+  Xenctrl.domid
+)
+"store.ml" 385 10577 10609 "store.ml" 385 10577 10622
+type(
+  string -> int
+)
+ident(
+  ext_ref Stdext.String.length
+)
+"store.ml" 385 10577 10623 "store.ml" 385 10577 10628
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 380 10349 10375 "store.ml" 380 10349 10380
+)
+"store.ml" 385 10577 10608 "store.ml" 385 10577 10629
+type(
+  int
+)
+"store.ml" 385 10577 10579 "store.ml" 385 10577 10629
+type(
+  unit
+)
+"store.ml" 388 10679 10681 "store.ml" 388 10679 10692
+type(
+  Quota.t -> Xenctrl.domid -> int -> unit
+)
+ident(
+  ext_ref Quota.check
+)
+"store.ml" 388 10679 10693 "store.ml" 388 10679 10698
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 388 10679 10693 "store.ml" 388 10679 10704
+type(
+  Quota.t
+)
+"store.ml" 388 10679 10705 "store.ml" 388 10679 10710
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref owner "store.ml" 382 10445 10450 "store.ml" 382 10445 10455
+)
+"store.ml" 388 10679 10712 "store.ml" 388 10679 10725
+type(
+  string -> int
+)
+ident(
+  ext_ref Stdext.String.length
+)
+"store.ml" 388 10679 10726 "store.ml" 388 10679 10731
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 380 10349 10375 "store.ml" 380 10349 10380
+)
+"store.ml" 388 10679 10711 "store.ml" 388 10679 10732
+type(
+  int
+)
+"store.ml" 388 10679 10681 "store.ml" 388 10679 10732
+type(
+  unit
+)
+"store.ml" 383 10481 10482 "store.ml" 388 10679 10732
+type(
+  unit
+)
+"store.ml" 389 10734 10739 "store.ml" 389 10734 10743
+type(
+  Node.t
+)
+"store.ml" 389 10734 10745 "store.ml" 389 10734 10757
+type(
+  bool
+)
+"store.ml" 389 10734 10739 "store.ml" 389 10734 10757
+type(
+  Node.t * bool
+)
+"store.ml" 389 10734 10760 "store.ml" 389 10734 10770
+type(
+  t -> Perms.Connection.t -> string list -> string -> Node.t * bool
+)
+ident(
+  int_ref path_write "store.ml" 243 6577 6581 "store.ml" 243 6577 6591
+)
+"store.ml" 389 10734 10771 "store.ml" 389 10734 10776
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 389 10734 10777 "store.ml" 389 10734 10781
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 380 10349 10365 "store.ml" 380 10349 10369
+)
+"store.ml" 389 10734 10782 "store.ml" 389 10734 10786
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 380 10349 10370 "store.ml" 380 10349 10374
+)
+"store.ml" 389 10734 10787 "store.ml" 389 10734 10792
+type(
+  string
+)
+ident(
+  int_ref value "store.ml" 380 10349 10375 "store.ml" 380 10349 10380
+)
+"store.ml" 389 10734 10760 "store.ml" 389 10734 10792
+type(
+  Node.t * bool
+)
+"store.ml" 390 10796 10797 "store.ml" 390 10796 10802
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 390 10796 10811 "store.ml" 390 10796 10815
+type(
+  Node.t
+)
+ident(
+  int_ref root "store.ml" 389 10734 10739 "store.ml" 389 10734 10743
+)
+"store.ml" 390 10796 10797 "store.ml" 390 10796 10815
+type(
+  unit
+)
+"store.ml" 391 10817 10821 "store.ml" 391 10817 10833
+type(
+  bool
+)
+ident(
+  int_ref node_created "store.ml" 389 10734 10745 "store.ml" 389 10734 10757
+)
+"store.ml" 392 10834 10840 "store.ml" 392 10834 10855
+type(
+  Quota.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Quota.add_entry
+)
+"store.ml" 392 10834 10856 "store.ml" 392 10834 10861
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 380 10349 10359 "store.ml" 380 10349 10364
+)
+"store.ml" 392 10834 10856 "store.ml" 392 10834 10867
+type(
+  Quota.t
+)
+"store.ml" 392 10834 10868 "store.ml" 392 10834 10873
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref owner "store.ml" 382 10445 10450 "store.ml" 382 10445 10455
+)
+"store.ml" 392 10834 10840 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 391 10817 10818 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 390 10796 10797 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 389 10734 10735 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 383 10481 10482 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 382 10445 10446 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 381 10383 10384 "store.ml" 392 10834 10873
+type(
+  unit
+)
+"store.ml" 394 10875 10879 "store.ml" 394 10875 10884
+type(
+  t -> Perms.Connection.t -> string list -> unit
+)
+ident(
+  def mkdir "store.ml" 402 11247 11247 --
+)
+"store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+type(
+  t
+)
+ident(
+  def store "store.ml" 394 10875 10891 "store.ml" 400 11211 11245
+)
+"store.ml" 394 10875 10891 "store.ml" 394 10875 10895
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 394 10875 10896 "store.ml" 400 11211 11245
+)
+"store.ml" 394 10875 10896 "store.ml" 394 10875 10900
+type(
+  string list
+)
+ident(
+  def path "store.ml" 395 10903 10904 "store.ml" 400 11211 11245
+)
+"store.ml" 395 10903 10908 "store.ml" 395 10903 10912
+type(
+  Node.t
+)
+"store.ml" 395 10903 10914 "store.ml" 395 10903 10922
+type(
+  bool
+)
+"store.ml" 395 10903 10908 "store.ml" 395 10903 10922
+type(
+  Node.t * bool
+)
+"store.ml" 395 10903 10925 "store.ml" 395 10903 10950
+type(
+  t -> string list -> Node.t * bool
+)
+ident(
+  int_ref get_deepest_existing_node "store.ml" 291 7931 7935 "store.ml" 291 7931 7960
+)
+"store.ml" 395 10903 10951 "store.ml" 395 10903 10956
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+)
+"store.ml" 395 10903 10957 "store.ml" 395 10903 10961
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 394 10875 10896 "store.ml" 394 10875 10900
+)
+"store.ml" 395 10903 10925 "store.ml" 395 10903 10961
+type(
+  Node.t * bool
+)
+"store.ml" 396 10965 10970 "store.ml" 396 10965 10975
+type(
+  Xenctrl.domid
+)
+"store.ml" 396 10965 10978 "store.ml" 396 10965 10992
+type(
+  Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Node.get_owner
+)
+"store.ml" 396 10965 10993 "store.ml" 396 10965 10997
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 395 10903 10908 "store.ml" 395 10903 10912
+)
+"store.ml" 396 10965 10978 "store.ml" 396 10965 10997
+type(
+  Xenctrl.domid
+)
+"store.ml" 398 11076 11080 "store.ml" 398 11076 11083
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"store.ml" 398 11076 11085 "store.ml" 398 11076 11093
+type(
+  bool
+)
+ident(
+  int_ref existing "store.ml" 395 10903 10914 "store.ml" 395 10903 10922
+)
+"store.ml" 398 11076 11094 "store.ml" 398 11076 11096
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 398 11076 11098 "store.ml" 398 11076 11122
+type(
+  Perms.Connection.t -> bool
+)
+ident(
+  ext_ref Perms.Connection.is_dom0
+)
+"store.ml" 398 11076 11123 "store.ml" 398 11076 11127
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 394 10875 10891 "store.ml" 394 10875 10895
+)
+"store.ml" 398 11076 11097 "store.ml" 398 11076 11128
+type(
+  bool
+)
+"store.ml" 398 11076 11084 "store.ml" 398 11076 11129
+type(
+  bool
+)
+"store.ml" 398 11076 11080 "store.ml" 398 11076 11129
+type(
+  bool
+)
+"store.ml" 398 11076 11135 "store.ml" 398 11076 11146
+type(
+  Quota.t -> Xenctrl.domid -> int -> unit
+)
+ident(
+  ext_ref Quota.check
+)
+"store.ml" 398 11076 11147 "store.ml" 398 11076 11152
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+)
+"store.ml" 398 11076 11147 "store.ml" 398 11076 11158
+type(
+  Quota.t
+)
+"store.ml" 398 11076 11159 "store.ml" 398 11076 11164
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref owner "store.ml" 396 10965 10970 "store.ml" 396 10965 10975
+)
+"store.ml" 398 11076 11165 "store.ml" 398 11076 11166
+type(
+  int
+)
+"store.ml" 398 11076 11135 "store.ml" 398 11076 11166
+type(
+  unit
+)
+"store.ml" 398 11076 11077 "store.ml" 398 11076 11166
+type(
+  unit
+)
+"store.ml" 399 11168 11169 "store.ml" 399 11168 11174
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+)
+"store.ml" 399 11168 11183 "store.ml" 399 11168 11193
+type(
+  t -> Perms.Connection.t -> string list -> Node.t
+)
+ident(
+  int_ref path_mkdir "store.ml" 229 6195 6199 "store.ml" 229 6195 6209
+)
+"store.ml" 399 11168 11194 "store.ml" 399 11168 11199
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+)
+"store.ml" 399 11168 11200 "store.ml" 399 11168 11204
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 394 10875 10891 "store.ml" 394 10875 10895
+)
+"store.ml" 399 11168 11205 "store.ml" 399 11168 11209
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 394 10875 10896 "store.ml" 394 10875 10900
+)
+"store.ml" 399 11168 11183 "store.ml" 399 11168 11209
+type(
+  Node.t
+)
+"store.ml" 399 11168 11169 "store.ml" 399 11168 11209
+type(
+  unit
+)
+"store.ml" 400 11211 11212 "store.ml" 400 11211 11227
+type(
+  Quota.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Quota.add_entry
+)
+"store.ml" 400 11211 11228 "store.ml" 400 11211 11233
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 394 10875 10885 "store.ml" 394 10875 10890
+)
+"store.ml" 400 11211 11228 "store.ml" 400 11211 11239
+type(
+  Quota.t
+)
+"store.ml" 400 11211 11240 "store.ml" 400 11211 11245
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref owner "store.ml" 396 10965 10970 "store.ml" 396 10965 10975
+)
+"store.ml" 400 11211 11212 "store.ml" 400 11211 11245
+type(
+  unit
+)
+"store.ml" 399 11168 11169 "store.ml" 400 11211 11245
+type(
+  unit
+)
+"store.ml" 398 11076 11077 "store.ml" 400 11211 11245
+type(
+  unit
+)
+"store.ml" 396 10965 10966 "store.ml" 400 11211 11245
+type(
+  unit
+)
+"store.ml" 395 10903 10904 "store.ml" 400 11211 11245
+type(
+  unit
+)
+"store.ml" 402 11247 11251 "store.ml" 402 11247 11253
+type(
+  t -> Perms.Connection.t -> string list -> unit
+)
+ident(
+  def rm "store.ml" 410 11533 11533 --
+)
+"store.ml" 402 11247 11254 "store.ml" 402 11247 11259
+type(
+  t
+)
+ident(
+  def store "store.ml" 402 11247 11260 "store.ml" 408 11443 11531
+)
+"store.ml" 402 11247 11260 "store.ml" 402 11247 11264
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 402 11247 11265 "store.ml" 408 11443 11531
+)
+"store.ml" 402 11247 11265 "store.ml" 402 11247 11269
+type(
+  string list
+)
+ident(
+  def path "store.ml" 403 11272 11273 "store.ml" 408 11443 11531
+)
+"store.ml" 403 11272 11277 "store.ml" 403 11272 11286
+type(
+  Node.t option
+)
+"store.ml" 403 11272 11289 "store.ml" 403 11272 11302
+type(
+  Node.t -> string list -> Node.t option
+)
+ident(
+  ext_ref Path.get_node
+)
+"store.ml" 403 11272 11303 "store.ml" 403 11272 11308
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 402 11247 11254 "store.ml" 402 11247 11259
+)
+"store.ml" 403 11272 11303 "store.ml" 403 11272 11313
+type(
+  Node.t
+)
+"store.ml" 403 11272 11314 "store.ml" 403 11272 11318
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 402 11247 11265 "store.ml" 402 11247 11269
+)
+"store.ml" 403 11272 11289 "store.ml" 403 11272 11318
+type(
+  Node.t option
+)
+"store.ml" 404 11322 11329 "store.ml" 404 11322 11338
+type(
+  Node.t option
+)
+ident(
+  int_ref rmed_node "store.ml" 403 11272 11277 "store.ml" 403 11272 11286
+)
+"store.ml" 405 11344 11347 "store.ml" 405 11344 11351
+type(
+  Node.t option
+)
+"store.ml" 405 11344 11355 "store.ml" 405 11344 11360
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 405 11344 11361 "store.ml" 405 11344 11380
+type(
+  exn
+)
+"store.ml" 405 11344 11355 "store.ml" 405 11344 11380
+type(
+  unit
+)
+"store.ml" 406 11381 11389 "store.ml" 406 11381 11398
+type(
+  Node.t
+)
+ident(
+  def rmed_node "store.ml" 407 11402 11404 "store.ml" 408 11443 11531
+)
+"store.ml" 406 11381 11384 "store.ml" 406 11381 11398
+type(
+  Node.t option
+)
+"store.ml" 407 11402 11404 "store.ml" 407 11402 11409
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 402 11247 11254 "store.ml" 402 11247 11259
+)
+"store.ml" 407 11402 11418 "store.ml" 407 11402 11425
+type(
+  t -> Perms.Connection.t -> string list -> Node.t
+)
+ident(
+  int_ref path_rm "store.ml" 261 7168 7172 "store.ml" 261 7168 7179
+)
+"store.ml" 407 11402 11426 "store.ml" 407 11402 11431
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 402 11247 11254 "store.ml" 402 11247 11259
+)
+"store.ml" 407 11402 11432 "store.ml" 407 11402 11436
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 402 11247 11260 "store.ml" 402 11247 11264
+)
+"store.ml" 407 11402 11437 "store.ml" 407 11402 11441
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 402 11247 11265 "store.ml" 402 11247 11269
+)
+"store.ml" 407 11402 11418 "store.ml" 407 11402 11441
+type(
+  Node.t
+)
+"store.ml" 407 11402 11404 "store.ml" 407 11402 11441
+type(
+  unit
+)
+"store.ml" 408 11443 11445 "store.ml" 408 11443 11457
+type(
+  (Node.t -> unit) -> Node.t -> unit
+)
+ident(
+  ext_ref Node.recurse
+)
+"store.ml" 408 11443 11463 "store.ml" 408 11443 11467
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 408 11443 11471 "store.ml" 408 11443 11520
+)
+"store.ml" 408 11443 11471 "store.ml" 408 11443 11486
+type(
+  Quota.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Quota.del_entry
+)
+"store.ml" 408 11443 11487 "store.ml" 408 11443 11492
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 402 11247 11254 "store.ml" 402 11247 11259
+)
+"store.ml" 408 11443 11487 "store.ml" 408 11443 11498
+type(
+  Quota.t
+)
+"store.ml" 408 11443 11500 "store.ml" 408 11443 11514
+type(
+  Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Node.get_owner
+)
+"store.ml" 408 11443 11515 "store.ml" 408 11443 11519
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 408 11443 11463 "store.ml" 408 11443 11467
+)
+"store.ml" 408 11443 11499 "store.ml" 408 11443 11520
+type(
+  Xenctrl.domid
+)
+"store.ml" 408 11443 11471 "store.ml" 408 11443 11520
+type(
+  unit
+)
+"store.ml" 408 11443 11458 "store.ml" 408 11443 11521
+type(
+  Node.t -> unit
+)
+"store.ml" 408 11443 11522 "store.ml" 408 11443 11531
+type(
+  Node.t
+)
+ident(
+  int_ref rmed_node "store.ml" 406 11381 11389 "store.ml" 406 11381 11398
+)
+"store.ml" 408 11443 11445 "store.ml" 408 11443 11531
+type(
+  unit
+)
+"store.ml" 407 11402 11404 "store.ml" 408 11443 11531
+type(
+  unit
+)
+"store.ml" 404 11322 11323 "store.ml" 408 11443 11531
+type(
+  unit
+)
+"store.ml" 403 11272 11273 "store.ml" 408 11443 11531
+type(
+  unit
+)
+"store.ml" 410 11533 11537 "store.ml" 410 11533 11545
+type(
+  t -> Perms.Connection.t -> string list -> Perms.Node.t -> unit
+)
+ident(
+  def setperms "store.ml" 421 12004 12004 --
+)
+"store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+type(
+  t
+)
+ident(
+  def store "store.ml" 410 11533 11552 "store.ml" 419 11963 12002
+)
+"store.ml" 410 11533 11552 "store.ml" 410 11533 11556
+type(
+  Perms.Connection.t
+)
+ident(
+  def perm "store.ml" 410 11533 11557 "store.ml" 419 11963 12002
+)
+"store.ml" 410 11533 11557 "store.ml" 410 11533 11561
+type(
+  string list
+)
+ident(
+  def path "store.ml" 410 11533 11562 "store.ml" 419 11963 12002
+)
+"store.ml" 410 11533 11562 "store.ml" 410 11533 11568
+type(
+  Perms.Node.t
+)
+ident(
+  def nperms "store.ml" 411 11571 11572 "store.ml" 419 11963 12002
+)
+"store.ml" 411 11571 11578 "store.ml" 411 11571 11591
+type(
+  Node.t -> string list -> Node.t option
+)
+ident(
+  ext_ref Path.get_node
+)
+"store.ml" 411 11571 11592 "store.ml" 411 11571 11597
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 411 11571 11592 "store.ml" 411 11571 11602
+type(
+  Node.t
+)
+"store.ml" 411 11571 11603 "store.ml" 411 11571 11607
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 410 11533 11557 "store.ml" 410 11533 11561
+)
+"store.ml" 411 11571 11578 "store.ml" 411 11571 11607
+type(
+  Node.t option
+)
+"store.ml" 412 11613 11616 "store.ml" 412 11613 11620
+type(
+  Node.t option
+)
+"store.ml" 412 11613 11624 "store.ml" 412 11613 11629
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"store.ml" 412 11613 11630 "store.ml" 412 11613 11649
+type(
+  exn
+)
+"store.ml" 412 11613 11624 "store.ml" 412 11613 11649
+type(
+  unit
+)
+"store.ml" 413 11650 11658 "store.ml" 413 11650 11662
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 414 11666 11668 "store.ml" 419 11963 12002
+)
+"store.ml" 413 11650 11653 "store.ml" 413 11650 11662
+type(
+  Node.t option
+)
+"store.ml" 414 11666 11672 "store.ml" 414 11666 11681
+type(
+  Xenctrl.domid
+)
+"store.ml" 414 11666 11684 "store.ml" 414 11666 11698
+type(
+  Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Node.get_owner
+)
+"store.ml" 414 11666 11699 "store.ml" 414 11666 11703
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 413 11650 11658 "store.ml" 413 11650 11662
+)
+"store.ml" 414 11666 11684 "store.ml" 414 11666 11703
+type(
+  Xenctrl.domid
+)
+"store.ml" 415 11707 11713 "store.ml" 415 11707 11722
+type(
+  Xenctrl.domid
+)
+"store.ml" 415 11707 11725 "store.ml" 415 11707 11745
+type(
+  Perms.Node.t -> Xenctrl.domid
+)
+ident(
+  ext_ref Perms.Node.get_owner
+)
+"store.ml" 415 11707 11746 "store.ml" 415 11707 11752
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref nperms "store.ml" 410 11533 11562 "store.ml" 410 11533 11568
+)
+"store.ml" 415 11707 11725 "store.ml" 415 11707 11752
+type(
+  Xenctrl.domid
+)
+"store.ml" 416 11756 11761 "store.ml" 416 11756 11764
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"store.ml" 416 11756 11767 "store.ml" 416 11756 11776
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref old_owner "store.ml" 414 11666 11672 "store.ml" 414 11666 11681
+)
+"store.ml" 416 11756 11777 "store.ml" 416 11756 11778
+type(
+  Xenctrl.domid -> Xenctrl.domid -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"store.ml" 416 11756 11779 "store.ml" 416 11756 11788
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref new_owner "store.ml" 415 11707 11713 "store.ml" 415 11707 11722
+)
+"store.ml" 416 11756 11766 "store.ml" 416 11756 11789
+type(
+  bool
+)
+"store.ml" 416 11756 11790 "store.ml" 416 11756 11792
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.||
+)
+"store.ml" 416 11756 11794 "store.ml" 416 11756 11818
+type(
+  Perms.Connection.t -> bool
+)
+ident(
+  ext_ref Perms.Connection.is_dom0
+)
+"store.ml" 416 11756 11819 "store.ml" 416 11756 11823
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 410 11533 11552 "store.ml" 410 11533 11556
+)
+"store.ml" 416 11756 11793 "store.ml" 416 11756 11824
+type(
+  bool
+)
+"store.ml" 416 11756 11765 "store.ml" 416 11756 11825
+type(
+  bool
+)
+"store.ml" 416 11756 11761 "store.ml" 416 11756 11825
+type(
+  bool
+)
+"store.ml" 416 11756 11831 "store.ml" 416 11756 11842
+type(
+  Quota.t -> Xenctrl.domid -> int -> unit
+)
+ident(
+  ext_ref Quota.check
+)
+"store.ml" 416 11756 11843 "store.ml" 416 11756 11848
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 416 11756 11843 "store.ml" 416 11756 11854
+type(
+  Quota.t
+)
+"store.ml" 416 11756 11855 "store.ml" 416 11756 11864
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref new_owner "store.ml" 415 11707 11713 "store.ml" 415 11707 11722
+)
+"store.ml" 416 11756 11865 "store.ml" 416 11756 11866
+type(
+  int
+)
+"store.ml" 416 11756 11831 "store.ml" 416 11756 11866
+type(
+  unit
+)
+"store.ml" 416 11756 11758 "store.ml" 416 11756 11866
+type(
+  unit
+)
+"store.ml" 417 11868 11870 "store.ml" 417 11868 11875
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 417 11868 11884 "store.ml" 417 11868 11897
+type(
+  t -> Perms.Connection.t -> string list -> Perms.Node.t -> Node.t
+)
+ident(
+  int_ref path_setperms "store.ml" 274 7491 7495 "store.ml" 274 7491 7508
+)
+"store.ml" 417 11868 11898 "store.ml" 417 11868 11903
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 417 11868 11904 "store.ml" 417 11868 11908
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perm "store.ml" 410 11533 11552 "store.ml" 410 11533 11556
+)
+"store.ml" 417 11868 11909 "store.ml" 417 11868 11913
+type(
+  string list
+)
+ident(
+  int_ref path "store.ml" 410 11533 11557 "store.ml" 410 11533 11561
+)
+"store.ml" 417 11868 11914 "store.ml" 417 11868 11920
+type(
+  Perms.Node.t
+)
+ident(
+  int_ref nperms "store.ml" 410 11533 11562 "store.ml" 410 11533 11568
+)
+"store.ml" 417 11868 11884 "store.ml" 417 11868 11920
+type(
+  Node.t
+)
+"store.ml" 417 11868 11870 "store.ml" 417 11868 11920
+type(
+  unit
+)
+"store.ml" 418 11922 11924 "store.ml" 418 11922 11939
+type(
+  Quota.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Quota.del_entry
+)
+"store.ml" 418 11922 11940 "store.ml" 418 11922 11945
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 418 11922 11940 "store.ml" 418 11922 11951
+type(
+  Quota.t
+)
+"store.ml" 418 11922 11952 "store.ml" 418 11922 11961
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref old_owner "store.ml" 414 11666 11672 "store.ml" 414 11666 11681
+)
+"store.ml" 418 11922 11924 "store.ml" 418 11922 11961
+type(
+  unit
+)
+"store.ml" 419 11963 11965 "store.ml" 419 11963 11980
+type(
+  Quota.t -> Xenctrl.domid -> unit
+)
+ident(
+  ext_ref Quota.add_entry
+)
+"store.ml" 419 11963 11981 "store.ml" 419 11963 11986
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 410 11533 11546 "store.ml" 410 11533 11551
+)
+"store.ml" 419 11963 11981 "store.ml" 419 11963 11992
+type(
+  Quota.t
+)
+"store.ml" 419 11963 11993 "store.ml" 419 11963 12002
+type(
+  Xenctrl.domid
+)
+ident(
+  int_ref new_owner "store.ml" 415 11707 11713 "store.ml" 415 11707 11722
+)
+"store.ml" 419 11963 11965 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 418 11922 11924 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 417 11868 11870 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 416 11756 11758 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 415 11707 11709 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 414 11666 11668 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 411 11571 11572 "store.ml" 419 11963 12002
+type(
+  unit
+)
+"store.ml" 433 12271 12275 "store.ml" 433 12271 12282
+type(
+  t -> Perms.Connection.t -> ops
+)
+ident(
+  def get_ops "store.ml" 445 12546 12546 --
+)
+"store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+type(
+  t
+)
+ident(
+  def store "store.ml" 433 12271 12289 "store.ml" 443 12543 12544
+)
+"store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+type(
+  Perms.Connection.t
+)
+ident(
+  def perms "store.ml" 433 12271 12297 "store.ml" 443 12543 12544
+)
+"store.ml" 434 12299 12308 "store.ml" 434 12299 12313
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 435 12315 12324 "store.ml" 435 12315 12329
+type(
+  t -> Perms.Connection.t -> Path.t -> string -> unit
+)
+ident(
+  int_ref write "store.ml" 380 10349 10353 "store.ml" 380 10349 10358
+)
+"store.ml" 435 12315 12330 "store.ml" 435 12315 12335
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 435 12315 12336 "store.ml" 435 12315 12341
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 435 12315 12324 "store.ml" 435 12315 12341
+type(
+  Path.t -> string -> unit
+)
+"store.ml" 436 12343 12352 "store.ml" 436 12343 12357
+type(
+  t -> Perms.Connection.t -> Path.t -> unit
+)
+ident(
+  int_ref mkdir "store.ml" 394 10875 10879 "store.ml" 394 10875 10884
+)
+"store.ml" 436 12343 12358 "store.ml" 436 12343 12363
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 436 12343 12364 "store.ml" 436 12343 12369
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 436 12343 12352 "store.ml" 436 12343 12369
+type(
+  Path.t -> unit
+)
+"store.ml" 437 12371 12377 "store.ml" 437 12371 12379
+type(
+  t -> Perms.Connection.t -> Path.t -> unit
+)
+ident(
+  int_ref rm "store.ml" 402 11247 11251 "store.ml" 402 11247 11253
+)
+"store.ml" 437 12371 12380 "store.ml" 437 12371 12385
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 437 12371 12386 "store.ml" 437 12371 12391
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 437 12371 12377 "store.ml" 437 12371 12391
+type(
+  Path.t -> unit
+)
+"store.ml" 438 12393 12405 "store.ml" 438 12393 12413
+type(
+  t -> Perms.Connection.t -> Path.t -> Perms.Node.t -> unit
+)
+ident(
+  int_ref setperms "store.ml" 410 11533 11537 "store.ml" 410 11533 11545
+)
+"store.ml" 438 12393 12414 "store.ml" 438 12393 12419
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 438 12393 12420 "store.ml" 438 12393 12425
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 438 12393 12405 "store.ml" 438 12393 12425
+type(
+  Path.t -> Perms.Node.t -> unit
+)
+"store.ml" 439 12427 12433 "store.ml" 439 12427 12435
+type(
+  t -> Perms.Connection.t -> Path.t -> string list
+)
+ident(
+  int_ref ls "store.ml" 307 8319 8323 "store.ml" 307 8319 8325
+)
+"store.ml" 439 12427 12436 "store.ml" 439 12427 12441
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 439 12427 12442 "store.ml" 439 12427 12447
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 439 12427 12433 "store.ml" 439 12427 12447
+type(
+  Path.t -> string list
+)
+"store.ml" 440 12449 12457 "store.ml" 440 12449 12461
+type(
+  t -> Perms.Connection.t -> Path.t -> string
+)
+ident(
+  int_ref read "store.ml" 294 8023 8027 "store.ml" 294 8023 8031
+)
+"store.ml" 440 12449 12462 "store.ml" 440 12449 12467
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 440 12449 12468 "store.ml" 440 12449 12473
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 440 12449 12457 "store.ml" 440 12449 12473
+type(
+  Path.t -> string
+)
+"store.ml" 441 12475 12487 "store.ml" 441 12475 12495
+type(
+  t -> Perms.Connection.t -> Path.t -> Perms.Node.t
+)
+ident(
+  int_ref getperms "store.ml" 319 8665 8669 "store.ml" 319 8665 8677
+)
+"store.ml" 441 12475 12496 "store.ml" 441 12475 12501
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 441 12475 12502 "store.ml" 441 12475 12507
+type(
+  Perms.Connection.t
+)
+ident(
+  int_ref perms "store.ml" 433 12271 12289 "store.ml" 433 12271 12294
+)
+"store.ml" 441 12475 12487 "store.ml" 441 12475 12507
+type(
+  Path.t -> Perms.Node.t
+)
+"store.ml" 442 12509 12524 "store.ml" 442 12509 12535
+type(
+  t -> Path.t -> bool
+)
+ident(
+  int_ref path_exists "store.ml" 329 8892 8896 "store.ml" 329 8892 8907
+)
+"store.ml" 442 12509 12536 "store.ml" 442 12509 12541
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 433 12271 12283 "store.ml" 433 12271 12288
+)
+"store.ml" 442 12509 12524 "store.ml" 442 12509 12541
+type(
+  Path.t -> bool
+)
+"store.ml" 433 12271 12297 "store.ml" 443 12543 12544
+type(
+  ops
+)
+"store.ml" 445 12546 12550 "store.ml" 445 12546 12556
+type(
+  unit -> t
+)
+ident(
+  def create "store.ml" 451 12700 12700 --
+)
+"store.ml" 445 12546 12557 "store.ml" 445 12546 12559
+type(
+  unit
+)
+"store.ml" 446 12564 12593 "store.ml" 446 12564 12594
+type(
+  int
+)
+"store.ml" 447 12596 12622 "store.ml" 447 12596 12623
+type(
+  int
+)
+"store.ml" 448 12625 12633 "store.ml" 448 12625 12644
+type(
+  string -> Perms.Node.t -> string -> Node.t
+)
+ident(
+  ext_ref Node.create
+)
+"store.ml" 448 12625 12645 "store.ml" 448 12625 12647
+type(
+  string
+)
+"store.ml" 448 12625 12648 "store.ml" 448 12625 12667
+type(
+  Perms.Node.t
+)
+ident(
+  ext_ref Perms.Node.default0
+)
+"store.ml" 448 12625 12668 "store.ml" 448 12625 12670
+type(
+  string
+)
+"store.ml" 448 12625 12633 "store.ml" 448 12625 12670
+type(
+  Node.t
+)
+"store.ml" 449 12672 12681 "store.ml" 449 12672 12693
+type(
+  unit -> Quota.t
+)
+ident(
+  ext_ref Quota.create
+)
+"store.ml" 449 12672 12694 "store.ml" 449 12672 12696
+type(
+  unit
+)
+"store.ml" 449 12672 12681 "store.ml" 449 12672 12696
+type(
+  Quota.t
+)
+"store.ml" 445 12546 12562 "store.ml" 450 12698 12699
+type(
+  t
+)
+"store.ml" 451 12700 12704 "store.ml" 451 12700 12708
+type(
+  t -> t
+)
+ident(
+  def copy "store.ml" 458 12893 12893 --
+)
+"store.ml" 451 12700 12709 "store.ml" 451 12700 12714
+type(
+  t
+)
+ident(
+  def store "store.ml" 451 12700 12717 "store.ml" 456 12890 12891
+)
+"store.ml" 452 12719 12748 "store.ml" 452 12719 12753
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 451 12700 12709 "store.ml" 451 12700 12714
+)
+"store.ml" 452 12719 12748 "store.ml" 452 12719 12779
+type(
+  int
+)
+"store.ml" 453 12781 12807 "store.ml" 453 12781 12812
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 451 12700 12709 "store.ml" 451 12700 12714
+)
+"store.ml" 453 12781 12807 "store.ml" 453 12781 12835
+type(
+  int
+)
+"store.ml" 454 12837 12845 "store.ml" 454 12837 12850
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 451 12700 12709 "store.ml" 451 12700 12714
+)
+"store.ml" 454 12837 12845 "store.ml" 454 12837 12855
+type(
+  Node.t
+)
+"store.ml" 455 12857 12866 "store.ml" 455 12857 12876
+type(
+  Quota.t -> Quota.t
+)
+ident(
+  ext_ref Quota.copy
+)
+"store.ml" 455 12857 12877 "store.ml" 455 12857 12882
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 451 12700 12709 "store.ml" 451 12700 12714
+)
+"store.ml" 455 12857 12877 "store.ml" 455 12857 12888
+type(
+  Quota.t
+)
+"store.ml" 455 12857 12866 "store.ml" 455 12857 12888
+type(
+  Quota.t
+)
+"store.ml" 451 12700 12717 "store.ml" 456 12890 12891
+type(
+  t
+)
+"store.ml" 458 12893 12897 "store.ml" 458 12893 12909
+type(
+  t -> unit
+)
+ident(
+  def mark_symbols "store.ml" 461 12993 12993 --
+)
+"store.ml" 458 12893 12910 "store.ml" 458 12893 12915
+type(
+  t
+)
+ident(
+  def store "store.ml" 459 12918 12919 "store.ml" 459 12918 12991
+)
+"store.ml" 459 12918 12919 "store.ml" 459 12918 12931
+type(
+  (Node.t -> unit) -> Node.t -> unit
+)
+ident(
+  ext_ref Node.recurse
+)
+"store.ml" 459 12918 12937 "store.ml" 459 12918 12941
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 459 12918 12945 "store.ml" 459 12918 12979
+)
+"store.ml" 459 12918 12945 "store.ml" 459 12918 12964
+type(
+  Symbol.t -> unit
+)
+ident(
+  ext_ref Symbol.mark_as_used
+)
+"store.ml" 459 12918 12965 "store.ml" 459 12918 12969
+type(
+  Node.t
+)
+ident(
+  int_ref node "store.ml" 459 12918 12937 "store.ml" 459 12918 12941
+)
+"store.ml" 459 12918 12965 "store.ml" 459 12918 12979
+type(
+  Symbol.t
+)
+"store.ml" 459 12918 12945 "store.ml" 459 12918 12979
+type(
+  unit
+)
+"store.ml" 459 12918 12932 "store.ml" 459 12918 12980
+type(
+  Node.t -> unit
+)
+"store.ml" 459 12918 12981 "store.ml" 459 12918 12986
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 458 12893 12910 "store.ml" 458 12893 12915
+)
+"store.ml" 459 12918 12981 "store.ml" 459 12918 12991
+type(
+  Node.t
+)
+"store.ml" 459 12918 12919 "store.ml" 459 12918 12991
+type(
+  unit
+)
+"store.ml" 461 12993 12997 "store.ml" 461 12993 13022
+type(
+  t -> unit
+)
+ident(
+  def incr_transaction_coalesce "store.ml" 463 13103 13103 --
+)
+"store.ml" 461 12993 13023 "store.ml" 461 12993 13028
+type(
+  t
+)
+ident(
+  def store "store.ml" 462 13031 13032 "store.ml" 462 13031 13102
+)
+"store.ml" 462 13031 13032 "store.ml" 462 13031 13037
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 461 12993 13023 "store.ml" 461 12993 13028
+)
+"store.ml" 462 13031 13067 "store.ml" 462 13031 13072
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 461 12993 13023 "store.ml" 461 12993 13028
+)
+"store.ml" 462 13031 13067 "store.ml" 462 13031 13098
+type(
+  int
+)
+"store.ml" 462 13031 13099 "store.ml" 462 13031 13100
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.+
+)
+"store.ml" 462 13031 13101 "store.ml" 462 13031 13102
+type(
+  int
+)
+"store.ml" 462 13031 13067 "store.ml" 462 13031 13102
+type(
+  int
+)
+"store.ml" 462 13031 13032 "store.ml" 462 13031 13102
+type(
+  unit
+)
+"store.ml" 463 13103 13107 "store.ml" 463 13103 13129
+type(
+  t -> unit
+)
+ident(
+  def incr_transaction_abort "store.ml" 466 13205 13205 --
+)
+"store.ml" 463 13103 13130 "store.ml" 463 13103 13135
+type(
+  t
+)
+ident(
+  def store "store.ml" 464 13138 13139 "store.ml" 464 13138 13203
+)
+"store.ml" 464 13138 13139 "store.ml" 464 13138 13144
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 463 13103 13130 "store.ml" 463 13103 13135
+)
+"store.ml" 464 13138 13171 "store.ml" 464 13138 13176
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 463 13103 13130 "store.ml" 463 13103 13135
+)
+"store.ml" 464 13138 13171 "store.ml" 464 13138 13199
+type(
+  int
+)
+"store.ml" 464 13138 13200 "store.ml" 464 13138 13201
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.+
+)
+"store.ml" 464 13138 13202 "store.ml" 464 13138 13203
+type(
+  int
+)
+"store.ml" 464 13138 13171 "store.ml" 464 13138 13203
+type(
+  int
+)
+"store.ml" 464 13138 13139 "store.ml" 464 13138 13203
+type(
+  unit
+)
+"store.ml" 466 13205 13209 "store.ml" 466 13205 13214
+type(
+  t -> int * int * int
+)
+ident(
+  def stats "store.ml" 471 13308 13381 --
+)
+"store.ml" 466 13205 13215 "store.ml" 466 13205 13220
+type(
+  t
+)
+ident(
+  def store "store.ml" 467 13223 13224 "store.ml" 471 13308 13381
+)
+"store.ml" 467 13223 13228 "store.ml" 467 13223 13236
+type(
+  int ref
+)
+"store.ml" 467 13223 13239 "store.ml" 467 13223 13242
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"store.ml" 467 13223 13243 "store.ml" 467 13223 13244
+type(
+  int
+)
+"store.ml" 467 13223 13239 "store.ml" 467 13223 13244
+type(
+  int ref
+)
+"store.ml" 468 13248 13249 "store.ml" 468 13248 13258
+type(
+  Node.t -> (string list -> Node.t -> unit) -> unit
+)
+ident(
+  int_ref traversal "store.ml" 342 9124 9128 "store.ml" 342 9124 9137
+)
+"store.ml" 468 13248 13259 "store.ml" 468 13248 13264
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 466 13205 13215 "store.ml" 466 13205 13220
+)
+"store.ml" 468 13248 13259 "store.ml" 468 13248 13269
+type(
+  Node.t
+)
+"store.ml" 468 13248 13275 "store.ml" 468 13248 13279
+type(
+  string list
+)
+ident(
+  def path "store.ml" 468 13248 13280 "store.ml" 469 13288 13303
+)
+"store.ml" 468 13248 13280 "store.ml" 468 13248 13284
+type(
+  Node.t
+)
+ident(
+  def node "store.ml" 469 13288 13290 "store.ml" 469 13288 13303
+)
+"store.ml" 469 13288 13290 "store.ml" 469 13288 13294
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"store.ml" 469 13288 13295 "store.ml" 469 13288 13303
+type(
+  int ref
+)
+ident(
+  int_ref nb_nodes "store.ml" 467 13223 13228 "store.ml" 467 13223 13236
+)
+"store.ml" 469 13288 13290 "store.ml" 469 13288 13303
+type(
+  unit
+)
+"store.ml" 468 13248 13270 "store.ml" 470 13304 13306
+type(
+  string list -> Node.t -> unit
+)
+"store.ml" 468 13248 13249 "store.ml" 470 13304 13306
+type(
+  unit
+)
+"store.ml" 471 13308 13309 "store.ml" 471 13308 13310
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.!
+)
+"store.ml" 471 13308 13310 "store.ml" 471 13308 13318
+type(
+  int ref
+)
+ident(
+  int_ref nb_nodes "store.ml" 467 13223 13228 "store.ml" 467 13223 13236
+)
+"store.ml" 471 13308 13309 "store.ml" 471 13308 13318
+type(
+  int
+)
+"store.ml" 471 13308 13320 "store.ml" 471 13308 13325
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 466 13205 13215 "store.ml" 466 13205 13220
+)
+"store.ml" 471 13308 13320 "store.ml" 471 13308 13348
+type(
+  int
+)
+"store.ml" 471 13308 13350 "store.ml" 471 13308 13355
+type(
+  t
+)
+ident(
+  int_ref store "store.ml" 466 13205 13215 "store.ml" 466 13205 13220
+)
+"store.ml" 471 13308 13350 "store.ml" 471 13308 13381
+type(
+  int
+)
+"store.ml" 471 13308 13309 "store.ml" 471 13308 13381
+type(
+  int * int * int
+)
+"store.ml" 468 13248 13249 "store.ml" 471 13308 13381
+type(
+  int * int * int
+)
+"store.ml" 467 13223 13224 "store.ml" 471 13308 13381
+type(
+  int * int * int
+)

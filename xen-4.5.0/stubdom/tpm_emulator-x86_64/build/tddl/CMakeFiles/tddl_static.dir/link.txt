@@ -1,0 +1,2 @@
+/usr/bin/ar cr libtddl.a  CMakeFiles/tddl_static.dir/tddl.o
+/usr/bin/ranlib libtddl.a

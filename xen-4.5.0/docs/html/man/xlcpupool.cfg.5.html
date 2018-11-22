@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>xlcpupool.cfg - XL Cpupool Configuration File Syntax</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#syntax">SYNTAX</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<ul>
+
+		<li><a href="#mandatory_configuration_items">Mandatory Configuration Items</a></li>
+		<li><a href="#optional_configuration_items">Optional Configuration Items</a></li>
+	</ul>
+
+	<li><a href="#files">FILES</a></li>
+	<li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>xlcpupool.cfg - XL Cpupool Configuration File Syntax</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ /etc/xen/xlcpupool</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>To create a Cpupool with xl requires the provision of a cpupool config
+file.  Typically these live in `/etc/xen/CPUPOOL.cfg` where CPUPOOL is
+the name of the cpupool.</p>
+<p>
+</p>
+<hr />
+<h1><a name="syntax">SYNTAX</a></h1>
+<p>A cpupool config file consists of a series of <code>KEY=VALUE</code> pairs.</p>
+<p>A value <code>VALUE</code> is one of:</p>
+<dl>
+<dt><strong><a name="string" class="item"><strong>&quot;STRING&quot;</strong></a></strong></dt>
+
+<dd>
+<p>A string, surrounded by either single or double quotes.</p>
+</dd>
+<dt><strong><a name="number" class="item"><strong>NUMBER</strong></a></strong></dt>
+
+<dd>
+<p>A number, in either decimal, octal (using a <code>0</code> prefix) or
+hexadecimal (using an <code>0x</code> prefix).</p>
+</dd>
+<dt><strong><a name="value_value" class="item"><strong>[ VALUE, VALUE, ... ]</strong></a></strong></dt>
+
+<dd>
+<p>A list of <code>VALUES</code> of the above types. Lists are homogeneous and are
+not nested.</p>
+</dd>
+</dl>
+<p>The semantics of each <code>KEY</code> defines which form of <code>VALUE</code> is required.</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<p>
+</p>
+<h2><a name="mandatory_configuration_items">Mandatory Configuration Items</a></h2>
+<p>The following key is mandatory for any cpupool:</p>
+<dl>
+<dt><strong><a name="name_name" class="item"><strong>name=&quot;NAME&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Specifies the name of the cpupool.  Names of cpupools existing on a
+single host must be unique.</p>
+</dd>
+</dl>
+<p>
+</p>
+<h2><a name="optional_configuration_items">Optional Configuration Items</a></h2>
+<p>The following options apply to guests of any type.</p>
+<dl>
+<dt><strong><a name="sched_sched" class="item"><strong>sched=&quot;SCHED&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Specifies the scheduler which is used for the cpupool. Valid
+values for <code>SCHED</code> are:</p>
+<dl>
+<dt><strong><a name="credit" class="item"><strong>credit</strong></a></strong></dt>
+
+<dd>
+<p>the credit scheduler</p>
+</dd>
+<dt><strong><a name="credit2" class="item"><strong>credit2</strong></a></strong></dt>
+
+<dd>
+<p>the credit2 scheduler</p>
+</dd>
+<dt><strong><a name="sedf" class="item"><strong>sedf</strong></a></strong></dt>
+
+<dd>
+<p>the SEDF scheduler</p>
+</dd>
+</dl>
+<p>The default scheduler is the one used for <code>Pool-0</code> specified as
+boot parameter of the hypervisor.</p>
+</dd>
+<dt><strong><a name="nodes_nodes" class="item"><strong>nodes=&quot;NODES&quot;</strong></a></strong></dt>
+
+<dd>
+<p>Specifies the cpus of the NUMA-nodes given in <code>NODES</code> (an integer or
+a list of integers) to be member of the cpupool. The free cpus in the
+specified nodes are allocated in the new cpupool.</p>
+</dd>
+<dt><strong><a name="cpus_cpus" class="item"><strong>cpus=&quot;CPUS&quot;</strong></a></strong></dt>
+
+<dd>
+<p>The specified <code>CPUS</code> are allocated in the new cpupool. All cpus must
+be free. Must not be specified together with <strong>nodes</strong>.</p>
+<p>If neither <strong>nodes</strong> nor <strong>cpus</strong> are specified only the first free cpu
+found will be allocated in the new cpupool.</p>
+</dd>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="files">FILES</a></h1>
+<p><em class="file">/etc/xen/CPUPOOL.cfg</em></p>
+<p>
+</p>
+<hr />
+<h1><a name="bugs">BUGS</a></h1>
+<p>This document is a work in progress and contains items which require
+further documentation and which are generally incomplete (marked with
+XXX).  However all options are included here whether or not they are
+fully documented.</p>
+<p>Patches to improve incomplete items (or any other item) would be
+gratefully received on the <a href="mailto:xen-devel@lists.xen.org">xen-devel@lists.xen.org</a> mailing
+list. Please see <a href="http://wiki.xen.org/wiki/SubmittingXenPatches">http://wiki.xen.org/wiki/SubmittingXenPatches</a> for
+information on how to submit a patch to Xen.</p>
+
+</body>
+
+</html>

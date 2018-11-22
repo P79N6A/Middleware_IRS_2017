@@ -1,0 +1,2 @@
+/usr/bin/ar cr libtpm_crypto.a  CMakeFiles/tpm_crypto.dir/hmac.o CMakeFiles/tpm_crypto.dir/rc4.o CMakeFiles/tpm_crypto.dir/rsa.o CMakeFiles/tpm_crypto.dir/sha1.o CMakeFiles/tpm_crypto.dir/bn_gmp.o
+/usr/bin/ranlib libtpm_crypto.a

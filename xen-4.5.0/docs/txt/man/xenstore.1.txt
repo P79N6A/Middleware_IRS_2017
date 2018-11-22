@@ -1,0 +1,37 @@
+NAME
+    xenstore - interact with Xenstore
+
+SYNOPSIS
+    xenstore *CMD* ...
+
+DESCRIPTION
+    A set of utilities for interacting with Xenstore.
+
+    xenstore-chmod(1)
+        Sets the permissions of keys.
+
+    xenstore-exists(1)
+        Test for the existance of a key.
+
+    xenstore-list(1)
+        List keys.
+
+    xenstore-ls(1)
+        List keys, values and permissions.
+
+    xenstore-read(1)
+        Read the value of a key.
+
+    xenstore-rm(1)
+        Remove keys.
+
+    xenstore-watch(1)
+        Watch for changes to keys or values.
+
+    xenstore-write(1)
+        Add or modify keys and values.
+
+BUGS
+    Send bugs to xen-devel@lists.xen.org, see
+    http://wiki.xen.org/xenwiki/ReportingBugs on how to send bug reports.
+

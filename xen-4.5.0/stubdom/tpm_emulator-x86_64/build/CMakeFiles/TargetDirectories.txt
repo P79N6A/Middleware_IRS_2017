@@ -1,0 +1,8 @@
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/mtm/CMakeFiles/mtm.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tddl/CMakeFiles/tddl.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tddl/CMakeFiles/tddl_static.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tddl/CMakeFiles/test_tddl.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tpm/CMakeFiles/tpm.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/crypto/CMakeFiles/tpm_crypto.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tpmd/unix/CMakeFiles/tpmd.dir
+/home/yzhao/work/xen_src/xen-4.5.0/stubdom/tpm_emulator-x86_64/build/tpmd_dev/CMakeFiles/tpmd_dev.dir
